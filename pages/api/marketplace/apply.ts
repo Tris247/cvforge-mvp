@@ -2,8 +2,6 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs'
 import path from 'path'
 
-const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
-
 // optional Prisma support — marketplace applications can be backed by DB when enabled
 let prismaApps: any = null
 if (process.env.USE_PRISMA_MARKETPLACE === 'true') {
@@ -14,14 +12,15 @@ if (process.env.USE_PRISMA_MARKETPLACE === 'true') {
   }catch(e){ prismaApps = null }
 }
 
-function ensure() {
-  const dir = path.dirname(FILE)
+function ensure(filePath: string) {
+  const dir = path.dirname(filePath)
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
-  if (!fs.existsSync(FILE)) fs.writeFileSync(FILE, '[]')
+  if (!fs.existsSync(filePath)) fs.writeFileSync(filePath, '[]')
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  ensure()
+  const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
+  ensure(FILE)
   try {
     if (req.method === 'GET') {
       if(prismaApps){
