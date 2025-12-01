@@ -14,9 +14,7 @@ if (process.env.USE_PRISMA_MARKETPLACE === 'true'){
 }
 
 export async function getMarketplaceItems(filePath?: string){
-  if(prisma){
-    try{ return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* fall back to files */ }
-  }
+  // First, prefer file-backed data if a marketplace file is configured or present
   const MARKET_FILE = filePath || (process.env.MARKETPLACE_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_FILE) : path.resolve(process.cwd(), 'data', 'marketplace.json'))
   try{
     if (fs.existsSync(MARKET_FILE)) {
@@ -31,8 +29,14 @@ export async function getMarketplaceItems(filePath?: string){
         return JSON.parse(fs.readFileSync(pick,'utf8')||'[]')
       }
     }
-    return []
-  }catch(e){ return [] }
+  }catch(e){ /* ignore and try prisma fallback */ }
+
+  // If no files found, and Prisma marketplace support is enabled, use the DB
+  if(prisma){
+    try{ return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* final fallback to empty */ }
+  }
+
+  return []
 }
 
 export async function requireOwner(req:any, itemId:string){
