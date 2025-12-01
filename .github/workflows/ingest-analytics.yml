@@ -1,0 +1,31 @@
+name: Ingest Analytics
+
+on:
+  schedule:
+    # hourly by default; adjust as needed
+    - cron: '0 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  ingest:
+    name: Ingest analytics JSONL to DB
+    runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: '--max-old-space-size=512'
+      ANALYTICS_FILE: 'data/analytics.jsonl'
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run ingestion worker
+        run: node ./scripts/ingest-analytics-worker.js
+        # secrets must be provided in repository settings for DB writes

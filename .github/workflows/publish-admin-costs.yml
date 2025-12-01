@@ -1,0 +1,42 @@
+name: Generate and Publish Admin Costs
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 8 * * *' # daily at 08:00 UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate admin page
+        env:
+          COST_AGG_DAYS: 30
+          OPENAI_COST_PER_1K_TOKENS: 0.002
+          # To include DB invoice revenue, set DATABASE_URL in repo secrets
+          # DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/generate-admin-costs.js
+
+      - name: Commit admin page to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Create gh-pages branch containing only the admin_costs.html
+          git checkout --orphan gh-pages || git checkout gh-pages || true
+          git rm -rf . || true
+          git add admin_costs.html || true
+          git commit -m "chore: update admin_costs.html [ci skip]" || echo "no changes to commit"
+          git push -u origin gh-pages --force

@@ -1,0 +1,27 @@
+name: Prune Analytics
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # daily at 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run prune script
+        env:
+          PRUNE_DAYS: 90
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: node scripts/prune-analytics.js

@@ -1,0 +1,29 @@
+name: CI
+on: [ push, pull_request ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: npm ci
+      - name: Ensure DB + Prisma client
+        env:
+          DATABASE_URL: file:./dev.db
+        run: |
+          npx prisma generate
+          # Create or apply migrations; allow fallback
+          npx prisma migrate deploy || npx prisma migrate dev --name ci || true
+          node prisma/seed.js || true
+      - name: Run unit/integration tests (Vitest)
+        run: npm run test:ci
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+      - name: Run E2E tests (Playwright)
+        run: npx playwright test --reporter=github

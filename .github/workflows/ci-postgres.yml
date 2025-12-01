@@ -1,0 +1,106 @@
+name: CI (Postgres)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: cvforge_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d cvforge_ci" --health-interval 10s
+
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/cvforge_ci
+      # Use a test sentinel to ensure tests simulate/unavailable OpenAI in CI
+      OPENAI_API_KEY: test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma client (Postgres schema)
+        run: npx prisma generate --schema=prisma/schema.postgres.prisma
+
+      - name: Apply DB schema (prisma db push)
+        run: npx prisma db push --schema=prisma/schema.postgres.prisma
+
+      - name: Import demo JSON data (safe for CI)
+        run: node ./scripts/migrate-json-to-postgres.js --force
+
+      - name: Run tests
+        run: npm test --silent
+
+      - name: Upload test reports (optional)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vitest-logs
+          path: .
+name: CI (Postgres)
+
+on:
+  pull_request:
+    branches: [ main, 'feat/*' ]
+  push:
+    branches: [ main ]
+
+jobs:
+  test-postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: cvforge_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d cvforge_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/cvforge_test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma client (Postgres schema)
+        run: npx prisma generate --schema=prisma/schema.postgres.prisma
+
+      - name: Push DB schema to Postgres
+        run: npx prisma db push --schema=prisma/schema.postgres.prisma
+
+      - name: Run tests
+        run: npx vitest --run
+        env:
+          DATABASE_URL: ${{ env.DATABASE_URL }}

@@ -1,0 +1,137 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  job_seeker
+  employer
+  admin
+}
+
+enum JobStatus {
+  open
+  closed
+  draft
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  name         String?
+  phone        String?
+  role         Role     @default(job_seeker)
+  passwordHash String?
+  profile      Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  cvs            CV[]
+  applications   Application[]
+  autoApplyRules AutoApplyRule[]
+  companies      Company[] @relation("CompanyOwner")
+  subscriptions  Subscription[]
+}
+
+model Company {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  ownerId     String
+  owner       User     @relation("CompanyOwner", fields: [ownerId], references: [id])
+  logo        String?
+  industry    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  jobs Job[]
+}
+
+model Job {
+  id          String    @id @default(uuid())
+  title       String
+  description String
+  salaryMin   Int?
+  salaryMax   Int?
+  companyId   String
+  company     Company   @relation(fields: [companyId], references: [id])
+  tags        String[]  @default([])
+  location    String?
+  jobType     String?
+  status      JobStatus @default(open)
+  remote      Boolean?  @default(false)
+  metadata    Json?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  applications Application[]
+}
+
+model CV {
+  id          String   @id @default(uuid())
+  ownerId     String
+  owner       User     @relation(fields: [ownerId], references: [id])
+  title       String?
+  path        String? // file path or storage key
+  content     String? // extracted text
+  parsed      Json?
+  createdAt   DateTime @default(now())
+
+  Application Application[]
+}
+
+model Application {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  jobId       String
+  job         Job      @relation(fields: [jobId], references: [id])
+  cvId        String?
+  cv          CV?      @relation(fields: [cvId], references: [id])
+  status      String   @default("applied")
+  autoApplied Boolean  @default(false)
+  source      String?
+  message     String?
+  metadata    Json?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AutoApplyRule {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  keywords  String[] @default([])
+  locations String[] @default([])
+  salaryMin Int?
+  jobTypes  String[] @default([])
+  active     Boolean  @default(true)
+  remoteOnly Boolean?
+  createdAt DateTime @default(now())
+}
+
+model Event {
+  id             String   @id @default(uuid())
+  name           String
+  userId         String?
+  payload        Json?
+  source         String?
+  idempotencyKey String?  @unique
+  createdAt      DateTime @default(now())
+}
+
+model Subscription {
+  id                   String   @id @default(uuid())
+  userId               String
+  user                 User     @relation(fields: [userId], references: [id])
+  tier                 String
+  active               Boolean  @default(false)
+  stripeSubscriptionId String?
+  metadata             Json?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}

@@ -1,0 +1,124 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Roles: 'job_seeker', 'employer', 'admin'
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  name         String?
+  phone        String?
+  role         String   @default("job_seeker")
+  passwordHash String?
+  profile      String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // users can own companies via Company.ownerId relation
+
+  cvs            CV[]
+  applications   Application[]
+  autoApplyRules AutoApplyRule[]
+  Company        Company[]
+  subscriptions  Subscription[]
+}
+
+model Company {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  ownerId     String
+  owner       User     @relation(fields: [ownerId], references: [id])
+  logo        String?
+  industry    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  jobs Job[]
+}
+
+model Job {
+  id          String    @id @default(uuid())
+  title       String
+  description String
+  salaryMin   Int?
+  salaryMax   Int?
+  companyId   String
+  company     Company   @relation(fields: [companyId], references: [id])
+  tags        String?   @default("")
+  location    String?
+  jobType     String?
+  status      String    @default("open")
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  applications Application[]
+}
+
+model CV {
+  id          String        @id @default(uuid())
+  ownerId     String
+  owner       User          @relation(fields: [ownerId], references: [id])
+  title       String?
+  path        String? // file path or storage key
+  content     String? // extracted text
+  createdAt   DateTime      @default(now())
+  Application Application[]
+}
+
+model Application {
+  id          String            @id @default(uuid())
+  userId      String
+  user        User              @relation(fields: [userId], references: [id])
+  jobId       String
+  job         Job               @relation(fields: [jobId], references: [id])
+  cvId        String?
+  cv          CV?               @relation(fields: [cvId], references: [id])
+  status      String              @default("applied")
+  autoApplied Boolean           @default(false)
+  source      String?
+  message     String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+}
+
+model AutoApplyRule {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  keywords  String?  @default("")
+  locations String?  @default("")
+  salaryMin Int?
+  jobTypes  String?  @default("")
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model Event {
+  id             String   @id @default(uuid())
+  name           String
+  userId         String?
+  payload        String?
+  source         String?
+  idempotencyKey String?  @unique
+  createdAt      DateTime @default(now())
+}
+
+// Enums removed for SQLite compatibility; use string fields with defaults instead.
+
+model Subscription {
+  id                   String   @id @default(uuid())
+  userId               String
+  user                 User     @relation(fields: [userId], references: [id])
+  tier                 String
+  active               Boolean  @default(false)
+  stripeSubscriptionId String?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}
