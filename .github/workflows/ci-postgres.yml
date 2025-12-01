@@ -42,21 +42,21 @@ jobs:
           mkdir -p data
           touch dev.db
           echo "Using SQLite dev DB at ./dev.db for test run"
-          export DATABASE_URL="file:./dev.db"
-          npx prisma generate
+          # Push the SQLite schema (avoid running Postgres-targeted migrations in CI)
+          npx prisma db push --schema=prisma/schema.prisma
+          npx prisma generate --schema=prisma/schema.prisma
         shell: bash
 
-      - name: Generate Prisma client (Postgres schema)
-        run: npx prisma generate --schema=prisma/schema.postgres.prisma
-
-      - name: Apply DB schema (prisma db push)
-        run: npx prisma db push --schema=prisma/schema.postgres.prisma
-
-      - name: Import demo JSON data (safe for CI)
-        run: node ./scripts/migrate-json-to-postgres.js --force
+      - name: Ensure `data/` exists
+        run: |
+          mkdir -p data
+        shell: bash
 
       - name: Run tests
         run: npm test --silent
+        env:
+          DATABASE_URL: file:./dev.db
+          OPENAI_API_KEY: test
 
       - name: Upload test reports (optional)
         if: failure()
