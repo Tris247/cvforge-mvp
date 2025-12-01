@@ -37,7 +37,7 @@ jobs:
         run: npm test --silent
         env:
           DATABASE_URL: file:./dev.db
-          OPENAI_API_KEY: test
+          
 
       - name: Upload test reports (optional)
         if: failure()
