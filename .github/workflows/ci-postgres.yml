@@ -92,9 +92,11 @@ jobs:
           done
         shell: bash
 
-      - name: Apply Postgres migrations and generate client
+      - name: Apply Postgres schema and generate client
         run: |
-          npx prisma migrate deploy --schema=prisma/schema.postgres.prisma
+          # Use `db push` in CI to apply the Postgres schema without relying on
+          # an existing migration history that may have been generated for SQLite.
+          npx prisma db push --schema=prisma/schema.postgres.prisma
           npx prisma generate --schema=prisma/schema.postgres.prisma
         shell: bash
 
