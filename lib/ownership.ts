@@ -48,7 +48,6 @@ export async function requireOwner(req:any, itemId:string){
   } catch (e) {
     try { const mod = await import('./auth'); getUserFromReq = mod.getUserFromReq } catch (_) {}
   }
-  }
   const user = getUserFromReq ? await getUserFromReq(req) : null
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
 
