@@ -1,55 +1,34 @@
-name: CI (Postgres)
+name: CI (SQLite-first)
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, master, 'feat/*' ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, master, 'feat/*' ]
 
 jobs:
-  test-postgres:
+  test:
     runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:15
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: cvforge_ci
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U postgres -d cvforge_ci" --health-interval 10s
-
-    env:
-      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/cvforge_ci
-      # Use a test sentinel to ensure tests simulate/unavailable OpenAI in CI
-      OPENAI_API_KEY: test
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Use Node.js 18
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: 18
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Prepare local test files and SQLite DB
+      - name: Prepare test files and SQLite DB
         run: |
           mkdir -p data
           touch dev.db
           echo "Using SQLite dev DB at ./dev.db for test run"
-          # Push the SQLite schema (avoid running Postgres-targeted migrations in CI)
+          # Apply the Prisma schema to the local sqlite dev.db (safe for CI)
           npx prisma db push --schema=prisma/schema.prisma
           npx prisma generate --schema=prisma/schema.prisma
-        shell: bash
-
-      - name: Ensure `data/` exists
-        run: |
-          mkdir -p data
         shell: bash
 
       - name: Run tests
@@ -64,56 +43,3 @@ jobs:
         with:
           name: vitest-logs
           path: .
-name: CI (Postgres)
-
-on:
-  pull_request:
-    branches: [ main, 'feat/*' ]
-  push:
-    branches: [ main ]
-
-jobs:
-  test-postgres:
-    runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres:15
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: cvforge_test
-        ports:
-          - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U postgres -d cvforge_test"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-    env:
-      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/cvforge_test
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Generate Prisma client (Postgres schema)
-        run: npx prisma generate --schema=prisma/schema.postgres.prisma
-
-      - name: Push DB schema to Postgres
-        run: npx prisma db push --schema=prisma/schema.postgres.prisma
-
-      - name: Run tests
-        run: npx vitest --run
-        env:
-          # For test suites that expect a local SQLite DB and file-backed data,
-          # override DATABASE_URL to point at a local sqlite file and ensure
-          # OpenAI sentinel is set so tests exercise the deterministic fallback.
-          DATABASE_URL: file:./dev.db
-          OPENAI_API_KEY: test
