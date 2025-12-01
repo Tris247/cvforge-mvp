@@ -27,7 +27,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // ensure the calling user is owner of the item this application belongs to
     const app = items[idx]
+    // Debug: surface which file and application are being processed in CI
+    try { console.warn('decision endpoint: FILE', FILE, 'appId', app.id, 'appItemId', app.itemId) } catch(e){}
     const check = await requireOwner(req, String(app.itemId))
+    if(!check.ok) { try { console.warn('decision endpoint: requireOwner failed', check) } catch(e){} }
     if(!check.ok) return res.status(check.status).json({ error: check.error })
 
     items[idx].status = decision === 'accept' ? 'accepted' : 'rejected'
