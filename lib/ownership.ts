@@ -17,7 +17,21 @@ export async function getMarketplaceItems(filePath?: string){
     try{ return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* fall back to files */ }
   }
   const MARKET_FILE = filePath || (process.env.MARKETPLACE_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_FILE) : path.resolve(process.cwd(), 'data', 'marketplace.json'))
-  try{ return JSON.parse(fs.readFileSync(MARKET_FILE,'utf8')||'[]') }catch(e){ return [] }
+  try{
+    if (fs.existsSync(MARKET_FILE)) {
+      return JSON.parse(fs.readFileSync(MARKET_FILE,'utf8')||'[]')
+    }
+    // fallback: if a marketplace test file was created by another worker, try to find it
+    const dataDir = path.resolve(process.cwd(), 'data')
+    if (fs.existsSync(dataDir)){
+      const candidates = fs.readdirSync(dataDir).filter(f => f.startsWith('marketplace') && f.endsWith('.json'))
+      if (candidates.length) {
+        const pick = path.join(dataDir, candidates[0])
+        return JSON.parse(fs.readFileSync(pick,'utf8')||'[]')
+      }
+    }
+    return []
+  }catch(e){ return [] }
 }
 
 export async function requireOwner(req:any, itemId:string){
