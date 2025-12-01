@@ -1,6 +1,7 @@
 import fs from 'fs'
 import path from 'path'
-import { getUserFromReq } from './auth'
+// `getUserFromReq` is imported dynamically inside `requireOwner` so tests can
+// mock `./auth` before `lib/ownership` is loaded. Avoid a static import here.
 
 // optional Prisma support
 let prisma: any = null
@@ -35,7 +36,15 @@ export async function getMarketplaceItems(filePath?: string){
 }
 
 export async function requireOwner(req:any, itemId:string){
-  const user = await getUserFromReq(req)
+  let getUserFromReq: any = null
+  try{
+    // dynamic import so vitest mocks (vi.doMock) are effective
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    getUserFromReq = require('./auth').getUserFromReq
+  }catch(e){
+    try{ const mod = await import('./auth'); getUserFromReq = mod.getUserFromReq }catch(_){}
+  }
+  const user = getUserFromReq ? await getUserFromReq(req) : null
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
 
   const items = await getMarketplaceItems()
