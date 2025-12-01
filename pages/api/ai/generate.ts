@@ -60,7 +60,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       try{ const { captureException } = require('../../../lib/telemetry'); captureException(err, { userId }) }catch(e){}
       const openaiMsg = err instanceof Error ? err.message : String(err)
       console.error('openai error', openaiMsg)
-      suggestion = 'Error generating with OpenAI — falling back to local rewrite.'
+      // Ensure we fall back to the deterministic local rewriter when OpenAI fails.
+      suggestion = ''
     }
   }
 
