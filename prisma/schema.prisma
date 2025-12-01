@@ -92,10 +92,10 @@ model AutoApplyRule {
   id        String   @id @default(uuid())
   userId    String
   user      User     @relation(fields: [userId], references: [id])
-  keywords  String[] @default([])
-  locations String[] @default([])
+  keywords  Json?
+  locations Json?
   salaryMin Int?
-  jobTypes  String[] @default([])
+  jobTypes  Json?
   active    Boolean  @default(true)
   createdAt DateTime @default(now())
 }
