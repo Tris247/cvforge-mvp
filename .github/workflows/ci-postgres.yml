@@ -43,9 +43,10 @@ jobs:
         shell: bash
 
       - name: Run tests
-        run: npx vitest --run --threads=false
+        run: npx vitest --run
         env:
           DATABASE_URL: file:./dev.db
+          VITEST_MAX_THREADS: '1'
 
       - name: Upload test reports (optional)
         if: failure()
