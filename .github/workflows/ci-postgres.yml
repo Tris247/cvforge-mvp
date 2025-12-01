@@ -43,10 +43,9 @@ jobs:
         shell: bash
 
       - name: Run tests
-        run: npm test --silent
+        run: npx vitest --run --threads=false
         env:
           DATABASE_URL: file:./dev.db
-          
 
       - name: Upload test reports (optional)
         if: failure()
