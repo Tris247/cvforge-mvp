@@ -17,9 +17,12 @@ jobs:
         env:
           DATABASE_URL: file:./dev.db
         run: |
-          npx prisma generate
-          # Create or apply migrations; allow fallback
-          npx prisma migrate deploy || npx prisma migrate dev --name ci || true
+          mkdir -p data
+          touch dev.db
+          # Push the Prisma schema to the local sqlite dev DB (avoid applying
+          # Postgres-specific migrations during CI unit tests)
+          npx prisma db push --schema=prisma/schema.prisma
+          npx prisma generate --schema=prisma/schema.prisma
           node prisma/seed.js || true
       - name: Run unit/integration tests (Vitest)
         run: npm run test:ci
