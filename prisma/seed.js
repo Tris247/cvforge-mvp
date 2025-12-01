@@ -13,7 +13,8 @@ async function main(){
     company = await prisma.company.create({ data: { name: 'CapeTech', ownerId: user.id } })
   }
 
-  const job = await prisma.job.create({ data: { title: 'Frontend Developer', companyId: company.id, location: 'Cape Town, South Africa', description: 'Work on React & Next.js apps', tags: 'remote,frontend' } })
+  // tags must match the Postgres schema (String[]). Provide as an array.
+  const job = await prisma.job.create({ data: { title: 'Frontend Developer', companyId: company.id, location: 'Cape Town, South Africa', description: 'Work on React & Next.js apps', tags: ['remote', 'frontend'] } })
 
   // create an application in the schema-compatible shape
   await prisma.application.create({ data: { jobId: job.id, userId: user.id, cvId: cv.id, status: 'applied', source: 'seed' } })
