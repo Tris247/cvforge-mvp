@@ -23,6 +23,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Prepare clean test environment
+        run: |
+          # ensure no leftover marketplace test files interfere with tests
+          rm -f ./data/marketplace*.json || true
+          rm -f ./data/marketplace-applications*.json || true
+          mkdir -p data
+          echo "Cleaned data/ and removed marketplace test files"
+        shell: bash
+
       - name: Prepare test files and SQLite DB
         run: |
           mkdir -p data
