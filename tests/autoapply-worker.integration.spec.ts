@@ -22,7 +22,7 @@ describe('autoapply worker integration', () => {
 
     // create a candidate user and a rule that should match
     user = await prisma.user.create({ data: { email: `candidate+${Date.now()}@test.local`, name: 'Candidate' } })
-    rule = await prisma.autoApplyRule.create({ data: { userId: user.id, keywords: ['engineer','services'], locations: ['remote'], active: true } })
+    rule = await prisma.autoApplyRule.create({ data: { userId: user.id, keywords: 'engineer,services', locations: 'remote', active: true } })
   })
 
   afterAll(async () => {
