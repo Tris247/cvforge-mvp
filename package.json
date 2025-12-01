@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "echo \"no lint configured\"",
+    "pretest": "node -e \"require('fs').mkdirSync('data', { recursive: true })\"",
     "test": "vitest",
     "test:ci": "vitest --run",
     "e2e": "playwright test",
