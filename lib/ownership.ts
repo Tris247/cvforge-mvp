@@ -18,7 +18,9 @@ export async function getMarketplaceItems(filePath?: string){
   const MARKET_FILE = filePath || (process.env.MARKETPLACE_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_FILE) : path.resolve(process.cwd(), 'data', 'marketplace.json'))
   try{
     if (fs.existsSync(MARKET_FILE)) {
-      return JSON.parse(fs.readFileSync(MARKET_FILE,'utf8')||'[]')
+      const data = JSON.parse(fs.readFileSync(MARKET_FILE,'utf8')||'[]')
+      try { console.log('getMarketplaceItems: using file', MARKET_FILE, 'items', (data||[]).slice(0,10).map((x:any)=> x && x.id)) } catch(_) {}
+      return data
     }
     // fallback: if a marketplace test file was created by another worker, try to find it
     const dataDir = path.resolve(process.cwd(), 'data')
@@ -26,14 +28,16 @@ export async function getMarketplaceItems(filePath?: string){
       const candidates = fs.readdirSync(dataDir).filter(f => f.startsWith('marketplace') && f.endsWith('.json'))
       if (candidates.length) {
         const pick = path.join(dataDir, candidates[0])
-        return JSON.parse(fs.readFileSync(pick,'utf8')||'[]')
+        const data = JSON.parse(fs.readFileSync(pick,'utf8')||'[]')
+        try { console.log('getMarketplaceItems: using candidate file', pick, 'items', (data||[]).slice(0,10).map((x:any)=> x && x.id)) } catch(_) {}
+        return data
       }
     }
   }catch(e){ /* ignore and try prisma fallback */ }
 
   // If no files found, and Prisma marketplace support is enabled, use the DB
   if(prisma){
-    try{ return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* final fallback to empty */ }
+    try{ console.log('getMarketplaceItems: falling back to prisma marketplace'); return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* final fallback to empty */ }
   }
 
   return []
