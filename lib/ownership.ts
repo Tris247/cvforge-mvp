@@ -2,8 +2,10 @@ import fs from 'fs'
 import path from 'path'
 import { getUserFromReq } from './auth'
 
-export async function requireOwner(req:any, itemId:string){
-  const user = await getUserFromReq(req)
+// optional Prisma support
+let prisma: any = null
+if (process.env.USE_PRISMA_MARKETPLACE === 'true'){
+  try{
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { PrismaClient } = require('@prisma/client')
     prisma = new PrismaClient()
@@ -19,9 +21,7 @@ export async function getMarketplaceItems(filePath?: string){
 }
 
 export async function requireOwner(req:any, itemId:string){
-  let getUserFromReq: any
-  try{ getUserFromReq = require('./auth').getUserFromReq }catch(e){ getUserFromReq = null }
-  const user = getUserFromReq ? await getUserFromReq(req) : null
+  const user = await getUserFromReq(req)
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
 
   const items = await getMarketplaceItems()
