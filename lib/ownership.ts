@@ -1,11 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-// require auth at runtime so test mocks (vi.doMock) reliably replace it
+import { getUserFromReq } from './auth'
 
-// optional Prisma support
-let prisma: any = null
-if (process.env.USE_PRISMA_MARKETPLACE === 'true'){
-  try{
+export async function requireOwner(req:any, itemId:string){
+  const user = await getUserFromReq(req)
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const { PrismaClient } = require('@prisma/client')
     prisma = new PrismaClient()
