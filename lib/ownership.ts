@@ -38,11 +38,15 @@ export async function getMarketplaceItems(filePath?: string){
 export async function requireOwner(req:any, itemId:string){
   let getUserFromReq: any = null
   try{
-    // dynamic import so vitest mocks (vi.doMock) are effective
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    getUserFromReq = require('./auth').getUserFromReq
+    // prefer dynamic ESM import so vitest ESM mocks (vi.doMock) are effective
+    try{ const mod = await import('./auth'); getUserFromReq = mod.getUserFromReq }catch(e){}
+    // fallback to require for CJS environments
+    if(!getUserFromReq){
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      getUserFromReq = require('./auth').getUserFromReq
+    }
   }catch(e){
-    try{ const mod = await import('./auth'); getUserFromReq = mod.getUserFromReq }catch(_){}
+    try{ const mod = await import('./auth'); getUserFromReq = mod.getUserFromReq }catch(_){}}
   }
   const user = getUserFromReq ? await getUserFromReq(req) : null
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
