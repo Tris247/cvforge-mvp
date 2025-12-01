@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: file:./dev.db
-      OPENAI_API_KEY: test
     steps:
       - name: Checkout
         uses: actions/checkout@v4
