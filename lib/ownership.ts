@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { getUserFromReq } from './auth'
+// require auth at runtime so test mocks (vi.doMock) reliably replace it
 
 // optional Prisma support
 let prisma: any = null
@@ -21,7 +21,9 @@ export async function getMarketplaceItems(filePath?: string){
 }
 
 export async function requireOwner(req:any, itemId:string){
-  const user = await getUserFromReq(req)
+  let getUserFromReq: any
+  try{ getUserFromReq = require('./auth').getUserFromReq }catch(e){ getUserFromReq = null }
+  const user = getUserFromReq ? await getUserFromReq(req) : null
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
 
   const items = await getMarketplaceItems()
