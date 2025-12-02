@@ -29,7 +29,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const app = items[idx]
     // Debug: surface which file and application are being processed in CI
     try { console.warn('decision endpoint: FILE', FILE, 'appId', app.id, 'appItemId', app.itemId) } catch(e){}
-    const check = await requireOwner(req, String(app.itemId))
+    // If the application recorded which marketplace file it was created from,
+    // prefer that source when validating ownership to avoid CI/test file mismatches.
+    const check = await requireOwner(req, String(app.itemId), { sourceFile: (app && app.sourceMarketplaceFile) || undefined })
     if(!check.ok) { try { console.warn('decision endpoint: requireOwner failed', check) } catch(e){} }
     if(!check.ok) return res.status(check.status).json({ error: check.error })
 

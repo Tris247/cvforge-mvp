@@ -61,6 +61,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         status: 'pending',
         message: body.message || null,
         applicantId: body.applicantId || null,
+        // record which marketplace applications file was used so decision
+        // handlers can validate against the same source in CI/test runs
+        sourceMarketplaceFile: FILE,
         createdAt: new Date().toISOString(),
       }
       items.unshift(newItem)

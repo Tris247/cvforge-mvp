@@ -43,7 +43,7 @@ export async function getMarketplaceItems(filePath?: string){
   return []
 }
 
-export async function requireOwner(req:any, itemId:string){
+export async function requireOwner(req:any, itemId:string, opts?: { sourceFile?: string }){
   let getUserFromReq: any = null
   try {
     // prefer dynamic ESM import so vitest ESM mocks (vi.doMock) are effective
@@ -77,7 +77,9 @@ export async function requireOwner(req:any, itemId:string){
   const user = getUserFromReq ? await getUserFromReq(req) : null
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
 
-  const items = await getMarketplaceItems()
+  // If caller provided a specific source file (e.g., stored on the application)
+  // prefer loading that file first to avoid cross-test file mismatches in CI.
+  const items = opts && opts.sourceFile ? await getMarketplaceItems(opts.sourceFile) : await getMarketplaceItems()
   let it = items.find((i:any)=> String(i.id) === String(itemId))
   if(!it) {
     // If not found in the primary list, scan candidate marketplace files in `data/`
