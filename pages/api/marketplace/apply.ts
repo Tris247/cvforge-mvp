@@ -22,10 +22,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
   // resolved marketplace file (items) — prefer explicit env if present
   const MARKET_FILE = process.env.MARKETPLACE_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_FILE) : path.resolve(process.cwd(), 'data', 'marketplace.json')
-  // debug: capture working dir and resolved file path in CI logs
-  try { console.log('apply endpoint: cwd', process.cwd(), 'resolved FILE', FILE) } catch(_) {}
   ensure(FILE)
-  try { console.log('apply endpoint: FILE', FILE) } catch(_) {}
   try {
     if (req.method === 'GET') {
       if(prismaApps){
@@ -39,7 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     if (req.method === 'POST') {
       const body = req.body || {}
-      try { console.log('apply endpoint POST: itemId', body.itemId, 'applicantId', body.applicantId) } catch(_) {}
+      try { /* quiet log */ } catch(_) {}
         // accept an embedded cv upload: { cvContent: base64, cvName, cvContentType }
         if(body.cvContent && body.cvName){
           const UP_DIR = path.resolve(process.cwd(), 'data', 'uploads')
@@ -72,7 +69,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }
       items.unshift(newItem)
       fs.writeFileSync(FILE, JSON.stringify(items, null, 2))
-      try { console.log('apply endpoint: wrote application', newItem.id, 'itemId', newItem.itemId) } catch(_) {}
+      try { /* quiet log */ } catch(_) {}
       // analytics: record an application event
       try{ const { trackEvent } = require('../../../lib/analytics'); trackEvent('marketplace.application.created', { itemId: newItem.itemId, applicantId: newItem.applicantId, applicantName: newItem.applicantName }) }catch(e){}
       return res.status(200).json({ application: newItem })

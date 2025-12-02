@@ -34,7 +34,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const items = JSON.parse(fs.readFileSync(FILE, 'utf8') || '[]')
     if (itemId) {
       const filtered = items.filter((a: any) => String(a.itemId) === String(itemId))
-      try { console.warn('list endpoint: FILE', FILE, 'itemId', itemId, 'returning', filtered.slice(0,10).map((x:any)=>x.id)) } catch(e){}
       return res.status(200).json({ applications: filtered })
     }
 

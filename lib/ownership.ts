@@ -19,7 +19,8 @@ export async function getMarketplaceItems(filePath?: string){
   try{
     if (fs.existsSync(MARKET_FILE)) {
       const data = JSON.parse(fs.readFileSync(MARKET_FILE,'utf8')||'[]')
-      try { console.log('getMarketplaceItems: using file', MARKET_FILE, 'items', (data||[]).slice(0,10).map((x:any)=> x && x.id)) } catch(_) {}
+      // using file-backed marketplace items
+      try { /* quiet log */ } catch(_) {}
       return data
     }
     // fallback: if a marketplace test file was created by another worker, try to find it
@@ -29,7 +30,7 @@ export async function getMarketplaceItems(filePath?: string){
       if (candidates.length) {
         const pick = path.join(dataDir, candidates[0])
         const data = JSON.parse(fs.readFileSync(pick,'utf8')||'[]')
-        try { console.log('getMarketplaceItems: using candidate file', pick, 'items', (data||[]).slice(0,10).map((x:any)=> x && x.id)) } catch(_) {}
+        try { /* quiet log */ } catch(_) {}
         return data
       }
     }
@@ -37,7 +38,7 @@ export async function getMarketplaceItems(filePath?: string){
 
   // If no files found, and Prisma marketplace support is enabled, use the DB
   if(prisma){
-    try{ console.log('getMarketplaceItems: falling back to prisma marketplace'); return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* final fallback to empty */ }
+    try{ return await prisma.marketplaceItem.findMany({ orderBy: { createdAt: 'desc' } as any }) }catch(e){ /* final fallback to empty */ }
   }
 
   return []
@@ -89,25 +90,21 @@ export async function requireOwner(req:any, itemId:string, opts?: { sourceFile?:
       const dataDir = path.resolve(process.cwd(), 'data')
         if (fs.existsSync(dataDir)) {
           const candidates = fs.readdirSync(dataDir).filter(f => f.startsWith('marketplace') && f.endsWith('.json'))
-          try {
-            // log candidate list for CI triage (non-sensitive filenames only)
-            console.log('requireOwner: candidate marketplace files', candidates.slice(0,20))
-          } catch (_) {}
+          try { /* quiet log */ } catch (_) {}
           for (const f of candidates) {
             try {
               const full = path.join(dataDir, f)
               let mtime: any = null
               try { mtime = fs.statSync(full).mtime.toISOString() } catch (_) { mtime = null }
-              console.log('requireOwner: inspecting candidate', full, 'mtime', mtime)
               const d = JSON.parse(fs.readFileSync(full,'utf8')||'[]')
               const found = (d||[]).find((x:any)=> String(x.id) === String(itemId))
               if (found) {
                 it = found
-                console.log('requireOwner: found item in file', full)
+                try { /* quiet log */ } catch(_){}
                 break
               }
             } catch (err) {
-              console.warn('requireOwner: failed inspecting candidate', f, err && err.message)
+              // ignore malformed candidate
               /* ignore malformed candidate */
             }
           }
@@ -115,11 +112,7 @@ export async function requireOwner(req:any, itemId:string, opts?: { sourceFile?:
     } catch (_) { /* ignore scan errors */ }
   }
   if(!it) {
-    // helpful debug for CI: surface candidate item ids when not found (non-sensitive)
-    try {
-      const ids = (items||[]).slice(0,10).map((x:any)=> x && x.id)
-      console.warn('requireOwner: item not found', { itemId, candidateIds: ids })
-    } catch (_) {}
+    // return not found without noisy logging
     return { ok: false, status: 404, error: 'item not found' }
   }
   if(it.ownerId !== user.id) return { ok: false, status: 403, error: 'forbidden' }

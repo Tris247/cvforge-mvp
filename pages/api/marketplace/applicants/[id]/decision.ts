@@ -11,8 +11,6 @@ function ensure(filePath: string) {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
-  // debug: capture working dir and resolved file path in CI logs
-  try { console.log('decision endpoint: cwd', process.cwd(), 'resolved FILE', FILE) } catch(_) {}
   ensure(FILE)
   try {
     if (req.method !== 'POST') return res.status(405).json({ error: 'method not allowed' })
@@ -29,12 +27,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // ensure the calling user is owner of the item this application belongs to
     const app = items[idx]
-    // Debug: surface which file and application are being processed in CI
-    try { console.warn('decision endpoint: FILE', FILE, 'appId', app.id, 'appItemId', app.itemId) } catch(e){}
+    // keep quiet logs; rely on structured errors
     // If the application recorded which marketplace file it was created from,
     // prefer that source when validating ownership to avoid CI/test file mismatches.
     const check = await requireOwner(req, String(app.itemId), { sourceFile: (app && app.sourceMarketplaceFile) || undefined })
-    if(!check.ok) { try { console.warn('decision endpoint: requireOwner failed', check) } catch(e){} }
     if(!check.ok) return res.status(check.status).json({ error: check.error })
 
     items[idx].status = decision === 'accept' ? 'accepted' : 'rejected'
