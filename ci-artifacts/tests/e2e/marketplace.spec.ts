@@ -22,11 +22,13 @@ if (process.env.PLAYWRIGHT_E2E === '1') {
   const found = (listJson.applications || []).find((a:any) => String(a.itemId) === String(itemId))
   expect(found).toBeTruthy()
   })
-}
-
+} else {
   // Provide a skipped suite so Vitest considers the file handled
   // when running unit tests without Playwright.
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const { describe } = require('vitest')
-  // @ts-ignore
-  describe.skip('playwright e2e (disabled locally)', () => {})
+  // Import vitest in ESM style to avoid require() CJS issues under Vitest
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  import('vitest').then(({ describe }) => {
+    // @ts-ignore
+    describe.skip('playwright e2e (disabled locally)', () => {})
+  })
+}
