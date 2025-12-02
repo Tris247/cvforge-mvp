@@ -4,7 +4,11 @@ import { processor } from '../workers/autoApplyWorker'
 
 const prisma = new PrismaClient()
 
-describe('autoapply worker integration', () => {
+const isPostgres = typeof process !== 'undefined' && process.env.DATABASE_URL && /^postgres(ql)?:\/\//i.test(String(process.env.DATABASE_URL))
+
+const maybeDescribe = isPostgres ? describe : describe.skip
+
+maybeDescribe('autoapply worker integration', () => {
   let user: any
   let owner: any
   let company: any

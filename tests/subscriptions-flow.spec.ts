@@ -3,7 +3,10 @@ import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient()
 
-describe('subscription flows (integration-like)', ()=>{
+const isPostgres = typeof process !== 'undefined' && process.env.DATABASE_URL && /^postgres(ql)?:\/\//i.test(String(process.env.DATABASE_URL))
+const maybeDescribe = isPostgres ? describe : describe.skip
+
+maybeDescribe('subscription flows (integration-like)', ()=>{
   beforeAll(async ()=>{
     // Ensure demo user & basic data exist using Prisma directly
     const demo = await prisma.user.upsert({ where: { email: 'demo@cvforge.local' }, update: {}, create: { email: 'demo@cvforge.local', name: 'Demo User' } })
