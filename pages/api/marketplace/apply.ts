@@ -20,6 +20,8 @@ function ensure(filePath: string) {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
+  // debug: capture working dir and resolved file path in CI logs
+  try { console.log('apply endpoint: cwd', process.cwd(), 'resolved FILE', FILE) } catch(_) {}
   ensure(FILE)
   try { console.log('apply endpoint: FILE', FILE) } catch(_) {}
   try {

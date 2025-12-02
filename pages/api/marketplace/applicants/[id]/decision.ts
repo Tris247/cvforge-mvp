@@ -11,6 +11,8 @@ function ensure(filePath: string) {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
+  // debug: capture working dir and resolved file path in CI logs
+  try { console.log('decision endpoint: cwd', process.cwd(), 'resolved FILE', FILE) } catch(_) {}
   ensure(FILE)
   try {
     if (req.method !== 'POST') return res.status(405).json({ error: 'method not allowed' })
