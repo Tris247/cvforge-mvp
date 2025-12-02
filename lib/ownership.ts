@@ -78,15 +78,38 @@ export async function requireOwner(req:any, itemId:string){
   if(!user) return { ok: false, status: 401, error: 'not authenticated' }
 
   const items = await getMarketplaceItems()
-  const it = items.find((i:any)=> String(i.id) === String(itemId))
+  let it = items.find((i:any)=> String(i.id) === String(itemId))
+  if(!it) {
+    // If not found in the primary list, scan candidate marketplace files in `data/`
+    // and search for the specific itemId. This handles per-test files created
+    // by Vitest where multiple marketplace files may exist in CI.
+    try {
+      const dataDir = path.resolve(process.cwd(), 'data')
+      if (fs.existsSync(dataDir)) {
+        const candidates = fs.readdirSync(dataDir).filter(f => f.startsWith('marketplace') && f.endsWith('.json'))
+        for (const f of candidates) {
+          try {
+            const full = path.join(dataDir, f)
+            const d = JSON.parse(fs.readFileSync(full,'utf8')||'[]')
+            const found = (d||[]).find((x:any)=> String(x.id) === String(itemId))
+            if (found) {
+              it = found
+              console.log('requireOwner: found item in file', full)
+              break
+            }
+          } catch (_) { /* ignore malformed candidate */ }
+        }
+      }
+    } catch (_) { /* ignore scan errors */ }
+  }
   if(!it) {
     // helpful debug for CI: surface candidate item ids when not found (non-sensitive)
     try {
       const ids = (items||[]).slice(0,10).map((x:any)=> x && x.id)
       console.warn('requireOwner: item not found', { itemId, candidateIds: ids })
     } catch (_) {}
+    return { ok: false, status: 404, error: 'item not found' }
   }
-  if(!it) return { ok: false, status: 404, error: 'item not found' }
   if(it.ownerId !== user.id) return { ok: false, status: 403, error: 'forbidden' }
   return { ok: true, user, item: it }
 }
