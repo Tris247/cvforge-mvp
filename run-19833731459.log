@@ -1,0 +1,247 @@
+test	Set up job	﻿2025-12-01T18:46:40.8089642Z Current runner version: '2.329.0'
+test	Set up job	2025-12-01T18:46:40.8115173Z ##[group]Runner Image Provisioner
+test	Set up job	2025-12-01T18:46:40.8115935Z Hosted Compute Agent
+test	Set up job	2025-12-01T18:46:40.8116474Z Version: 20251016.436
+test	Set up job	2025-12-01T18:46:40.8117095Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+test	Set up job	2025-12-01T18:46:40.8118129Z Build Date: 2025-10-15T20:44:12Z
+test	Set up job	2025-12-01T18:46:40.8118732Z ##[endgroup]
+test	Set up job	2025-12-01T18:46:40.8119362Z ##[group]Operating System
+test	Set up job	2025-12-01T18:46:40.8119917Z Ubuntu
+test	Set up job	2025-12-01T18:46:40.8120400Z 24.04.3
+test	Set up job	2025-12-01T18:46:40.8120902Z LTS
+test	Set up job	2025-12-01T18:46:40.8121336Z ##[endgroup]
+test	Set up job	2025-12-01T18:46:40.8121832Z ##[group]Runner Image
+test	Set up job	2025-12-01T18:46:40.8122353Z Image: ubuntu-24.04
+test	Set up job	2025-12-01T18:46:40.8122944Z Version: 20251112.124.1
+test	Set up job	2025-12-01T18:46:40.8123941Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2025-12-01T18:46:40.8125330Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+test	Set up job	2025-12-01T18:46:40.8126624Z ##[endgroup]
+test	Set up job	2025-12-01T18:46:40.8128102Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2025-12-01T18:46:40.8130244Z Contents: read
+test	Set up job	2025-12-01T18:46:40.8130772Z Metadata: read
+test	Set up job	2025-12-01T18:46:40.8131374Z Packages: read
+test	Set up job	2025-12-01T18:46:40.8131833Z ##[endgroup]
+test	Set up job	2025-12-01T18:46:40.8133917Z Secret source: Actions
+test	Set up job	2025-12-01T18:46:40.8135000Z Prepare workflow directory
+test	Set up job	2025-12-01T18:46:40.8531179Z Prepare all required actions
+test	Set up job	2025-12-01T18:46:40.8570519Z Getting action download info
+test	Set up job	2025-12-01T18:46:41.2184397Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+test	Set up job	2025-12-01T18:46:41.8070676Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test	Set up job	2025-12-01T18:46:41.8994440Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test	Set up job	2025-12-01T18:46:42.1045098Z Complete job name: test
+test	Checkout	﻿2025-12-01T18:46:42.1780138Z ##[group]Run actions/checkout@v4
+test	Checkout	2025-12-01T18:46:42.1781137Z with:
+test	Checkout	2025-12-01T18:46:42.1781630Z   repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-01T18:46:42.1782445Z   token: ***
+test	Checkout	2025-12-01T18:46:42.1782880Z   ssh-strict: true
+test	Checkout	2025-12-01T18:46:42.1783344Z   ssh-user: git
+test	Checkout	2025-12-01T18:46:42.1783802Z   persist-credentials: true
+test	Checkout	2025-12-01T18:46:42.1784325Z   clean: true
+test	Checkout	2025-12-01T18:46:42.1784790Z   sparse-checkout-cone-mode: true
+test	Checkout	2025-12-01T18:46:42.1785368Z   fetch-depth: 1
+test	Checkout	2025-12-01T18:46:42.1785818Z   fetch-tags: false
+test	Checkout	2025-12-01T18:46:42.1786296Z   show-progress: true
+test	Checkout	2025-12-01T18:46:42.1786764Z   lfs: false
+test	Checkout	2025-12-01T18:46:42.1787177Z   submodules: false
+test	Checkout	2025-12-01T18:46:42.1788043Z   set-safe-directory: true
+test	Checkout	2025-12-01T18:46:42.1788872Z env:
+test	Checkout	2025-12-01T18:46:42.1789305Z   DATABASE_URL: file:./dev.db
+test	Checkout	2025-12-01T18:46:42.1789822Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.2883715Z Syncing repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-01T18:46:42.2885744Z ##[group]Getting Git version info
+test	Checkout	2025-12-01T18:46:42.2886606Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-01T18:46:42.2888179Z [command]/usr/bin/git version
+test	Checkout	2025-12-01T18:46:42.2968561Z git version 2.51.2
+test	Checkout	2025-12-01T18:46:42.2996711Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.3012762Z Temporarily overriding HOME='/home/runner/work/_temp/78c740e5-abb4-4a00-bb52-746e8cf0d710' before making global git config changes
+test	Checkout	2025-12-01T18:46:42.3014630Z Adding repository directory to the temporary git global config as a safe directory
+test	Checkout	2025-12-01T18:46:42.3026256Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-01T18:46:42.3066423Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-01T18:46:42.3070662Z ##[group]Initializing the repository
+test	Checkout	2025-12-01T18:46:42.3075733Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-01T18:46:42.3193858Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Checkout	2025-12-01T18:46:42.3195440Z hint: is subject to change. To configure the initial branch name to use in all
+test	Checkout	2025-12-01T18:46:42.3197766Z hint: of your new repositories, which will suppress this warning, call:
+test	Checkout	2025-12-01T18:46:42.3198661Z hint:
+test	Checkout	2025-12-01T18:46:42.3199565Z hint: 	git config --global init.defaultBranch <name>
+test	Checkout	2025-12-01T18:46:42.3200809Z hint:
+test	Checkout	2025-12-01T18:46:42.3201956Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Checkout	2025-12-01T18:46:42.3203906Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Checkout	2025-12-01T18:46:42.3205475Z hint:
+test	Checkout	2025-12-01T18:46:42.3206297Z hint: 	git branch -m <name>
+test	Checkout	2025-12-01T18:46:42.3207136Z hint:
+test	Checkout	2025-12-01T18:46:42.3208584Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Checkout	2025-12-01T18:46:42.3210756Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+test	Checkout	2025-12-01T18:46:42.3214410Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-01T18:46:42.3250549Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.3251974Z ##[group]Disabling automatic garbage collection
+test	Checkout	2025-12-01T18:46:42.3255531Z [command]/usr/bin/git config --local gc.auto 0
+test	Checkout	2025-12-01T18:46:42.3284998Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.3286371Z ##[group]Setting up auth
+test	Checkout	2025-12-01T18:46:42.3293367Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Checkout	2025-12-01T18:46:42.3325350Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Checkout	2025-12-01T18:46:42.3679035Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Checkout	2025-12-01T18:46:42.3709034Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Checkout	2025-12-01T18:46:42.3940882Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Checkout	2025-12-01T18:46:42.3980598Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Checkout	2025-12-01T18:46:42.4210829Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Checkout	2025-12-01T18:46:42.4246295Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.4247185Z ##[group]Fetching the repository
+test	Checkout	2025-12-01T18:46:42.4257133Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3f34ec29c7c37ec274c2cec4d1ddec939011dd86:refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T18:46:42.7027847Z From https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-01T18:46:42.7029745Z  * [new ref]         3f34ec29c7c37ec274c2cec4d1ddec939011dd86 -> origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T18:46:42.7062960Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.7064880Z ##[group]Determining the checkout info
+test	Checkout	2025-12-01T18:46:42.7066925Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.7071259Z [command]/usr/bin/git sparse-checkout disable
+test	Checkout	2025-12-01T18:46:42.7113498Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Checkout	2025-12-01T18:46:42.7140332Z ##[group]Checking out the ref
+test	Checkout	2025-12-01T18:46:42.7145209Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T18:46:42.7285279Z Switched to a new branch 'feat/postgres-ci-migration'
+test	Checkout	2025-12-01T18:46:42.7288254Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+test	Checkout	2025-12-01T18:46:42.7294658Z ##[endgroup]
+test	Checkout	2025-12-01T18:46:42.7333201Z [command]/usr/bin/git log -1 --format=%H
+test	Checkout	2025-12-01T18:46:42.7355891Z 3f34ec29c7c37ec274c2cec4d1ddec939011dd86
+test	Setup Node.js	﻿2025-12-01T18:46:42.7658872Z ##[group]Run actions/setup-node@v4
+test	Setup Node.js	2025-12-01T18:46:42.7660044Z with:
+test	Setup Node.js	2025-12-01T18:46:42.7660849Z   node-version: 18
+test	Setup Node.js	2025-12-01T18:46:42.7661721Z   always-auth: false
+test	Setup Node.js	2025-12-01T18:46:42.7662680Z   check-latest: false
+test	Setup Node.js	2025-12-01T18:46:42.7663878Z   token: ***
+test	Setup Node.js	2025-12-01T18:46:42.7664680Z env:
+test	Setup Node.js	2025-12-01T18:46:42.7665666Z   DATABASE_URL: file:./dev.db
+test	Setup Node.js	2025-12-01T18:46:42.7666650Z ##[endgroup]
+test	Setup Node.js	2025-12-01T18:46:42.9504610Z Attempting to download 18...
+test	Setup Node.js	2025-12-01T18:46:43.4290107Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+test	Setup Node.js	2025-12-01T18:46:43.8484323Z Extracting ...
+test	Setup Node.js	2025-12-01T18:46:43.8586909Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/83d6a3c3-ab77-480e-a635-7224ec298cb2 -f /home/runner/work/_temp/d1ec6a1b-2e0b-442b-8f42-3439b2233af3
+test	Setup Node.js	2025-12-01T18:46:44.8208587Z Adding to the cache ...
+test	Setup Node.js	2025-12-01T18:46:46.5251100Z ##[group]Environment details
+test	Setup Node.js	2025-12-01T18:46:46.7830381Z node: v18.20.8
+test	Setup Node.js	2025-12-01T18:46:46.7831384Z npm: 10.8.2
+test	Setup Node.js	2025-12-01T18:46:46.7833092Z yarn: 1.22.22
+test	Setup Node.js	2025-12-01T18:46:46.7834093Z ##[endgroup]
+test	Install dependencies	﻿2025-12-01T18:46:46.7988749Z ##[group]Run npm ci
+test	Install dependencies	2025-12-01T18:46:46.7989108Z [36;1mnpm ci[0m
+test	Install dependencies	2025-12-01T18:46:46.8031029Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2025-12-01T18:46:46.8031402Z env:
+test	Install dependencies	2025-12-01T18:46:46.8031620Z   DATABASE_URL: file:./dev.db
+test	Install dependencies	2025-12-01T18:46:46.8031889Z ##[endgroup]
+test	Install dependencies	2025-12-01T18:46:48.4979549Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+test	Install dependencies	2025-12-01T18:46:48.7857625Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+test	Install dependencies	2025-12-01T18:46:49.1272752Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+test	Install dependencies	2025-12-01T18:46:49.2363418Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+test	Install dependencies	2025-12-01T18:46:49.3973967Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+test	Install dependencies	2025-12-01T18:46:49.5495111Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+test	Install dependencies	2025-12-01T18:46:49.6164298Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+test	Install dependencies	2025-12-01T18:46:49.8368500Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+test	Install dependencies	2025-12-01T18:46:58.0858108Z 
+test	Install dependencies	2025-12-01T18:46:58.0859050Z added 310 packages, and audited 311 packages in 11s
+test	Install dependencies	2025-12-01T18:46:58.0859781Z 
+test	Install dependencies	2025-12-01T18:46:58.0868814Z 52 packages are looking for funding
+test	Install dependencies	2025-12-01T18:46:58.0869520Z   run `npm fund` for details
+test	Install dependencies	2025-12-01T18:46:58.1075400Z 
+test	Install dependencies	2025-12-01T18:46:58.1094272Z 4 moderate severity vulnerabilities
+test	Install dependencies	2025-12-01T18:46:58.1094873Z 
+test	Install dependencies	2025-12-01T18:46:58.1095861Z To address all issues (including breaking changes), run:
+test	Install dependencies	2025-12-01T18:46:58.1097164Z   npm audit fix --force
+test	Install dependencies	2025-12-01T18:46:58.1097785Z 
+test	Install dependencies	2025-12-01T18:46:58.1098017Z Run `npm audit` for details.
+test	Prepare test files and SQLite DB	﻿2025-12-01T18:46:58.1446860Z ##[group]Run mkdir -p data
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1447184Z [36;1mmkdir -p data[0m
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1447690Z [36;1mtouch dev.db[0m
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1448041Z [36;1mecho "Using SQLite dev DB at ./dev.db for test run"[0m
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1448455Z [36;1m# Apply the Prisma schema to the local sqlite dev.db (safe for CI)[0m
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1448840Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1449192Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1483412Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1483746Z env:
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1483921Z   DATABASE_URL: file:./dev.db
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1484143Z ##[endgroup]
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.1564202Z Using SQLite dev DB at ./dev.db for test run
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.9835091Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-01T18:46:58.9886810Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0242978Z Error: P1012
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0243390Z 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0244418Z error: Error validating field `keywords` in model `AutoApplyRule`: Field `keywords` in model `AutoApplyRule` can't be of type Json. The current connector does not support the Json type.
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0245982Z   -->  prisma/schema.prisma:95
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0246415Z    | 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0246990Z 94 |   user      User     @relation(fields: [userId], references: [id])
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0247777Z 95 |   keywords  Json?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0248027Z 96 |   locations Json?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0248330Z    | 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0249743Z error: Error validating field `locations` in model `AutoApplyRule`: Field `locations` in model `AutoApplyRule` can't be of type Json. The current connector does not support the Json type.
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0250952Z   -->  prisma/schema.prisma:96
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0251296Z    | 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0251601Z 95 |   keywords  Json?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0251977Z 96 |   locations Json?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0252308Z 97 |   salaryMin Int?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0252623Z    | 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0253880Z error: Error validating field `jobTypes` in model `AutoApplyRule`: Field `jobTypes` in model `AutoApplyRule` can't be of type Json. The current connector does not support the Json type.
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0254961Z   -->  prisma/schema.prisma:98
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0255328Z    | 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0255610Z 97 |   salaryMin Int?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0255950Z 98 |   jobTypes  Json?
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0256362Z 99 |   active    Boolean  @default(true)
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0256748Z    | 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0256890Z 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0256900Z 
+test	Prepare test files and SQLite DB	2025-12-01T18:46:59.0451936Z ##[error]Process completed with exit code 1.
+test	Upload test reports (optional)	﻿2025-12-01T18:46:59.0531438Z ##[group]Run actions/upload-artifact@v4
+test	Upload test reports (optional)	2025-12-01T18:46:59.0531732Z with:
+test	Upload test reports (optional)	2025-12-01T18:46:59.0531910Z   name: vitest-logs
+test	Upload test reports (optional)	2025-12-01T18:46:59.0532099Z   path: .
+test	Upload test reports (optional)	2025-12-01T18:46:59.0532270Z   if-no-files-found: warn
+test	Upload test reports (optional)	2025-12-01T18:46:59.0532492Z   compression-level: 6
+test	Upload test reports (optional)	2025-12-01T18:46:59.0532686Z   overwrite: false
+test	Upload test reports (optional)	2025-12-01T18:46:59.0532885Z   include-hidden-files: false
+test	Upload test reports (optional)	2025-12-01T18:46:59.0533096Z env:
+test	Upload test reports (optional)	2025-12-01T18:46:59.0533273Z   DATABASE_URL: file:./dev.db
+test	Upload test reports (optional)	2025-12-01T18:46:59.0533498Z ##[endgroup]
+test	Upload test reports (optional)	2025-12-01T18:47:01.2021128Z With the provided path, there will be 13834 files uploaded
+test	Upload test reports (optional)	2025-12-01T18:47:01.2027715Z Artifact name is valid!
+test	Upload test reports (optional)	2025-12-01T18:47:01.2028930Z Root directory input is valid!
+test	Upload test reports (optional)	2025-12-01T18:47:01.4801713Z Beginning upload of artifact content to blob storage
+test	Upload test reports (optional)	2025-12-01T18:47:03.1245594Z Uploaded bytes 8388608
+test	Upload test reports (optional)	2025-12-01T18:47:03.6722643Z Uploaded bytes 16777216
+test	Upload test reports (optional)	2025-12-01T18:47:04.4368121Z Uploaded bytes 25165824
+test	Upload test reports (optional)	2025-12-01T18:47:05.1346791Z Uploaded bytes 33554432
+test	Upload test reports (optional)	2025-12-01T18:47:05.8068695Z Uploaded bytes 41943040
+test	Upload test reports (optional)	2025-12-01T18:47:06.5154433Z Uploaded bytes 50331648
+test	Upload test reports (optional)	2025-12-01T18:47:07.2296920Z Uploaded bytes 58720256
+test	Upload test reports (optional)	2025-12-01T18:47:08.0210483Z Uploaded bytes 67108864
+test	Upload test reports (optional)	2025-12-01T18:47:08.6908322Z Uploaded bytes 75497472
+test	Upload test reports (optional)	2025-12-01T18:47:09.3741425Z Uploaded bytes 83886080
+test	Upload test reports (optional)	2025-12-01T18:47:09.9219376Z Uploaded bytes 92274688
+test	Upload test reports (optional)	2025-12-01T18:47:10.6303716Z Uploaded bytes 100663296
+test	Upload test reports (optional)	2025-12-01T18:47:11.3000579Z Uploaded bytes 109051904
+test	Upload test reports (optional)	2025-12-01T18:47:11.8886916Z Uploaded bytes 117440512
+test	Upload test reports (optional)	2025-12-01T18:47:13.7261299Z Uploaded bytes 125829120
+test	Upload test reports (optional)	2025-12-01T18:47:15.0610734Z Uploaded bytes 134217728
+test	Upload test reports (optional)	2025-12-01T18:47:15.9953771Z Uploaded bytes 142606336
+test	Upload test reports (optional)	2025-12-01T18:47:18.2065437Z Uploaded bytes 150994944
+test	Upload test reports (optional)	2025-12-01T18:47:19.1828008Z Uploaded bytes 159383552
+test	Upload test reports (optional)	2025-12-01T18:47:19.8192641Z Uploaded bytes 167772160
+test	Upload test reports (optional)	2025-12-01T18:47:20.7283227Z Uploaded bytes 176160768
+test	Upload test reports (optional)	2025-12-01T18:47:21.7564633Z Uploaded bytes 182450777
+test	Upload test reports (optional)	2025-12-01T18:47:21.7924442Z Finished uploading artifact content to blob storage!
+test	Upload test reports (optional)	2025-12-01T18:47:21.7928189Z SHA256 digest of uploaded artifact zip is 0028c73517027173e9b5b3dd9994894c29e2d2cd8128967fe5aedb7416895426
+test	Upload test reports (optional)	2025-12-01T18:47:21.7930156Z Finalizing artifact upload
+test	Upload test reports (optional)	2025-12-01T18:47:21.9649092Z Artifact vitest-logs.zip successfully finalized. Artifact ID 4728462861
+test	Upload test reports (optional)	2025-12-01T18:47:21.9650486Z Artifact vitest-logs has been successfully uploaded! Final size is 182450777 bytes. Artifact ID is 4728462861
+test	Upload test reports (optional)	2025-12-01T18:47:21.9657898Z Artifact download URL: https://github.com/Tris247/cvforge-mvp/actions/runs/19833731459/artifacts/4728462861
+test	Post Checkout	﻿2025-12-01T18:47:22.0030606Z Post job cleanup.
+test	Post Checkout	2025-12-01T18:47:22.0987473Z [command]/usr/bin/git version
+test	Post Checkout	2025-12-01T18:47:22.1024556Z git version 2.51.2
+test	Post Checkout	2025-12-01T18:47:22.1069521Z Temporarily overriding HOME='/home/runner/work/_temp/4cf5655c-7644-45d6-b688-549c4b8ff8bb' before making global git config changes
+test	Post Checkout	2025-12-01T18:47:22.1070979Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Checkout	2025-12-01T18:47:22.1076244Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Post Checkout	2025-12-01T18:47:22.1113849Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Checkout	2025-12-01T18:47:22.1147003Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Checkout	2025-12-01T18:47:22.1381838Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Checkout	2025-12-01T18:47:22.1403873Z http.https://github.com/.extraheader
+test	Post Checkout	2025-12-01T18:47:22.1416564Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Checkout	2025-12-01T18:47:22.1448026Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Checkout	2025-12-01T18:47:22.1672693Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Checkout	2025-12-01T18:47:22.1705849Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	﻿2025-12-01T18:47:22.2041412Z Cleaning up orphan processes

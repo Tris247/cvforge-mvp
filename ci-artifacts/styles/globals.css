@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next { height: 100%; }
+body { margin: 0; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: #0b1220; color: #e6eef6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+.card { background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 8px; }
+.btn { @apply bg-teal-400 text-white px-4 py-2 rounded-lg cursor-pointer }
+textarea, input, select { @apply w-full p-3 rounded-md border bg-[rgba(255,255,255,0.02)] text-current }

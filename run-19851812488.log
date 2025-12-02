@@ -1,0 +1,393 @@
+build	UNKNOWN STEP	﻿2025-12-02T08:18:37.8833156Z Current runner version: '2.329.0'
+build	UNKNOWN STEP	2025-12-02T08:18:37.8855823Z ##[group]Runner Image Provisioner
+build	UNKNOWN STEP	2025-12-02T08:18:37.8856730Z Hosted Compute Agent
+build	UNKNOWN STEP	2025-12-02T08:18:37.8857243Z Version: 20251016.436
+build	UNKNOWN STEP	2025-12-02T08:18:37.8857849Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+build	UNKNOWN STEP	2025-12-02T08:18:37.8858561Z Build Date: 2025-10-15T20:44:12Z
+build	UNKNOWN STEP	2025-12-02T08:18:37.8859174Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:37.8859875Z ##[group]Operating System
+build	UNKNOWN STEP	2025-12-02T08:18:37.8860463Z Ubuntu
+build	UNKNOWN STEP	2025-12-02T08:18:37.8860997Z 24.04.3
+build	UNKNOWN STEP	2025-12-02T08:18:37.8861428Z LTS
+build	UNKNOWN STEP	2025-12-02T08:18:37.8861932Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:37.8862406Z ##[group]Runner Image
+build	UNKNOWN STEP	2025-12-02T08:18:37.8862987Z Image: ubuntu-24.04
+build	UNKNOWN STEP	2025-12-02T08:18:37.8863439Z Version: 20251112.124.1
+build	UNKNOWN STEP	2025-12-02T08:18:37.8864574Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+build	UNKNOWN STEP	2025-12-02T08:18:37.8866070Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+build	UNKNOWN STEP	2025-12-02T08:18:37.8867095Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:37.8868164Z ##[group]GITHUB_TOKEN Permissions
+build	UNKNOWN STEP	2025-12-02T08:18:37.8870705Z Contents: read
+build	UNKNOWN STEP	2025-12-02T08:18:37.8871210Z Metadata: read
+build	UNKNOWN STEP	2025-12-02T08:18:37.8871699Z Packages: read
+build	UNKNOWN STEP	2025-12-02T08:18:37.8872266Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:37.8874544Z Secret source: Actions
+build	UNKNOWN STEP	2025-12-02T08:18:37.8875385Z Prepare workflow directory
+build	UNKNOWN STEP	2025-12-02T08:18:37.9192584Z Prepare all required actions
+build	UNKNOWN STEP	2025-12-02T08:18:37.9247570Z Getting action download info
+build	UNKNOWN STEP	2025-12-02T08:18:38.3598110Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	UNKNOWN STEP	2025-12-02T08:18:38.9172427Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	UNKNOWN STEP	2025-12-02T08:18:39.0746161Z Complete job name: build
+build	UNKNOWN STEP	2025-12-02T08:18:39.1483620Z ##[group]Run actions/checkout@v4
+build	UNKNOWN STEP	2025-12-02T08:18:39.1484436Z with:
+build	UNKNOWN STEP	2025-12-02T08:18:39.1484843Z   repository: Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:39.1485480Z   token: ***
+build	UNKNOWN STEP	2025-12-02T08:18:39.1485877Z   ssh-strict: true
+build	UNKNOWN STEP	2025-12-02T08:18:39.1486266Z   ssh-user: git
+build	UNKNOWN STEP	2025-12-02T08:18:39.1486666Z   persist-credentials: true
+build	UNKNOWN STEP	2025-12-02T08:18:39.1487168Z   clean: true
+build	UNKNOWN STEP	2025-12-02T08:18:39.1487572Z   sparse-checkout-cone-mode: true
+build	UNKNOWN STEP	2025-12-02T08:18:39.1488062Z   fetch-depth: 1
+build	UNKNOWN STEP	2025-12-02T08:18:39.1488449Z   fetch-tags: false
+build	UNKNOWN STEP	2025-12-02T08:18:39.1488852Z   show-progress: true
+build	UNKNOWN STEP	2025-12-02T08:18:39.1489256Z   lfs: false
+build	UNKNOWN STEP	2025-12-02T08:18:39.1489755Z   submodules: false
+build	UNKNOWN STEP	2025-12-02T08:18:39.1490162Z   set-safe-directory: true
+build	UNKNOWN STEP	2025-12-02T08:18:39.1490855Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.2581073Z Syncing repository: Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:39.2584133Z ##[group]Getting Git version info
+build	UNKNOWN STEP	2025-12-02T08:18:39.2585366Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-02T08:18:39.2587306Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-12-02T08:18:39.2643232Z git version 2.51.2
+build	UNKNOWN STEP	2025-12-02T08:18:39.2669844Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.2683299Z Temporarily overriding HOME='/home/runner/work/_temp/83d44ae4-f5f8-4044-aeda-dd56a9a80ab2' before making global git config changes
+build	UNKNOWN STEP	2025-12-02T08:18:39.2684732Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-12-02T08:18:39.2688097Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:39.2729936Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-02T08:18:39.2733501Z ##[group]Initializing the repository
+build	UNKNOWN STEP	2025-12-02T08:18:39.2737218Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:39.2836897Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	UNKNOWN STEP	2025-12-02T08:18:39.2838535Z hint: is subject to change. To configure the initial branch name to use in all
+build	UNKNOWN STEP	2025-12-02T08:18:39.2840313Z hint: of your new repositories, which will suppress this warning, call:
+build	UNKNOWN STEP	2025-12-02T08:18:39.2841513Z hint:
+build	UNKNOWN STEP	2025-12-02T08:18:39.2842287Z hint: 	git config --global init.defaultBranch <name>
+build	UNKNOWN STEP	2025-12-02T08:18:39.2843316Z hint:
+build	UNKNOWN STEP	2025-12-02T08:18:39.2843883Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	UNKNOWN STEP	2025-12-02T08:18:39.2844817Z hint: 'development'. The just-created branch can be renamed via this command:
+build	UNKNOWN STEP	2025-12-02T08:18:39.2845546Z hint:
+build	UNKNOWN STEP	2025-12-02T08:18:39.2845930Z hint: 	git branch -m <name>
+build	UNKNOWN STEP	2025-12-02T08:18:39.2846384Z hint:
+build	UNKNOWN STEP	2025-12-02T08:18:39.2847377Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	UNKNOWN STEP	2025-12-02T08:18:39.2848570Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+build	UNKNOWN STEP	2025-12-02T08:18:39.2852570Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:39.2886604Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.2887355Z ##[group]Disabling automatic garbage collection
+build	UNKNOWN STEP	2025-12-02T08:18:39.2890454Z [command]/usr/bin/git config --local gc.auto 0
+build	UNKNOWN STEP	2025-12-02T08:18:39.2918052Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.2918731Z ##[group]Setting up auth
+build	UNKNOWN STEP	2025-12-02T08:18:39.2924697Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-12-02T08:18:39.2953002Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-12-02T08:18:39.3268796Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-12-02T08:18:39.3296439Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-12-02T08:18:39.3510570Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2025-12-02T08:18:39.3539376Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2025-12-02T08:18:39.3767032Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	UNKNOWN STEP	2025-12-02T08:18:39.3800158Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.3801415Z ##[group]Fetching the repository
+build	UNKNOWN STEP	2025-12-02T08:18:39.3809954Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +166d5b99f6fc694fde9912e554cba5d6d72580bd:refs/remotes/origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-02T08:18:39.8297988Z From https://github.com/Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:39.8299389Z  * [new ref]         166d5b99f6fc694fde9912e554cba5d6d72580bd -> origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-02T08:18:39.8331621Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.8332996Z ##[group]Determining the checkout info
+build	UNKNOWN STEP	2025-12-02T08:18:39.8334523Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.8338300Z [command]/usr/bin/git sparse-checkout disable
+build	UNKNOWN STEP	2025-12-02T08:18:39.8377244Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	UNKNOWN STEP	2025-12-02T08:18:39.8402355Z ##[group]Checking out the ref
+build	UNKNOWN STEP	2025-12-02T08:18:39.8406037Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-02T08:18:39.8544078Z Switched to a new branch 'feat/postgres-ci-migration'
+build	UNKNOWN STEP	2025-12-02T08:18:39.8547289Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+build	UNKNOWN STEP	2025-12-02T08:18:39.8554885Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:39.8589205Z [command]/usr/bin/git log -1 --format=%H
+build	UNKNOWN STEP	2025-12-02T08:18:39.8611798Z 166d5b99f6fc694fde9912e554cba5d6d72580bd
+build	UNKNOWN STEP	2025-12-02T08:18:39.8918463Z ##[group]Run actions/setup-node@v4
+build	UNKNOWN STEP	2025-12-02T08:18:39.8919534Z with:
+build	UNKNOWN STEP	2025-12-02T08:18:39.8920571Z   node-version: 18
+build	UNKNOWN STEP	2025-12-02T08:18:39.8921397Z   always-auth: false
+build	UNKNOWN STEP	2025-12-02T08:18:39.8922228Z   check-latest: false
+build	UNKNOWN STEP	2025-12-02T08:18:39.8923318Z   token: ***
+build	UNKNOWN STEP	2025-12-02T08:18:39.8924056Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:40.0693409Z Attempting to download 18...
+build	UNKNOWN STEP	2025-12-02T08:18:41.0476533Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+build	UNKNOWN STEP	2025-12-02T08:18:41.5898366Z Extracting ...
+build	UNKNOWN STEP	2025-12-02T08:18:41.6004877Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/9ccef7e6-4830-470d-9b61-fe6b7140d83d -f /home/runner/work/_temp/668e46bc-2b24-4b0f-8519-86e3a924f57c
+build	UNKNOWN STEP	2025-12-02T08:18:42.5604239Z Adding to the cache ...
+build	UNKNOWN STEP	2025-12-02T08:18:44.1451883Z ##[group]Environment details
+build	UNKNOWN STEP	2025-12-02T08:18:44.3735537Z node: v18.20.8
+build	UNKNOWN STEP	2025-12-02T08:18:44.3736119Z npm: 10.8.2
+build	UNKNOWN STEP	2025-12-02T08:18:44.3736530Z yarn: 1.22.22
+build	UNKNOWN STEP	2025-12-02T08:18:44.3737237Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:44.3895989Z ##[group]Run npm ci
+build	UNKNOWN STEP	2025-12-02T08:18:44.3896286Z [36;1mnpm ci[0m
+build	UNKNOWN STEP	2025-12-02T08:18:44.3933597Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-02T08:18:44.3933909Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:46.1271589Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build	UNKNOWN STEP	2025-12-02T08:18:46.3267586Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-02T08:18:46.5747676Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build	UNKNOWN STEP	2025-12-02T08:18:46.8278701Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+build	UNKNOWN STEP	2025-12-02T08:18:46.9477578Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-02T08:18:46.9661499Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-02T08:18:47.0164038Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+build	UNKNOWN STEP	2025-12-02T08:18:47.0848801Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+build	UNKNOWN STEP	2025-12-02T08:18:55.1003238Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.1004062Z added 310 packages, and audited 311 packages in 11s
+build	UNKNOWN STEP	2025-12-02T08:18:55.1004502Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.1004747Z 52 packages are looking for funding
+build	UNKNOWN STEP	2025-12-02T08:18:55.1005199Z   run `npm fund` for details
+build	UNKNOWN STEP	2025-12-02T08:18:55.1198552Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.1199151Z 4 moderate severity vulnerabilities
+build	UNKNOWN STEP	2025-12-02T08:18:55.1199499Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.1200032Z To address all issues (including breaking changes), run:
+build	UNKNOWN STEP	2025-12-02T08:18:55.1200569Z   npm audit fix --force
+build	UNKNOWN STEP	2025-12-02T08:18:55.1200795Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.1200974Z Run `npm audit` for details.
+build	UNKNOWN STEP	2025-12-02T08:18:55.1500008Z ##[group]Run node scripts/generate-admin-costs.js
+build	UNKNOWN STEP	2025-12-02T08:18:55.1500428Z [36;1mnode scripts/generate-admin-costs.js[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.1535060Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-02T08:18:55.1535299Z env:
+build	UNKNOWN STEP	2025-12-02T08:18:55.1535469Z   COST_AGG_DAYS: 30
+build	UNKNOWN STEP	2025-12-02T08:18:55.1535702Z   OPENAI_COST_PER_1K_TOKENS: 0.002
+build	UNKNOWN STEP	2025-12-02T08:18:55.1535929Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:55.2242092Z Wrote /home/runner/work/cvforge-mvp/cvforge-mvp/admin_costs.html
+build	UNKNOWN STEP	2025-12-02T08:18:55.2392157Z ##[group]Run git config user.name "github-actions[bot]"
+build	UNKNOWN STEP	2025-12-02T08:18:55.2392774Z [36;1mgit config user.name "github-actions[bot]"[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2393500Z [36;1mgit config user.email "41898282+github-actions[bot]@users.noreply.github.com"[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2394283Z [36;1m# Create gh-pages branch containing only the admin_costs.html[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2394983Z [36;1mgit checkout --orphan gh-pages || git checkout gh-pages || true[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2395539Z [36;1mgit rm -rf . || true[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2395905Z [36;1mgit add admin_costs.html || true[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2396599Z [36;1mgit commit -m "chore: update admin_costs.html [ci skip]" || echo "no changes to commit"[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2397303Z [36;1mgit push -u origin gh-pages --force[0m
+build	UNKNOWN STEP	2025-12-02T08:18:55.2441432Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-02T08:18:55.2441797Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-02T08:18:55.2677434Z Switched to a new branch 'gh-pages'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2680223Z M	admin_costs.html
+build	UNKNOWN STEP	2025-12-02T08:18:55.2700240Z rm '.env.example'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2700723Z rm '.github/PULL_REQUEST_TEMPLATE.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2701481Z rm '.github/copilot-instructions.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2702009Z rm '.github/workflows/ci-postgres.yml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2702457Z rm '.github/workflows/ci.yml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2702958Z rm '.github/workflows/ingest-analytics.yml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2703503Z rm '.github/workflows/prune-analytics.yml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2704081Z rm '.github/workflows/publish-admin-costs.yml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2704545Z rm '.gitignore'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2704890Z rm '.migrate-json-state.json'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2705271Z rm 'CHANGELOG.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2705579Z rm 'DEVNOTES.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2705864Z rm 'Dockerfile'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2706196Z rm 'README.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2706502Z rm 'admin_costs.html'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2706829Z rm 'analytics.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2707172Z rm 'components/CVEditor.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2707577Z rm 'components/CVPreview.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2708062Z rm 'components/DashboardSidebar.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2708496Z rm 'components/Header.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2708950Z rm 'components/MarketplaceCard.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2709432Z rm 'components/ToastProvider.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2710213Z rm 'components/layouts/DashboardLayout.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2710682Z rm 'components/ui/Button.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2711027Z rm 'dev.db'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2711328Z rm 'docker-compose.yml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2711694Z rm 'docs/ARCHITECTURE.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2712144Z rm 'docs/CHANGELOG-2025-12-01.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2712561Z rm 'docs/CONTRIBUTING.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2712914Z rm 'docs/MAILER.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2713295Z rm 'docs/PRISMA_MARKETPLACE.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2713680Z rm 'docs/PR_BODY.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2714107Z rm 'docs/migrate-sqlite-to-postgres.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2714601Z rm 'docs/migration-runbook.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2715051Z rm 'docs/pr-open-instructions.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2715587Z rm 'docs/prisma-postgres-reconcile.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2716038Z rm 'lib/analytics-queue.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2716418Z rm 'lib/analytics.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2716725Z rm 'lib/auth.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2717048Z rm 'lib/authServer.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2717361Z rm 'lib/db.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2717635Z rm 'lib/hash.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2717918Z rm 'lib/jobs.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2718224Z rm 'lib/jobs/cache.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2718548Z rm 'lib/mailer.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2718883Z rm 'lib/notifications.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2719230Z rm 'lib/openai.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2719748Z rm 'lib/ownership.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2720084Z rm 'lib/prisma.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2720392Z rm 'lib/queue.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2720709Z rm 'lib/ratelimit.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2721037Z rm 'lib/redis/index.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2721375Z rm 'lib/referrals.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2721710Z rm 'lib/subscriptions.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2722063Z rm 'lib/telemetry.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2722603Z rm 'lib/template.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2722936Z rm 'lib/usage.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2723260Z rm 'lib/validation.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2723604Z rm 'middleware.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2723925Z rm 'next-env.d.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2724242Z rm 'next.config.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2724565Z rm 'package-lock.json'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2724900Z rm 'package.json'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2725232Z rm 'pages/_app.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2725680Z rm 'pages/account/admin/reconcile.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2726170Z rm 'pages/account/analytics.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2726625Z rm 'pages/account/autoapply.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2727061Z rm 'pages/account/billing.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2727459Z rm 'pages/account/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2727900Z rm 'pages/account/subscription.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2728358Z rm 'pages/admin/analytics.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2728749Z rm 'pages/admin/costs.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2729183Z rm 'pages/api/admin/analytics.csv.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2729781Z rm 'pages/api/admin/costs.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2730182Z rm 'pages/api/ai/generate.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2730627Z rm 'pages/api/analytics/summary.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2731275Z rm 'pages/api/applications/index.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2731750Z rm 'pages/api/auth/[...nextauth].ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2732183Z rm 'pages/api/auth/login.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2732574Z rm 'pages/api/auth/logout.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2732955Z rm 'pages/api/auth/me.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2733368Z rm 'pages/api/auth/register.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2733775Z rm 'pages/api/auth/signup.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2734217Z rm 'pages/api/autoapply/enqueue.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2734688Z rm 'pages/api/autoapply/process.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2735106Z rm 'pages/api/cv/download.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2735493Z rm 'pages/api/cv/list.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2735863Z rm 'pages/api/cv/preview.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2736255Z rm 'pages/api/cv/rewrite.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2736632Z rm 'pages/api/cv/save.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2737005Z rm 'pages/api/cv/upload.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2737390Z rm 'pages/api/jobs/index.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2737928Z rm 'pages/api/marketplace/applicants/[id]/archive.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2738592Z rm 'pages/api/marketplace/applicants/[id]/decision.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2739230Z rm 'pages/api/marketplace/applicants/[id]/hire.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2740007Z rm 'pages/api/marketplace/applicants/[id]/message.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2740617Z rm 'pages/api/marketplace/applicants/index.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2741155Z rm 'pages/api/marketplace/apply.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2741626Z rm 'pages/api/marketplace/index.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2742108Z rm 'pages/api/notifications/index.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2742574Z rm 'pages/api/stripe/config.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2743094Z rm 'pages/api/stripe/create-checkout-session.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2743694Z rm 'pages/api/stripe/create-portal-session.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2744239Z rm 'pages/api/stripe/invoice-download.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2744744Z rm 'pages/api/stripe/invoices.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2745211Z rm 'pages/api/stripe/reconcile.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2745667Z rm 'pages/api/stripe/webhook.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2746149Z rm 'pages/api/subscriptions/cancel.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2746685Z rm 'pages/api/subscriptions/checkout.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2747217Z rm 'pages/api/subscriptions/reactivate.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2747732Z rm 'pages/api/subscriptions/status.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2748229Z rm 'pages/api/subscriptions/upgrade.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2748721Z rm 'pages/api/uploads/upload.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2749122Z rm 'pages/cv/editor.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2749472Z rm 'pages/cv/list.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2750047Z rm 'pages/dashboard/employer.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2750525Z rm 'pages/dashboard/employer/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2750999Z rm 'pages/dashboard/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2751474Z rm 'pages/dashboard/job-seeker/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2751897Z rm 'pages/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2752248Z rm 'pages/jobs/create.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2752784Z rm 'pages/jobs/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2753153Z rm 'pages/login.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2753611Z rm 'pages/marketplace/[id].tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2754060Z rm 'pages/marketplace/index.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2754502Z rm 'pages/marketplace/new.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2754882Z rm 'pages/privacy.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2755234Z rm 'pages/register.tsx'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2755599Z rm 'playwright.config.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2755968Z rm 'postcss.config.cjs'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2756311Z rm 'prisma/dev.db'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2756812Z rm 'prisma/migrations/20251129180634_init/migration.sql'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2757561Z rm 'prisma/migrations/20251201081204_add_marketplace/migration.sql'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2758336Z rm 'prisma/migrations/20251201103342_add_events/migration.sql'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2759123Z rm 'prisma/migrations/20251201_reconcile_postgres/migration.sql'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2759901Z rm 'prisma/migrations/migration_lock.toml'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2760427Z rm 'prisma/schema.postgres.prisma'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2760856Z rm 'prisma/schema.prisma'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2761233Z rm 'prisma/seed-postgres.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2761765Z rm 'prisma/seed.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2762175Z rm 'scripts/autoapply-worker-bull.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2762669Z rm 'scripts/autoapply-worker.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2763152Z rm 'scripts/check-analytics-legacy.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2763672Z rm 'scripts/convert-legacy-analytics.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2764133Z rm 'scripts/create-pr.ps1'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2764511Z rm 'scripts/db-inspect.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2764895Z rm 'scripts/db-test-write.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2765354Z rm 'scripts/generate-admin-costs.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2765852Z rm 'scripts/ingest-analytics-worker.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2766379Z rm 'scripts/migrate-json-to-postgres.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2766918Z rm 'scripts/migrate-sqlite-to-postgres.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2767477Z rm 'scripts/process-autoapply-file-queue.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2767997Z rm 'scripts/prune-analytics.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2768388Z rm 'scripts/release.md'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2768742Z rm 'scripts/release.ps1'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2769168Z rm 'scripts/repair-analytics.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2769775Z rm 'scripts/reset-postgres-dev.ps1'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2770276Z rm 'scripts/run-migrate-postgres.ps1'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2770781Z rm 'scripts/start-autoapply-worker.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2771275Z rm 'scripts/stripe-reconcile.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2771746Z rm 'scripts/sync-analytics-to-db.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2772214Z rm 'scripts/verify-postgres.js'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2772603Z rm 'styles/globals.css'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2772957Z rm 'tailwind.config.cjs'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2773364Z rm 'test-results/.last-run.json'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2773813Z rm 'tests/ai-generate.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2774209Z rm 'tests/ai-upload.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2774656Z rm 'tests/analytics-jsonl.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2775150Z rm 'tests/autoapply-matching.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2775721Z rm 'tests/autoapply-worker.integration.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2776302Z rm 'tests/convert-legacy-analytics.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2776786Z rm 'tests/cv-preview.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2777230Z rm 'tests/e2e/marketplace.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2777695Z rm 'tests/ingest-worker.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2778155Z rm 'tests/invoice-webhook.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2778641Z rm 'tests/marketplace-actions.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2779146Z rm 'tests/marketplace-api.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2779797Z rm 'tests/marketplace-applicants.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2780328Z rm 'tests/marketplace-apply.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2780819Z rm 'tests/marketplace-auth.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2781291Z rm 'tests/marketplace-e2e.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2781764Z rm 'tests/notifications-api.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2782266Z rm 'tests/notifications-mailer.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2782757Z rm 'tests/openai-wrapper.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2783168Z rm 'tests/queue.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2783707Z rm 'tests/repair-cli.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2784180Z rm 'tests/subscriptions-flow.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2784669Z rm 'tests/subscriptions.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2785075Z rm 'tests/telemetry.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2785507Z rm 'tests/uploads-api.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2785955Z rm 'tests/uploads-parsing.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2786453Z rm 'tests/webhook-reconcile.spec.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2786902Z rm 'tsconfig.json'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2787243Z rm 'types/next-auth.d.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2787666Z rm 'types/shims-jsonwebtoken.d.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2788094Z rm 'types/shims-mammoth.d.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2788533Z rm 'types/shims-pdf-parse.d.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2788921Z rm 'vitest.config.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2789317Z rm 'workers/autoApplyWorker.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2789963Z rm 'workers/queue.ts'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2790542Z fatal: pathspec 'admin_costs.html' did not match any files
+build	UNKNOWN STEP	2025-12-02T08:18:55.2791075Z On branch gh-pages
+build	UNKNOWN STEP	2025-12-02T08:18:55.2791276Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.2791406Z Initial commit
+build	UNKNOWN STEP	2025-12-02T08:18:55.2791579Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.2791700Z Untracked files:
+build	UNKNOWN STEP	2025-12-02T08:18:55.2792355Z   (use "git add <file>..." to include in what will be committed)
+build	UNKNOWN STEP	2025-12-02T08:18:55.2792842Z 	data/
+build	UNKNOWN STEP	2025-12-02T08:18:55.2793102Z 	node_modules/
+build	UNKNOWN STEP	2025-12-02T08:18:55.2793282Z 
+build	UNKNOWN STEP	2025-12-02T08:18:55.2793751Z nothing added to commit but untracked files present (use "git add" to track)
+build	UNKNOWN STEP	2025-12-02T08:18:55.2794370Z no changes to commit
+build	UNKNOWN STEP	2025-12-02T08:18:55.2864865Z error: src refspec gh-pages does not match any
+build	UNKNOWN STEP	2025-12-02T08:18:55.2865696Z error: failed to push some refs to 'https://github.com/Tris247/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-02T08:18:55.2890027Z ##[error]Process completed with exit code 1.
+build	UNKNOWN STEP	2025-12-02T08:18:55.3008740Z Post job cleanup.
+build	UNKNOWN STEP	2025-12-02T08:18:55.3935187Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-12-02T08:18:55.3974860Z git version 2.51.2
+build	UNKNOWN STEP	2025-12-02T08:18:55.4018944Z Temporarily overriding HOME='/home/runner/work/_temp/9b2c870d-edb9-41e3-adf1-79ec023abfc5' before making global git config changes
+build	UNKNOWN STEP	2025-12-02T08:18:55.4020630Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-12-02T08:18:55.4025579Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-02T08:18:55.4062531Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-12-02T08:18:55.4096373Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-12-02T08:18:55.4337545Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-12-02T08:18:55.4358169Z http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-12-02T08:18:55.4372187Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-12-02T08:18:55.4404133Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-12-02T08:18:55.4630699Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2025-12-02T08:18:55.4663976Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2025-12-02T08:18:55.5063484Z Cleaning up orphan processes

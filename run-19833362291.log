@@ -1,0 +1,179 @@
+Ingest analytics JSONL to DB	Set up job	﻿2025-12-01T18:33:08.8847021Z Current runner version: '2.329.0'
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8872237Z ##[group]Runner Image Provisioner
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8873066Z Hosted Compute Agent
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8873650Z Version: 20251016.436
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8874439Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8875089Z Build Date: 2025-10-15T20:44:12Z
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8875715Z ##[endgroup]
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8876254Z ##[group]Operating System
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8876811Z Ubuntu
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8877224Z 24.04.3
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8877741Z LTS
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8878144Z ##[endgroup]
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8878611Z ##[group]Runner Image
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8879232Z Image: ubuntu-24.04
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8879695Z Version: 20251112.124.1
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8880676Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8882082Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8883266Z ##[endgroup]
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8884440Z ##[group]GITHUB_TOKEN Permissions
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8886276Z Contents: read
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8886940Z Metadata: read
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8887461Z Packages: read
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8887959Z ##[endgroup]
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8889972Z Secret source: Actions
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.8890693Z Prepare workflow directory
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.9451454Z Prepare all required actions
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:08.9488722Z Getting action download info
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:09.3914516Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:09.9788851Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Ingest analytics JSONL to DB	Set up job	2025-12-01T18:33:10.1345727Z Complete job name: Ingest analytics JSONL to DB
+Ingest analytics JSONL to DB	Checkout	﻿2025-12-01T18:33:10.2065877Z ##[group]Run actions/checkout@v4
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2066763Z with:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2067191Z   repository: Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2067885Z   token: ***
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2068309Z   ssh-strict: true
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2068715Z   ssh-user: git
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2069134Z   persist-credentials: true
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2069598Z   clean: true
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2070022Z   sparse-checkout-cone-mode: true
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2070512Z   fetch-depth: 1
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2070921Z   fetch-tags: false
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2071350Z   show-progress: true
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2071775Z   lfs: false
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2072168Z   submodules: false
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2072595Z   set-safe-directory: true
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2073252Z env:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2073878Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2074472Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2074988Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.2075393Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3431359Z Syncing repository: Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3433381Z ##[group]Getting Git version info
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3434494Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3435565Z [command]/usr/bin/git version
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3502295Z git version 2.51.2
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3528251Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3541628Z Temporarily overriding HOME='/home/runner/work/_temp/0df6a16a-6dab-4831-89b4-a165465061d0' before making global git config changes
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3544084Z Adding repository directory to the temporary git global config as a safe directory
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3554419Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3589872Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3593415Z ##[group]Initializing the repository
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3597503Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3684587Z hint: Using 'master' as the name for the initial branch. This default branch name
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3685944Z hint: is subject to change. To configure the initial branch name to use in all
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3687330Z hint: of your new repositories, which will suppress this warning, call:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3688430Z hint:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3689335Z hint: 	git config --global init.defaultBranch <name>
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3690455Z hint:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3691496Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3692764Z hint: 'development'. The just-created branch can be renamed via this command:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3694062Z hint:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3694855Z hint: 	git branch -m <name>
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3695495Z hint:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3696234Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3697677Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3700065Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3733589Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3735146Z ##[group]Disabling automatic garbage collection
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3738769Z [command]/usr/bin/git config --local gc.auto 0
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3766743Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3768188Z ##[group]Setting up auth
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3774511Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.3805157Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4130373Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4161529Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4380184Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4412255Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4638972Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4672456Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4680808Z ##[group]Fetching the repository
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.4682378Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f8d15921affd0f222d9d2445dd16f61998a08642:refs/remotes/origin/feat/postgres-ci-migration
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8907185Z From https://github.com/Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8908740Z  * [new ref]         f8d15921affd0f222d9d2445dd16f61998a08642 -> origin/feat/postgres-ci-migration
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8941003Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8942117Z ##[group]Determining the checkout info
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8943470Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8949693Z [command]/usr/bin/git sparse-checkout disable
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.8991543Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9018455Z ##[group]Checking out the ref
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9023282Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9161198Z Switched to a new branch 'feat/postgres-ci-migration'
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9164329Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9171441Z ##[endgroup]
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9202780Z [command]/usr/bin/git log -1 --format=%H
+Ingest analytics JSONL to DB	Checkout	2025-12-01T18:33:10.9224070Z f8d15921affd0f222d9d2445dd16f61998a08642
+Ingest analytics JSONL to DB	Setup Node	﻿2025-12-01T18:33:10.9517482Z ##[group]Run actions/setup-node@v4
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9518651Z with:
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9519443Z   node-version: 18
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9520344Z   always-auth: false
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9521271Z   check-latest: false
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9522453Z   token: ***
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9523525Z env:
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9524714Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9526023Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9527183Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:10.9528056Z ##[endgroup]
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:11.1587500Z Attempting to download 18...
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:11.9491762Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:12.4918490Z Extracting ...
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:12.5021421Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/7a67c57f-d6b7-47ee-9707-543b478a4037 -f /home/runner/work/_temp/bc361aa5-3c3c-439b-aa1e-5344d3d82566
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:13.4706137Z Adding to the cache ...
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:15.0558225Z ##[group]Environment details
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:15.3434594Z node: v18.20.8
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:15.3435271Z npm: 10.8.2
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:15.3435614Z yarn: 1.22.22
+Ingest analytics JSONL to DB	Setup Node	2025-12-01T18:33:15.3436345Z ##[endgroup]
+Ingest analytics JSONL to DB	Install dependencies	﻿2025-12-01T18:33:15.3616889Z ##[group]Run npm ci
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3617216Z [36;1mnpm ci[0m
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3657433Z shell: /usr/bin/bash -e {0}
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3657714Z env:
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3657914Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3658206Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3658441Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:15.3658661Z ##[endgroup]
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:17.5606443Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:17.6522406Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:17.9095915Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:18.2515710Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:18.4026683Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:18.4185673Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:18.4941104Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:18.5825770Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9536643Z 
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9537573Z added 310 packages, and audited 311 packages in 12s
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9538133Z 
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9544855Z 52 packages are looking for funding
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9545569Z   run `npm fund` for details
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9725882Z 
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9727643Z 4 moderate severity vulnerabilities
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9728100Z 
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9728692Z To address all issues (including breaking changes), run:
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9729629Z   npm audit fix --force
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9730175Z 
+Ingest analytics JSONL to DB	Install dependencies	2025-12-01T18:33:26.9731130Z Run `npm audit` for details.
+Ingest analytics JSONL to DB	Run ingestion worker	﻿2025-12-01T18:33:26.9998308Z ##[group]Run node ./scripts/ingest-analytics-worker.js
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:26.9998749Z [36;1mnode ./scripts/ingest-analytics-worker.js[0m
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0031437Z shell: /usr/bin/bash -e {0}
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0031661Z env:
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0031846Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0032116Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0032352Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0032525Z ##[endgroup]
+Ingest analytics JSONL to DB	Run ingestion worker	2025-12-01T18:33:27.0439694Z DATABASE_URL not set — ingestion worker disabled
+Ingest analytics JSONL to DB	Post Setup Node	﻿2025-12-01T18:33:27.0615925Z Post job cleanup.
+Ingest analytics JSONL to DB	Post Checkout	﻿2025-12-01T18:33:27.2568794Z Post job cleanup.
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3787141Z [command]/usr/bin/git version
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3824618Z git version 2.51.2
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3869494Z Temporarily overriding HOME='/home/runner/work/_temp/97682eef-660e-4e34-81a4-b821e85133c5' before making global git config changes
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3871005Z Adding repository directory to the temporary git global config as a safe directory
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3876630Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3914185Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.3951310Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.4210800Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.4234544Z http.https://github.com/.extraheader
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.4248292Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.4281483Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.4519944Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ingest analytics JSONL to DB	Post Checkout	2025-12-01T18:33:27.4552964Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ingest analytics JSONL to DB	Complete job	﻿2025-12-01T18:33:27.4896636Z Cleaning up orphan processes

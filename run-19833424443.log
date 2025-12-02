@@ -1,0 +1,487 @@
+test	UNKNOWN STEP	﻿2025-12-01T18:35:30.7388486Z Current runner version: '2.329.0'
+test	UNKNOWN STEP	2025-12-01T18:35:30.7412059Z ##[group]Runner Image Provisioner
+test	UNKNOWN STEP	2025-12-01T18:35:30.7412927Z Hosted Compute Agent
+test	UNKNOWN STEP	2025-12-01T18:35:30.7413601Z Version: 20251016.436
+test	UNKNOWN STEP	2025-12-01T18:35:30.7414209Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+test	UNKNOWN STEP	2025-12-01T18:35:30.7414957Z Build Date: 2025-10-15T20:44:12Z
+test	UNKNOWN STEP	2025-12-01T18:35:30.7415554Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:30.7416101Z ##[group]Operating System
+test	UNKNOWN STEP	2025-12-01T18:35:30.7416688Z Ubuntu
+test	UNKNOWN STEP	2025-12-01T18:35:30.7417169Z 24.04.3
+test	UNKNOWN STEP	2025-12-01T18:35:30.7417602Z LTS
+test	UNKNOWN STEP	2025-12-01T18:35:30.7418116Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:30.7418570Z ##[group]Runner Image
+test	UNKNOWN STEP	2025-12-01T18:35:30.7419128Z Image: ubuntu-24.04
+test	UNKNOWN STEP	2025-12-01T18:35:30.7419662Z Version: 20251112.124.1
+test	UNKNOWN STEP	2025-12-01T18:35:30.7420668Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+test	UNKNOWN STEP	2025-12-01T18:35:30.7422201Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+test	UNKNOWN STEP	2025-12-01T18:35:30.7423175Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:30.7424460Z ##[group]GITHUB_TOKEN Permissions
+test	UNKNOWN STEP	2025-12-01T18:35:30.7426210Z Contents: read
+test	UNKNOWN STEP	2025-12-01T18:35:30.7426753Z Metadata: read
+test	UNKNOWN STEP	2025-12-01T18:35:30.7427338Z Packages: read
+test	UNKNOWN STEP	2025-12-01T18:35:30.7427809Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:30.7430175Z Secret source: Actions
+test	UNKNOWN STEP	2025-12-01T18:35:30.7431286Z Prepare workflow directory
+test	UNKNOWN STEP	2025-12-01T18:35:30.7813949Z Prepare all required actions
+test	UNKNOWN STEP	2025-12-01T18:35:30.7852257Z Getting action download info
+test	UNKNOWN STEP	2025-12-01T18:35:31.1079675Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+test	UNKNOWN STEP	2025-12-01T18:35:31.3844836Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test	UNKNOWN STEP	2025-12-01T18:35:31.4739198Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test	UNKNOWN STEP	2025-12-01T18:35:31.6642009Z Complete job name: test
+test	UNKNOWN STEP	2025-12-01T18:35:31.7351552Z ##[group]Run actions/checkout@v4
+test	UNKNOWN STEP	2025-12-01T18:35:31.7352399Z with:
+test	UNKNOWN STEP	2025-12-01T18:35:31.7352832Z   repository: Tris247/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:35:31.7353731Z   token: ***
+test	UNKNOWN STEP	2025-12-01T18:35:31.7354126Z   ssh-strict: true
+test	UNKNOWN STEP	2025-12-01T18:35:31.7354517Z   ssh-user: git
+test	UNKNOWN STEP	2025-12-01T18:35:31.7354913Z   persist-credentials: true
+test	UNKNOWN STEP	2025-12-01T18:35:31.7355356Z   clean: true
+test	UNKNOWN STEP	2025-12-01T18:35:31.7355758Z   sparse-checkout-cone-mode: true
+test	UNKNOWN STEP	2025-12-01T18:35:31.7356221Z   fetch-depth: 1
+test	UNKNOWN STEP	2025-12-01T18:35:31.7356615Z   fetch-tags: false
+test	UNKNOWN STEP	2025-12-01T18:35:31.7357008Z   show-progress: true
+test	UNKNOWN STEP	2025-12-01T18:35:31.7357405Z   lfs: false
+test	UNKNOWN STEP	2025-12-01T18:35:31.7357765Z   submodules: false
+test	UNKNOWN STEP	2025-12-01T18:35:31.7358170Z   set-safe-directory: true
+test	UNKNOWN STEP	2025-12-01T18:35:31.7358883Z env:
+test	UNKNOWN STEP	2025-12-01T18:35:31.7359280Z   DATABASE_URL: file:./dev.db
+test	UNKNOWN STEP	2025-12-01T18:35:31.7359739Z   OPENAI_API_KEY: test
+test	UNKNOWN STEP	2025-12-01T18:35:31.7360177Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:31.8516838Z Syncing repository: Tris247/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:35:31.8518609Z ##[group]Getting Git version info
+test	UNKNOWN STEP	2025-12-01T18:35:31.8519474Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	UNKNOWN STEP	2025-12-01T18:35:31.8520479Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2025-12-01T18:35:31.8597144Z git version 2.51.2
+test	UNKNOWN STEP	2025-12-01T18:35:31.8622270Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:31.8642891Z Temporarily overriding HOME='/home/runner/work/_temp/69551a12-b26b-42d3-a3f3-c2352c5e75a7' before making global git config changes
+test	UNKNOWN STEP	2025-12-01T18:35:31.8644559Z Adding repository directory to the temporary git global config as a safe directory
+test	UNKNOWN STEP	2025-12-01T18:35:31.8648127Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:35:31.8684376Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	UNKNOWN STEP	2025-12-01T18:35:31.8687716Z ##[group]Initializing the repository
+test	UNKNOWN STEP	2025-12-01T18:35:31.8691310Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:35:31.8793504Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	UNKNOWN STEP	2025-12-01T18:35:31.8794693Z hint: is subject to change. To configure the initial branch name to use in all
+test	UNKNOWN STEP	2025-12-01T18:35:31.8796070Z hint: of your new repositories, which will suppress this warning, call:
+test	UNKNOWN STEP	2025-12-01T18:35:31.8796739Z hint:
+test	UNKNOWN STEP	2025-12-01T18:35:31.8797460Z hint: 	git config --global init.defaultBranch <name>
+test	UNKNOWN STEP	2025-12-01T18:35:31.8798382Z hint:
+test	UNKNOWN STEP	2025-12-01T18:35:31.8799231Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	UNKNOWN STEP	2025-12-01T18:35:31.8800639Z hint: 'development'. The just-created branch can be renamed via this command:
+test	UNKNOWN STEP	2025-12-01T18:35:31.8801365Z hint:
+test	UNKNOWN STEP	2025-12-01T18:35:31.8801746Z hint: 	git branch -m <name>
+test	UNKNOWN STEP	2025-12-01T18:35:31.8802174Z hint:
+test	UNKNOWN STEP	2025-12-01T18:35:31.8803076Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	UNKNOWN STEP	2025-12-01T18:35:31.8804933Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+test	UNKNOWN STEP	2025-12-01T18:35:31.8808578Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:35:31.8843124Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:31.8844164Z ##[group]Disabling automatic garbage collection
+test	UNKNOWN STEP	2025-12-01T18:35:31.8847145Z [command]/usr/bin/git config --local gc.auto 0
+test	UNKNOWN STEP	2025-12-01T18:35:31.8876375Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:31.8877536Z ##[group]Setting up auth
+test	UNKNOWN STEP	2025-12-01T18:35:31.8884287Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	UNKNOWN STEP	2025-12-01T18:35:31.8914846Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	UNKNOWN STEP	2025-12-01T18:35:31.9247367Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	UNKNOWN STEP	2025-12-01T18:35:31.9279621Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	UNKNOWN STEP	2025-12-01T18:35:31.9497663Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	UNKNOWN STEP	2025-12-01T18:35:31.9528412Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	UNKNOWN STEP	2025-12-01T18:35:31.9754908Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	UNKNOWN STEP	2025-12-01T18:35:31.9788283Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:31.9789201Z ##[group]Fetching the repository
+test	UNKNOWN STEP	2025-12-01T18:35:31.9797303Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +343b78c7576363b05d129c6a2788bff18de2bb1b:refs/remotes/origin/feat/postgres-ci-migration
+test	UNKNOWN STEP	2025-12-01T18:35:32.1398385Z From https://github.com/Tris247/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:35:32.1400369Z  * [new ref]         343b78c7576363b05d129c6a2788bff18de2bb1b -> origin/feat/postgres-ci-migration
+test	UNKNOWN STEP	2025-12-01T18:35:32.1430823Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:32.1432017Z ##[group]Determining the checkout info
+test	UNKNOWN STEP	2025-12-01T18:35:32.1433286Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:32.1436495Z [command]/usr/bin/git sparse-checkout disable
+test	UNKNOWN STEP	2025-12-01T18:35:32.1477797Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	UNKNOWN STEP	2025-12-01T18:35:32.1505238Z ##[group]Checking out the ref
+test	UNKNOWN STEP	2025-12-01T18:35:32.1510075Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+test	UNKNOWN STEP	2025-12-01T18:35:32.1648028Z Switched to a new branch 'feat/postgres-ci-migration'
+test	UNKNOWN STEP	2025-12-01T18:35:32.1650451Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+test	UNKNOWN STEP	2025-12-01T18:35:32.1657002Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:32.1689832Z [command]/usr/bin/git log -1 --format=%H
+test	UNKNOWN STEP	2025-12-01T18:35:32.1711199Z 343b78c7576363b05d129c6a2788bff18de2bb1b
+test	UNKNOWN STEP	2025-12-01T18:35:32.1963819Z ##[group]Run actions/setup-node@v4
+test	UNKNOWN STEP	2025-12-01T18:35:32.1964586Z with:
+test	UNKNOWN STEP	2025-12-01T18:35:32.1964997Z   node-version: 18
+test	UNKNOWN STEP	2025-12-01T18:35:32.1965718Z   always-auth: false
+test	UNKNOWN STEP	2025-12-01T18:35:32.1966346Z   check-latest: false
+test	UNKNOWN STEP	2025-12-01T18:35:32.1967665Z   token: ***
+test	UNKNOWN STEP	2025-12-01T18:35:32.1968092Z env:
+test	UNKNOWN STEP	2025-12-01T18:35:32.1968499Z   DATABASE_URL: file:./dev.db
+test	UNKNOWN STEP	2025-12-01T18:35:32.1969121Z   OPENAI_API_KEY: test
+test	UNKNOWN STEP	2025-12-01T18:35:32.1969633Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:32.3752339Z Attempting to download 18...
+test	UNKNOWN STEP	2025-12-01T18:35:32.7128027Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+test	UNKNOWN STEP	2025-12-01T18:35:33.1236852Z Extracting ...
+test	UNKNOWN STEP	2025-12-01T18:35:33.1343758Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/3d22fac0-0cf4-40dd-8332-4eb30978d0b1 -f /home/runner/work/_temp/7416b780-4f00-4b31-918e-878c5eac5f8b
+test	UNKNOWN STEP	2025-12-01T18:35:34.0727346Z Adding to the cache ...
+test	UNKNOWN STEP	2025-12-01T18:35:35.6630643Z ##[group]Environment details
+test	UNKNOWN STEP	2025-12-01T18:35:35.8980326Z node: v18.20.8
+test	UNKNOWN STEP	2025-12-01T18:35:35.8980735Z npm: 10.8.2
+test	UNKNOWN STEP	2025-12-01T18:35:35.8981011Z yarn: 1.22.22
+test	UNKNOWN STEP	2025-12-01T18:35:35.9004526Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:35.9142465Z ##[group]Run npm ci
+test	UNKNOWN STEP	2025-12-01T18:35:35.9142758Z [36;1mnpm ci[0m
+test	UNKNOWN STEP	2025-12-01T18:35:35.9180763Z shell: /usr/bin/bash -e {0}
+test	UNKNOWN STEP	2025-12-01T18:35:35.9181009Z env:
+test	UNKNOWN STEP	2025-12-01T18:35:35.9181178Z   DATABASE_URL: file:./dev.db
+test	UNKNOWN STEP	2025-12-01T18:35:35.9181412Z   OPENAI_API_KEY: test
+test	UNKNOWN STEP	2025-12-01T18:35:35.9181623Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:37.6513321Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+test	UNKNOWN STEP	2025-12-01T18:35:37.8879237Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+test	UNKNOWN STEP	2025-12-01T18:35:38.1630527Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+test	UNKNOWN STEP	2025-12-01T18:35:38.3052221Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+test	UNKNOWN STEP	2025-12-01T18:35:38.5530326Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+test	UNKNOWN STEP	2025-12-01T18:35:38.5534078Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+test	UNKNOWN STEP	2025-12-01T18:35:38.6450930Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+test	UNKNOWN STEP	2025-12-01T18:35:38.7390080Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+test	UNKNOWN STEP	2025-12-01T18:35:46.5909697Z 
+test	UNKNOWN STEP	2025-12-01T18:35:46.5910707Z added 310 packages, and audited 311 packages in 11s
+test	UNKNOWN STEP	2025-12-01T18:35:46.5934235Z 
+test	UNKNOWN STEP	2025-12-01T18:35:46.5934654Z 52 packages are looking for funding
+test	UNKNOWN STEP	2025-12-01T18:35:46.5935137Z   run `npm fund` for details
+test	UNKNOWN STEP	2025-12-01T18:35:46.6141043Z 
+test	UNKNOWN STEP	2025-12-01T18:35:46.6141474Z 4 moderate severity vulnerabilities
+test	UNKNOWN STEP	2025-12-01T18:35:46.6141853Z 
+test	UNKNOWN STEP	2025-12-01T18:35:46.6142255Z To address all issues (including breaking changes), run:
+test	UNKNOWN STEP	2025-12-01T18:35:46.6142843Z   npm audit fix --force
+test	UNKNOWN STEP	2025-12-01T18:35:46.6143124Z 
+test	UNKNOWN STEP	2025-12-01T18:35:46.6143327Z Run `npm audit` for details.
+test	UNKNOWN STEP	2025-12-01T18:35:46.6425754Z ##[group]Run mkdir -p data
+test	UNKNOWN STEP	2025-12-01T18:35:46.6426058Z [36;1mmkdir -p data[0m
+test	UNKNOWN STEP	2025-12-01T18:35:46.6426267Z [36;1mtouch dev.db[0m
+test	UNKNOWN STEP	2025-12-01T18:35:46.6426529Z [36;1mecho "Using SQLite dev DB at ./dev.db for test run"[0m
+test	UNKNOWN STEP	2025-12-01T18:35:46.6426968Z [36;1m# Apply the Prisma schema to the local sqlite dev.db (safe for CI)[0m
+test	UNKNOWN STEP	2025-12-01T18:35:46.6427365Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+test	UNKNOWN STEP	2025-12-01T18:35:46.6427717Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+test	UNKNOWN STEP	2025-12-01T18:35:46.6466249Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	UNKNOWN STEP	2025-12-01T18:35:46.6466570Z env:
+test	UNKNOWN STEP	2025-12-01T18:35:46.6466748Z   DATABASE_URL: file:./dev.db
+test	UNKNOWN STEP	2025-12-01T18:35:46.6466969Z   OPENAI_API_KEY: test
+test	UNKNOWN STEP	2025-12-01T18:35:46.6467153Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:46.6543224Z Using SQLite dev DB at ./dev.db for test run
+test	UNKNOWN STEP	2025-12-01T18:35:47.4555436Z Prisma schema loaded from prisma/schema.prisma
+test	UNKNOWN STEP	2025-12-01T18:35:47.4609761Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+test	UNKNOWN STEP	2025-12-01T18:35:47.4950006Z 
+test	UNKNOWN STEP	2025-12-01T18:35:47.4952209Z The database is already in sync with the Prisma schema.
+test	UNKNOWN STEP	2025-12-01T18:35:47.4954154Z 
+test	UNKNOWN STEP	2025-12-01T18:35:47.4966246Z Running generate... (Use --skip-generate to skip the generators)
+test	UNKNOWN STEP	2025-12-01T18:35:47.7121323Z [2K[1A[2K[GRunning generate... - Prisma Client
+test	UNKNOWN STEP	2025-12-01T18:35:47.8235838Z [2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 110ms
+test	UNKNOWN STEP	2025-12-01T18:35:47.8238449Z 
+test	UNKNOWN STEP	2025-12-01T18:35:48.8169966Z Prisma schema loaded from prisma/schema.prisma
+test	UNKNOWN STEP	2025-12-01T18:35:49.1835866Z 
+test	UNKNOWN STEP	2025-12-01T18:35:49.1837229Z ✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 115ms
+test	UNKNOWN STEP	2025-12-01T18:35:49.1837789Z 
+test	UNKNOWN STEP	2025-12-01T18:35:49.1838419Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+test	UNKNOWN STEP	2025-12-01T18:35:49.1838981Z 
+test	UNKNOWN STEP	2025-12-01T18:35:49.1839895Z Tip: Want to react to database changes in your app as they happen? Discover how with Pulse: https://pris.ly/tip-1-pulse
+test	UNKNOWN STEP	2025-12-01T18:35:49.1840600Z 
+test	UNKNOWN STEP	2025-12-01T18:35:49.2096090Z ┌─────────────────────────────────────────────────────────┐
+test	UNKNOWN STEP	2025-12-01T18:35:49.2097222Z │  Update available 5.22.0 -> 7.0.1                       │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2098024Z │                                                         │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2098909Z │  This is a major update - please follow the guide at    │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2099944Z │  https://pris.ly/d/major-version-upgrade                │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2100790Z │                                                         │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2101615Z │  Run the following to update                            │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2102501Z │    npm i --save-dev prisma@latest                       │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2103318Z │    npm i @prisma/client@latest                          │
+test	UNKNOWN STEP	2025-12-01T18:35:49.2104404Z └─────────────────────────────────────────────────────────┘
+test	UNKNOWN STEP	2025-12-01T18:35:49.3911315Z ##[group]Run npm test --silent
+test	UNKNOWN STEP	2025-12-01T18:35:49.3911599Z [36;1mnpm test --silent[0m
+test	UNKNOWN STEP	2025-12-01T18:35:49.3944187Z shell: /usr/bin/bash -e {0}
+test	UNKNOWN STEP	2025-12-01T18:35:49.3944427Z env:
+test	UNKNOWN STEP	2025-12-01T18:35:49.3944600Z   DATABASE_URL: file:./dev.db
+test	UNKNOWN STEP	2025-12-01T18:35:49.3944815Z   OPENAI_API_KEY: test
+test	UNKNOWN STEP	2025-12-01T18:35:49.3945004Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:49.8162031Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+test	UNKNOWN STEP	2025-12-01T18:35:49.8496520Z 
+test	UNKNOWN STEP	2025-12-01T18:35:49.8497900Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+test	UNKNOWN STEP	2025-12-01T18:35:49.8498613Z 
+test	UNKNOWN STEP	2025-12-01T18:35:50.3045857Z  [32m✓[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 91[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.3096245Z [90mstderr[2m | tests/ai-generate.spec.ts[2m > [22m[2mAI generate endpoint[2m > [22m[2muses OpenAI when configured and falls back correctly[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.3101650Z Captured exception Error: Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:50.3104102Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3106468Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3108776Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-generate.spec.ts:67:5
+test	UNKNOWN STEP	2025-12-01T18:35:50.3117128Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3118448Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3119718Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3120979Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3122336Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	UNKNOWN STEP	2025-12-01T18:35:50.3124362Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	UNKNOWN STEP	2025-12-01T18:35:50.3126046Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u1' }
+test	UNKNOWN STEP	2025-12-01T18:35:50.3127298Z openai error Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:50.3127681Z 
+test	UNKNOWN STEP	2025-12-01T18:35:50.3208448Z  [33m❯[39m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 109[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.3210179Z [31m   [33m❯[31m tests/ai-generate.spec.ts[2m > [22mAI generate endpoint[2m > [22muses OpenAI when configured and falls back correctly[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.3211692Z [31m     → expected 'Led some bullets\nLed did lots' to contain 'Error generating with OpenAI'[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.3936229Z  [32m✓[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 192[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.6746422Z  [32m✓[39m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 80[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.6774500Z [90mstderr[2m | tests/webhook-reconcile.spec.ts[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.6778392Z STRIPE_SECRET required
+test	UNKNOWN STEP	2025-12-01T18:35:50.6778630Z 
+test	UNKNOWN STEP	2025-12-01T18:35:50.7043928Z [90mstderr[2m | tests/uploads-parsing.spec.ts[2m > [22m[2muploads API binary parsing (pdf/docx)[2m > [22m[2mparses PDF using pdf-parse and saves .txt path[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.7049055Z Captured exception Error: Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:50.7061304Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7062683Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7063909Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/uploads-parsing.spec.ts:44:5
+test	UNKNOWN STEP	2025-12-01T18:35:50.7065110Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7066646Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7068069Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7069455Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7070871Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	UNKNOWN STEP	2025-12-01T18:35:50.7072403Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	UNKNOWN STEP	2025-12-01T18:35:50.7074469Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u20' }
+test	UNKNOWN STEP	2025-12-01T18:35:50.7075886Z openai error Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:50.7076292Z 
+test	UNKNOWN STEP	2025-12-01T18:35:50.7085710Z  [32m✓[39m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 72[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:50.7200432Z  [32m✓[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 42[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.0515751Z [90mstdout[2m | tests/subscriptions-flow.spec.ts[2m > [22m[2msubscription flows (integration-like)[2m > [22m[2mwebhook checkout.session.completed maps pending subscription by metadata[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.0519890Z checkout.session.completed sess_x
+test	UNKNOWN STEP	2025-12-01T18:35:51.0520218Z 
+test	UNKNOWN STEP	2025-12-01T18:35:51.0577206Z  [32m✓[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 50[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.0703767Z  [32m✓[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 106[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.2409253Z  [32m✓[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 256[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.3910756Z  [32m✓[39m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 57[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.3912664Z [90mstderr[2m | tests/uploads-api.spec.ts[2m > [22m[2mserver upload API and AI merge[2m > [22m[2maccepts upload and AI uses saved file text[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.3914203Z Captured exception Error: Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:51.3915153Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3916186Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3917203Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/uploads-api.spec.ts:28:5
+test	UNKNOWN STEP	2025-12-01T18:35:51.3918453Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3919840Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3921229Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3922608Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3924208Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	UNKNOWN STEP	2025-12-01T18:35:51.3925737Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	UNKNOWN STEP	2025-12-01T18:35:51.3927845Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u10' }
+test	UNKNOWN STEP	2025-12-01T18:35:51.3929188Z openai error Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:51.3929548Z 
+test	UNKNOWN STEP	2025-12-01T18:35:51.4391401Z  [33m❯[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 58[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.5529793Z [90mstderr[2m | tests/ai-upload.spec.ts[2m > [22m[2mAI generate with uploaded texts[2m > [22m[2mmerges uploadedTexts into fallback rewrite[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.5531482Z Captured exception Error: Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:51.5532617Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5534902Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5535943Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-upload.spec.ts:17:5
+test	UNKNOWN STEP	2025-12-01T18:35:51.5537180Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5538582Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5539973Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5541346Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5542769Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	UNKNOWN STEP	2025-12-01T18:35:51.5544712Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	UNKNOWN STEP	2025-12-01T18:35:51.5546499Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u9' }
+test	UNKNOWN STEP	2025-12-01T18:35:51.5547854Z openai error Simulated OpenAI failure for test API key
+test	UNKNOWN STEP	2025-12-01T18:35:51.5548217Z 
+test	UNKNOWN STEP	2025-12-01T18:35:51.5573668Z  [32m✓[39m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 60[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.7129493Z  [32m✓[39m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 58[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.7240334Z  [32m✓[39m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.9312541Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:51.9314189Z notification email preview: preview://example
+test	UNKNOWN STEP	2025-12-01T18:35:51.9314568Z 
+test	UNKNOWN STEP	2025-12-01T18:35:51.9923267Z  [32m✓[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 4[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.0171796Z  [32m✓[39m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 47[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.0786829Z  [32m✓[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 238[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.3284075Z  [32m✓[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 72[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.3777106Z  [32m✓[39m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 126[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.4928777Z  [32m✓[39m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 102[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.6332866Z  [32m✓[39m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 43[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.6859181Z  [32m✓[39m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 32[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.7795407Z  [32m✓[39m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 11[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.9721615Z  [32m✓[39m tests/queue.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 48[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:52.9843614Z  [32m✓[39m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 19[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0488857Z  [32m✓[39m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 11[2mms[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0492335Z [90mstderr[2m | tests/telemetry.spec.ts[2m > [22m[2mtelemetry helper[2m > [22m[2mdoes not throw when SENTRY_DSN not configured[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0493583Z Captured exception Error: test
+test	UNKNOWN STEP	2025-12-01T18:35:53.0494459Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:34
+test	UNKNOWN STEP	2025-12-01T18:35:53.0495645Z     at Proxy.assertThrows (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/core/assertions.js:2644:7)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0497067Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0498624Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:850:16)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0500335Z     at Proxy.overwritingMethodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0502053Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:1324:19)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0503812Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:800:17)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0505377Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	UNKNOWN STEP	2025-12-01T18:35:53.0506618Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:58
+test	UNKNOWN STEP	2025-12-01T18:35:53.0507760Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:135:14 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0664367Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0665454Z [31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0665871Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0668627Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0674049Z [31m[1m[7m FAIL [27m[22m[39m tests/autoapply-worker.integration.spec.ts[2m > [22mautoapply worker integration
+test	UNKNOWN STEP	2025-12-01T18:35:53.0684467Z [31m[1mPrismaClientValidationError[22m: 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0685594Z Invalid `prisma.autoApplyRule.create()` invocation in
+test	UNKNOWN STEP	2025-12-01T18:35:53.0687636Z /home/runner/work/cvforge-mvp/cvforge-mvp/tests/autoapply-worker.integration.spec.ts:25:39
+test	UNKNOWN STEP	2025-12-01T18:35:53.0688526Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0688768Z   22 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0689517Z   23 // create a candidate user and a rule that should match
+test	UNKNOWN STEP	2025-12-01T18:35:53.0690857Z   24 user = await prisma.user.create({ data: { email: `candidate+${Date.now()}@test.local`, name: 'Candidate' } })
+test	UNKNOWN STEP	2025-12-01T18:35:53.0692190Z → 25 rule = await prisma.autoApplyRule.create({
+test	UNKNOWN STEP	2025-12-01T18:35:53.0692912Z        data: {
+test	UNKNOWN STEP	2025-12-01T18:35:53.0693716Z          userId: "fa6d4818-1fcd-4397-99e9-e3feed491ffb",
+test	UNKNOWN STEP	2025-12-01T18:35:53.0694424Z          keywords: [
+test	UNKNOWN STEP	2025-12-01T18:35:53.0694920Z            "engineer",
+test	UNKNOWN STEP	2025-12-01T18:35:53.0695405Z            "services"
+test	UNKNOWN STEP	2025-12-01T18:35:53.0695991Z          ],
+test	UNKNOWN STEP	2025-12-01T18:35:53.0696821Z          ~~~~~~~~~~~~
+test	UNKNOWN STEP	2025-12-01T18:35:53.0697369Z          locations: [
+test	UNKNOWN STEP	2025-12-01T18:35:53.0697954Z            "remote"
+test	UNKNOWN STEP	2025-12-01T18:35:53.0698508Z          ],
+test	UNKNOWN STEP	2025-12-01T18:35:53.0699043Z          active: true
+test	UNKNOWN STEP	2025-12-01T18:35:53.0699509Z        }
+test	UNKNOWN STEP	2025-12-01T18:35:53.0704957Z      })
+test	UNKNOWN STEP	2025-12-01T18:35:53.0708085Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.0709125Z Argument `keywords`: Invalid value provided. Expected String or Null, provided (String, String).[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0710528Z [90m [2m❯[22m wn node_modules/@prisma/client/runtime/library.js:[2m29:1363[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0720203Z [90m [2m❯[22m $n.handleRequestError node_modules/@prisma/client/runtime/library.js:[2m121:6958[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0727175Z [90m [2m❯[22m $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:[2m121:6623[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0731327Z [90m [2m❯[22m $n.request node_modules/@prisma/client/runtime/library.js:[2m121:6307[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0754555Z [90m [2m❯[22m l node_modules/@prisma/client/runtime/library.js:[2m130:9633[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.0756169Z [36m [2m❯[22m tests/autoapply-worker.integration.spec.ts:[2m25:12[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1058423Z     [90m 23| [39m    [90m// create a candidate user and a rule that should match[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1060518Z     [90m 24| [39m    user [33m=[39m [35mawait[39m prisma[33m.[39muser[33m.[39m[34mcreate[39m({ data[33m:[39m { email[33m:[39m [32m`candidate+[39m[36m${[39m[33mDate[39m…
+test	UNKNOWN STEP	2025-12-01T18:35:53.1062792Z     [90m 25| [39m    rule [33m=[39m [35mawait[39m prisma[33m.[39mautoApplyRule[33m.[39m[34mcreate[39m({ data[33m:[39m { userId[33m:[39m user[33m.[39mid…
+test	UNKNOWN STEP	2025-12-01T18:35:53.1064518Z     [90m   | [39m           [31m^[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1065300Z     [90m 26| [39m  })
+test	UNKNOWN STEP	2025-12-01T18:35:53.1065979Z     [90m 27| [39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1066431Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1067045Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1068286Z [31m[1mSerialized Error:[22m[39m [90m{ clientVersion: '5.22.0' }[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1080334Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1082122Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1082897Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1083679Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1084739Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1115774Z ##[error]AssertionError: expected 'Led some bullets\nLed did lots' to contain 'Error generating with OpenAI'
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	- Expected
+test	UNKNOWN STEP	+ Received
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	- Error generating with OpenAI
+test	UNKNOWN STEP	+ Led some bullets
+test	UNKNOWN STEP	+ Led did lots
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	 ❯ tests/ai-generate.spec.ts:71:45
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	2025-12-01T18:35:53.1126672Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1127961Z [31m[1m[7m FAIL [27m[22m[39m tests/ai-generate.spec.ts[2m > [22mAI generate endpoint[2m > [22muses OpenAI when configured and falls back correctly
+test	UNKNOWN STEP	2025-12-01T18:35:53.1129738Z [31m[1mAssertionError[22m: expected 'Led some bullets\nLed did lots' to contain 'Error generating with OpenAI'[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1130403Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1130943Z - Expected
+test	UNKNOWN STEP	2025-12-01T18:35:53.1131228Z + Received
+test	UNKNOWN STEP	2025-12-01T18:35:53.1131393Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1131602Z - Error generating with OpenAI
+test	UNKNOWN STEP	2025-12-01T18:35:53.1131990Z + Led some bullets
+test	UNKNOWN STEP	2025-12-01T18:35:53.1132295Z + Led did lots
+test	UNKNOWN STEP	2025-12-01T18:35:53.1132481Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1132987Z [36m [2m❯[22m tests/ai-generate.spec.ts:[2m71:45[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1147463Z ##[error]PrismaClientValidationError: 
+test	UNKNOWN STEP	Invalid `prisma.autoApplyRule.create()` invocation in
+test	UNKNOWN STEP	/home/runner/work/cvforge-mvp/cvforge-mvp/tests/autoapply-worker.integration.spec.ts:25:39
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	  22 
+test	UNKNOWN STEP	  23 // create a candidate user and a rule that should match
+test	UNKNOWN STEP	  24 user = await prisma.user.create({ data: { email: `candidate+${Date.now()}@test.local`, name: 'Candidate' } })
+test	UNKNOWN STEP	→ 25 rule = await prisma.autoApplyRule.create({
+test	UNKNOWN STEP	       data: {
+test	UNKNOWN STEP	         userId: "fa6d4818-1fcd-4397-99e9-e3feed491ffb",
+test	UNKNOWN STEP	         keywords: [
+test	UNKNOWN STEP	           "engineer",
+test	UNKNOWN STEP	           "services"
+test	UNKNOWN STEP	         ],
+test	UNKNOWN STEP	         ~~~~~~~~~~~~
+test	UNKNOWN STEP	         locations: [
+test	UNKNOWN STEP	           "remote"
+test	UNKNOWN STEP	         ],
+test	UNKNOWN STEP	         active: true
+test	UNKNOWN STEP	       }
+test	UNKNOWN STEP	     })
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	Argument `keywords`: Invalid value provided. Expected String or Null, provided (String, String).
+test	UNKNOWN STEP	 ❯ wn node_modules/@prisma/client/runtime/library.js:29:1363
+test	UNKNOWN STEP	 ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:6958
+test	UNKNOWN STEP	 ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+test	UNKNOWN STEP	 ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+test	UNKNOWN STEP	 ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+test	UNKNOWN STEP	 ❯ tests/autoapply-worker.integration.spec.ts:25:12
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+test	UNKNOWN STEP	Serialized Error: { clientVersion: '5.22.0' }
+test	UNKNOWN STEP	
+test	UNKNOWN STEP	2025-12-01T18:35:53.1289180Z     [90m 69| [39m    [34mexpect[39m(out[33m.[39mstatusCode)[33m.[39m[34mtoBe[39m([34m200[39m)
+test	UNKNOWN STEP	2025-12-01T18:35:53.1290929Z [2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m24 passed[39m[22m[90m (26)[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1294062Z     [90m 70| [39m    [90m// if OpenAI fails in CI (network/key) we expect handler to gracef[39m…
+test	UNKNOWN STEP	2025-12-01T18:35:53.1295606Z     [90m 71| [39m    [34mexpect[39m([33mString[39m(out[33m.[39mjsonBody[33m.[39msuggestion))[33m.[39m[34mtoContain[39m([32m'Error generatin[39m…
+test	UNKNOWN STEP	2025-12-01T18:35:53.1296920Z     [90m   | [39m                                            [31m^[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1297881Z     [90m 72| [39m    [35mdelete[39m (globalThis [35mas[39m any)[33m.[39m__TEST_USAGE_ALLOWED
+test	UNKNOWN STEP	2025-12-01T18:35:53.1299021Z     [90m 73| [39m    [35mdelete[39m (globalThis [35mas[39m any)[33m.[39m__TEST_USAGE_INCREMENT
+test	UNKNOWN STEP	2025-12-01T18:35:53.1299550Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1299967Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1300285Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1300986Z [2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m41 passed[39m[22m[90m (43)[39m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1301731Z [2m   Start at [22m 18:35:49
+test	UNKNOWN STEP	2025-12-01T18:35:53.1302412Z [2m   Duration [22m 3.21s[2m (transform 480ms, setup 1ms, collect 715ms, tests 1.99s, environment 6ms, prepare 2.56s)[22m
+test	UNKNOWN STEP	2025-12-01T18:35:53.1302802Z 
+test	UNKNOWN STEP	2025-12-01T18:35:53.1635953Z ##[error]Process completed with exit code 1.
+test	UNKNOWN STEP	2025-12-01T18:35:53.1705384Z ##[group]Run actions/upload-artifact@v4
+test	UNKNOWN STEP	2025-12-01T18:35:53.1705662Z with:
+test	UNKNOWN STEP	2025-12-01T18:35:53.1705833Z   name: vitest-logs
+test	UNKNOWN STEP	2025-12-01T18:35:53.1706012Z   path: .
+test	UNKNOWN STEP	2025-12-01T18:35:53.1706179Z   if-no-files-found: warn
+test	UNKNOWN STEP	2025-12-01T18:35:53.1706391Z   compression-level: 6
+test	UNKNOWN STEP	2025-12-01T18:35:53.1706583Z   overwrite: false
+test	UNKNOWN STEP	2025-12-01T18:35:53.1706772Z   include-hidden-files: false
+test	UNKNOWN STEP	2025-12-01T18:35:53.1706975Z env:
+test	UNKNOWN STEP	2025-12-01T18:35:53.1707140Z   DATABASE_URL: file:./dev.db
+test	UNKNOWN STEP	2025-12-01T18:35:53.1707347Z   OPENAI_API_KEY: test
+test	UNKNOWN STEP	2025-12-01T18:35:53.1707522Z ##[endgroup]
+test	UNKNOWN STEP	2025-12-01T18:35:55.1314810Z With the provided path, there will be 13847 files uploaded
+test	UNKNOWN STEP	2025-12-01T18:35:55.1316225Z Artifact name is valid!
+test	UNKNOWN STEP	2025-12-01T18:35:55.1317227Z Root directory input is valid!
+test	UNKNOWN STEP	2025-12-01T18:35:55.3685339Z Beginning upload of artifact content to blob storage
+test	UNKNOWN STEP	2025-12-01T18:35:56.6809512Z Uploaded bytes 8388608
+test	UNKNOWN STEP	2025-12-01T18:35:57.3794851Z Uploaded bytes 16777216
+test	UNKNOWN STEP	2025-12-01T18:35:58.1652658Z Uploaded bytes 25165824
+test	UNKNOWN STEP	2025-12-01T18:35:58.7283171Z Uploaded bytes 33554432
+test	UNKNOWN STEP	2025-12-01T18:35:59.3801931Z Uploaded bytes 41943040
+test	UNKNOWN STEP	2025-12-01T18:36:00.0363700Z Uploaded bytes 50331648
+test	UNKNOWN STEP	2025-12-01T18:36:00.8156134Z Uploaded bytes 58720256
+test	UNKNOWN STEP	2025-12-01T18:36:01.5055991Z Uploaded bytes 67108864
+test	UNKNOWN STEP	2025-12-01T18:36:02.2272375Z Uploaded bytes 75497472
+test	UNKNOWN STEP	2025-12-01T18:36:03.0415811Z Uploaded bytes 83886080
+test	UNKNOWN STEP	2025-12-01T18:36:03.5746688Z Uploaded bytes 92274688
+test	UNKNOWN STEP	2025-12-01T18:36:04.2770624Z Uploaded bytes 100663296
+test	UNKNOWN STEP	2025-12-01T18:36:04.8910169Z Uploaded bytes 109051904
+test	UNKNOWN STEP	2025-12-01T18:36:05.6067152Z Uploaded bytes 117440512
+test	UNKNOWN STEP	2025-12-01T18:36:07.2097352Z Uploaded bytes 125829120
+test	UNKNOWN STEP	2025-12-01T18:36:08.5887455Z Uploaded bytes 134217728
+test	UNKNOWN STEP	2025-12-01T18:36:09.5367052Z Uploaded bytes 142606336
+test	UNKNOWN STEP	2025-12-01T18:36:11.5792037Z Uploaded bytes 150994944
+test	UNKNOWN STEP	2025-12-01T18:36:12.6867862Z Uploaded bytes 159383552
+test	UNKNOWN STEP	2025-12-01T18:36:13.4216497Z Uploaded bytes 167772160
+test	UNKNOWN STEP	2025-12-01T18:36:14.2352695Z Uploaded bytes 176160768
+test	UNKNOWN STEP	2025-12-01T18:36:15.3443718Z Uploaded bytes 182454457
+test	UNKNOWN STEP	2025-12-01T18:36:15.3590941Z Finished uploading artifact content to blob storage!
+test	UNKNOWN STEP	2025-12-01T18:36:15.3594444Z SHA256 digest of uploaded artifact zip is 6ce89de2e67c971f9814298df4ed0072af2b33dd688e4fb3a4bfaf9c293502cb
+test	UNKNOWN STEP	2025-12-01T18:36:15.3596526Z Finalizing artifact upload
+test	UNKNOWN STEP	2025-12-01T18:36:15.4868993Z Artifact vitest-logs.zip successfully finalized. Artifact ID 4728351704
+test	UNKNOWN STEP	2025-12-01T18:36:15.4870497Z Artifact vitest-logs has been successfully uploaded! Final size is 182454457 bytes. Artifact ID is 4728351704
+test	UNKNOWN STEP	2025-12-01T18:36:15.4878152Z Artifact download URL: https://github.com/Tris247/cvforge-mvp/actions/runs/19833424443/artifacts/4728351704
+test	UNKNOWN STEP	2025-12-01T18:36:15.5241176Z Post job cleanup.
+test	UNKNOWN STEP	2025-12-01T18:36:15.6163513Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2025-12-01T18:36:15.6199184Z git version 2.51.2
+test	UNKNOWN STEP	2025-12-01T18:36:15.6241295Z Temporarily overriding HOME='/home/runner/work/_temp/9e43136d-c281-4e88-a473-f105a5ca9e0e' before making global git config changes
+test	UNKNOWN STEP	2025-12-01T18:36:15.6242355Z Adding repository directory to the temporary git global config as a safe directory
+test	UNKNOWN STEP	2025-12-01T18:36:15.6246865Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	UNKNOWN STEP	2025-12-01T18:36:15.6280918Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	UNKNOWN STEP	2025-12-01T18:36:15.6312871Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	UNKNOWN STEP	2025-12-01T18:36:15.6539592Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	UNKNOWN STEP	2025-12-01T18:36:15.6559496Z http.https://github.com/.extraheader
+test	UNKNOWN STEP	2025-12-01T18:36:15.6572270Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	UNKNOWN STEP	2025-12-01T18:36:15.6601482Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	UNKNOWN STEP	2025-12-01T18:36:15.6817587Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	UNKNOWN STEP	2025-12-01T18:36:15.6847097Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	UNKNOWN STEP	2025-12-01T18:36:15.7173230Z Cleaning up orphan processes

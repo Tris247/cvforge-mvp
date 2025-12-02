@@ -1,0 +1,369 @@
+test	Set up job	﻿2025-12-01T19:14:08.3209602Z Current runner version: '2.329.0'
+test	Set up job	2025-12-01T19:14:08.3233565Z ##[group]Runner Image Provisioner
+test	Set up job	2025-12-01T19:14:08.3234404Z Hosted Compute Agent
+test	Set up job	2025-12-01T19:14:08.3234928Z Version: 20251016.436
+test	Set up job	2025-12-01T19:14:08.3235635Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+test	Set up job	2025-12-01T19:14:08.3236294Z Build Date: 2025-10-15T20:44:12Z
+test	Set up job	2025-12-01T19:14:08.3236893Z ##[endgroup]
+test	Set up job	2025-12-01T19:14:08.3237704Z ##[group]Operating System
+test	Set up job	2025-12-01T19:14:08.3238329Z Ubuntu
+test	Set up job	2025-12-01T19:14:08.3238815Z 24.04.3
+test	Set up job	2025-12-01T19:14:08.3239436Z LTS
+test	Set up job	2025-12-01T19:14:08.3239930Z ##[endgroup]
+test	Set up job	2025-12-01T19:14:08.3240399Z ##[group]Runner Image
+test	Set up job	2025-12-01T19:14:08.3241019Z Image: ubuntu-24.04
+test	Set up job	2025-12-01T19:14:08.3241540Z Version: 20251112.124.1
+test	Set up job	2025-12-01T19:14:08.3242581Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2025-12-01T19:14:08.3244012Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+test	Set up job	2025-12-01T19:14:08.3245153Z ##[endgroup]
+test	Set up job	2025-12-01T19:14:08.3246322Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2025-12-01T19:14:08.3248336Z Contents: read
+test	Set up job	2025-12-01T19:14:08.3248886Z Metadata: read
+test	Set up job	2025-12-01T19:14:08.3249801Z Packages: read
+test	Set up job	2025-12-01T19:14:08.3250337Z ##[endgroup]
+test	Set up job	2025-12-01T19:14:08.3252285Z Secret source: Actions
+test	Set up job	2025-12-01T19:14:08.3253089Z Prepare workflow directory
+test	Set up job	2025-12-01T19:14:08.3642783Z Prepare all required actions
+test	Set up job	2025-12-01T19:14:08.3679687Z Getting action download info
+test	Set up job	2025-12-01T19:14:08.8181324Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+test	Set up job	2025-12-01T19:14:09.5751340Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test	Set up job	2025-12-01T19:14:09.6664105Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test	Set up job	2025-12-01T19:14:09.8643669Z Complete job name: test
+test	Checkout	﻿2025-12-01T19:14:09.9351430Z ##[group]Run actions/checkout@v4
+test	Checkout	2025-12-01T19:14:09.9352336Z with:
+test	Checkout	2025-12-01T19:14:09.9352809Z   repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-01T19:14:09.9353509Z   token: ***
+test	Checkout	2025-12-01T19:14:09.9353926Z   ssh-strict: true
+test	Checkout	2025-12-01T19:14:09.9354355Z   ssh-user: git
+test	Checkout	2025-12-01T19:14:09.9354798Z   persist-credentials: true
+test	Checkout	2025-12-01T19:14:09.9355280Z   clean: true
+test	Checkout	2025-12-01T19:14:09.9355719Z   sparse-checkout-cone-mode: true
+test	Checkout	2025-12-01T19:14:09.9356256Z   fetch-depth: 1
+test	Checkout	2025-12-01T19:14:09.9356690Z   fetch-tags: false
+test	Checkout	2025-12-01T19:14:09.9357133Z   show-progress: true
+test	Checkout	2025-12-01T19:14:09.9357585Z   lfs: false
+test	Checkout	2025-12-01T19:14:09.9358002Z   submodules: false
+test	Checkout	2025-12-01T19:14:09.9358447Z   set-safe-directory: true
+test	Checkout	2025-12-01T19:14:09.9359123Z env:
+test	Checkout	2025-12-01T19:14:09.9359711Z   DATABASE_URL: file:./dev.db
+test	Checkout	2025-12-01T19:14:09.9360221Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.0425259Z Syncing repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-01T19:14:10.0427109Z ##[group]Getting Git version info
+test	Checkout	2025-12-01T19:14:10.0427924Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-01T19:14:10.0429077Z [command]/usr/bin/git version
+test	Checkout	2025-12-01T19:14:10.0507177Z git version 2.51.2
+test	Checkout	2025-12-01T19:14:10.0533494Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.0553266Z Temporarily overriding HOME='/home/runner/work/_temp/021e93c8-b8de-4049-a6e0-c501f2e40693' before making global git config changes
+test	Checkout	2025-12-01T19:14:10.0558280Z Adding repository directory to the temporary git global config as a safe directory
+test	Checkout	2025-12-01T19:14:10.0560069Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-01T19:14:10.0596558Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-01T19:14:10.0600575Z ##[group]Initializing the repository
+test	Checkout	2025-12-01T19:14:10.0605277Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-01T19:14:10.0704155Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Checkout	2025-12-01T19:14:10.0705893Z hint: is subject to change. To configure the initial branch name to use in all
+test	Checkout	2025-12-01T19:14:10.0707739Z hint: of your new repositories, which will suppress this warning, call:
+test	Checkout	2025-12-01T19:14:10.0709413Z hint:
+test	Checkout	2025-12-01T19:14:10.0710295Z hint: 	git config --global init.defaultBranch <name>
+test	Checkout	2025-12-01T19:14:10.0711175Z hint:
+test	Checkout	2025-12-01T19:14:10.0711773Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Checkout	2025-12-01T19:14:10.0712776Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Checkout	2025-12-01T19:14:10.0713893Z hint:
+test	Checkout	2025-12-01T19:14:10.0714348Z hint: 	git branch -m <name>
+test	Checkout	2025-12-01T19:14:10.0714827Z hint:
+test	Checkout	2025-12-01T19:14:10.0715468Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Checkout	2025-12-01T19:14:10.0716617Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+test	Checkout	2025-12-01T19:14:10.0719198Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-01T19:14:10.0753758Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.0755172Z ##[group]Disabling automatic garbage collection
+test	Checkout	2025-12-01T19:14:10.0758553Z [command]/usr/bin/git config --local gc.auto 0
+test	Checkout	2025-12-01T19:14:10.0787570Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.0788983Z ##[group]Setting up auth
+test	Checkout	2025-12-01T19:14:10.0795269Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Checkout	2025-12-01T19:14:10.0826142Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Checkout	2025-12-01T19:14:10.1145752Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Checkout	2025-12-01T19:14:10.1176311Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Checkout	2025-12-01T19:14:10.1394276Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Checkout	2025-12-01T19:14:10.1426047Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Checkout	2025-12-01T19:14:10.1646822Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Checkout	2025-12-01T19:14:10.1678860Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.1679937Z ##[group]Fetching the repository
+test	Checkout	2025-12-01T19:14:10.1687714Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +b74d6923d8e1814454da1723e1a118beb91dc4da:refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T19:14:10.6469087Z From https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-01T19:14:10.6471147Z  * [new ref]         b74d6923d8e1814454da1723e1a118beb91dc4da -> origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T19:14:10.6503723Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.6504484Z ##[group]Determining the checkout info
+test	Checkout	2025-12-01T19:14:10.6505911Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.6510943Z [command]/usr/bin/git sparse-checkout disable
+test	Checkout	2025-12-01T19:14:10.6549546Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Checkout	2025-12-01T19:14:10.6573966Z ##[group]Checking out the ref
+test	Checkout	2025-12-01T19:14:10.6577870Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T19:14:10.6715076Z Switched to a new branch 'feat/postgres-ci-migration'
+test	Checkout	2025-12-01T19:14:10.6718133Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+test	Checkout	2025-12-01T19:14:10.6724748Z ##[endgroup]
+test	Checkout	2025-12-01T19:14:10.6758157Z [command]/usr/bin/git log -1 --format=%H
+test	Checkout	2025-12-01T19:14:10.6779104Z b74d6923d8e1814454da1723e1a118beb91dc4da
+test	Setup Node.js	﻿2025-12-01T19:14:10.7005802Z ##[group]Run actions/setup-node@v4
+test	Setup Node.js	2025-12-01T19:14:10.7006453Z with:
+test	Setup Node.js	2025-12-01T19:14:10.7006837Z   node-version: 18
+test	Setup Node.js	2025-12-01T19:14:10.7007225Z   always-auth: false
+test	Setup Node.js	2025-12-01T19:14:10.7007634Z   check-latest: false
+test	Setup Node.js	2025-12-01T19:14:10.7008200Z   token: ***
+test	Setup Node.js	2025-12-01T19:14:10.7008570Z env:
+test	Setup Node.js	2025-12-01T19:14:10.7009155Z   DATABASE_URL: file:./dev.db
+test	Setup Node.js	2025-12-01T19:14:10.7009956Z ##[endgroup]
+test	Setup Node.js	2025-12-01T19:14:10.8790895Z Attempting to download 18...
+test	Setup Node.js	2025-12-01T19:14:11.8895429Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+test	Setup Node.js	2025-12-01T19:14:12.5074978Z Extracting ...
+test	Setup Node.js	2025-12-01T19:14:12.5176086Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/0c2f2063-3f7b-4ca8-a8eb-a2a14aba6155 -f /home/runner/work/_temp/e532a893-869e-44de-97f2-131ed72d6e89
+test	Setup Node.js	2025-12-01T19:14:13.4574509Z Adding to the cache ...
+test	Setup Node.js	2025-12-01T19:14:15.1693082Z ##[group]Environment details
+test	Setup Node.js	2025-12-01T19:14:15.3995014Z node: v18.20.8
+test	Setup Node.js	2025-12-01T19:14:15.3995500Z npm: 10.8.2
+test	Setup Node.js	2025-12-01T19:14:15.3995798Z yarn: 1.22.22
+test	Setup Node.js	2025-12-01T19:14:15.3997615Z ##[endgroup]
+test	Install dependencies	﻿2025-12-01T19:14:15.4160556Z ##[group]Run npm ci
+test	Install dependencies	2025-12-01T19:14:15.4160851Z [36;1mnpm ci[0m
+test	Install dependencies	2025-12-01T19:14:15.4200137Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2025-12-01T19:14:15.4200428Z env:
+test	Install dependencies	2025-12-01T19:14:15.4200608Z   DATABASE_URL: file:./dev.db
+test	Install dependencies	2025-12-01T19:14:15.4200834Z ##[endgroup]
+test	Install dependencies	2025-12-01T19:14:17.0904004Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+test	Install dependencies	2025-12-01T19:14:17.3500358Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+test	Install dependencies	2025-12-01T19:14:17.6103281Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+test	Install dependencies	2025-12-01T19:14:17.7595226Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+test	Install dependencies	2025-12-01T19:14:17.8384553Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+test	Install dependencies	2025-12-01T19:14:17.8988076Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+test	Install dependencies	2025-12-01T19:14:17.9840758Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+test	Install dependencies	2025-12-01T19:14:18.2085686Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+test	Install dependencies	2025-12-01T19:14:26.4564965Z 
+test	Install dependencies	2025-12-01T19:14:26.4565772Z added 310 packages, and audited 311 packages in 11s
+test	Install dependencies	2025-12-01T19:14:26.4566427Z 
+test	Install dependencies	2025-12-01T19:14:26.4611583Z 52 packages are looking for funding
+test	Install dependencies	2025-12-01T19:14:26.4613297Z   run `npm fund` for details
+test	Install dependencies	2025-12-01T19:14:26.4826739Z 
+test	Install dependencies	2025-12-01T19:14:26.4827922Z 4 moderate severity vulnerabilities
+test	Install dependencies	2025-12-01T19:14:26.4828544Z 
+test	Install dependencies	2025-12-01T19:14:26.4829139Z To address all issues (including breaking changes), run:
+test	Install dependencies	2025-12-01T19:14:26.4832921Z   npm audit fix --force
+test	Install dependencies	2025-12-01T19:14:26.4833178Z 
+test	Install dependencies	2025-12-01T19:14:26.4833365Z Run `npm audit` for details.
+test	Prepare test files and SQLite DB	﻿2025-12-01T19:14:26.5144015Z ##[group]Run mkdir -p data
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5144497Z [36;1mmkdir -p data[0m
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5144838Z [36;1mtouch dev.db[0m
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5145257Z [36;1mecho "Using SQLite dev DB at ./dev.db for test run"[0m
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5145927Z [36;1m# Apply the Prisma schema to the local sqlite dev.db (safe for CI)[0m
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5146572Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5147158Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5191653Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5192154Z env:
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5192430Z   DATABASE_URL: file:./dev.db
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5192764Z ##[endgroup]
+test	Prepare test files and SQLite DB	2025-12-01T19:14:26.5285760Z Using SQLite dev DB at ./dev.db for test run
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.4041497Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.4113364Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.4549489Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.4557943Z The database is already in sync with the Prisma schema.
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.4558550Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.4569815Z Running generate... (Use --skip-generate to skip the generators)
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.7406413Z [2K[1A[2K[GRunning generate... - Prisma Client
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.8595572Z [2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 117ms
+test	Prepare test files and SQLite DB	2025-12-01T19:14:27.8598077Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:28.8886819Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2933574Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2934864Z ✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 116ms
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2935404Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2935940Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2936574Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2937866Z Tip: Easily identify and fix slow SQL queries in your app. Optimize helps you enhance your visibility: https://pris.ly/--optimize
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.2939106Z 
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3210009Z ┌─────────────────────────────────────────────────────────┐
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3211287Z │  Update available 5.22.0 -> 7.0.1                       │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3212162Z │                                                         │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3213090Z │  This is a major update - please follow the guide at    │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3214129Z │  https://pris.ly/d/major-version-upgrade                │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3214784Z │                                                         │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3215325Z │  Run the following to update                            │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3215892Z │    npm i --save-dev prisma@latest                       │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3216459Z │    npm i @prisma/client@latest                          │
+test	Prepare test files and SQLite DB	2025-12-01T19:14:29.3217027Z └─────────────────────────────────────────────────────────┘
+test	Run tests	﻿2025-12-01T19:14:29.5030233Z ##[group]Run npm test --silent
+test	Run tests	2025-12-01T19:14:29.5030553Z [36;1mnpm test --silent[0m
+test	Run tests	2025-12-01T19:14:29.5063096Z shell: /usr/bin/bash -e {0}
+test	Run tests	2025-12-01T19:14:29.5063321Z env:
+test	Run tests	2025-12-01T19:14:29.5063499Z   DATABASE_URL: file:./dev.db
+test	Run tests	2025-12-01T19:14:29.5063715Z ##[endgroup]
+test	Run tests	2025-12-01T19:14:29.9365027Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+test	Run tests	2025-12-01T19:14:29.9638813Z 
+test	Run tests	2025-12-01T19:14:29.9640410Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+test	Run tests	2025-12-01T19:14:29.9641073Z 
+test	Run tests	2025-12-01T19:14:30.4131310Z  [33m❯[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 86[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:30.4137108Z [31m   [33m❯[31m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject[39m
+test	Run tests	2025-12-01T19:14:30.4138716Z [31m     → expected 404 to be 200 // Object.is equality[39m
+test	Run tests	2025-12-01T19:14:30.4143994Z [90mstderr[2m | tests/ai-generate.spec.ts[2m > [22m[2mAI generate endpoint[2m > [22m[2muses OpenAI when configured and falls back correctly[22m[39m
+test	Run tests	2025-12-01T19:14:30.4147246Z Captured exception Error: Simulated OpenAI failure for test API key
+test	Run tests	2025-12-01T19:14:30.4148260Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	Run tests	2025-12-01T19:14:30.4149600Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	Run tests	2025-12-01T19:14:30.4150676Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-generate.spec.ts:67:5
+test	Run tests	2025-12-01T19:14:30.4156064Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	Run tests	2025-12-01T19:14:30.4157557Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	Run tests	2025-12-01T19:14:30.4159105Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	Run tests	2025-12-01T19:14:30.4160684Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	Run tests	2025-12-01T19:14:30.4162103Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	Run tests	2025-12-01T19:14:30.4163990Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	Run tests	2025-12-01T19:14:30.4165823Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u1' }
+test	Run tests	2025-12-01T19:14:30.4167211Z openai error Simulated OpenAI failure for test API key
+test	Run tests	2025-12-01T19:14:30.4167629Z 
+test	Run tests	2025-12-01T19:14:30.4249014Z  [32m✓[39m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 113[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:30.4775037Z  [32m✓[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 165[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:30.8029045Z  [32m✓[39m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 93[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:30.8209888Z [90mstderr[2m | tests/webhook-reconcile.spec.ts[22m[39m
+test	Run tests	2025-12-01T19:14:30.8210817Z STRIPE_SECRET required
+test	Run tests	2025-12-01T19:14:30.8211089Z 
+test	Run tests	2025-12-01T19:14:30.8212020Z  [32m✓[39m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 100[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:30.8349923Z  [32m✓[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 44[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.1942251Z  [32m✓[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 46[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.1987102Z [90mstdout[2m | tests/subscriptions-flow.spec.ts[2m > [22m[2msubscription flows (integration-like)[2m > [22m[2mwebhook checkout.session.completed maps pending subscription by metadata[22m[39m
+test	Run tests	2025-12-01T19:14:31.1990290Z checkout.session.completed sess_x
+test	Run tests	2025-12-01T19:14:31.1991077Z 
+test	Run tests	2025-12-01T19:14:31.2631001Z  [32m✓[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 135[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.4888503Z  [32m✓[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[33m 355[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.5093189Z  [32m✓[39m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 39[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.5759653Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-01T19:14:31.5761574Z processing autoapply job 8826f4be-7dfc-458d-aceb-440fc6e85be4
+test	Run tests	2025-12-01T19:14:31.5762400Z 
+test	Run tests	2025-12-01T19:14:31.5784630Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-01T19:14:31.5785852Z found 1 auto-apply rules
+test	Run tests	2025-12-01T19:14:31.5786093Z 
+test	Run tests	2025-12-01T19:14:31.5849561Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-01T19:14:31.5851831Z autoapply created 1 applications for job 8826f4be-7dfc-458d-aceb-440fc6e85be4
+test	Run tests	2025-12-01T19:14:31.5852916Z 
+test	Run tests	2025-12-01T19:14:31.6185039Z  [32m✓[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 65[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.8199535Z  [32m✓[39m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 48[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.8310996Z  [32m✓[39m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 45[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:31.9178430Z  [32m✓[39m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.1726036Z  [32m✓[39m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 64[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.1732214Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+test	Run tests	2025-12-01T19:14:32.1733486Z notification email preview: preview://example
+test	Run tests	2025-12-01T19:14:32.1734110Z 
+test	Run tests	2025-12-01T19:14:32.2326556Z  [32m✓[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 4[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.3240069Z  [32m✓[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 245[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.5187892Z  [32m✓[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 89[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.6034544Z  [32m✓[39m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 119[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.7082097Z  [32m✓[39m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 100[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.8516028Z  [32m✓[39m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 41[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.9079071Z  [32m✓[39m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 33[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:32.9812365Z  [32m✓[39m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:33.1964731Z  [32m✓[39m tests/queue.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 67[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:33.2077870Z  [32m✓[39m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 20[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:33.2354564Z  [32m✓[39m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 13[2mms[22m[39m
+test	Run tests	2025-12-01T19:14:33.2361836Z [90mstderr[2m | tests/telemetry.spec.ts[2m > [22m[2mtelemetry helper[2m > [22m[2mdoes not throw when SENTRY_DSN not configured[22m[39m
+test	Run tests	2025-12-01T19:14:33.2363650Z Captured exception Error: test
+test	Run tests	2025-12-01T19:14:33.2364606Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:34
+test	Run tests	2025-12-01T19:14:33.2365941Z     at Proxy.assertThrows (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/core/assertions.js:2644:7)
+test	Run tests	2025-12-01T19:14:33.2367544Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	Run tests	2025-12-01T19:14:33.2369195Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:850:16)
+test	Run tests	2025-12-01T19:14:33.2371149Z     at Proxy.overwritingMethodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33)
+test	Run tests	2025-12-01T19:14:33.2372760Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:1324:19)
+test	Run tests	2025-12-01T19:14:33.2374172Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:800:17)
+test	Run tests	2025-12-01T19:14:33.2375644Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	Run tests	2025-12-01T19:14:33.2376802Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:58
+test	Run tests	2025-12-01T19:14:33.2377907Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:135:14 
+test	Run tests	2025-12-01T19:14:33.2378606Z 
+test	Run tests	2025-12-01T19:14:33.2513933Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+test	Run tests	2025-12-01T19:14:33.2516169Z 
+test	Run tests	2025-12-01T19:14:33.2522951Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject
+test	Run tests	2025-12-01T19:14:33.2524019Z 
+test	Run tests	2025-12-01T19:14:33.2532433Z [31m[1mAssertionError[22m: expected 404 to be 200 // Object.is equality[39m
+test	Run tests	2025-12-01T19:14:33.2535665Z 
+test	Run tests	2025-12-01T19:14:33.2535847Z - Expected
+test	Run tests	2025-12-01T19:14:33.2536216Z + Received
+test	Run tests	2025-12-01T19:14:33.2536397Z 
+test	Run tests	2025-12-01T19:14:33.2536516Z - 200
+test	Run tests	2025-12-01T19:14:33.2536797Z + 404
+test	Run tests	2025-12-01T19:14:33.2536955Z 
+test	Run tests	2025-12-01T19:14:33.2539007Z [36m [2m❯[22m tests/marketplace-applicants.spec.ts:[2m58:30[22m[39m
+test	Run tests	2025-12-01T19:14:33.2858643Z 
+test	Run tests	2025-12-01T19:14:33.2891075Z ##[error]AssertionError: expected 404 to be 200 // Object.is equality
+test	Run tests	
+test	Run tests	- Expected
+test	Run tests	+ Received
+test	Run tests	
+test	Run tests	- 200
+test	Run tests	+ 404
+test	Run tests	
+test	Run tests	 ❯ tests/marketplace-applicants.spec.ts:58:30
+test	Run tests	
+test	Run tests	
+test	Run tests	2025-12-01T19:14:33.2904539Z     [90m 56| [39m    [35mconst[39m dres[33m:[39many [33m=[39m { status[33m:[39m (c[33m:[39mnumber)[33m=>[39m ({ json[33m:[39m (b[33m:[39many)[33m=>[39m { dres[33m.[39m…
+test	Run tests	2025-12-01T19:14:33.2906242Z     [90m 57| [39m    [35mawait[39m decisionMod[33m.[39m[35mdefault[39m(dreq[33m,[39m dres)
+test	Run tests	2025-12-01T19:14:33.2907663Z     [90m 58| [39m    [34mexpect[39m(dres[33m.[39m_out[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m200[39m)
+test	Run tests	2025-12-01T19:14:33.2908684Z     [90m   | [39m                             [31m^[39m
+test	Run tests	2025-12-01T19:14:33.2918827Z     [90m 59| [39m    [34mexpect[39m(dres[33m.[39m_out[33m.[39mbody[33m.[39mapplication[33m.[39mstatus)[33m.[39m[34mtoBe[39m([32m'accepted'[39m)
+test	Run tests	2025-12-01T19:14:33.2919774Z     [90m 60| [39m
+test	Run tests	2025-12-01T19:14:33.2919902Z 
+test	Run tests	2025-12-01T19:14:33.2920175Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+test	Run tests	2025-12-01T19:14:33.2920379Z 
+test	Run tests	2025-12-01T19:14:33.2920812Z [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m25 passed[39m[22m[90m (26)[39m
+test	Run tests	2025-12-01T19:14:33.2921480Z [2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m42 passed[39m[22m[90m (43)[39m
+test	Run tests	2025-12-01T19:14:33.2921918Z [2m   Start at [22m 19:14:29
+test	Run tests	2025-12-01T19:14:33.2923139Z [2m   Duration [22m 3.29s[2m (transform 489ms, setup 1ms, collect 728ms, tests 2.15s, environment 6ms, prepare 2.66s)[22m
+test	Run tests	2025-12-01T19:14:33.2923805Z 
+test	Run tests	2025-12-01T19:14:33.3180042Z ##[error]Process completed with exit code 1.
+test	Upload test reports (optional)	﻿2025-12-01T19:14:33.3245989Z ##[group]Run actions/upload-artifact@v4
+test	Upload test reports (optional)	2025-12-01T19:14:33.3246261Z with:
+test	Upload test reports (optional)	2025-12-01T19:14:33.3246424Z   name: vitest-logs
+test	Upload test reports (optional)	2025-12-01T19:14:33.3246602Z   path: .
+test	Upload test reports (optional)	2025-12-01T19:14:33.3246766Z   if-no-files-found: warn
+test	Upload test reports (optional)	2025-12-01T19:14:33.3246973Z   compression-level: 6
+test	Upload test reports (optional)	2025-12-01T19:14:33.3247157Z   overwrite: false
+test	Upload test reports (optional)	2025-12-01T19:14:33.3247360Z   include-hidden-files: false
+test	Upload test reports (optional)	2025-12-01T19:14:33.3247565Z env:
+test	Upload test reports (optional)	2025-12-01T19:14:33.3247723Z   DATABASE_URL: file:./dev.db
+test	Upload test reports (optional)	2025-12-01T19:14:33.3247922Z ##[endgroup]
+test	Upload test reports (optional)	2025-12-01T19:14:35.4414723Z With the provided path, there will be 13848 files uploaded
+test	Upload test reports (optional)	2025-12-01T19:14:35.4419918Z Artifact name is valid!
+test	Upload test reports (optional)	2025-12-01T19:14:35.4421240Z Root directory input is valid!
+test	Upload test reports (optional)	2025-12-01T19:14:35.8107735Z Beginning upload of artifact content to blob storage
+test	Upload test reports (optional)	2025-12-01T19:14:37.8584506Z Uploaded bytes 8388608
+test	Upload test reports (optional)	2025-12-01T19:14:38.5392436Z Uploaded bytes 16777216
+test	Upload test reports (optional)	2025-12-01T19:14:38.7790397Z Uploaded bytes 25165824
+test	Upload test reports (optional)	2025-12-01T19:14:39.4841598Z Uploaded bytes 33554432
+test	Upload test reports (optional)	2025-12-01T19:14:40.0390679Z Uploaded bytes 41943040
+test	Upload test reports (optional)	2025-12-01T19:14:40.8975605Z Uploaded bytes 50331648
+test	Upload test reports (optional)	2025-12-01T19:14:41.6412870Z Uploaded bytes 58720256
+test	Upload test reports (optional)	2025-12-01T19:14:42.3924144Z Uploaded bytes 67108864
+test	Upload test reports (optional)	2025-12-01T19:14:43.1072480Z Uploaded bytes 75497472
+test	Upload test reports (optional)	2025-12-01T19:14:43.7225346Z Uploaded bytes 83886080
+test	Upload test reports (optional)	2025-12-01T19:14:44.3116232Z Uploaded bytes 92274688
+test	Upload test reports (optional)	2025-12-01T19:14:45.0656377Z Uploaded bytes 100663296
+test	Upload test reports (optional)	2025-12-01T19:14:45.6179230Z Uploaded bytes 109051904
+test	Upload test reports (optional)	2025-12-01T19:14:46.3138251Z Uploaded bytes 117440512
+test	Upload test reports (optional)	2025-12-01T19:14:48.2880509Z Uploaded bytes 125829120
+test	Upload test reports (optional)	2025-12-01T19:14:49.6366928Z Uploaded bytes 134217728
+test	Upload test reports (optional)	2025-12-01T19:14:50.5037157Z Uploaded bytes 142606336
+test	Upload test reports (optional)	2025-12-01T19:14:52.7737803Z Uploaded bytes 150994944
+test	Upload test reports (optional)	2025-12-01T19:14:53.6454943Z Uploaded bytes 159383552
+test	Upload test reports (optional)	2025-12-01T19:14:54.2151638Z Uploaded bytes 167772160
+test	Upload test reports (optional)	2025-12-01T19:14:55.3528371Z Uploaded bytes 176160768
+test	Upload test reports (optional)	2025-12-01T19:14:56.3872447Z Uploaded bytes 182454893
+test	Upload test reports (optional)	2025-12-01T19:14:56.4565728Z Finished uploading artifact content to blob storage!
+test	Upload test reports (optional)	2025-12-01T19:14:56.4570022Z SHA256 digest of uploaded artifact zip is aa652ff95b0f5b05232aa0a407e99b56e8d38d11599654c1d97be028ada29a30
+test	Upload test reports (optional)	2025-12-01T19:14:56.4571885Z Finalizing artifact upload
+test	Upload test reports (optional)	2025-12-01T19:14:56.7253407Z Artifact vitest-logs.zip successfully finalized. Artifact ID 4728745339
+test	Upload test reports (optional)	2025-12-01T19:14:56.7255268Z Artifact vitest-logs has been successfully uploaded! Final size is 182454893 bytes. Artifact ID is 4728745339
+test	Upload test reports (optional)	2025-12-01T19:14:56.7261520Z Artifact download URL: https://github.com/Tris247/cvforge-mvp/actions/runs/19834480730/artifacts/4728745339
+test	Post Checkout	﻿2025-12-01T19:14:56.7573777Z Post job cleanup.
+test	Post Checkout	2025-12-01T19:14:56.8490663Z [command]/usr/bin/git version
+test	Post Checkout	2025-12-01T19:14:56.8526122Z git version 2.51.2
+test	Post Checkout	2025-12-01T19:14:56.8570183Z Temporarily overriding HOME='/home/runner/work/_temp/9647631c-8e4e-4b67-a92d-2cc25316a6dd' before making global git config changes
+test	Post Checkout	2025-12-01T19:14:56.8571637Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Checkout	2025-12-01T19:14:56.8576470Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Post Checkout	2025-12-01T19:14:56.8612228Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Checkout	2025-12-01T19:14:56.8644371Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Checkout	2025-12-01T19:14:56.8870545Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Checkout	2025-12-01T19:14:56.8890974Z http.https://github.com/.extraheader
+test	Post Checkout	2025-12-01T19:14:56.8902964Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Checkout	2025-12-01T19:14:56.8932112Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Checkout	2025-12-01T19:14:56.9149603Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Checkout	2025-12-01T19:14:56.9179543Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	﻿2025-12-01T19:14:56.9502877Z Cleaning up orphan processes

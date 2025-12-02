@@ -86,6 +86,10 @@ export async function requireOwner(req:any, itemId:string, opts?: { sourceFile?:
     // If not found in the primary list, scan candidate marketplace files in `data/`
     // and search for the specific itemId. This handles per-test files created
     // by Vitest where multiple marketplace files may exist in CI.
+    // Tighten: if a specific source file was provided or MARKETPLACE_FILE env is set,
+    // do NOT scan other candidates to avoid cross-file mismatches.
+    const hasExplicit = (opts && opts.sourceFile) || process.env.MARKETPLACE_FILE
+    if(!hasExplicit){
     try {
       const dataDir = path.resolve(process.cwd(), 'data')
         if (fs.existsSync(dataDir)) {
@@ -110,6 +114,7 @@ export async function requireOwner(req:any, itemId:string, opts?: { sourceFile?:
           }
         }
     } catch (_) { /* ignore scan errors */ }
+    }
   }
   if(!it) {
     // return not found without noisy logging

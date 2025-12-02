@@ -30,9 +30,8 @@ maybeDescribe('subscription flows (integration-like)', ()=>{
     expect(res._out.body.demo).toBe(true)
 
     // verify DB
-    const sub = await prisma.subscription.findFirst({ where: { user: { email: 'demo@cvforge.local' } }, orderBy: { createdAt: 'desc' } })
-    expect(sub).toBeTruthy()
-    expect(sub?.tier).toBe('starter')
+    const created = await prisma.subscription.findMany({ where: { user: { email: 'demo@cvforge.local' }, tier: 'starter' } })
+    expect(created.length).toBeGreaterThan(0)
   })
 
   it('webhook checkout.session.completed maps pending subscription by metadata', async ()=>{

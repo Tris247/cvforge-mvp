@@ -1,0 +1,212 @@
+build	Set up job	﻿2025-12-01T18:43:59.4726205Z Current runner version: '2.329.0'
+build	Set up job	2025-12-01T18:43:59.4749221Z ##[group]Runner Image Provisioner
+build	Set up job	2025-12-01T18:43:59.4750071Z Hosted Compute Agent
+build	Set up job	2025-12-01T18:43:59.4750646Z Version: 20251016.436
+build	Set up job	2025-12-01T18:43:59.4751277Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+build	Set up job	2025-12-01T18:43:59.4751927Z Build Date: 2025-10-15T20:44:12Z
+build	Set up job	2025-12-01T18:43:59.4752562Z ##[endgroup]
+build	Set up job	2025-12-01T18:43:59.4753084Z ##[group]Operating System
+build	Set up job	2025-12-01T18:43:59.4753695Z Ubuntu
+build	Set up job	2025-12-01T18:43:59.4754293Z 24.04.3
+build	Set up job	2025-12-01T18:43:59.4754853Z LTS
+build	Set up job	2025-12-01T18:43:59.4755299Z ##[endgroup]
+build	Set up job	2025-12-01T18:43:59.4755789Z ##[group]Runner Image
+build	Set up job	2025-12-01T18:43:59.4756441Z Image: ubuntu-24.04
+build	Set up job	2025-12-01T18:43:59.4756934Z Version: 20251112.124.1
+build	Set up job	2025-12-01T18:43:59.4757937Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2025-12-01T18:43:59.4759328Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+build	Set up job	2025-12-01T18:43:59.4760415Z ##[endgroup]
+build	Set up job	2025-12-01T18:43:59.4761575Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2025-12-01T18:43:59.4763555Z Contents: read
+build	Set up job	2025-12-01T18:43:59.4764353Z Metadata: read
+build	Set up job	2025-12-01T18:43:59.4764825Z Packages: read
+build	Set up job	2025-12-01T18:43:59.4765335Z ##[endgroup]
+build	Set up job	2025-12-01T18:43:59.4767291Z Secret source: Actions
+build	Set up job	2025-12-01T18:43:59.4768021Z Prepare workflow directory
+build	Set up job	2025-12-01T18:43:59.5175941Z Prepare all required actions
+build	Set up job	2025-12-01T18:43:59.5234777Z Getting action download info
+build	Set up job	2025-12-01T18:43:59.9776147Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	Set up job	2025-12-01T18:44:00.8155959Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	Set up job	2025-12-01T18:44:00.9066238Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+build	Set up job	2025-12-01T18:44:01.1005787Z Complete job name: build
+build	Run actions/checkout@v4	﻿2025-12-01T18:44:01.1689865Z ##[group]Run actions/checkout@v4
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1690736Z with:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1691175Z   repository: Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1691849Z   token: ***
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1692234Z   ssh-strict: true
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1692629Z   ssh-user: git
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1693029Z   persist-credentials: true
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1693479Z   clean: true
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1694058Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1694559Z   fetch-depth: 1
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1694944Z   fetch-tags: false
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1695364Z   show-progress: true
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1695782Z   lfs: false
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1696165Z   submodules: false
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1696585Z   set-safe-directory: true
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1697263Z env:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1697664Z   DATABASE_URL: file:./dev.db
+build	Run actions/checkout@v4	2025-12-01T18:44:01.1698136Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2782904Z Syncing repository: Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2785310Z ##[group]Getting Git version info
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2786537Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2788450Z [command]/usr/bin/git version
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2873052Z git version 2.51.2
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2899436Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2915063Z Temporarily overriding HOME='/home/runner/work/_temp/217bb761-8c7f-49c0-9cdb-57ce1bd4ce90' before making global git config changes
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2917492Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2928446Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2964939Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2968741Z ##[group]Initializing the repository
+build	Run actions/checkout@v4	2025-12-01T18:44:01.2973368Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3097402Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3098860Z hint: is subject to change. To configure the initial branch name to use in all
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3100483Z hint: of your new repositories, which will suppress this warning, call:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3101310Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3102198Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3103046Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3103955Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3105835Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3107302Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3108089Z hint: 	git branch -m <name>
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3108985Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3110191Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3112233Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3116829Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3150372Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3151605Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3155401Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3183920Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3185243Z ##[group]Setting up auth
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3191321Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3221546Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3582495Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3610090Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3827433Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Run actions/checkout@v4	2025-12-01T18:44:01.3858295Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Run actions/checkout@v4	2025-12-01T18:44:01.4084858Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v4	2025-12-01T18:44:01.4117835Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.4119135Z ##[group]Fetching the repository
+build	Run actions/checkout@v4	2025-12-01T18:44:01.4127841Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +87750572b06dca6f6972f16f11395e1c34f662ac:refs/remotes/origin/feat/postgres-ci-migration
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8348534Z From https://github.com/Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8350235Z  * [new ref]         87750572b06dca6f6972f16f11395e1c34f662ac -> origin/feat/postgres-ci-migration
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8385747Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8386811Z ##[group]Determining the checkout info
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8388241Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8393212Z [command]/usr/bin/git sparse-checkout disable
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8435631Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8461499Z ##[group]Checking out the ref
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8466554Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8603063Z Switched to a new branch 'feat/postgres-ci-migration'
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8606496Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8613094Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8644604Z [command]/usr/bin/git log -1 --format=%H
+build	Run actions/checkout@v4	2025-12-01T18:44:01.8665256Z 87750572b06dca6f6972f16f11395e1c34f662ac
+build	Run actions/setup-node@v4	﻿2025-12-01T18:44:01.8959590Z ##[group]Run actions/setup-node@v4
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8960764Z with:
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8961593Z   node-version: 20
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8962488Z   always-auth: false
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8963423Z   check-latest: false
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8964836Z   token: ***
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8965665Z env:
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8966754Z   DATABASE_URL: file:./dev.db
+build	Run actions/setup-node@v4	2025-12-01T18:44:01.8967788Z ##[endgroup]
+build	Run actions/setup-node@v4	2025-12-01T18:44:02.0722166Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+build	Run actions/setup-node@v4	2025-12-01T18:44:02.0728792Z ##[group]Environment details
+build	Run actions/setup-node@v4	2025-12-01T18:44:04.4418372Z node: v20.19.5
+build	Run actions/setup-node@v4	2025-12-01T18:44:04.4418967Z npm: 10.8.2
+build	Run actions/setup-node@v4	2025-12-01T18:44:04.4419393Z yarn: 1.22.22
+build	Run actions/setup-node@v4	2025-12-01T18:44:04.4422237Z ##[endgroup]
+build	Run actions/cache@v4	﻿2025-12-01T18:44:04.5319065Z ##[group]Run actions/cache@v4
+build	Run actions/cache@v4	2025-12-01T18:44:04.5319401Z with:
+build	Run actions/cache@v4	2025-12-01T18:44:04.5319618Z   path: ~/.npm
+build	Run actions/cache@v4	2025-12-01T18:44:04.5320001Z   key: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	Run actions/cache@v4	2025-12-01T18:44:04.5320449Z   enableCrossOsArchive: false
+build	Run actions/cache@v4	2025-12-01T18:44:04.5320716Z   fail-on-cache-miss: false
+build	Run actions/cache@v4	2025-12-01T18:44:04.5320967Z   lookup-only: false
+build	Run actions/cache@v4	2025-12-01T18:44:04.5321193Z   save-always: false
+build	Run actions/cache@v4	2025-12-01T18:44:04.5321411Z env:
+build	Run actions/cache@v4	2025-12-01T18:44:04.5321614Z   DATABASE_URL: file:./dev.db
+build	Run actions/cache@v4	2025-12-01T18:44:04.5321867Z ##[endgroup]
+build	Run actions/cache@v4	2025-12-01T18:44:04.9615272Z Cache not found for input keys: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	Install dependencies	﻿2025-12-01T18:44:04.9688226Z ##[group]Run npm ci
+build	Install dependencies	2025-12-01T18:44:04.9688491Z [36;1mnpm ci[0m
+build	Install dependencies	2025-12-01T18:44:04.9793693Z shell: /usr/bin/bash -e {0}
+build	Install dependencies	2025-12-01T18:44:04.9794187Z env:
+build	Install dependencies	2025-12-01T18:44:04.9794362Z   DATABASE_URL: file:./dev.db
+build	Install dependencies	2025-12-01T18:44:04.9794590Z ##[endgroup]
+build	Install dependencies	2025-12-01T18:44:08.2541861Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build	Install dependencies	2025-12-01T18:44:08.3071535Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+build	Install dependencies	2025-12-01T18:44:08.5420539Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build	Install dependencies	2025-12-01T18:44:08.7639368Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+build	Install dependencies	2025-12-01T18:44:08.9121221Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+build	Install dependencies	2025-12-01T18:44:08.9147725Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+build	Install dependencies	2025-12-01T18:44:09.0080275Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+build	Install dependencies	2025-12-01T18:44:09.0169775Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+build	Install dependencies	2025-12-01T18:44:15.9059955Z 
+build	Install dependencies	2025-12-01T18:44:15.9060739Z added 310 packages, and audited 311 packages in 11s
+build	Install dependencies	2025-12-01T18:44:15.9061275Z 
+build	Install dependencies	2025-12-01T18:44:15.9061543Z 52 packages are looking for funding
+build	Install dependencies	2025-12-01T18:44:15.9061934Z   run `npm fund` for details
+build	Install dependencies	2025-12-01T18:44:15.9304408Z 
+build	Install dependencies	2025-12-01T18:44:15.9304929Z 4 moderate severity vulnerabilities
+build	Install dependencies	2025-12-01T18:44:15.9305273Z 
+build	Install dependencies	2025-12-01T18:44:15.9305686Z To address all issues (including breaking changes), run:
+build	Install dependencies	2025-12-01T18:44:15.9307194Z   npm audit fix --force
+build	Install dependencies	2025-12-01T18:44:15.9307430Z 
+build	Install dependencies	2025-12-01T18:44:15.9307605Z Run `npm audit` for details.
+build	Ensure DB + Prisma client	﻿2025-12-01T18:44:15.9615363Z ##[group]Run mkdir -p data
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9615670Z [36;1mmkdir -p data[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9615875Z [36;1mtouch dev.db[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9616179Z [36;1m# Push the Prisma schema to the local sqlite dev DB (avoid applying[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9616598Z [36;1m# Postgres-specific migrations during CI unit tests)[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9616958Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9617307Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9617600Z [36;1mnode prisma/seed.js || true[0m
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9650482Z shell: /usr/bin/bash -e {0}
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9650705Z env:
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9650871Z   DATABASE_URL: file:./dev.db
+build	Ensure DB + Prisma client	2025-12-01T18:44:15.9651084Z ##[endgroup]
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7300051Z Prisma schema loaded from prisma/schema.prisma
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7341492Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7698549Z Error: P1012
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7700266Z 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7701331Z error: Field "keywords" in model "AutoApplyRule" can't be a list. The current connector does not support lists of primitive types.
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7701958Z   -->  prisma/schema.prisma:95
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7702221Z    | 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7702838Z 94 |   user      User     @relation(fields: [userId], references: [id])
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7703244Z 95 |   keywords  String[] @default([])
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7703534Z 96 |   locations String[] @default([])
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7703974Z    | 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7704882Z error: Field "locations" in model "AutoApplyRule" can't be a list. The current connector does not support lists of primitive types.
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7705850Z   -->  prisma/schema.prisma:96
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7706225Z    | 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7706645Z 95 |   keywords  String[] @default([])
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7707243Z 96 |   locations String[] @default([])
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7707683Z 97 |   salaryMin Int?
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7707992Z    | 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7708889Z error: Field "jobTypes" in model "AutoApplyRule" can't be a list. The current connector does not support lists of primitive types.
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7709751Z   -->  prisma/schema.prisma:98
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7710088Z    | 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7710584Z 97 |   salaryMin Int?
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7711019Z 98 |   jobTypes  String[] @default([])
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7711493Z 99 |   active    Boolean  @default(true)
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7711835Z    | 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7711978Z 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7711990Z 
+build	Ensure DB + Prisma client	2025-12-01T18:44:16.7897313Z ##[error]Process completed with exit code 1.
+build	Post Run actions/checkout@v4	﻿2025-12-01T18:44:16.8015620Z Post job cleanup.
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.8954942Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.8990037Z git version 2.51.2
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9032057Z Temporarily overriding HOME='/home/runner/work/_temp/2b7797ae-e093-48a4-822d-5f54d8e6a4f5' before making global git config changes
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9033252Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9037156Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9075222Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9109338Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9334822Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9354355Z http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9367265Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9397816Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9614381Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Run actions/checkout@v4	2025-12-01T18:44:16.9643615Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2025-12-01T18:44:16.9961690Z Cleaning up orphan processes

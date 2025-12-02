@@ -11,7 +11,6 @@ describe('legacy analytics conversion', () => {
     fs.mkdirSync(dataDir, { recursive: true })
   })
   afterEach(() => {
-    try{ process.chdir(path.resolve(process.cwd())) }catch(e){}
     try{ if(fs.existsSync(tmp)) fs.rmSync(tmp, { recursive: true }) }catch(e){}
     // clear module cache
     try{ delete require.cache[require.resolve('../lib/analytics')] }catch(e){}
@@ -21,15 +20,10 @@ describe('legacy analytics conversion', () => {
     const legacyFile = path.join(dataDir, 'analytics.json')
     const arr = [{ id: '1', name: 'a', payload: {} }, { id: '2', name: 'b', payload: {} }]
     fs.writeFileSync(legacyFile, JSON.stringify(arr, null, 2), 'utf8')
-    // run the lib in-process with cwd set to tmp so the conversion runs there
-    const prevCwd = process.cwd()
-    process.chdir(tmp)
-    try {
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('../lib/analytics')
-    } finally {
-      process.chdir(prevCwd)
-    }
+    // run the conversion via child process with explicit cwd
+    // Windows-friendly quoting
+    const cmd = 'node -e "require(\'../lib/analytics\')"'
+    execSync(cmd, { cwd: tmp, stdio: 'inherit' })
     // ensure converted file exists
     const converted = path.join(dataDir, 'analytics.jsonl')
     const backup = legacyFile + '.converted.bak'

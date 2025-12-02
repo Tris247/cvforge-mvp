@@ -1,0 +1,179 @@
+Ingest analytics JSONL to DB	UNKNOWN STEP	﻿2025-12-02T12:42:10.0920166Z Current runner version: '2.329.0'
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0943563Z ##[group]Runner Image Provisioner
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0944364Z Hosted Compute Agent
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0944945Z Version: 20251016.436
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0945561Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0946216Z Build Date: 2025-10-15T20:44:12Z
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0946852Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0947434Z ##[group]Operating System
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0947961Z Ubuntu
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0948478Z 24.04.3
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0948924Z LTS
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0949395Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0949852Z ##[group]Runner Image
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0950500Z Image: ubuntu-24.04
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0950982Z Version: 20251112.124.1
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0951986Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0953956Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0954992Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0956085Z ##[group]GITHUB_TOKEN Permissions
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0957831Z Contents: read
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0958752Z Metadata: read
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0959518Z Packages: read
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0960241Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0963335Z Secret source: Actions
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.0964037Z Prepare workflow directory
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.1521281Z Prepare all required actions
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.1557698Z Getting action download info
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:10.5243746Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.3264439Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.4823790Z Complete job name: Ingest analytics JSONL to DB
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5533793Z ##[group]Run actions/checkout@v4
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5534711Z with:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5535166Z   repository: Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5535938Z   token: ***
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5536411Z   ssh-strict: true
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5536872Z   ssh-user: git
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5537355Z   persist-credentials: true
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5537891Z   clean: true
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5538370Z   sparse-checkout-cone-mode: true
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5538946Z   fetch-depth: 1
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5539403Z   fetch-tags: false
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5539860Z   show-progress: true
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5540348Z   lfs: false
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5540762Z   submodules: false
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5541226Z   set-safe-directory: true
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5541935Z env:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5542674Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5543348Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5543931Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.5544385Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.6897037Z Syncing repository: Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.6898894Z ##[group]Getting Git version info
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.6899956Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.6901178Z [command]/usr/bin/git version
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.6980494Z git version 2.51.2
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7007102Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7020766Z Temporarily overriding HOME='/home/runner/work/_temp/81fd827b-4fd8-4594-be54-36ed25df5d30' before making global git config changes
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7023454Z Adding repository directory to the temporary git global config as a safe directory
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7032876Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7068916Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7072509Z ##[group]Initializing the repository
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7076757Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7193569Z hint: Using 'master' as the name for the initial branch. This default branch name
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7195313Z hint: is subject to change. To configure the initial branch name to use in all
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7197240Z hint: of your new repositories, which will suppress this warning, call:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7198353Z hint:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7199388Z hint: 	git config --global init.defaultBranch <name>
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7200721Z hint:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7201951Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7204415Z hint: 'development'. The just-created branch can be renamed via this command:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7206164Z hint:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7206987Z hint: 	git branch -m <name>
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7207949Z hint:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7209295Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7211691Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7215211Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7246702Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7248154Z ##[group]Disabling automatic garbage collection
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7251710Z [command]/usr/bin/git config --local gc.auto 0
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7279888Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7281318Z ##[group]Setting up auth
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7287644Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7318964Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7673290Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7706558Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7927139Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.7958468Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.8187072Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.8219759Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.8229175Z ##[group]Fetching the repository
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:11.8232682Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +166d5b99f6fc694fde9912e554cba5d6d72580bd:refs/remotes/origin/feat/postgres-ci-migration
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3163483Z From https://github.com/Tris247/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3165939Z  * [new ref]         166d5b99f6fc694fde9912e554cba5d6d72580bd -> origin/feat/postgres-ci-migration
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3197633Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3199056Z ##[group]Determining the checkout info
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3200596Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3204711Z [command]/usr/bin/git sparse-checkout disable
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3244678Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3271811Z ##[group]Checking out the ref
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3276659Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3419293Z Switched to a new branch 'feat/postgres-ci-migration'
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3422647Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3428692Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3462350Z [command]/usr/bin/git log -1 --format=%H
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3483892Z 166d5b99f6fc694fde9912e554cba5d6d72580bd
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3779528Z ##[group]Run actions/setup-node@v4
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3780663Z with:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3781488Z   node-version: 18
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3782626Z   always-auth: false
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3783561Z   check-latest: false
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3784774Z   token: ***
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3785823Z env:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3786694Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3787953Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3789084Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.3789937Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:12.5848454Z Attempting to download 18...
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:13.3109309Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:13.9776306Z Extracting ...
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:13.9910826Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/207ae1ed-d43a-4ac7-8d5c-710e57d7c090 -f /home/runner/work/_temp/c0c933b5-c4aa-4ae1-ae45-2dee9864f40c
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:14.9605059Z Adding to the cache ...
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.6669697Z ##[group]Environment details
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9131764Z node: v18.20.8
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9132633Z npm: 10.8.2
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9132981Z yarn: 1.22.22
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9133684Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9294145Z ##[group]Run npm ci
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9294434Z [36;1mnpm ci[0m
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9334292Z shell: /usr/bin/bash -e {0}
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9334548Z env:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9334754Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9335037Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9335304Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:16.9335517Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:18.7335502Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.0107899Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.3296800Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.6367781Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.7982818Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.8242847Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.8470167Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:19.9412585Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8360398Z 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8362365Z added 310 packages, and audited 311 packages in 12s
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8364356Z 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8364772Z 52 packages are looking for funding
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8365506Z   run `npm fund` for details
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8554022Z 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8556128Z 4 moderate severity vulnerabilities
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8556546Z 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8557056Z To address all issues (including breaking changes), run:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8803392Z   npm audit fix --force
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8803731Z 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8803917Z Run `npm audit` for details.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8832729Z ##[group]Run node ./scripts/ingest-analytics-worker.js
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8833167Z [36;1mnode ./scripts/ingest-analytics-worker.js[0m
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8865720Z shell: /usr/bin/bash -e {0}
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8865946Z env:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8866145Z   NODE_OPTIONS: --max-old-space-size=512
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8866421Z   ANALYTICS_FILE: data/analytics.jsonl
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8866668Z   DATABASE_URL: 
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.8866845Z ##[endgroup]
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.9262560Z DATABASE_URL not set — ingestion worker disabled
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:28.9440752Z Post job cleanup.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.1407747Z Post job cleanup.
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2631096Z [command]/usr/bin/git version
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2668590Z git version 2.51.2
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2713451Z Temporarily overriding HOME='/home/runner/work/_temp/e1db0102-4b1f-4162-a4b0-253704c3f513' before making global git config changes
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2714897Z Adding repository directory to the temporary git global config as a safe directory
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2720205Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2756810Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.2790414Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3047208Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3069319Z http.https://github.com/.extraheader
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3087331Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3121264Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3361448Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3393650Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Ingest analytics JSONL to DB	UNKNOWN STEP	2025-12-02T12:42:29.3718595Z Cleaning up orphan processes

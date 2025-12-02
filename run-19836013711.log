@@ -1,0 +1,342 @@
+build	UNKNOWN STEP	﻿2025-12-01T20:10:25.3495854Z Current runner version: '2.329.0'
+build	UNKNOWN STEP	2025-12-01T20:10:25.3520857Z ##[group]Runner Image Provisioner
+build	UNKNOWN STEP	2025-12-01T20:10:25.3521646Z Hosted Compute Agent
+build	UNKNOWN STEP	2025-12-01T20:10:25.3522170Z Version: 20251016.436
+build	UNKNOWN STEP	2025-12-01T20:10:25.3523167Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+build	UNKNOWN STEP	2025-12-01T20:10:25.3523940Z Build Date: 2025-10-15T20:44:12Z
+build	UNKNOWN STEP	2025-12-01T20:10:25.3524495Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:25.3525140Z ##[group]Operating System
+build	UNKNOWN STEP	2025-12-01T20:10:25.3525665Z Ubuntu
+build	UNKNOWN STEP	2025-12-01T20:10:25.3526140Z 24.04.3
+build	UNKNOWN STEP	2025-12-01T20:10:25.3526602Z LTS
+build	UNKNOWN STEP	2025-12-01T20:10:25.3527080Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:25.3527534Z ##[group]Runner Image
+build	UNKNOWN STEP	2025-12-01T20:10:25.3528138Z Image: ubuntu-24.04
+build	UNKNOWN STEP	2025-12-01T20:10:25.3528655Z Version: 20251112.124.1
+build	UNKNOWN STEP	2025-12-01T20:10:25.3529622Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+build	UNKNOWN STEP	2025-12-01T20:10:25.3531219Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+build	UNKNOWN STEP	2025-12-01T20:10:25.3532147Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:25.3533457Z ##[group]GITHUB_TOKEN Permissions
+build	UNKNOWN STEP	2025-12-01T20:10:25.3535583Z Contents: read
+build	UNKNOWN STEP	2025-12-01T20:10:25.3536072Z Metadata: read
+build	UNKNOWN STEP	2025-12-01T20:10:25.3536727Z Packages: read
+build	UNKNOWN STEP	2025-12-01T20:10:25.3537182Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:25.3539188Z Secret source: Actions
+build	UNKNOWN STEP	2025-12-01T20:10:25.3540203Z Prepare workflow directory
+build	UNKNOWN STEP	2025-12-01T20:10:25.3925221Z Prepare all required actions
+build	UNKNOWN STEP	2025-12-01T20:10:25.3963075Z Getting action download info
+build	UNKNOWN STEP	2025-12-01T20:10:25.8373675Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	UNKNOWN STEP	2025-12-01T20:10:26.1354371Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	UNKNOWN STEP	2025-12-01T20:10:26.2732315Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+build	UNKNOWN STEP	2025-12-01T20:10:26.4557653Z Complete job name: build
+build	UNKNOWN STEP	2025-12-01T20:10:26.5263495Z ##[group]Run actions/checkout@v4
+build	UNKNOWN STEP	2025-12-01T20:10:26.5264422Z with:
+build	UNKNOWN STEP	2025-12-01T20:10:26.5264941Z   repository: Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:26.5265623Z   token: ***
+build	UNKNOWN STEP	2025-12-01T20:10:26.5266023Z   ssh-strict: true
+build	UNKNOWN STEP	2025-12-01T20:10:26.5266439Z   ssh-user: git
+build	UNKNOWN STEP	2025-12-01T20:10:26.5266873Z   persist-credentials: true
+build	UNKNOWN STEP	2025-12-01T20:10:26.5267346Z   clean: true
+build	UNKNOWN STEP	2025-12-01T20:10:26.5267780Z   sparse-checkout-cone-mode: true
+build	UNKNOWN STEP	2025-12-01T20:10:26.5268288Z   fetch-depth: 1
+build	UNKNOWN STEP	2025-12-01T20:10:26.5268706Z   fetch-tags: false
+build	UNKNOWN STEP	2025-12-01T20:10:26.5269148Z   show-progress: true
+build	UNKNOWN STEP	2025-12-01T20:10:26.5269574Z   lfs: false
+build	UNKNOWN STEP	2025-12-01T20:10:26.5269978Z   submodules: false
+build	UNKNOWN STEP	2025-12-01T20:10:26.5270412Z   set-safe-directory: true
+build	UNKNOWN STEP	2025-12-01T20:10:26.5271081Z env:
+build	UNKNOWN STEP	2025-12-01T20:10:26.5271502Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T20:10:26.5272012Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.6347871Z Syncing repository: Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:26.6349764Z ##[group]Getting Git version info
+build	UNKNOWN STEP	2025-12-01T20:10:26.6350620Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-01T20:10:26.6351661Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-12-01T20:10:26.6419663Z git version 2.51.2
+build	UNKNOWN STEP	2025-12-01T20:10:26.6445933Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.6466739Z Temporarily overriding HOME='/home/runner/work/_temp/eb213e64-95b4-4a44-a10e-f29c66ee72dd' before making global git config changes
+build	UNKNOWN STEP	2025-12-01T20:10:26.6469011Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-12-01T20:10:26.6471216Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:26.6506740Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-01T20:10:26.6510199Z ##[group]Initializing the repository
+build	UNKNOWN STEP	2025-12-01T20:10:26.6514099Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:26.6682135Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	UNKNOWN STEP	2025-12-01T20:10:26.6683631Z hint: is subject to change. To configure the initial branch name to use in all
+build	UNKNOWN STEP	2025-12-01T20:10:26.6685004Z hint: of your new repositories, which will suppress this warning, call:
+build	UNKNOWN STEP	2025-12-01T20:10:26.6685820Z hint:
+build	UNKNOWN STEP	2025-12-01T20:10:26.6686384Z hint: 	git config --global init.defaultBranch <name>
+build	UNKNOWN STEP	2025-12-01T20:10:26.6687072Z hint:
+build	UNKNOWN STEP	2025-12-01T20:10:26.6688036Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	UNKNOWN STEP	2025-12-01T20:10:26.6689823Z hint: 'development'. The just-created branch can be renamed via this command:
+build	UNKNOWN STEP	2025-12-01T20:10:26.6691193Z hint:
+build	UNKNOWN STEP	2025-12-01T20:10:26.6691663Z hint: 	git branch -m <name>
+build	UNKNOWN STEP	2025-12-01T20:10:26.6692198Z hint:
+build	UNKNOWN STEP	2025-12-01T20:10:26.6693229Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	UNKNOWN STEP	2025-12-01T20:10:26.6694599Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+build	UNKNOWN STEP	2025-12-01T20:10:26.6699113Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:26.6732551Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.6733565Z ##[group]Disabling automatic garbage collection
+build	UNKNOWN STEP	2025-12-01T20:10:26.6736879Z [command]/usr/bin/git config --local gc.auto 0
+build	UNKNOWN STEP	2025-12-01T20:10:26.6765053Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.6765768Z ##[group]Setting up auth
+build	UNKNOWN STEP	2025-12-01T20:10:26.6771754Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-12-01T20:10:26.6801242Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-12-01T20:10:26.7153129Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-12-01T20:10:26.7181790Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-12-01T20:10:26.7402933Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2025-12-01T20:10:26.7436363Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2025-12-01T20:10:26.7655223Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	UNKNOWN STEP	2025-12-01T20:10:26.7688704Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.7689485Z ##[group]Fetching the repository
+build	UNKNOWN STEP	2025-12-01T20:10:26.7697393Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1032d3caf9b98ce18d8305947ad24d0db281d937:refs/remotes/origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-01T20:10:26.9757714Z From https://github.com/Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:26.9789028Z  * [new ref]         1032d3caf9b98ce18d8305947ad24d0db281d937 -> origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-01T20:10:26.9791732Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.9793015Z ##[group]Determining the checkout info
+build	UNKNOWN STEP	2025-12-01T20:10:26.9794022Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:26.9797140Z [command]/usr/bin/git sparse-checkout disable
+build	UNKNOWN STEP	2025-12-01T20:10:26.9836524Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	UNKNOWN STEP	2025-12-01T20:10:26.9860371Z ##[group]Checking out the ref
+build	UNKNOWN STEP	2025-12-01T20:10:26.9864512Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-01T20:10:27.0001449Z Switched to a new branch 'feat/postgres-ci-migration'
+build	UNKNOWN STEP	2025-12-01T20:10:27.0004756Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+build	UNKNOWN STEP	2025-12-01T20:10:27.0010664Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:27.0043755Z [command]/usr/bin/git log -1 --format=%H
+build	UNKNOWN STEP	2025-12-01T20:10:27.0064974Z 1032d3caf9b98ce18d8305947ad24d0db281d937
+build	UNKNOWN STEP	2025-12-01T20:10:27.0303708Z ##[group]Run actions/setup-node@v4
+build	UNKNOWN STEP	2025-12-01T20:10:27.0304361Z with:
+build	UNKNOWN STEP	2025-12-01T20:10:27.0304781Z   node-version: 20
+build	UNKNOWN STEP	2025-12-01T20:10:27.0305245Z   always-auth: false
+build	UNKNOWN STEP	2025-12-01T20:10:27.0305736Z   check-latest: false
+build	UNKNOWN STEP	2025-12-01T20:10:27.0306376Z   token: ***
+build	UNKNOWN STEP	2025-12-01T20:10:27.0306802Z env:
+build	UNKNOWN STEP	2025-12-01T20:10:27.0307425Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T20:10:27.0307964Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:27.2056470Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+build	UNKNOWN STEP	2025-12-01T20:10:27.2062665Z ##[group]Environment details
+build	UNKNOWN STEP	2025-12-01T20:10:29.0671849Z node: v20.19.5
+build	UNKNOWN STEP	2025-12-01T20:10:29.0673321Z npm: 10.8.2
+build	UNKNOWN STEP	2025-12-01T20:10:29.0673676Z yarn: 1.22.22
+build	UNKNOWN STEP	2025-12-01T20:10:29.0675725Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:29.1599429Z ##[group]Run actions/cache@v4
+build	UNKNOWN STEP	2025-12-01T20:10:29.1599742Z with:
+build	UNKNOWN STEP	2025-12-01T20:10:29.1599963Z   path: ~/.npm
+build	UNKNOWN STEP	2025-12-01T20:10:29.1600355Z   key: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	UNKNOWN STEP	2025-12-01T20:10:29.1600803Z   enableCrossOsArchive: false
+build	UNKNOWN STEP	2025-12-01T20:10:29.1601081Z   fail-on-cache-miss: false
+build	UNKNOWN STEP	2025-12-01T20:10:29.1601342Z   lookup-only: false
+build	UNKNOWN STEP	2025-12-01T20:10:29.1601571Z   save-always: false
+build	UNKNOWN STEP	2025-12-01T20:10:29.1601798Z env:
+build	UNKNOWN STEP	2025-12-01T20:10:29.1602010Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T20:10:29.1602275Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:29.4084027Z Cache hit for: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	UNKNOWN STEP	2025-12-01T20:10:30.1642356Z Received 148708729 of 148708729 (100.0%), 195.9 MBs/sec
+build	UNKNOWN STEP	2025-12-01T20:10:30.1643571Z Cache Size: ~142 MB (148708729 B)
+build	UNKNOWN STEP	2025-12-01T20:10:30.1674758Z [command]/usr/bin/tar -xf /home/runner/work/_temp/ccccb786-dc2d-4245-8e47-e196d9296117/cache.tzst -P -C /home/runner/work/cvforge-mvp/cvforge-mvp --use-compress-program unzstd
+build	UNKNOWN STEP	2025-12-01T20:10:30.4491502Z Cache restored successfully
+build	UNKNOWN STEP	2025-12-01T20:10:30.4854322Z Cache restored from key: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	UNKNOWN STEP	2025-12-01T20:10:30.5047366Z ##[group]Run npm ci
+build	UNKNOWN STEP	2025-12-01T20:10:30.5047706Z [36;1mnpm ci[0m
+build	UNKNOWN STEP	2025-12-01T20:10:30.5092166Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-01T20:10:30.5092437Z env:
+build	UNKNOWN STEP	2025-12-01T20:10:30.5092639Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T20:10:30.5093099Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:34.3811098Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build	UNKNOWN STEP	2025-12-01T20:10:34.3903947Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+build	UNKNOWN STEP	2025-12-01T20:10:34.4181815Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-01T20:10:34.4487583Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build	UNKNOWN STEP	2025-12-01T20:10:34.4791071Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-01T20:10:34.4865948Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+build	UNKNOWN STEP	2025-12-01T20:10:34.5811760Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-01T20:10:34.6621049Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+build	UNKNOWN STEP	2025-12-01T20:10:39.1115432Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.1116259Z added 310 packages, and audited 311 packages in 9s
+build	UNKNOWN STEP	2025-12-01T20:10:39.1116754Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.1117013Z 52 packages are looking for funding
+build	UNKNOWN STEP	2025-12-01T20:10:39.1117478Z   run `npm fund` for details
+build	UNKNOWN STEP	2025-12-01T20:10:39.1327221Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.1328023Z 4 moderate severity vulnerabilities
+build	UNKNOWN STEP	2025-12-01T20:10:39.1328465Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.1328957Z To address all issues (including breaking changes), run:
+build	UNKNOWN STEP	2025-12-01T20:10:39.1329631Z   npm audit fix --force
+build	UNKNOWN STEP	2025-12-01T20:10:39.1329932Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.1330290Z Run `npm audit` for details.
+build	UNKNOWN STEP	2025-12-01T20:10:39.1864665Z ##[group]Run mkdir -p data
+build	UNKNOWN STEP	2025-12-01T20:10:39.1864996Z [36;1mmkdir -p data[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1865222Z [36;1mtouch dev.db[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1865560Z [36;1m# Push the Prisma schema to the local sqlite dev DB (avoid applying[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1865990Z [36;1m# Postgres-specific migrations during CI unit tests)[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1866378Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1866998Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1867341Z [36;1mnode prisma/seed.js || true[0m
+build	UNKNOWN STEP	2025-12-01T20:10:39.1900052Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-01T20:10:39.1900287Z env:
+build	UNKNOWN STEP	2025-12-01T20:10:39.1900492Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T20:10:39.1900736Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:39.9043229Z Prisma schema loaded from prisma/schema.prisma
+build	UNKNOWN STEP	2025-12-01T20:10:39.9083613Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+build	UNKNOWN STEP	2025-12-01T20:10:39.9407924Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.9408877Z The database is already in sync with the Prisma schema.
+build	UNKNOWN STEP	2025-12-01T20:10:39.9409322Z 
+build	UNKNOWN STEP	2025-12-01T20:10:39.9419237Z Running generate... (Use --skip-generate to skip the generators)
+build	UNKNOWN STEP	2025-12-01T20:10:40.1706487Z [2K[1A[2K[GRunning generate... - Prisma Client
+build	UNKNOWN STEP	2025-12-01T20:10:40.3099450Z [2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 137ms
+build	UNKNOWN STEP	2025-12-01T20:10:40.3102253Z 
+build	UNKNOWN STEP	2025-12-01T20:10:41.1906229Z Prisma schema loaded from prisma/schema.prisma
+build	UNKNOWN STEP	2025-12-01T20:10:41.5693196Z 
+build	UNKNOWN STEP	2025-12-01T20:10:41.5694613Z ✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 118ms
+build	UNKNOWN STEP	2025-12-01T20:10:41.5695185Z 
+build	UNKNOWN STEP	2025-12-01T20:10:41.5695866Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+build	UNKNOWN STEP	2025-12-01T20:10:41.5696384Z 
+build	UNKNOWN STEP	2025-12-01T20:10:41.5697403Z Help us improve the Prisma ORM for everyone. Share your feedback in a short 2-min survey: https://pris.ly/orm/survey/release-5-22
+build	UNKNOWN STEP	2025-12-01T20:10:41.5698140Z 
+build	UNKNOWN STEP	2025-12-01T20:10:41.6024610Z ┌─────────────────────────────────────────────────────────┐
+build	UNKNOWN STEP	2025-12-01T20:10:41.6025337Z │  Update available 5.22.0 -> 7.0.1                       │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6025794Z │                                                         │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6026256Z │  This is a major update - please follow the guide at    │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6026779Z │  https://pris.ly/d/major-version-upgrade                │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6027225Z │                                                         │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6027658Z │  Run the following to update                            │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6028097Z │    npm i --save-dev prisma@latest                       │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6028530Z │    npm i @prisma/client@latest                          │
+build	UNKNOWN STEP	2025-12-01T20:10:41.6028963Z └─────────────────────────────────────────────────────────┘
+build	UNKNOWN STEP	2025-12-01T20:10:41.8193035Z Seeding demo data...
+build	UNKNOWN STEP	2025-12-01T20:10:41.8823729Z skipping invoice seed (model may be absent) Cannot read properties of undefined (reading 'create')
+build	UNKNOWN STEP	2025-12-01T20:10:41.8825187Z skipping stripeEvent seed (model may be absent) Cannot read properties of undefined (reading 'create')
+build	UNKNOWN STEP	2025-12-01T20:10:41.8826807Z skipping marketplace seed (models may be absent) Cannot read properties of undefined (reading 'create')
+build	UNKNOWN STEP	2025-12-01T20:10:41.8827665Z Seeding finished
+build	UNKNOWN STEP	2025-12-01T20:10:41.8958576Z ##[group]Run npm run test:ci
+build	UNKNOWN STEP	2025-12-01T20:10:41.8958868Z [36;1mnpm run test:ci[0m
+build	UNKNOWN STEP	2025-12-01T20:10:41.8991690Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-01T20:10:41.8991953Z env:
+build	UNKNOWN STEP	2025-12-01T20:10:41.8992143Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T20:10:41.8992370Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T20:10:42.0073918Z 
+build	UNKNOWN STEP	2025-12-01T20:10:42.0074617Z > cvforge-mvp@0.1.0 test:ci
+build	UNKNOWN STEP	2025-12-01T20:10:42.0075142Z > vitest --run
+build	UNKNOWN STEP	2025-12-01T20:10:42.0075367Z 
+build	UNKNOWN STEP	2025-12-01T20:10:42.3726538Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.3994513Z 
+build	UNKNOWN STEP	2025-12-01T20:10:42.3995778Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.3996382Z 
+build	UNKNOWN STEP	2025-12-01T20:10:42.8605382Z  [33m❯[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 67[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8609071Z [31m   [33m❯[31m tests/marketplace-actions.spec.ts[2m > [22mmarketplace applicant actions (owner-only)[2m > [22mallows owner to message, hire and archive applicants[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8611787Z [31m     → Transform failed with 1 error:
+build	UNKNOWN STEP	2025-12-01T20:10:42.8613283Z /home/runner/work/cvforge-mvp/cvforge-mvp/lib/ownership.ts:60:0: ERROR: Unexpected "}"[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8627733Z  [33m❯[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 70[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8630062Z [31m   [33m❯[31m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8631529Z [31m     → Transform failed with 1 error:
+build	UNKNOWN STEP	2025-12-01T20:10:42.8633009Z /home/runner/work/cvforge-mvp/cvforge-mvp/lib/ownership.ts:60:0: ERROR: Unexpected "}"[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8664244Z [90mstderr[2m | tests/ai-generate.spec.ts[2m > [22m[2mAI generate endpoint[2m > [22m[2muses OpenAI when configured and falls back correctly[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:42.8665682Z Captured exception Error: Simulated OpenAI failure for test API key
+build	UNKNOWN STEP	2025-12-01T20:10:42.8668228Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8671903Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8673616Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-generate.spec.ts:67:5
+build	UNKNOWN STEP	2025-12-01T20:10:42.8675106Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8676810Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8678527Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8680040Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8681561Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+build	UNKNOWN STEP	2025-12-01T20:10:42.8683395Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+build	UNKNOWN STEP	2025-12-01T20:10:42.8685339Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u1' }
+build	UNKNOWN STEP	2025-12-01T20:10:42.8686782Z openai error Simulated OpenAI failure for test API key
+build	UNKNOWN STEP	2025-12-01T20:10:42.8687227Z 
+build	UNKNOWN STEP	2025-12-01T20:10:42.8709194Z  [32m✓[39m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 82[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.2172101Z  [32m✓[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 34[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.2522508Z  [32m✓[39m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 74[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.2758795Z  [32m✓[39m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 95[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.2763483Z [90mstderr[2m | tests/webhook-reconcile.spec.ts[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.2764122Z STRIPE_SECRET required
+build	UNKNOWN STEP	2025-12-01T20:10:43.2764379Z 
+build	UNKNOWN STEP	2025-12-01T20:10:43.5931966Z [90mstdout[2m | tests/subscriptions-flow.spec.ts[2m > [22m[2msubscription flows (integration-like)[2m > [22m[2mwebhook checkout.session.completed maps pending subscription by metadata[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.5933758Z checkout.session.completed sess_x
+build	UNKNOWN STEP	2025-12-01T20:10:43.5934111Z 
+build	UNKNOWN STEP	2025-12-01T20:10:43.6130080Z  [33m❯[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 43[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.6132104Z [31m   [33m❯[31m tests/marketplace-auth.spec.ts[2m > [22mmarketplace auth checks[2m > [22mprevents non-owners from listing and deciding[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.6133018Z [31m     → Transform failed with 1 error:
+build	UNKNOWN STEP	2025-12-01T20:10:43.6133685Z /home/runner/work/cvforge-mvp/cvforge-mvp/lib/ownership.ts:60:0: ERROR: Unexpected "}"[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.6726715Z  [33m❯[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 99[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.6764963Z [31m   [33m❯[31m tests/marketplace-e2e.spec.ts[2m > [22mmarketplace full flow e2e-like[2m > [22mpost -> apply -> owner accepts flow completes[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.6766874Z [31m     → Transform failed with 1 error:
+build	UNKNOWN STEP	2025-12-01T20:10:43.6768275Z /home/runner/work/cvforge-mvp/cvforge-mvp/lib/ownership.ts:60:0: ERROR: Unexpected "}"[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.8030331Z  [32m✓[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 276[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:43.9190329Z  [32m✓[39m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 47[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.0402288Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.0411283Z processing autoapply job 3b9a75bf-58b0-410f-bc34-b939020f4dc3
+build	UNKNOWN STEP	2025-12-01T20:10:44.0411742Z 
+build	UNKNOWN STEP	2025-12-01T20:10:44.0493875Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.0495387Z found 1 auto-apply rules
+build	UNKNOWN STEP	2025-12-01T20:10:44.0495854Z 
+build	UNKNOWN STEP	2025-12-01T20:10:44.0598193Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.0599827Z autoapply created 1 applications for job 3b9a75bf-58b0-410f-bc34-b939020f4dc3
+build	UNKNOWN STEP	2025-12-01T20:10:44.0600467Z 
+build	UNKNOWN STEP	2025-12-01T20:10:44.0881419Z  [32m✓[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 89[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.1012169Z  [32m✓[39m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 35[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.2575153Z  [32m✓[39m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 73[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.3913267Z  [32m✓[39m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.4457995Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.4459204Z notification email preview: preview://example
+build	UNKNOWN STEP	2025-12-01T20:10:44.4459553Z 
+build	UNKNOWN STEP	2025-12-01T20:10:44.5726989Z  [32m✓[39m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 41[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.5985803Z  [32m✓[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 218[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.6627044Z  [32m✓[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 8[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.9086332Z  [32m✓[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 69[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:44.9976617Z  [32m✓[39m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 115[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.0757954Z  [32m✓[39m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 81[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.2407797Z  [32m✓[39m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 46[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.3417106Z  [32m✓[39m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 38[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.3771856Z  [32m✓[39m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 13[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.5887655Z  [32m✓[39m tests/queue.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 52[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.6559012Z  [32m✓[39m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 10[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.6832964Z  [32m✓[39m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.6836745Z [90mstderr[2m | tests/telemetry.spec.ts[2m > [22m[2mtelemetry helper[2m > [22m[2mdoes not throw when SENTRY_DSN not configured[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.6839036Z Captured exception Error: test
+build	UNKNOWN STEP	2025-12-01T20:10:45.6839774Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:34
+build	UNKNOWN STEP	2025-12-01T20:10:45.6841091Z     at Proxy.assertThrows (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/core/assertions.js:2644:7)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6842872Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6844603Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:850:16)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6846315Z     at Proxy.overwritingMethodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6848071Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:1324:19)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6849650Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:800:17)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6851197Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+build	UNKNOWN STEP	2025-12-01T20:10:45.6852465Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:58
+build	UNKNOWN STEP	2025-12-01T20:10:45.6853897Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:135:14 
+build	UNKNOWN STEP	2025-12-01T20:10:45.6854607Z 
+build	UNKNOWN STEP	2025-12-01T20:10:45.7046327Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 4 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7047940Z 
+build	UNKNOWN STEP	2025-12-01T20:10:45.7050759Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-actions.spec.ts[2m > [22mmarketplace applicant actions (owner-only)[2m > [22mallows owner to message, hire and archive applicants
+build	UNKNOWN STEP	2025-12-01T20:10:45.7054932Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject
+build	UNKNOWN STEP	2025-12-01T20:10:45.7057559Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-auth.spec.ts[2m > [22mmarketplace auth checks[2m > [22mprevents non-owners from listing and deciding
+build	UNKNOWN STEP	2025-12-01T20:10:45.7073347Z 
+build	UNKNOWN STEP	2025-12-01T20:10:45.7084496Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-e2e.spec.ts[2m > [22mmarketplace full flow e2e-like[2m > [22mpost -> apply -> owner accepts flow completes
+build	UNKNOWN STEP	2025-12-01T20:10:45.7085959Z [31m[1mError[22m: Transform failed with 1 error:
+build	UNKNOWN STEP	2025-12-01T20:10:45.7087607Z /home/runner/work/cvforge-mvp/cvforge-mvp/lib/ownership.ts:60:0: ERROR: Unexpected "}"[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7088991Z [2m Test Files [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m22 passed[39m[22m[90m (26)[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7090176Z [2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m39 passed[39m[22m[90m (43)[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7090988Z [2m   Start at [22m 20:10:42
+build	UNKNOWN STEP	2025-12-01T20:10:45.7092177Z [2m   Duration [22m 3.30s[2m (transform 489ms, setup 7ms, collect 735ms, tests 1.79s, environment 6ms, prepare 2.90s)[22m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7093160Z 
+build	UNKNOWN STEP	2025-12-01T20:10:45.7094453Z [90m [2m❯[22m failureErrorWithLog node_modules/esbuild/lib/main.js:[2m1472:15[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7096099Z [90m [2m❯[22m node_modules/esbuild/lib/main.js:[2m755:50[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7097933Z [90m [2m❯[22m responseCallbacks.<computed> node_modules/esbuild/lib/main.js:[2m622:9[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7099997Z [90m [2m❯[22m handleIncomingPacket node_modules/esbuild/lib/main.js:[2m677:12[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7101300Z [90m [2m❯[22m Socket.readFromStdout node_modules/esbuild/lib/main.js:[2m600:7[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7103012Z [90m [2m❯[22m Socket.emit node:events:[2m524:28[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7103405Z 
+build	UNKNOWN STEP	2025-12-01T20:10:45.7103820Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+build	UNKNOWN STEP	2025-12-01T20:10:45.7104149Z 
+build	UNKNOWN STEP	2025-12-01T20:10:45.7545697Z ##[error]Process completed with exit code 1.
+build	UNKNOWN STEP	2025-12-01T20:10:45.7628854Z Post job cleanup.
+build	UNKNOWN STEP	2025-12-01T20:10:45.8579058Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-12-01T20:10:45.8616450Z git version 2.51.2
+build	UNKNOWN STEP	2025-12-01T20:10:45.8659659Z Temporarily overriding HOME='/home/runner/work/_temp/8caec203-a2f2-4db5-943e-ba78349d83ba' before making global git config changes
+build	UNKNOWN STEP	2025-12-01T20:10:45.8661170Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-12-01T20:10:45.8666216Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T20:10:45.8701152Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-12-01T20:10:45.8733575Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-12-01T20:10:45.8958301Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-12-01T20:10:45.8980918Z http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-12-01T20:10:45.8993559Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-12-01T20:10:45.9023407Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-12-01T20:10:45.9238109Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2025-12-01T20:10:45.9267960Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2025-12-01T20:10:45.9588702Z Cleaning up orphan processes

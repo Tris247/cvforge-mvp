@@ -1,0 +1,168 @@
+prune	UNKNOWN STEP	﻿2025-12-02T04:20:55.7513659Z Current runner version: '2.329.0'
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7536765Z ##[group]Runner Image Provisioner
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7537631Z Hosted Compute Agent
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7538176Z Version: 20251016.436
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7538705Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7539331Z Build Date: 2025-10-15T20:44:12Z
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7539817Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7540395Z ##[group]Operating System
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7540877Z Ubuntu
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7541302Z 24.04.3
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7541737Z LTS
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7542141Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7542552Z ##[group]Runner Image
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7543072Z Image: ubuntu-24.04
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7543533Z Version: 20251112.124.1
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7544401Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7545805Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7546626Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7547845Z ##[group]GITHUB_TOKEN Permissions
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7549669Z Contents: read
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7550206Z Metadata: read
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7550665Z Packages: read
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7551088Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7553383Z Secret source: Actions
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7554153Z Prepare workflow directory
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7857193Z Prepare all required actions
+prune	UNKNOWN STEP	2025-12-02T04:20:55.7896930Z Getting action download info
+prune	UNKNOWN STEP	2025-12-02T04:20:56.1718701Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+prune	UNKNOWN STEP	2025-12-02T04:20:56.9588189Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+prune	UNKNOWN STEP	2025-12-02T04:20:57.0991698Z Complete job name: prune
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1609542Z ##[group]Run actions/checkout@v4
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1610555Z with:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1611075Z   repository: Tris247/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1611883Z   token: ***
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1612551Z   ssh-strict: true
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1613011Z   ssh-user: git
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1613545Z   persist-credentials: true
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1614121Z   clean: true
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1614627Z   sparse-checkout-cone-mode: true
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1615220Z   fetch-depth: 1
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1615761Z   fetch-tags: false
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1616257Z   show-progress: true
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1616755Z   lfs: false
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1617604Z   submodules: false
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1618144Z   set-safe-directory: true
+prune	UNKNOWN STEP	2025-12-02T04:20:57.1619001Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2670600Z Syncing repository: Tris247/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2672832Z ##[group]Getting Git version info
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2673634Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2675138Z [command]/usr/bin/git version
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2724779Z git version 2.51.2
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2750801Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2763127Z Temporarily overriding HOME='/home/runner/work/_temp/a04d79ba-af52-42fd-af80-0edc5108e826' before making global git config changes
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2764731Z Adding repository directory to the temporary git global config as a safe directory
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2768282Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2801748Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2804526Z ##[group]Initializing the repository
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2808549Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2918928Z hint: Using 'master' as the name for the initial branch. This default branch name
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2920785Z hint: is subject to change. To configure the initial branch name to use in all
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2922776Z hint: of your new repositories, which will suppress this warning, call:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2924347Z hint:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2925625Z hint: 	git config --global init.defaultBranch <name>
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2927462Z hint:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2928784Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2930737Z hint: 'development'. The just-created branch can be renamed via this command:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2932262Z hint:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2933236Z hint: 	git branch -m <name>
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2934398Z hint:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2935750Z hint: Disable this message with "git config set advice.defaultBranchName false"
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2937847Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2941041Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2971910Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2973540Z ##[group]Disabling automatic garbage collection
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2974985Z [command]/usr/bin/git config --local gc.auto 0
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2996642Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.2998529Z ##[group]Setting up auth
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3004415Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3031129Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3339870Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3365528Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3534285Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3559635Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3731122Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3762839Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3763818Z ##[group]Fetching the repository
+prune	UNKNOWN STEP	2025-12-02T04:20:57.3770998Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +df5aaa561df9ccc480e7b7cff2e8d1d3c7cbbc4a:refs/remotes/origin/feat/postgres-ci-migration
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8891151Z From https://github.com/Tris247/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8893198Z  * [new ref]         df5aaa561df9ccc480e7b7cff2e8d1d3c7cbbc4a -> origin/feat/postgres-ci-migration
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8923660Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8925204Z ##[group]Determining the checkout info
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8926831Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8928364Z [command]/usr/bin/git sparse-checkout disable
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8962596Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8984437Z ##[group]Checking out the ref
+prune	UNKNOWN STEP	2025-12-02T04:20:57.8988399Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9087236Z Switched to a new branch 'feat/postgres-ci-migration'
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9090042Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9094020Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9122844Z [command]/usr/bin/git log -1 --format=%H
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9141270Z df5aaa561df9ccc480e7b7cff2e8d1d3c7cbbc4a
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9522954Z ##[group]Run actions/setup-node@v4
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9524057Z with:
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9524818Z   node-version: 18
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9525667Z   always-auth: false
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9526536Z   check-latest: false
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9528000Z   token: ***
+prune	UNKNOWN STEP	2025-12-02T04:20:57.9528803Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:20:58.1231201Z Attempting to download 18...
+prune	UNKNOWN STEP	2025-12-02T04:20:58.9362271Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+prune	UNKNOWN STEP	2025-12-02T04:20:59.4058200Z Extracting ...
+prune	UNKNOWN STEP	2025-12-02T04:20:59.4143688Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/fbf78371-3407-414d-8c0d-63faa7dd5d79 -f /home/runner/work/_temp/3335d272-a757-4e33-8588-91df601d47a3
+prune	UNKNOWN STEP	2025-12-02T04:21:00.3192024Z Adding to the cache ...
+prune	UNKNOWN STEP	2025-12-02T04:21:01.4878255Z ##[group]Environment details
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7168844Z node: v18.20.8
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7169528Z npm: 10.8.2
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7169816Z yarn: 1.22.22
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7170452Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7293258Z ##[group]Run npm ci
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7293550Z [36;1mnpm ci[0m
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7319717Z shell: /usr/bin/bash -e {0}
+prune	UNKNOWN STEP	2025-12-02T04:21:01.7319980Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:21:03.2716081Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+prune	UNKNOWN STEP	2025-12-02T04:21:03.4681666Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+prune	UNKNOWN STEP	2025-12-02T04:21:03.6533101Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+prune	UNKNOWN STEP	2025-12-02T04:21:03.8159890Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+prune	UNKNOWN STEP	2025-12-02T04:21:03.9552135Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+prune	UNKNOWN STEP	2025-12-02T04:21:03.9727471Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+prune	UNKNOWN STEP	2025-12-02T04:21:04.0971575Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+prune	UNKNOWN STEP	2025-12-02T04:21:04.2033202Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0583047Z 
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0583866Z added 310 packages, and audited 311 packages in 10s
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0584379Z 
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0584705Z 52 packages are looking for funding
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0585287Z   run `npm fund` for details
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0801724Z 
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0802673Z 4 moderate severity vulnerabilities
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0803064Z 
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0804093Z To address all issues (including breaking changes), run:
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0804797Z   npm audit fix --force
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0804961Z 
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0805109Z Run `npm audit` for details.
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0991177Z ##[group]Run node scripts/prune-analytics.js
+prune	UNKNOWN STEP	2025-12-02T04:21:12.0991501Z [36;1mnode scripts/prune-analytics.js[0m
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1012224Z shell: /usr/bin/bash -e {0}
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1012460Z env:
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1012620Z   PRUNE_DAYS: 90
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1012790Z   DATABASE_URL: 
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1012955Z ##[endgroup]
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1305765Z Pruning events older than 90 days (cutoff 2025-09-03T04:21:12.127Z)
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1309203Z DATABASE_URL not set — skipping DB prune
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1319923Z No analytics file to prune
+prune	UNKNOWN STEP	2025-12-02T04:21:12.1401927Z Post job cleanup.
+prune	UNKNOWN STEP	2025-12-02T04:21:12.2945663Z Post job cleanup.
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3814569Z [command]/usr/bin/git version
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3847158Z git version 2.51.2
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3885068Z Temporarily overriding HOME='/home/runner/work/_temp/d4c58bc3-9171-4d79-b9f6-cb2bdfa2c20f' before making global git config changes
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3885800Z Adding repository directory to the temporary git global config as a safe directory
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3890186Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3920994Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+prune	UNKNOWN STEP	2025-12-02T04:21:12.3947375Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4140343Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4158304Z http.https://github.com/.extraheader
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4168282Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4192858Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4364253Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4390017Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+prune	UNKNOWN STEP	2025-12-02T04:21:12.4646611Z Cleaning up orphan processes

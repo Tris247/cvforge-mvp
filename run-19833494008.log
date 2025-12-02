@@ -1,0 +1,481 @@
+build	Set up job	﻿2025-12-01T18:38:01.4732161Z Current runner version: '2.329.0'
+build	Set up job	2025-12-01T18:38:01.4754537Z ##[group]Runner Image Provisioner
+build	Set up job	2025-12-01T18:38:01.4755374Z Hosted Compute Agent
+build	Set up job	2025-12-01T18:38:01.4755875Z Version: 20251016.436
+build	Set up job	2025-12-01T18:38:01.4756441Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+build	Set up job	2025-12-01T18:38:01.4757032Z Build Date: 2025-10-15T20:44:12Z
+build	Set up job	2025-12-01T18:38:01.4757931Z ##[endgroup]
+build	Set up job	2025-12-01T18:38:01.4758458Z ##[group]Operating System
+build	Set up job	2025-12-01T18:38:01.4758985Z Ubuntu
+build	Set up job	2025-12-01T18:38:01.4759378Z 24.04.3
+build	Set up job	2025-12-01T18:38:01.4759945Z LTS
+build	Set up job	2025-12-01T18:38:01.4760336Z ##[endgroup]
+build	Set up job	2025-12-01T18:38:01.4760779Z ##[group]Runner Image
+build	Set up job	2025-12-01T18:38:01.4761329Z Image: ubuntu-24.04
+build	Set up job	2025-12-01T18:38:01.4761758Z Version: 20251112.124.1
+build	Set up job	2025-12-01T18:38:01.4762655Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2025-12-01T18:38:01.4763892Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+build	Set up job	2025-12-01T18:38:01.4764908Z ##[endgroup]
+build	Set up job	2025-12-01T18:38:01.4765937Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2025-12-01T18:38:01.4767707Z Contents: read
+build	Set up job	2025-12-01T18:38:01.4768251Z Metadata: read
+build	Set up job	2025-12-01T18:38:01.4768661Z Packages: read
+build	Set up job	2025-12-01T18:38:01.4769107Z ##[endgroup]
+build	Set up job	2025-12-01T18:38:01.4771364Z Secret source: Actions
+build	Set up job	2025-12-01T18:38:01.4772032Z Prepare workflow directory
+build	Set up job	2025-12-01T18:38:01.5099296Z Prepare all required actions
+build	Set up job	2025-12-01T18:38:01.5136931Z Getting action download info
+build	Set up job	2025-12-01T18:38:01.9073410Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	Set up job	2025-12-01T18:38:02.8215705Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	Set up job	2025-12-01T18:38:02.8954902Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+build	Set up job	2025-12-01T18:38:03.0556664Z Complete job name: build
+build	Run actions/checkout@v4	﻿2025-12-01T18:38:03.1203452Z ##[group]Run actions/checkout@v4
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1204577Z with:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1205196Z   repository: Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1206056Z   token: ***
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1206615Z   ssh-strict: true
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1207143Z   ssh-user: git
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1207737Z   persist-credentials: true
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1208341Z   clean: true
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1208882Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1209808Z   fetch-depth: 1
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1210306Z   fetch-tags: false
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1210939Z   show-progress: true
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1211496Z   lfs: false
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1212006Z   submodules: false
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1212576Z   set-safe-directory: true
+build	Run actions/checkout@v4	2025-12-01T18:38:03.1213464Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2229355Z Syncing repository: Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2231985Z ##[group]Getting Git version info
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2233915Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2236412Z [command]/usr/bin/git version
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2280811Z git version 2.51.2
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2303738Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2326561Z Temporarily overriding HOME='/home/runner/work/_temp/a5a9c5b4-9bf5-4fbe-b8b4-9608b47755b3' before making global git config changes
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2329818Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2333921Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2368252Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2481520Z ##[group]Initializing the repository
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2483743Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2485510Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2487297Z hint: is subject to change. To configure the initial branch name to use in all
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2488996Z hint: of your new repositories, which will suppress this warning, call:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2490604Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2491414Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2492064Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2492679Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2493650Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2494426Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2495117Z hint: 	git branch -m <name>
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2495951Z hint:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2497126Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2499175Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2501973Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2522958Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2523854Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2524603Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2554636Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2555450Z ##[group]Setting up auth
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2556204Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2579125Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2852581Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v4	2025-12-01T18:38:03.2877316Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v4	2025-12-01T18:38:03.3048273Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Run actions/checkout@v4	2025-12-01T18:38:03.3077072Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Run actions/checkout@v4	2025-12-01T18:38:03.3254195Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v4	2025-12-01T18:38:03.3284467Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.3286134Z ##[group]Fetching the repository
+build	Run actions/checkout@v4	2025-12-01T18:38:03.3294649Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4a3f164403bf3ef6c03140043fa6e0d96daac756:refs/remotes/origin/feat/postgres-ci-migration
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8826135Z From https://github.com/Tris247/cvforge-mvp
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8828040Z  * [new ref]         4a3f164403bf3ef6c03140043fa6e0d96daac756 -> origin/feat/postgres-ci-migration
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8858716Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8859997Z ##[group]Determining the checkout info
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8861296Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8866863Z [command]/usr/bin/git sparse-checkout disable
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8902645Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8932501Z ##[group]Checking out the ref
+build	Run actions/checkout@v4	2025-12-01T18:38:03.8936576Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+build	Run actions/checkout@v4	2025-12-01T18:38:03.9041020Z Switched to a new branch 'feat/postgres-ci-migration'
+build	Run actions/checkout@v4	2025-12-01T18:38:03.9042557Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+build	Run actions/checkout@v4	2025-12-01T18:38:03.9047995Z ##[endgroup]
+build	Run actions/checkout@v4	2025-12-01T18:38:03.9081077Z [command]/usr/bin/git log -1 --format=%H
+build	Run actions/checkout@v4	2025-12-01T18:38:03.9101040Z 4a3f164403bf3ef6c03140043fa6e0d96daac756
+build	Run actions/setup-node@v4	﻿2025-12-01T18:38:03.9328344Z ##[group]Run actions/setup-node@v4
+build	Run actions/setup-node@v4	2025-12-01T18:38:03.9328869Z with:
+build	Run actions/setup-node@v4	2025-12-01T18:38:03.9329217Z   node-version: 20
+build	Run actions/setup-node@v4	2025-12-01T18:38:03.9329899Z   always-auth: false
+build	Run actions/setup-node@v4	2025-12-01T18:38:03.9330359Z   check-latest: false
+build	Run actions/setup-node@v4	2025-12-01T18:38:03.9330968Z   token: ***
+build	Run actions/setup-node@v4	2025-12-01T18:38:03.9331323Z ##[endgroup]
+build	Run actions/setup-node@v4	2025-12-01T18:38:04.0997459Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+build	Run actions/setup-node@v4	2025-12-01T18:38:04.1002707Z ##[group]Environment details
+build	Run actions/setup-node@v4	2025-12-01T18:38:06.1797581Z node: v20.19.5
+build	Run actions/setup-node@v4	2025-12-01T18:38:06.1798150Z npm: 10.8.2
+build	Run actions/setup-node@v4	2025-12-01T18:38:06.1798472Z yarn: 1.22.22
+build	Run actions/setup-node@v4	2025-12-01T18:38:06.1800744Z ##[endgroup]
+build	Run actions/cache@v4	﻿2025-12-01T18:38:06.2626161Z ##[group]Run actions/cache@v4
+build	Run actions/cache@v4	2025-12-01T18:38:06.2626480Z with:
+build	Run actions/cache@v4	2025-12-01T18:38:06.2626703Z   path: ~/.npm
+build	Run actions/cache@v4	2025-12-01T18:38:06.2627091Z   key: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	Run actions/cache@v4	2025-12-01T18:38:06.2627530Z   enableCrossOsArchive: false
+build	Run actions/cache@v4	2025-12-01T18:38:06.2627800Z   fail-on-cache-miss: false
+build	Run actions/cache@v4	2025-12-01T18:38:06.2628062Z   lookup-only: false
+build	Run actions/cache@v4	2025-12-01T18:38:06.2628292Z   save-always: false
+build	Run actions/cache@v4	2025-12-01T18:38:06.2628522Z ##[endgroup]
+build	Run actions/cache@v4	2025-12-01T18:38:06.6331809Z Cache not found for input keys: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	Install dependencies	﻿2025-12-01T18:38:06.6408356Z ##[group]Run npm ci
+build	Install dependencies	2025-12-01T18:38:06.6408719Z [36;1mnpm ci[0m
+build	Install dependencies	2025-12-01T18:38:06.6439290Z shell: /usr/bin/bash -e {0}
+build	Install dependencies	2025-12-01T18:38:06.6439857Z ##[endgroup]
+build	Install dependencies	2025-12-01T18:38:09.0716290Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build	Install dependencies	2025-12-01T18:38:09.2609472Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+build	Install dependencies	2025-12-01T18:38:09.5374030Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build	Install dependencies	2025-12-01T18:38:09.6598940Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+build	Install dependencies	2025-12-01T18:38:09.7326806Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+build	Install dependencies	2025-12-01T18:38:09.7987787Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+build	Install dependencies	2025-12-01T18:38:09.8770216Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+build	Install dependencies	2025-12-01T18:38:10.0142289Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+build	Install dependencies	2025-12-01T18:38:17.1007570Z 
+build	Install dependencies	2025-12-01T18:38:17.1008302Z added 310 packages, and audited 311 packages in 10s
+build	Install dependencies	2025-12-01T18:38:17.1008806Z 
+build	Install dependencies	2025-12-01T18:38:17.1010283Z 52 packages are looking for funding
+build	Install dependencies	2025-12-01T18:38:17.1011783Z   run `npm fund` for details
+build	Install dependencies	2025-12-01T18:38:17.1310214Z 
+build	Install dependencies	2025-12-01T18:38:17.1311364Z 4 moderate severity vulnerabilities
+build	Install dependencies	2025-12-01T18:38:17.1325600Z 
+build	Install dependencies	2025-12-01T18:38:17.1326224Z To address all issues (including breaking changes), run:
+build	Install dependencies	2025-12-01T18:38:17.1326771Z   npm audit fix --force
+build	Install dependencies	2025-12-01T18:38:17.1326975Z 
+build	Install dependencies	2025-12-01T18:38:17.1327141Z Run `npm audit` for details.
+build	Ensure DB + Prisma client	﻿2025-12-01T18:38:17.1515121Z ##[group]Run mkdir -p data
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1515600Z [36;1mmkdir -p data[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1515975Z [36;1mtouch dev.db[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1516530Z [36;1m# Push the Prisma schema to the local sqlite dev DB (avoid applying[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1517309Z [36;1m# Postgres-specific migrations during CI unit tests)[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1518007Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1518678Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1519264Z [36;1mnode prisma/seed.js || true[0m
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1547997Z shell: /usr/bin/bash -e {0}
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1548398Z env:
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1548718Z   DATABASE_URL: file:./dev.db
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.1549108Z ##[endgroup]
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.8730970Z Prisma schema loaded from prisma/schema.prisma
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.8830690Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.9115181Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.9116266Z The database is already in sync with the Prisma schema.
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.9121971Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:17.9135915Z Running generate... (Use --skip-generate to skip the generators)
+build	Ensure DB + Prisma client	2025-12-01T18:38:18.1844531Z [2K[1A[2K[GRunning generate... - Prisma Client
+build	Ensure DB + Prisma client	2025-12-01T18:38:18.3065076Z [2K[1A[2K[G✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 120ms
+build	Ensure DB + Prisma client	2025-12-01T18:38:18.3068465Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.1678420Z Prisma schema loaded from prisma/schema.prisma
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5290069Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5292953Z ✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 101ms
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5293387Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5293825Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5294175Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5294927Z Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5295564Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5495346Z ┌─────────────────────────────────────────────────────────┐
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5496526Z │  Update available 5.22.0 -> 7.0.1                       │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5497298Z │                                                         │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5498011Z │  This is a major update - please follow the guide at    │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5499353Z │  https://pris.ly/d/major-version-upgrade                │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5500365Z │                                                         │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5501114Z │  Run the following to update                            │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5501908Z │    npm i --save-dev prisma@latest                       │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5502689Z │    npm i @prisma/client@latest                          │
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.5503492Z └─────────────────────────────────────────────────────────┘
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7711045Z Seeding demo data...
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7971574Z PrismaClientValidationError: 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7972362Z Invalid `prisma.job.create()` invocation in
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7973250Z /home/runner/work/cvforge-mvp/cvforge-mvp/prisma/seed.js:10:32
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7973826Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7973968Z    7 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7975355Z    8 const cv = await prisma.cV.upsert({ where: { id: 'cv-demo-1' }, update: { content: 'Updated' }, create: { id: 'cv-demo-1', title: 'Full Stack Developer', content: '• Built services\n• Led teams', ownerId: user.id } })
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7976138Z    9 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7976478Z → 10 const job = await prisma.job.create({
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7976774Z        data: {
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7977048Z          title: "Frontend Developer",
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7977351Z          company: "CapeTech",
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7977609Z                   ~~~~~~~~~~
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7977908Z          location: "Cape Town, South Africa",
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7978285Z          description: "Work on React & Next.js apps",
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7978634Z          tags: "remote,frontend"
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7978890Z        }
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7979105Z      })
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7979480Z 
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7980503Z Argument `company`: Invalid value provided. Expected CompanyCreateNestedOneWithoutJobsInput, provided String.
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7982112Z     at wn (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:29:1363)
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7983873Z     at $n.handleRequestError (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:121:6958)
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7985873Z     at $n.handleAndLogRequestError (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:121:6623)
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7987709Z     at $n.request (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:121:6307)
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7989155Z     at async l (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:130:9633)
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7990409Z     at async main (/home/runner/work/cvforge-mvp/cvforge-mvp/prisma/seed.js:10:15) {
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7991109Z   clientVersion: '5.22.0'
+build	Ensure DB + Prisma client	2025-12-01T18:38:19.7991412Z }
+build	Run unit/integration tests (Vitest)	﻿2025-12-01T18:38:19.8024126Z ##[group]Run npm run test:ci
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:19.8024388Z [36;1mnpm run test:ci[0m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:19.8042690Z shell: /usr/bin/bash -e {0}
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:19.8042940Z ##[endgroup]
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:19.9010764Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:19.9011373Z > cvforge-mvp@0.1.0 test:ci
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:19.9011878Z > vitest --run
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.2043864Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.2044556Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.2282348Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.2283942Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.2284578Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6231190Z [90mstderr[2m | tests/ai-generate.spec.ts[2m > [22m[2mAI generate endpoint[2m > [22m[2muses OpenAI when configured and falls back correctly[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6232292Z Captured exception Error: Simulated OpenAI failure for test API key
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6233115Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6233900Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6234662Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-generate.spec.ts:67:5
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6235617Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6236718Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6237817Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6238961Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6240239Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6241540Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6243019Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u1' }
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6244218Z openai error Simulated OpenAI failure for test API key
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6244565Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6267013Z  [33m❯[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 72[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6270133Z [31m   [33m❯[31m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6271790Z [31m     → expected 404 to be 200 // Object.is equality[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6275654Z  [32m✓[39m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 63[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.6904395Z  [32m✓[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 134[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.9174472Z  [32m✓[39m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 36[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.9830974Z  [32m✓[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 9[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:20.9984063Z  [32m✓[39m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 75[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.0004394Z [90mstderr[2m | tests/webhook-reconcile.spec.ts[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.0006384Z STRIPE_SECRET required
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.0006648Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.2368411Z  [33m❯[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 15[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.2997903Z  [32m✓[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 14[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.3523802Z  [32m✓[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 97[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.5073557Z  [32m✓[39m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.6306214Z  [32m✓[39m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 15[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.6452740Z  [33m❯[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 26[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.8337429Z  [32m✓[39m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 46[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.8824880Z  [32m✓[39m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.9421660Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.9423091Z notification email preview: preview://example
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:21.9423581Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.0937436Z  [32m✓[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 222[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.1001071Z  [32m✓[39m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 48[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.1277746Z  [32m✓[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 4[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.4169828Z  [32m✓[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 61[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.4670613Z  [32m✓[39m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 74[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.4811542Z  [32m✓[39m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 109[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.7122088Z  [32m✓[39m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 34[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.7339349Z  [32m✓[39m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 5[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:22.7719200Z  [32m✓[39m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0264439Z  [32m✓[39m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 15[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0471771Z [90mstderr[2m | tests/telemetry.spec.ts[2m > [22m[2mtelemetry helper[2m > [22m[2mdoes not throw when SENTRY_DSN not configured[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0472967Z Captured exception Error: test
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0473685Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:34
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0474903Z     at Proxy.assertThrows (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/core/assertions.js:2644:7)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0476385Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0477920Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:850:16)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0479466Z     at Proxy.overwritingMethodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0481142Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:1324:19)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0482559Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:800:17)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0484014Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0485165Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:58
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0486223Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:135:14 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0487277Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0488282Z  [32m✓[39m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 10[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0489355Z  [32m✓[39m tests/queue.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 68[2mms[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0652215Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0662050Z [31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 2 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0662485Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0663429Z [31m[1m[7m FAIL [27m[22m[39m tests/autoapply-worker.integration.spec.ts[2m > [22mautoapply worker integration
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0664539Z [31m[1mPrismaClientInitializationError[22m: 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0665170Z Invalid `prisma.user.create()` invocation in
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0666131Z /home/runner/work/cvforge-mvp/cvforge-mvp/tests/autoapply-worker.integration.spec.ts:17:31
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0666763Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0666893Z   14 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0667200Z   15 beforeAll(async () => {
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0667611Z   16   // create an employer owner for company
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0668264Z → 17   owner = await prisma.user.create(
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0668864Z error: Environment variable not found: DATABASE_URL.
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0669357Z   -->  schema.prisma:7
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0669857Z    | 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0670155Z  6 |   provider = "sqlite"
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0670510Z  7 |   url      = env("DATABASE_URL")
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0670846Z    | 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0670981Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0671278Z Validation Error Count: 1[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0672363Z [90m [2m❯[22m $n.handleRequestError node_modules/@prisma/client/runtime/library.js:[2m121:7615[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0673797Z [90m [2m❯[22m $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:[2m121:6623[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0675162Z [90m [2m❯[22m $n.request node_modules/@prisma/client/runtime/library.js:[2m121:6307[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0676328Z [90m [2m❯[22m l node_modules/@prisma/client/runtime/library.js:[2m130:9633[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0677464Z [36m [2m❯[22m tests/autoapply-worker.integration.spec.ts:[2m17:13[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0964830Z     [90m 15| [39m  [34mbeforeAll[39m([35masync[39m () [33m=>[39m {
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0966173Z     [90m 16| [39m    [90m// create an employer owner for company[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0967854Z     [90m 17| [39m    owner [33m=[39m [35mawait[39m prisma[33m.[39muser[33m.[39m[34mcreate[39m({ data[33m:[39m { email[33m:[39m [32m`owner+[39m[36m${[39m[33mDate[39m[33m.[39m[34mno[39m…
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0968691Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0969155Z     [90m   | [39m            [31m^[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0970556Z     [90m 18| [39m    company [33m=[39m [35mawait[39m prisma[33m.[39mcompany[33m.[39m[34mcreate[39m({ data[33m:[39m { name[33m:[39m [32m`TestCo [39m[36m${[39m[33mDa[39m…
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0971479Z     [90m 19| [39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0971675Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0972050Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.0974509Z [31m[1mSerialized Error:[22m[39m [90m{ clientVersion: '5.22.0', errorCode: undefined }[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1012640Z ##[error]PrismaClientInitializationError: 
+build	Run unit/integration tests (Vitest)	Invalid `prisma.user.create()` invocation in
+build	Run unit/integration tests (Vitest)	/home/runner/work/cvforge-mvp/cvforge-mvp/tests/autoapply-worker.integration.spec.ts:17:31
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	  14 
+build	Run unit/integration tests (Vitest)	  15 beforeAll(async () => {
+build	Run unit/integration tests (Vitest)	  16   // create an employer owner for company
+build	Run unit/integration tests (Vitest)	→ 17   owner = await prisma.user.create(
+build	Run unit/integration tests (Vitest)	error: Environment variable not found: DATABASE_URL.
+build	Run unit/integration tests (Vitest)	  -->  schema.prisma:7
+build	Run unit/integration tests (Vitest)	   | 
+build	Run unit/integration tests (Vitest)	 6 |   provider = "sqlite"
+build	Run unit/integration tests (Vitest)	 7 |   url      = env("DATABASE_URL")
+build	Run unit/integration tests (Vitest)	   | 
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	Validation Error Count: 1
+build	Run unit/integration tests (Vitest)	 ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7615
+build	Run unit/integration tests (Vitest)	 ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+build	Run unit/integration tests (Vitest)	 ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+build	Run unit/integration tests (Vitest)	 ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+build	Run unit/integration tests (Vitest)	 ❯ tests/autoapply-worker.integration.spec.ts:17:13
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+build	Run unit/integration tests (Vitest)	Serialized Error: { clientVersion: '5.22.0', errorCode: undefined }
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1025032Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1025288Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1025986Z [31m[1m[7m FAIL [27m[22m[39m tests/autoapply-worker.integration.spec.ts[2m > [22mautoapply worker integration
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1026674Z [31m[1mTypeError[22m: Cannot read properties of undefined (reading 'id')[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1027259Z [36m [2m❯[22m tests/autoapply-worker.integration.spec.ts:[2m30:63[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1027765Z     [90m 28| [39m  [34mafterAll[39m([35masync[39m () [33m=>[39m {
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1028170Z     [90m 29| [39m    [90m// clean up created records[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1028847Z     [90m 30| [39m    [35mawait[39m prisma[33m.[39mapplication[33m.[39m[34mdeleteMany[39m({ where[33m:[39m { jobId[33m:[39m job[33m.[39mid } })
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1029506Z     [90m   | [39m                                                              [31m^[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1030892Z     [90m 31| [39m    [35mawait[39m prisma[33m.[39mautoApplyRule[33m.[39m[34mdeleteMany[39m({ where[33m:[39m { userId[33m:[39m user[33m.[39mid }…
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1032445Z     [90m 32| [39m    [35mawait[39m prisma[33m.[39mjob[33m.[39m[34mdeleteMany[39m({ where[33m:[39m { id[33m:[39m job[33m.[39mid } })
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1033048Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1033367Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1033647Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1034432Z [31m[1m[7m FAIL [27m[22m[39m tests/subscriptions-flow.spec.ts[2m > [22msubscription flows (integration-like)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1035397Z [31m[1mPrismaClientInitializationError[22m: 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1035927Z Invalid `prisma.user.upsert()` invocation in
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1036685Z /home/runner/work/cvforge-mvp/cvforge-mvp/tests/subscriptions-flow.spec.ts:9:36
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1037199Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1037486Z   6 describe('subscription flows (integration-like)', ()=>{
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1037969Z   7   beforeAll(async ()=>{
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1038493Z   8     // Ensure demo user & basic data exist using Prisma directly
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1039248Z → 9     const demo = await prisma.user.upsert(
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1040032Z error: Environment variable not found: DATABASE_URL.
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1040492Z   -->  schema.prisma:7
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1040781Z    | 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1041053Z  6 |   provider = "sqlite"
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1041421Z  7 |   url      = env("DATABASE_URL")
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1041764Z    | 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1041907Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1042208Z Validation Error Count: 1[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1043178Z [90m [2m❯[22m $n.handleRequestError node_modules/@prisma/client/runtime/library.js:[2m121:7615[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1044608Z [90m [2m❯[22m $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:[2m121:6623[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1045900Z [90m [2m❯[22m $n.request node_modules/@prisma/client/runtime/library.js:[2m121:6307[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1047040Z [90m [2m❯[22m l node_modules/@prisma/client/runtime/library.js:[2m130:9633[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1048114Z [36m [2m❯[22m tests/subscriptions-flow.spec.ts:[2m9:18[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1048512Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1051206Z ##[error]TypeError: Cannot read properties of undefined (reading 'id')
+build	Run unit/integration tests (Vitest)	 ❯ tests/autoapply-worker.integration.spec.ts:30:63
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1052865Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1055112Z ##[error]AssertionError: expected 404 to be 200 // Object.is equality
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	- Expected
+build	Run unit/integration tests (Vitest)	+ Received
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	- 200
+build	Run unit/integration tests (Vitest)	+ 404
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	 ❯ tests/marketplace-applicants.spec.ts:58:30
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1075676Z     [90m  7| [39m  [34mbeforeAll[39m([35masync[39m ()[33m=>[39m{
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1076147Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1076800Z     [90m  8| [39m    [90m// Ensure demo user & basic data exist using Prisma directly[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1078218Z     [90m  9| [39m    [35mconst[39m demo [33m=[39m [35mawait[39m prisma[33m.[39muser[33m.[39m[34mupsert[39m({ where[33m:[39m { email[33m:[39m [32m'demo@cvfo[39m…
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1079813Z     [90m   | [39m                 [31m^[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1091758Z ##[error]PrismaClientInitializationError: 
+build	Run unit/integration tests (Vitest)	Invalid `prisma.user.upsert()` invocation in
+build	Run unit/integration tests (Vitest)	/home/runner/work/cvforge-mvp/cvforge-mvp/tests/subscriptions-flow.spec.ts:9:36
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	  6 describe('subscription flows (integration-like)', ()=>{
+build	Run unit/integration tests (Vitest)	  7   beforeAll(async ()=>{
+build	Run unit/integration tests (Vitest)	  8     // Ensure demo user & basic data exist using Prisma directly
+build	Run unit/integration tests (Vitest)	→ 9     const demo = await prisma.user.upsert(
+build	Run unit/integration tests (Vitest)	error: Environment variable not found: DATABASE_URL.
+build	Run unit/integration tests (Vitest)	  -->  schema.prisma:7
+build	Run unit/integration tests (Vitest)	   | 
+build	Run unit/integration tests (Vitest)	 6 |   provider = "sqlite"
+build	Run unit/integration tests (Vitest)	 7 |   url      = env("DATABASE_URL")
+build	Run unit/integration tests (Vitest)	   | 
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	Validation Error Count: 1
+build	Run unit/integration tests (Vitest)	 ❯ $n.handleRequestError node_modules/@prisma/client/runtime/library.js:121:7615
+build	Run unit/integration tests (Vitest)	 ❯ $n.handleAndLogRequestError node_modules/@prisma/client/runtime/library.js:121:6623
+build	Run unit/integration tests (Vitest)	 ❯ $n.request node_modules/@prisma/client/runtime/library.js:121:6307
+build	Run unit/integration tests (Vitest)	 ❯ l node_modules/@prisma/client/runtime/library.js:130:9633
+build	Run unit/integration tests (Vitest)	 ❯ tests/subscriptions-flow.spec.ts:9:18
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+build	Run unit/integration tests (Vitest)	Serialized Error: { clientVersion: '5.22.0', errorCode: undefined }
+build	Run unit/integration tests (Vitest)	
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1102780Z     [90m 10| [39m    [35mawait[39m prisma[33m.[39mcV[33m.[39m[34mupsert[39m({ where[33m:[39m { id[33m:[39m [32m'cv-demo-1'[39m }[33m,[39m update[33m:[39m {}[33m,[39m c…
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1103800Z     [90m 11| [39m  })
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1104021Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1104398Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1105527Z [31m[1mSerialized Error:[22m[39m [90m{ clientVersion: '5.22.0', errorCode: undefined }[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1106444Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1106770Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1107183Z [31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1107536Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1108825Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1116006Z [31m[1mAssertionError[22m: expected 404 to be 200 // Object.is equality[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1116488Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1116620Z - Expected
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1116888Z + Received
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1117023Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1117128Z - 200
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1117378Z + 404
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1117505Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1118098Z [36m [2m❯[22m tests/marketplace-applicants.spec.ts:[2m58:30[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1157497Z     [90m 56| [39m    [35mconst[39m dres[33m:[39many [33m=[39m { status[33m:[39m (c[33m:[39mnumber)[33m=>[39m ({ json[33m:[39m (b[33m:[39many)[33m=>[39m { dres[33m.[39m…
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1159249Z     [90m 57| [39m    [35mawait[39m decisionMod[33m.[39m[35mdefault[39m(dreq[33m,[39m dres)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1160776Z     [90m 58| [39m    [34mexpect[39m(dres[33m.[39m_out[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m200[39m)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1161922Z     [90m   | [39m                             [31m^[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1163371Z     [90m 59| [39m    [34mexpect[39m(dres[33m.[39m_out[33m.[39mbody[33m.[39mapplication[33m.[39mstatus)[33m.[39m[34mtoBe[39m([32m'accepted'[39m)
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1164606Z     [90m 60| [39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1165007Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1165535Z [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯[22m[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1166001Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1167466Z [2m Test Files [22m [1m[31m3 failed[39m[22m[2m | [22m[1m[32m23 passed[39m[22m[90m (26)[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1168936Z [2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m39 passed[39m[22m[90m (43)[39m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1169983Z [2m   Start at [22m 18:38:20
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1171104Z [2m   Duration [22m 2.84s[2m (transform 526ms, setup 1ms, collect 723ms, tests 1.27s, environment 14ms, prepare 2.58s)[22m
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1172011Z 
+build	Run unit/integration tests (Vitest)	2025-12-01T18:38:23.1624404Z ##[error]Process completed with exit code 1.
+build	Post Run actions/checkout@v4	﻿2025-12-01T18:38:23.1703074Z Post job cleanup.
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2559789Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2591733Z git version 2.51.2
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2628574Z Temporarily overriding HOME='/home/runner/work/_temp/ff55bbb9-591b-48c4-9c14-564735f64b03' before making global git config changes
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2630092Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2633129Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2670051Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2695282Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2873019Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2889342Z http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2900026Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.2923914Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.3098551Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Run actions/checkout@v4	2025-12-01T18:38:23.3130113Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2025-12-01T18:38:23.3416048Z Cleaning up orphan processes

@@ -1,0 +1,212 @@
+build	UNKNOWN STEP	﻿2025-12-01T18:46:40.6982748Z Current runner version: '2.329.0'
+build	UNKNOWN STEP	2025-12-01T18:46:40.7018079Z ##[group]Runner Image Provisioner
+build	UNKNOWN STEP	2025-12-01T18:46:40.7019335Z Hosted Compute Agent
+build	UNKNOWN STEP	2025-12-01T18:46:40.7020255Z Version: 20251016.436
+build	UNKNOWN STEP	2025-12-01T18:46:40.7021293Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+build	UNKNOWN STEP	2025-12-01T18:46:40.7022388Z Build Date: 2025-10-15T20:44:12Z
+build	UNKNOWN STEP	2025-12-01T18:46:40.7023471Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:40.7024360Z ##[group]Operating System
+build	UNKNOWN STEP	2025-12-01T18:46:40.7025334Z Ubuntu
+build	UNKNOWN STEP	2025-12-01T18:46:40.7026050Z 24.04.3
+build	UNKNOWN STEP	2025-12-01T18:46:40.7027006Z LTS
+build	UNKNOWN STEP	2025-12-01T18:46:40.7027946Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:40.7028788Z ##[group]Runner Image
+build	UNKNOWN STEP	2025-12-01T18:46:40.7029961Z Image: ubuntu-24.04
+build	UNKNOWN STEP	2025-12-01T18:46:40.7030824Z Version: 20251112.124.1
+build	UNKNOWN STEP	2025-12-01T18:46:40.7032616Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+build	UNKNOWN STEP	2025-12-01T18:46:40.7035448Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+build	UNKNOWN STEP	2025-12-01T18:46:40.7037144Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:40.7039336Z ##[group]GITHUB_TOKEN Permissions
+build	UNKNOWN STEP	2025-12-01T18:46:40.7042104Z Contents: read
+build	UNKNOWN STEP	2025-12-01T18:46:40.7043058Z Metadata: read
+build	UNKNOWN STEP	2025-12-01T18:46:40.7043807Z Packages: read
+build	UNKNOWN STEP	2025-12-01T18:46:40.7044582Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:40.7047426Z Secret source: Actions
+build	UNKNOWN STEP	2025-12-01T18:46:40.7048933Z Prepare workflow directory
+build	UNKNOWN STEP	2025-12-01T18:46:40.7577379Z Prepare all required actions
+build	UNKNOWN STEP	2025-12-01T18:46:40.7614531Z Getting action download info
+build	UNKNOWN STEP	2025-12-01T18:46:41.2063091Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build	UNKNOWN STEP	2025-12-01T18:46:41.7850841Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	UNKNOWN STEP	2025-12-01T18:46:41.9243024Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+build	UNKNOWN STEP	2025-12-01T18:46:42.1115994Z Complete job name: build
+build	UNKNOWN STEP	2025-12-01T18:46:42.1909001Z ##[group]Run actions/checkout@v4
+build	UNKNOWN STEP	2025-12-01T18:46:42.1910250Z with:
+build	UNKNOWN STEP	2025-12-01T18:46:42.1910993Z   repository: Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:42.1912174Z   token: ***
+build	UNKNOWN STEP	2025-12-01T18:46:42.1912847Z   ssh-strict: true
+build	UNKNOWN STEP	2025-12-01T18:46:42.1913553Z   ssh-user: git
+build	UNKNOWN STEP	2025-12-01T18:46:42.1914274Z   persist-credentials: true
+build	UNKNOWN STEP	2025-12-01T18:46:42.1915086Z   clean: true
+build	UNKNOWN STEP	2025-12-01T18:46:42.1915802Z   sparse-checkout-cone-mode: true
+build	UNKNOWN STEP	2025-12-01T18:46:42.1916688Z   fetch-depth: 1
+build	UNKNOWN STEP	2025-12-01T18:46:42.1917379Z   fetch-tags: false
+build	UNKNOWN STEP	2025-12-01T18:46:42.1918256Z   show-progress: true
+build	UNKNOWN STEP	2025-12-01T18:46:42.1918980Z   lfs: false
+build	UNKNOWN STEP	2025-12-01T18:46:42.1919650Z   submodules: false
+build	UNKNOWN STEP	2025-12-01T18:46:42.1920395Z   set-safe-directory: true
+build	UNKNOWN STEP	2025-12-01T18:46:42.1921417Z env:
+build	UNKNOWN STEP	2025-12-01T18:46:42.1922090Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T18:46:42.1922900Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.2986506Z Syncing repository: Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:42.2989206Z ##[group]Getting Git version info
+build	UNKNOWN STEP	2025-12-01T18:46:42.2990537Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-01T18:46:42.2992267Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-12-01T18:46:42.3076674Z git version 2.51.2
+build	UNKNOWN STEP	2025-12-01T18:46:42.3102602Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.3123781Z Temporarily overriding HOME='/home/runner/work/_temp/386abe4a-6978-4857-913b-213e9c99603c' before making global git config changes
+build	UNKNOWN STEP	2025-12-01T18:46:42.3128684Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-12-01T18:46:42.3130749Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:42.3166303Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+build	UNKNOWN STEP	2025-12-01T18:46:42.3168866Z ##[group]Initializing the repository
+build	UNKNOWN STEP	2025-12-01T18:46:42.3173188Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:42.3330329Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	UNKNOWN STEP	2025-12-01T18:46:42.3332127Z hint: is subject to change. To configure the initial branch name to use in all
+build	UNKNOWN STEP	2025-12-01T18:46:42.3334227Z hint: of your new repositories, which will suppress this warning, call:
+build	UNKNOWN STEP	2025-12-01T18:46:42.3335643Z hint:
+build	UNKNOWN STEP	2025-12-01T18:46:42.3336907Z hint: 	git config --global init.defaultBranch <name>
+build	UNKNOWN STEP	2025-12-01T18:46:42.3338682Z hint:
+build	UNKNOWN STEP	2025-12-01T18:46:42.3339832Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	UNKNOWN STEP	2025-12-01T18:46:42.3341795Z hint: 'development'. The just-created branch can be renamed via this command:
+build	UNKNOWN STEP	2025-12-01T18:46:42.3343082Z hint:
+build	UNKNOWN STEP	2025-12-01T18:46:42.3343733Z hint: 	git branch -m <name>
+build	UNKNOWN STEP	2025-12-01T18:46:42.3344477Z hint:
+build	UNKNOWN STEP	2025-12-01T18:46:42.3345521Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	UNKNOWN STEP	2025-12-01T18:46:42.3347975Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+build	UNKNOWN STEP	2025-12-01T18:46:42.3350813Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:42.3381004Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.3382194Z ##[group]Disabling automatic garbage collection
+build	UNKNOWN STEP	2025-12-01T18:46:42.3384478Z [command]/usr/bin/git config --local gc.auto 0
+build	UNKNOWN STEP	2025-12-01T18:46:42.3414639Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.3416625Z ##[group]Setting up auth
+build	UNKNOWN STEP	2025-12-01T18:46:42.3422349Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-12-01T18:46:42.3454465Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-12-01T18:46:42.3834754Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-12-01T18:46:42.3866187Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-12-01T18:46:42.4082216Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2025-12-01T18:46:42.4114135Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2025-12-01T18:46:42.4340115Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	UNKNOWN STEP	2025-12-01T18:46:42.4372817Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.4380557Z ##[group]Fetching the repository
+build	UNKNOWN STEP	2025-12-01T18:46:42.4383289Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3f34ec29c7c37ec274c2cec4d1ddec939011dd86:refs/remotes/origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-01T18:46:42.8579486Z From https://github.com/Tris247/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:42.8582410Z  * [new ref]         3f34ec29c7c37ec274c2cec4d1ddec939011dd86 -> origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-01T18:46:42.8613417Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.8614905Z ##[group]Determining the checkout info
+build	UNKNOWN STEP	2025-12-01T18:46:42.8616360Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.8620012Z [command]/usr/bin/git sparse-checkout disable
+build	UNKNOWN STEP	2025-12-01T18:46:42.8659588Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	UNKNOWN STEP	2025-12-01T18:46:42.8684131Z ##[group]Checking out the ref
+build	UNKNOWN STEP	2025-12-01T18:46:42.8687501Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+build	UNKNOWN STEP	2025-12-01T18:46:42.8826540Z Switched to a new branch 'feat/postgres-ci-migration'
+build	UNKNOWN STEP	2025-12-01T18:46:42.8829777Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+build	UNKNOWN STEP	2025-12-01T18:46:42.8836415Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:42.8868216Z [command]/usr/bin/git log -1 --format=%H
+build	UNKNOWN STEP	2025-12-01T18:46:42.8889455Z 3f34ec29c7c37ec274c2cec4d1ddec939011dd86
+build	UNKNOWN STEP	2025-12-01T18:46:42.9152383Z ##[group]Run actions/setup-node@v4
+build	UNKNOWN STEP	2025-12-01T18:46:42.9153426Z with:
+build	UNKNOWN STEP	2025-12-01T18:46:42.9154070Z   node-version: 20
+build	UNKNOWN STEP	2025-12-01T18:46:42.9154930Z   always-auth: false
+build	UNKNOWN STEP	2025-12-01T18:46:42.9155678Z   check-latest: false
+build	UNKNOWN STEP	2025-12-01T18:46:42.9156655Z   token: ***
+build	UNKNOWN STEP	2025-12-01T18:46:42.9157301Z env:
+build	UNKNOWN STEP	2025-12-01T18:46:42.9158328Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T18:46:42.9159147Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:43.0979556Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+build	UNKNOWN STEP	2025-12-01T18:46:43.0985906Z ##[group]Environment details
+build	UNKNOWN STEP	2025-12-01T18:46:43.4913508Z node: v20.19.5
+build	UNKNOWN STEP	2025-12-01T18:46:43.4914413Z npm: 10.8.2
+build	UNKNOWN STEP	2025-12-01T18:46:43.4915165Z yarn: 1.22.22
+build	UNKNOWN STEP	2025-12-01T18:46:43.4916613Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:43.5825900Z ##[group]Run actions/cache@v4
+build	UNKNOWN STEP	2025-12-01T18:46:43.5826517Z with:
+build	UNKNOWN STEP	2025-12-01T18:46:43.5827016Z   path: ~/.npm
+build	UNKNOWN STEP	2025-12-01T18:46:43.5827916Z   key: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	UNKNOWN STEP	2025-12-01T18:46:43.5828743Z   enableCrossOsArchive: false
+build	UNKNOWN STEP	2025-12-01T18:46:43.5829309Z   fail-on-cache-miss: false
+build	UNKNOWN STEP	2025-12-01T18:46:43.5829847Z   lookup-only: false
+build	UNKNOWN STEP	2025-12-01T18:46:43.5830348Z   save-always: false
+build	UNKNOWN STEP	2025-12-01T18:46:43.5830834Z env:
+build	UNKNOWN STEP	2025-12-01T18:46:43.5831323Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T18:46:43.5831855Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:44.0182361Z Cache not found for input keys: Linux-node-c290567df98d21d5055ae6116084515929824465b87e2b57d9039ab1fa3502fa
+build	UNKNOWN STEP	2025-12-01T18:46:44.0269395Z ##[group]Run npm ci
+build	UNKNOWN STEP	2025-12-01T18:46:44.0269946Z [36;1mnpm ci[0m
+build	UNKNOWN STEP	2025-12-01T18:46:44.0315228Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-01T18:46:44.0315766Z env:
+build	UNKNOWN STEP	2025-12-01T18:46:44.0316203Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T18:46:44.0316704Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:46.0355289Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+build	UNKNOWN STEP	2025-12-01T18:46:46.1999840Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-01T18:46:46.4114370Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+build	UNKNOWN STEP	2025-12-01T18:46:46.6016817Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+build	UNKNOWN STEP	2025-12-01T18:46:46.7978421Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-01T18:46:46.8784414Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+build	UNKNOWN STEP	2025-12-01T18:46:46.9080942Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+build	UNKNOWN STEP	2025-12-01T18:46:46.9452374Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+build	UNKNOWN STEP	2025-12-01T18:46:53.7282034Z 
+build	UNKNOWN STEP	2025-12-01T18:46:53.7282923Z added 310 packages, and audited 311 packages in 10s
+build	UNKNOWN STEP	2025-12-01T18:46:53.7283269Z 
+build	UNKNOWN STEP	2025-12-01T18:46:53.7283464Z 52 packages are looking for funding
+build	UNKNOWN STEP	2025-12-01T18:46:53.7283764Z   run `npm fund` for details
+build	UNKNOWN STEP	2025-12-01T18:46:53.7537208Z 
+build	UNKNOWN STEP	2025-12-01T18:46:53.7551318Z 4 moderate severity vulnerabilities
+build	UNKNOWN STEP	2025-12-01T18:46:53.7564705Z 
+build	UNKNOWN STEP	2025-12-01T18:46:53.7565268Z To address all issues (including breaking changes), run:
+build	UNKNOWN STEP	2025-12-01T18:46:53.7565889Z   npm audit fix --force
+build	UNKNOWN STEP	2025-12-01T18:46:53.7566158Z 
+build	UNKNOWN STEP	2025-12-01T18:46:53.7566380Z Run `npm audit` for details.
+build	UNKNOWN STEP	2025-12-01T18:46:53.7845854Z ##[group]Run mkdir -p data
+build	UNKNOWN STEP	2025-12-01T18:46:53.7846180Z [36;1mmkdir -p data[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7846411Z [36;1mtouch dev.db[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7846731Z [36;1m# Push the Prisma schema to the local sqlite dev DB (avoid applying[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7847164Z [36;1m# Postgres-specific migrations during CI unit tests)[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7847535Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7848152Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7848469Z [36;1mnode prisma/seed.js || true[0m
+build	UNKNOWN STEP	2025-12-01T18:46:53.7884193Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2025-12-01T18:46:53.7884476Z env:
+build	UNKNOWN STEP	2025-12-01T18:46:53.7884679Z   DATABASE_URL: file:./dev.db
+build	UNKNOWN STEP	2025-12-01T18:46:53.7884908Z ##[endgroup]
+build	UNKNOWN STEP	2025-12-01T18:46:54.4829173Z Prisma schema loaded from prisma/schema.prisma
+build	UNKNOWN STEP	2025-12-01T18:46:54.4884768Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+build	UNKNOWN STEP	2025-12-01T18:46:54.5249767Z Error: P1012
+build	UNKNOWN STEP	2025-12-01T18:46:54.5250677Z 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5252082Z error: Error validating field `keywords` in model `AutoApplyRule`: Field `keywords` in model `AutoApplyRule` can't be of type Json. The current connector does not support the Json type.
+build	UNKNOWN STEP	2025-12-01T18:46:54.5253380Z   -->  prisma/schema.prisma:95
+build	UNKNOWN STEP	2025-12-01T18:46:54.5253791Z    | 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5254341Z 94 |   user      User     @relation(fields: [userId], references: [id])
+build	UNKNOWN STEP	2025-12-01T18:46:54.5254948Z 95 |   keywords  Json?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5255336Z 96 |   locations Json?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5255630Z    | 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5256441Z error: Error validating field `locations` in model `AutoApplyRule`: Field `locations` in model `AutoApplyRule` can't be of type Json. The current connector does not support the Json type.
+build	UNKNOWN STEP	2025-12-01T18:46:54.5257164Z   -->  prisma/schema.prisma:96
+build	UNKNOWN STEP	2025-12-01T18:46:54.5257394Z    | 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5257817Z 95 |   keywords  Json?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5258088Z 96 |   locations Json?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5258318Z 97 |   salaryMin Int?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5258509Z    | 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5259281Z error: Error validating field `jobTypes` in model `AutoApplyRule`: Field `jobTypes` in model `AutoApplyRule` can't be of type Json. The current connector does not support the Json type.
+build	UNKNOWN STEP	2025-12-01T18:46:54.5259976Z   -->  prisma/schema.prisma:98
+build	UNKNOWN STEP	2025-12-01T18:46:54.5260201Z    | 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5260382Z 97 |   salaryMin Int?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5260596Z 98 |   jobTypes  Json?
+build	UNKNOWN STEP	2025-12-01T18:46:54.5260874Z 99 |   active    Boolean  @default(true)
+build	UNKNOWN STEP	2025-12-01T18:46:54.5261117Z    | 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5261215Z 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5261225Z 
+build	UNKNOWN STEP	2025-12-01T18:46:54.5422346Z ##[error]Process completed with exit code 1.
+build	UNKNOWN STEP	2025-12-01T18:46:54.5530678Z Post job cleanup.
+build	UNKNOWN STEP	2025-12-01T18:46:54.6458199Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2025-12-01T18:46:54.6493284Z git version 2.51.2
+build	UNKNOWN STEP	2025-12-01T18:46:54.6537436Z Temporarily overriding HOME='/home/runner/work/_temp/aefb60be-3075-4032-bb16-cb2619b39af9' before making global git config changes
+build	UNKNOWN STEP	2025-12-01T18:46:54.6539166Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2025-12-01T18:46:54.6543902Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+build	UNKNOWN STEP	2025-12-01T18:46:54.6579829Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2025-12-01T18:46:54.6612694Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2025-12-01T18:46:54.6840733Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2025-12-01T18:46:54.6860690Z http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-12-01T18:46:54.6873178Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	UNKNOWN STEP	2025-12-01T18:46:54.6903773Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2025-12-01T18:46:54.7121273Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2025-12-01T18:46:54.7151493Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2025-12-01T18:46:54.7496973Z Cleaning up orphan processes

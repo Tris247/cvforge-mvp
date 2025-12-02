@@ -1,0 +1,720 @@
+test	Set up job	´╗┐2025-12-01T20:12:57.6116152Z Current runner version: '2.329.0'
+test	Set up job	2025-12-01T20:12:57.6139928Z ##[group]Runner Image Provisioner
+test	Set up job	2025-12-01T20:12:57.6140775Z Hosted Compute Agent
+test	Set up job	2025-12-01T20:12:57.6141264Z Version: 20251016.436
+test	Set up job	2025-12-01T20:12:57.6142282Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+test	Set up job	2025-12-01T20:12:57.6142949Z Build Date: 2025-10-15T20:44:12Z
+test	Set up job	2025-12-01T20:12:57.6143526Z ##[endgroup]
+test	Set up job	2025-12-01T20:12:57.6144164Z ##[group]Operating System
+test	Set up job	2025-12-01T20:12:57.6144692Z Ubuntu
+test	Set up job	2025-12-01T20:12:57.6145157Z 24.04.3
+test	Set up job	2025-12-01T20:12:57.6145664Z LTS
+test	Set up job	2025-12-01T20:12:57.6146124Z ##[endgroup]
+test	Set up job	2025-12-01T20:12:57.6146576Z ##[group]Runner Image
+test	Set up job	2025-12-01T20:12:57.6147223Z Image: ubuntu-24.04
+test	Set up job	2025-12-01T20:12:57.6147702Z Version: 20251112.124.1
+test	Set up job	2025-12-01T20:12:57.6148710Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2025-12-01T20:12:57.6150138Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+test	Set up job	2025-12-01T20:12:57.6151250Z ##[endgroup]
+test	Set up job	2025-12-01T20:12:57.6152625Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2025-12-01T20:12:57.6154635Z Contents: read
+test	Set up job	2025-12-01T20:12:57.6155224Z Metadata: read
+test	Set up job	2025-12-01T20:12:57.6155751Z Packages: read
+test	Set up job	2025-12-01T20:12:57.6156213Z ##[endgroup]
+test	Set up job	2025-12-01T20:12:57.6158509Z Secret source: Actions
+test	Set up job	2025-12-01T20:12:57.6159220Z Prepare workflow directory
+test	Set up job	2025-12-01T20:12:57.6545764Z Prepare all required actions
+test	Set up job	2025-12-01T20:12:57.6583437Z Getting action download info
+test	Set up job	2025-12-01T20:12:57.9908370Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+test	Set up job	2025-12-01T20:12:58.5190646Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test	Set up job	2025-12-01T20:12:58.6076673Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test	Set up job	2025-12-01T20:12:58.8059299Z Complete job name: test
+test	Checkout	´╗┐2025-12-01T20:12:58.8751609Z ##[group]Run actions/checkout@v4
+test	Checkout	2025-12-01T20:12:58.8752877Z with:
+test	Checkout	2025-12-01T20:12:58.8753379Z   repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-01T20:12:58.8754093Z   token: ***
+test	Checkout	2025-12-01T20:12:58.8754505Z   ssh-strict: true
+test	Checkout	2025-12-01T20:12:58.8754938Z   ssh-user: git
+test	Checkout	2025-12-01T20:12:58.8755371Z   persist-credentials: true
+test	Checkout	2025-12-01T20:12:58.8755862Z   clean: true
+test	Checkout	2025-12-01T20:12:58.8756297Z   sparse-checkout-cone-mode: true
+test	Checkout	2025-12-01T20:12:58.8756822Z   fetch-depth: 1
+test	Checkout	2025-12-01T20:12:58.8757255Z   fetch-tags: false
+test	Checkout	2025-12-01T20:12:58.8757685Z   show-progress: true
+test	Checkout	2025-12-01T20:12:58.8758139Z   lfs: false
+test	Checkout	2025-12-01T20:12:58.8758553Z   submodules: false
+test	Checkout	2025-12-01T20:12:58.8759019Z   set-safe-directory: true
+test	Checkout	2025-12-01T20:12:58.8759773Z env:
+test	Checkout	2025-12-01T20:12:58.8760216Z   DATABASE_URL: file:./dev.db
+test	Checkout	2025-12-01T20:12:58.8760713Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:58.9823774Z Syncing repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-01T20:12:58.9825665Z ##[group]Getting Git version info
+test	Checkout	2025-12-01T20:12:58.9826481Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-01T20:12:58.9827657Z [command]/usr/bin/git version
+test	Checkout	2025-12-01T20:12:58.9902004Z git version 2.51.2
+test	Checkout	2025-12-01T20:12:58.9928470Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:58.9942517Z Temporarily overriding HOME='/home/runner/work/_temp/c86fa3b4-fc85-427e-b524-89130b1fa64e' before making global git config changes
+test	Checkout	2025-12-01T20:12:58.9944167Z Adding repository directory to the temporary git global config as a safe directory
+test	Checkout	2025-12-01T20:12:58.9955962Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-01T20:12:58.9990614Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-01T20:12:58.9994867Z ##[group]Initializing the repository
+test	Checkout	2025-12-01T20:12:58.9999632Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-01T20:12:59.0097901Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Checkout	2025-12-01T20:12:59.0099466Z hint: is subject to change. To configure the initial branch name to use in all
+test	Checkout	2025-12-01T20:12:59.0101756Z hint: of your new repositories, which will suppress this warning, call:
+test	Checkout	2025-12-01T20:12:59.0103404Z hint:
+test	Checkout	2025-12-01T20:12:59.0104498Z hint: 	git config --global init.defaultBranch <name>
+test	Checkout	2025-12-01T20:12:59.0105740Z hint:
+test	Checkout	2025-12-01T20:12:59.0106942Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Checkout	2025-12-01T20:12:59.0108863Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Checkout	2025-12-01T20:12:59.0110317Z hint:
+test	Checkout	2025-12-01T20:12:59.0111108Z hint: 	git branch -m <name>
+test	Checkout	2025-12-01T20:12:59.0112344Z hint:
+test	Checkout	2025-12-01T20:12:59.0113627Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Checkout	2025-12-01T20:12:59.0115811Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+test	Checkout	2025-12-01T20:12:59.0118922Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-01T20:12:59.0148641Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:59.0150055Z ##[group]Disabling automatic garbage collection
+test	Checkout	2025-12-01T20:12:59.0153762Z [command]/usr/bin/git config --local gc.auto 0
+test	Checkout	2025-12-01T20:12:59.0181189Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:59.0182224Z ##[group]Setting up auth
+test	Checkout	2025-12-01T20:12:59.0187592Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Checkout	2025-12-01T20:12:59.0216737Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Checkout	2025-12-01T20:12:59.0527054Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Checkout	2025-12-01T20:12:59.0554655Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Checkout	2025-12-01T20:12:59.0784240Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Checkout	2025-12-01T20:12:59.0817024Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Checkout	2025-12-01T20:12:59.1042680Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Checkout	2025-12-01T20:12:59.1076229Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:59.1077062Z ##[group]Fetching the repository
+test	Checkout	2025-12-01T20:12:59.1084292Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +51b333ea472688f9dade0e4aa06202012d261087:refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T20:12:59.4742907Z From https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-01T20:12:59.4745457Z  * [new ref]         51b333ea472688f9dade0e4aa06202012d261087 -> origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T20:12:59.4776986Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:59.4778051Z ##[group]Determining the checkout info
+test	Checkout	2025-12-01T20:12:59.4779843Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:59.4784470Z [command]/usr/bin/git sparse-checkout disable
+test	Checkout	2025-12-01T20:12:59.4822707Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Checkout	2025-12-01T20:12:59.4847190Z ##[group]Checking out the ref
+test	Checkout	2025-12-01T20:12:59.4851152Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-01T20:12:59.4987434Z Switched to a new branch 'feat/postgres-ci-migration'
+test	Checkout	2025-12-01T20:12:59.4990182Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+test	Checkout	2025-12-01T20:12:59.4996998Z ##[endgroup]
+test	Checkout	2025-12-01T20:12:59.5028922Z [command]/usr/bin/git log -1 --format=%H
+test	Checkout	2025-12-01T20:12:59.5051119Z 51b333ea472688f9dade0e4aa06202012d261087
+test	Setup Node.js	´╗┐2025-12-01T20:12:59.5348767Z ##[group]Run actions/setup-node@v4
+test	Setup Node.js	2025-12-01T20:12:59.5349930Z with:
+test	Setup Node.js	2025-12-01T20:12:59.5350737Z   node-version: 18
+test	Setup Node.js	2025-12-01T20:12:59.5351921Z   always-auth: false
+test	Setup Node.js	2025-12-01T20:12:59.5352879Z   check-latest: false
+test	Setup Node.js	2025-12-01T20:12:59.5354085Z   token: ***
+test	Setup Node.js	2025-12-01T20:12:59.5354901Z env:
+test	Setup Node.js	2025-12-01T20:12:59.5355916Z   DATABASE_URL: file:./dev.db
+test	Setup Node.js	2025-12-01T20:12:59.5356951Z ##[endgroup]
+test	Setup Node.js	2025-12-01T20:12:59.7180806Z Attempting to download 18...
+test	Setup Node.js	2025-12-01T20:13:00.2652434Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+test	Setup Node.js	2025-12-01T20:13:00.7169702Z Extracting ...
+test	Setup Node.js	2025-12-01T20:13:00.7275707Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/4e038eb2-e4f8-489f-8d87-d873d196df6b -f /home/runner/work/_temp/34b6d093-17ee-487f-ade9-26fc34daa894
+test	Setup Node.js	2025-12-01T20:13:01.6857538Z Adding to the cache ...
+test	Setup Node.js	2025-12-01T20:13:03.2451681Z ##[group]Environment details
+test	Setup Node.js	2025-12-01T20:13:03.4689214Z node: v18.20.8
+test	Setup Node.js	2025-12-01T20:13:03.4689788Z npm: 10.8.2
+test	Setup Node.js	2025-12-01T20:13:03.4690067Z yarn: 1.22.22
+test	Setup Node.js	2025-12-01T20:13:03.4690762Z ##[endgroup]
+test	Install dependencies	´╗┐2025-12-01T20:13:03.4843820Z ##[group]Run npm ci
+test	Install dependencies	2025-12-01T20:13:03.4844136Z [36;1mnpm ci[0m
+test	Install dependencies	2025-12-01T20:13:03.4882632Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2025-12-01T20:13:03.4882931Z env:
+test	Install dependencies	2025-12-01T20:13:03.4883111Z   DATABASE_URL: file:./dev.db
+test	Install dependencies	2025-12-01T20:13:03.4883335Z ##[endgroup]
+test	Install dependencies	2025-12-01T20:13:05.1837293Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+test	Install dependencies	2025-12-01T20:13:05.3740932Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+test	Install dependencies	2025-12-01T20:13:05.6399078Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+test	Install dependencies	2025-12-01T20:13:05.8253348Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+test	Install dependencies	2025-12-01T20:13:05.8540799Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+test	Install dependencies	2025-12-01T20:13:05.8963242Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+test	Install dependencies	2025-12-01T20:13:06.0142779Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+test	Install dependencies	2025-12-01T20:13:06.2723370Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+test	Install dependencies	2025-12-01T20:13:14.5375456Z 
+test	Install dependencies	2025-12-01T20:13:14.5376198Z added 310 packages, and audited 311 packages in 11s
+test	Install dependencies	2025-12-01T20:13:14.5384128Z 
+test	Install dependencies	2025-12-01T20:13:14.5384662Z 52 packages are looking for funding
+test	Install dependencies	2025-12-01T20:13:14.5386315Z   run `npm fund` for details
+test	Install dependencies	2025-12-01T20:13:14.5575149Z 
+test	Install dependencies	2025-12-01T20:13:14.5581572Z 4 moderate severity vulnerabilities
+test	Install dependencies	2025-12-01T20:13:14.5582466Z 
+test	Install dependencies	2025-12-01T20:13:14.5656045Z To address all issues (including breaking changes), run:
+test	Install dependencies	2025-12-01T20:13:14.5656807Z   npm audit fix --force
+test	Install dependencies	2025-12-01T20:13:14.5657085Z 
+test	Install dependencies	2025-12-01T20:13:14.5657294Z Run `npm audit` for details.
+test	Prepare clean test environment	´╗┐2025-12-01T20:13:14.5926709Z ##[group]Run # ensure no leftover marketplace test files interfere with tests
+test	Prepare clean test environment	2025-12-01T20:13:14.5927555Z [36;1m# ensure no leftover marketplace test files interfere with tests[0m
+test	Prepare clean test environment	2025-12-01T20:13:14.5928180Z [36;1mrm -f ./data/marketplace*.json || true[0m
+test	Prepare clean test environment	2025-12-01T20:13:14.5928741Z [36;1mrm -f ./data/marketplace-applications*.json || true[0m
+test	Prepare clean test environment	2025-12-01T20:13:14.5929242Z [36;1mmkdir -p data[0m
+test	Prepare clean test environment	2025-12-01T20:13:14.5929688Z [36;1mecho "Cleaned data/ and removed marketplace test files"[0m
+test	Prepare clean test environment	2025-12-01T20:13:14.5973209Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Prepare clean test environment	2025-12-01T20:13:14.5973711Z env:
+test	Prepare clean test environment	2025-12-01T20:13:14.5973981Z   DATABASE_URL: file:./dev.db
+test	Prepare clean test environment	2025-12-01T20:13:14.5974335Z ##[endgroup]
+test	Prepare clean test environment	2025-12-01T20:13:14.6073147Z Cleaned data/ and removed marketplace test files
+test	Prepare test files and SQLite DB	´╗┐2025-12-01T20:13:14.6095339Z ##[group]Run mkdir -p data
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6095616Z [36;1mmkdir -p data[0m
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6095820Z [36;1mtouch dev.db[0m
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6096064Z [36;1mecho "Using SQLite dev DB at ./dev.db for test run"[0m
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6096448Z [36;1m# Apply the Prisma schema to the local sqlite dev.db (safe for CI)[0m
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6096835Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6097404Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6127526Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6127851Z env:
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6128023Z   DATABASE_URL: file:./dev.db
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6128237Z ##[endgroup]
+test	Prepare test files and SQLite DB	2025-12-01T20:13:14.6199367Z Using SQLite dev DB at ./dev.db for test run
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.5429428Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.5506564Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.5878299Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.5879074Z The database is already in sync with the Prisma schema.
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.5879707Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.5891507Z Running generate... (Use --skip-generate to skip the generators)
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.8328885Z [2K[1A[2K[GRunning generate... - Prisma Client
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.9558045Z [2K[1A[2K[GÔ£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 121ms
+test	Prepare test files and SQLite DB	2025-12-01T20:13:15.9560830Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:16.9458691Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2977327Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2978892Z Ô£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 110ms
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2981171Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2982187Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2982800Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2983686Z Tip: Want to react to database changes in your app as they happen? Discover how with Pulse: https://pris.ly/tip-1-pulse
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.2984433Z 
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3234874Z ÔöîÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÉ
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3235921Z Ôöé  Update available 5.22.0 -> 7.0.1                       Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3236665Z Ôöé                                                         Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3237399Z Ôöé  This is a major update - please follow the guide at    Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3238455Z Ôöé  https://pris.ly/d/major-version-upgrade                Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3239231Z Ôöé                                                         Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3239924Z Ôöé  Run the following to update                            Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3240685Z Ôöé    npm i --save-dev prisma@latest                       Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3241528Z Ôöé    npm i @prisma/client@latest                          Ôöé
+test	Prepare test files and SQLite DB	2025-12-01T20:13:17.3242048Z ÔööÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÿ
+test	Run tests	´╗┐2025-12-01T20:13:17.5062654Z ##[group]Run npx vitest --run
+test	Run tests	2025-12-01T20:13:17.5062948Z [36;1mnpx vitest --run[0m
+test	Run tests	2025-12-01T20:13:17.5095859Z shell: /usr/bin/bash -e {0}
+test	Run tests	2025-12-01T20:13:17.5096084Z env:
+test	Run tests	2025-12-01T20:13:17.5096266Z   DATABASE_URL: file:./dev.db
+test	Run tests	2025-12-01T20:13:17.5096484Z   VITEST_MAX_THREADS: 1
+test	Run tests	2025-12-01T20:13:17.5096673Z   VITEST_MIN_THREADS: 1
+test	Run tests	2025-12-01T20:13:17.5096857Z ##[endgroup]
+test	Run tests	2025-12-01T20:13:18.3683527Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+test	Run tests	2025-12-01T20:13:18.3947369Z 
+test	Run tests	2025-12-01T20:13:18.3948649Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+test	Run tests	2025-12-01T20:13:18.3949306Z 
+test	Run tests	2025-12-01T20:13:18.7037413Z [90mstderr[2m | tests/ai-generate.spec.ts[2m > [22m[2mAI generate endpoint[2m > [22m[2muses OpenAI when configured and falls back correctly[22m[39m
+test	Run tests	2025-12-01T20:13:18.7039297Z Captured exception Error: Simulated OpenAI failure for test API key
+test	Run tests	2025-12-01T20:13:18.7040546Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	Run tests	2025-12-01T20:13:18.7042686Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	Run tests	2025-12-01T20:13:18.7043765Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-generate.spec.ts:67:5
+test	Run tests	2025-12-01T20:13:18.7045031Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	Run tests	2025-12-01T20:13:18.7045942Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	Run tests	2025-12-01T20:13:18.7047419Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	Run tests	2025-12-01T20:13:18.7048720Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	Run tests	2025-12-01T20:13:18.7050132Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	Run tests	2025-12-01T20:13:18.7051932Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	Run tests	2025-12-01T20:13:18.7053614Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u1' }
+test	Run tests	2025-12-01T20:13:18.7054401Z openai error Simulated OpenAI failure for test API key
+test	Run tests	2025-12-01T20:13:18.7054634Z 
+test	Run tests	2025-12-01T20:13:18.7146819Z  [32mÔ£ô[39m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 62[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:19.1809487Z  [32mÔ£ô[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 273[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:19.3949050Z  [32mÔ£ô[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 37[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:19.6174405Z  [32mÔ£ô[39m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 39[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:19.8634660Z  [32mÔ£ô[39m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 63[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:19.8659106Z [90mstderr[2m | tests/webhook-reconcile.spec.ts[22m[39m
+test	Run tests	2025-12-01T20:13:19.8659783Z STRIPE_SECRET required
+test	Run tests	2025-12-01T20:13:19.8660032Z 
+test	Run tests	2025-12-01T20:13:20.0679097Z  [32mÔ£ô[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 25[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:20.3034960Z [90mstdout[2m | tests/subscriptions-flow.spec.ts[2m > [22m[2msubscription flows (integration-like)[2m > [22m[2mwebhook checkout.session.completed maps pending subscription by metadata[22m[39m
+test	Run tests	2025-12-01T20:13:20.3036079Z checkout.session.completed sess_x
+test	Run tests	2025-12-01T20:13:20.3036357Z 
+test	Run tests	2025-12-01T20:13:20.5556900Z  [32mÔ£ô[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 289[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:20.8129680Z  [32mÔ£ô[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 78[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:21.0204291Z  [32mÔ£ô[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 28[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:21.2223035Z  [32mÔ£ô[39m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 27[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:21.4503596Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-01T20:13:21.4505087Z processing autoapply job dddbce7f-fff1-4728-8a32-58446274753f
+test	Run tests	2025-12-01T20:13:21.4505561Z 
+test	Run tests	2025-12-01T20:13:21.4529004Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-01T20:13:21.4530588Z found 1 auto-apply rules
+test	Run tests	2025-12-01T20:13:21.4530818Z 
+test	Run tests	2025-12-01T20:13:21.4556251Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-01T20:13:21.4557228Z autoapply created 1 applications for job dddbce7f-fff1-4728-8a32-58446274753f
+test	Run tests	2025-12-01T20:13:21.4557537Z 
+test	Run tests	2025-12-01T20:13:21.4720825Z  [32mÔ£ô[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 42[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:21.6757128Z  [32mÔ£ô[39m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 27[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:21.8948252Z  [32mÔ£ô[39m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 39[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:22.0783015Z  [32mÔ£ô[39m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:22.3125327Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+test	Run tests	2025-12-01T20:13:22.3126733Z notification email preview: preview://example
+test	Run tests	2025-12-01T20:13:22.3127191Z 
+test	Run tests	2025-12-01T20:13:22.4600754Z  [32mÔ£ô[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 205[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:22.6784251Z  [32mÔ£ô[39m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 42[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:22.8794298Z  [32mÔ£ô[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 4[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:23.1193537Z  [32mÔ£ô[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 57[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:23.3695153Z  [32mÔ£ô[39m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 74[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:23.6093748Z  [32mÔ£ô[39m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 61[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:23.8049904Z  [32mÔ£ô[39m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 24[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:24.0043271Z  [32mÔ£ô[39m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 21[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:24.1864458Z  [32mÔ£ô[39m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:24.4070291Z  [32mÔ£ô[39m tests/queue.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 42[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:24.5934011Z  [32mÔ£ô[39m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 7[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:24.7777418Z  [32mÔ£ô[39m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 9[2mms[22m[39m
+test	Run tests	2025-12-01T20:13:24.7781741Z [90mstderr[2m | tests/telemetry.spec.ts[2m > [22m[2mtelemetry helper[2m > [22m[2mdoes not throw when SENTRY_DSN not configured[22m[39m
+test	Run tests	2025-12-01T20:13:24.7782993Z Captured exception Error: test
+test	Run tests	2025-12-01T20:13:24.7783843Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:34
+test	Run tests	2025-12-01T20:13:24.7785369Z     at Proxy.assertThrows (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/core/assertions.js:2644:7)
+test	Run tests	2025-12-01T20:13:24.7787181Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	Run tests	2025-12-01T20:13:24.7788223Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:850:16)
+test	Run tests	2025-12-01T20:13:24.7789350Z     at Proxy.overwritingMethodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33)
+test	Run tests	2025-12-01T20:13:24.7790468Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:1324:19)
+test	Run tests	2025-12-01T20:13:24.7791654Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:800:17)
+test	Run tests	2025-12-01T20:13:24.7792663Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	Run tests	2025-12-01T20:13:24.7793476Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:58
+test	Run tests	2025-12-01T20:13:24.7794215Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:135:14 
+test	Run tests	2025-12-01T20:13:24.7853102Z 
+test	Run tests	2025-12-01T20:13:24.7853152Z 
+test	Run tests	2025-12-01T20:13:24.7864786Z [2m Test Files [22m [1m[32m26 passed[39m[22m[90m (26)[39m
+test	Run tests	2025-12-01T20:13:24.7865652Z [2m      Tests [22m [1m[32m43 passed[39m[22m[90m (43)[39m
+test	Run tests	2025-12-01T20:13:24.7867644Z [2m   Start at [22m 20:13:18
+test	Run tests	2025-12-01T20:13:24.7869307Z [2m   Duration [22m 6.39s[2m (transform 301ms, setup 1ms, collect 401ms, tests 1.59s, environment 4ms, prepare 1.66s)[22m
+test	Run tests	2025-12-01T20:13:24.7870033Z 
+test	Post Setup Node.js	´╗┐2025-12-01T20:13:24.8177864Z Post job cleanup.
+test	Post Checkout	´╗┐2025-12-01T20:13:24.9822386Z Post job cleanup.
+test	Post Checkout	2025-12-01T20:13:25.0743556Z [command]/usr/bin/git version
+test	Post Checkout	2025-12-01T20:13:25.0779311Z git version 2.51.2
+test	Post Checkout	2025-12-01T20:13:25.0823712Z Temporarily overriding HOME='/home/runner/work/_temp/f2e9c907-5c84-41d8-a4ca-78c9fb03cbf3' before making global git config changes
+test	Post Checkout	2025-12-01T20:13:25.0825187Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Checkout	2025-12-01T20:13:25.0830092Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Post Checkout	2025-12-01T20:13:25.0865314Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Checkout	2025-12-01T20:13:25.0897466Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Checkout	2025-12-01T20:13:25.1123269Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Checkout	2025-12-01T20:13:25.1145998Z http.https://github.com/.extraheader
+test	Post Checkout	2025-12-01T20:13:25.1158804Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Checkout	2025-12-01T20:13:25.1191756Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Checkout	2025-12-01T20:13:25.1426556Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Checkout	2025-12-01T20:13:25.1459499Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	´╗┐2025-12-01T20:13:25.1830962Z Cleaning up orphan processes
+Postgres Integration	Set up job	´╗┐2025-12-01T20:13:30.1986945Z Current runner version: '2.329.0'
+Postgres Integration	Set up job	2025-12-01T20:13:30.2020064Z ##[group]Runner Image Provisioner
+Postgres Integration	Set up job	2025-12-01T20:13:30.2021249Z Hosted Compute Agent
+Postgres Integration	Set up job	2025-12-01T20:13:30.2022101Z Version: 20251016.436
+Postgres Integration	Set up job	2025-12-01T20:13:30.2023344Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+Postgres Integration	Set up job	2025-12-01T20:13:30.2024485Z Build Date: 2025-10-15T20:44:12Z
+Postgres Integration	Set up job	2025-12-01T20:13:30.2025604Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-01T20:13:30.2026592Z ##[group]Operating System
+Postgres Integration	Set up job	2025-12-01T20:13:30.2027527Z Ubuntu
+Postgres Integration	Set up job	2025-12-01T20:13:30.2028265Z 24.04.3
+Postgres Integration	Set up job	2025-12-01T20:13:30.2029193Z LTS
+Postgres Integration	Set up job	2025-12-01T20:13:30.2029936Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-01T20:13:30.2030760Z ##[group]Runner Image
+Postgres Integration	Set up job	2025-12-01T20:13:30.2031859Z Image: ubuntu-24.04
+Postgres Integration	Set up job	2025-12-01T20:13:30.2032727Z Version: 20251112.124.1
+Postgres Integration	Set up job	2025-12-01T20:13:30.2034604Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+Postgres Integration	Set up job	2025-12-01T20:13:30.2037460Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+Postgres Integration	Set up job	2025-12-01T20:13:30.2039417Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-01T20:13:30.2041166Z ##[group]GITHUB_TOKEN Permissions
+Postgres Integration	Set up job	2025-12-01T20:13:30.2043876Z Contents: read
+Postgres Integration	Set up job	2025-12-01T20:13:30.2045086Z Metadata: read
+Postgres Integration	Set up job	2025-12-01T20:13:30.2045912Z Packages: read
+Postgres Integration	Set up job	2025-12-01T20:13:30.2046695Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-01T20:13:30.2049567Z Secret source: Actions
+Postgres Integration	Set up job	2025-12-01T20:13:30.2050633Z Prepare workflow directory
+Postgres Integration	Set up job	2025-12-01T20:13:30.2644229Z Prepare all required actions
+Postgres Integration	Set up job	2025-12-01T20:13:30.2698747Z Getting action download info
+Postgres Integration	Set up job	2025-12-01T20:13:30.5351032Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Postgres Integration	Set up job	2025-12-01T20:13:30.7957571Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Postgres Integration	Set up job	2025-12-01T20:13:31.2633491Z Complete job name: Postgres Integration
+Postgres Integration	Initialize containers	´╗┐2025-12-01T20:13:31.3134884Z ##[group]Checking docker version
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3148226Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3526620Z '1.48'
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3539709Z Docker daemon API version: '1.48'
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3540534Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3688449Z '1.48'
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3701586Z Docker client API version: '1.48'
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3706688Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3709720Z ##[group]Clean up resources from previous jobs
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3715264Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=9c0c7a"
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3851122Z ##[command]/usr/bin/docker network prune --force --filter "label=9c0c7a"
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3973664Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3974218Z ##[group]Create local container network
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.3984661Z ##[command]/usr/bin/docker network create --label 9c0c7a github_network_ab33b998d0ae4983abcaab1e1ad62082
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.4461960Z a8c0bd2599a85842b98522efb5f112865b939bb11b552397b4b298079c9eebec
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.4481768Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.4506731Z ##[group]Starting postgres service container
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.4525938Z ##[command]/usr/bin/docker pull postgres:15
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7028464Z 15: Pulling from library/postgres
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7656665Z 0e4bc2bd6656: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7657711Z e213bd2560e2: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7658538Z 9fcd228516aa: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7659503Z 2e6036390374: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7660270Z 5a19b1f63ace: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7661047Z dd23ed782cae: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7661674Z b10108f2d223: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7662353Z 4eb4a683c389: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7663035Z b475dc4bba47: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7663740Z 2c64a0db539b: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7664447Z 6e6c09f9e058: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7665380Z 304e9b7c93e6: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7666126Z 95bcad39f7ff: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7666889Z fa51353b2c9b: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7667571Z 2e6036390374: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7668498Z 5a19b1f63ace: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7669133Z b475dc4bba47: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7669755Z dd23ed782cae: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7670471Z 2c64a0db539b: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7671170Z b10108f2d223: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7671878Z 6e6c09f9e058: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7672601Z 95bcad39f7ff: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7673307Z fa51353b2c9b: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7674018Z 304e9b7c93e6: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.7674751Z 4eb4a683c389: Waiting
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.8449084Z e213bd2560e2: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.9529186Z 2e6036390374: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.9530784Z 2e6036390374: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.9659577Z 9fcd228516aa: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:31.9660927Z 9fcd228516aa: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.0889285Z dd23ed782cae: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.0890688Z dd23ed782cae: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.1822040Z b10108f2d223: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.1823373Z b10108f2d223: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.2069489Z 5a19b1f63ace: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.2071136Z 5a19b1f63ace: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.2637276Z 4eb4a683c389: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.2638848Z 4eb4a683c389: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.3503072Z 2c64a0db539b: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.3506694Z 2c64a0db539b: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.4221669Z 6e6c09f9e058: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.4223305Z 6e6c09f9e058: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.5635602Z 304e9b7c93e6: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.5637865Z 304e9b7c93e6: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.6568148Z 95bcad39f7ff: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.7361442Z fa51353b2c9b: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:32.7363165Z fa51353b2c9b: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:33.0884660Z 0e4bc2bd6656: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:33.0885551Z 0e4bc2bd6656: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:34.0399479Z 0e4bc2bd6656: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:34.9365426Z b475dc4bba47: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-01T20:13:34.9366128Z b475dc4bba47: Download complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.0299783Z e213bd2560e2: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.2029481Z 9fcd228516aa: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.2427792Z 2e6036390374: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.5431878Z 5a19b1f63ace: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.6357993Z dd23ed782cae: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.6451062Z b10108f2d223: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:35.6562099Z 4eb4a683c389: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5306933Z b475dc4bba47: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5470113Z 2c64a0db539b: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5583962Z 6e6c09f9e058: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5728624Z 304e9b7c93e6: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5836961Z 95bcad39f7ff: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5941888Z fa51353b2c9b: Pull complete
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.5996863Z Digest: sha256:24d6c206bba8c0440bceb24a8d4bf642f60bf7aea94887051ea5761d29c22323
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.6011694Z Status: Downloaded newer image for postgres:15
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.6021363Z docker.io/library/postgres:15
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.6082686Z ##[command]/usr/bin/docker create --name cc37117f5f634948a0de1e0747a114b4_postgres15_738092 --label 9c0c7a --network github_network_ab33b998d0ae4983abcaab1e1ad62082 --network-alias postgres -p 5432:5432 --health-cmd "pg_isready -U postgres" --health-interval=5s --health-timeout=5s --health-retries=5 -e "POSTGRES_PASSWORD=postgres" -e GITHUB_ACTIONS=true -e CI=true postgres:15
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.6328747Z ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.6350280Z ##[command]/usr/bin/docker start ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.7965250Z ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.7986218Z ##[command]/usr/bin/docker ps --all --filter id=ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8111427Z ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b Up Less than a second (health: starting)
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8133014Z ##[command]/usr/bin/docker port ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8257770Z 5432/tcp -> 0.0.0.0:5432
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8258294Z 5432/tcp -> [::]:5432
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8303924Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8312525Z ##[group]Waiting for all services to be ready
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8325828Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8450368Z starting
+Postgres Integration	Initialize containers	2025-12-01T20:13:38.8472280Z postgres service is starting, waiting 2 seconds before checking again.
+Postgres Integration	Initialize containers	2025-12-01T20:13:40.8467127Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:40.8588802Z starting
+Postgres Integration	Initialize containers	2025-12-01T20:13:40.8603139Z postgres service is starting, waiting 4 seconds before checking again.
+Postgres Integration	Initialize containers	2025-12-01T20:13:45.0256414Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Initialize containers	2025-12-01T20:13:45.0379025Z healthy
+Postgres Integration	Initialize containers	2025-12-01T20:13:45.0396115Z postgres service is healthy.
+Postgres Integration	Initialize containers	2025-12-01T20:13:45.0396525Z ##[endgroup]
+Postgres Integration	Checkout	´╗┐2025-12-01T20:13:45.0643580Z ##[group]Run actions/checkout@v4
+Postgres Integration	Checkout	2025-12-01T20:13:45.0644107Z with:
+Postgres Integration	Checkout	2025-12-01T20:13:45.0644291Z   repository: Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-01T20:13:45.0644647Z   token: ***
+Postgres Integration	Checkout	2025-12-01T20:13:45.0644819Z   ssh-strict: true
+Postgres Integration	Checkout	2025-12-01T20:13:45.0645157Z   ssh-user: git
+Postgres Integration	Checkout	2025-12-01T20:13:45.0645341Z   persist-credentials: true
+Postgres Integration	Checkout	2025-12-01T20:13:45.0645549Z   clean: true
+Postgres Integration	Checkout	2025-12-01T20:13:45.0645734Z   sparse-checkout-cone-mode: true
+Postgres Integration	Checkout	2025-12-01T20:13:45.0645951Z   fetch-depth: 1
+Postgres Integration	Checkout	2025-12-01T20:13:45.0646119Z   fetch-tags: false
+Postgres Integration	Checkout	2025-12-01T20:13:45.0646307Z   show-progress: true
+Postgres Integration	Checkout	2025-12-01T20:13:45.0646487Z   lfs: false
+Postgres Integration	Checkout	2025-12-01T20:13:45.0646641Z   submodules: false
+Postgres Integration	Checkout	2025-12-01T20:13:45.0646815Z   set-safe-directory: true
+Postgres Integration	Checkout	2025-12-01T20:13:45.0647242Z env:
+Postgres Integration	Checkout	2025-12-01T20:13:45.0647615Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Checkout	2025-12-01T20:13:45.0647844Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.1727948Z Syncing repository: Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-01T20:13:45.1730058Z ##[group]Getting Git version info
+Postgres Integration	Checkout	2025-12-01T20:13:45.1730845Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Postgres Integration	Checkout	2025-12-01T20:13:45.1731792Z [command]/usr/bin/git version
+Postgres Integration	Checkout	2025-12-01T20:13:45.1762525Z git version 2.51.2
+Postgres Integration	Checkout	2025-12-01T20:13:45.1789018Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.1801805Z Temporarily overriding HOME='/home/runner/work/_temp/f8d916d0-6d17-4083-8efe-6b7fdbbce37e' before making global git config changes
+Postgres Integration	Checkout	2025-12-01T20:13:45.1802709Z Adding repository directory to the temporary git global config as a safe directory
+Postgres Integration	Checkout	2025-12-01T20:13:45.1815388Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Postgres Integration	Checkout	2025-12-01T20:13:45.1848066Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Postgres Integration	Checkout	2025-12-01T20:13:45.1851670Z ##[group]Initializing the repository
+Postgres Integration	Checkout	2025-12-01T20:13:45.1856429Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+Postgres Integration	Checkout	2025-12-01T20:13:45.1918376Z hint: Using 'master' as the name for the initial branch. This default branch name
+Postgres Integration	Checkout	2025-12-01T20:13:45.1919431Z hint: is subject to change. To configure the initial branch name to use in all
+Postgres Integration	Checkout	2025-12-01T20:13:45.1920228Z hint: of your new repositories, which will suppress this warning, call:
+Postgres Integration	Checkout	2025-12-01T20:13:45.1920860Z hint:
+Postgres Integration	Checkout	2025-12-01T20:13:45.1921288Z hint: 	git config --global init.defaultBranch <name>
+Postgres Integration	Checkout	2025-12-01T20:13:45.1921718Z hint:
+Postgres Integration	Checkout	2025-12-01T20:13:45.1922036Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Postgres Integration	Checkout	2025-12-01T20:13:45.1922703Z hint: 'development'. The just-created branch can be renamed via this command:
+Postgres Integration	Checkout	2025-12-01T20:13:45.1923713Z hint:
+Postgres Integration	Checkout	2025-12-01T20:13:45.1924114Z hint: 	git branch -m <name>
+Postgres Integration	Checkout	2025-12-01T20:13:45.1924516Z hint:
+Postgres Integration	Checkout	2025-12-01T20:13:45.1925290Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Postgres Integration	Checkout	2025-12-01T20:13:45.1926361Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+Postgres Integration	Checkout	2025-12-01T20:13:45.1933330Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-01T20:13:45.1963056Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.1963478Z ##[group]Disabling automatic garbage collection
+Postgres Integration	Checkout	2025-12-01T20:13:45.1967389Z [command]/usr/bin/git config --local gc.auto 0
+Postgres Integration	Checkout	2025-12-01T20:13:45.1994458Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.1995099Z ##[group]Setting up auth
+Postgres Integration	Checkout	2025-12-01T20:13:45.2001458Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Postgres Integration	Checkout	2025-12-01T20:13:45.2030464Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Postgres Integration	Checkout	2025-12-01T20:13:45.2290490Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Postgres Integration	Checkout	2025-12-01T20:13:45.2318476Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Postgres Integration	Checkout	2025-12-01T20:13:45.2537506Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Postgres Integration	Checkout	2025-12-01T20:13:45.2568565Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Postgres Integration	Checkout	2025-12-01T20:13:45.2798418Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Postgres Integration	Checkout	2025-12-01T20:13:45.2831109Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.2831631Z ##[group]Fetching the repository
+Postgres Integration	Checkout	2025-12-01T20:13:45.2839771Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +51b333ea472688f9dade0e4aa06202012d261087:refs/remotes/origin/feat/postgres-ci-migration
+Postgres Integration	Checkout	2025-12-01T20:13:45.4551746Z From https://github.com/Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-01T20:13:45.4552359Z  * [new ref]         51b333ea472688f9dade0e4aa06202012d261087 -> origin/feat/postgres-ci-migration
+Postgres Integration	Checkout	2025-12-01T20:13:45.4581929Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.4582467Z ##[group]Determining the checkout info
+Postgres Integration	Checkout	2025-12-01T20:13:45.4584409Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.4589501Z [command]/usr/bin/git sparse-checkout disable
+Postgres Integration	Checkout	2025-12-01T20:13:45.4626294Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Postgres Integration	Checkout	2025-12-01T20:13:45.4650760Z ##[group]Checking out the ref
+Postgres Integration	Checkout	2025-12-01T20:13:45.4655112Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+Postgres Integration	Checkout	2025-12-01T20:13:45.4791886Z Switched to a new branch 'feat/postgres-ci-migration'
+Postgres Integration	Checkout	2025-12-01T20:13:45.4795174Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+Postgres Integration	Checkout	2025-12-01T20:13:45.4800990Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-01T20:13:45.4834621Z [command]/usr/bin/git log -1 --format=%H
+Postgres Integration	Checkout	2025-12-01T20:13:45.4856008Z 51b333ea472688f9dade0e4aa06202012d261087
+Postgres Integration	Setup Node.js	´╗┐2025-12-01T20:13:45.5125900Z ##[group]Run actions/setup-node@v4
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5126162Z with:
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5126335Z   node-version: 18
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5126513Z   always-auth: false
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5126707Z   check-latest: false
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5127012Z   token: ***
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5127179Z env:
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5127533Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.5127775Z ##[endgroup]
+Postgres Integration	Setup Node.js	2025-12-01T20:13:45.6869726Z Attempting to download 18...
+Postgres Integration	Setup Node.js	2025-12-01T20:13:51.0963817Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+Postgres Integration	Setup Node.js	2025-12-01T20:13:51.4934248Z Extracting ...
+Postgres Integration	Setup Node.js	2025-12-01T20:13:51.5033627Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a6bff93f-aab7-41e5-a52f-9c3978937f13 -f /home/runner/work/_temp/f15aa0f2-4f5a-414b-896a-4c5eb7d56e9c
+Postgres Integration	Setup Node.js	2025-12-01T20:13:52.4348084Z Adding to the cache ...
+Postgres Integration	Setup Node.js	2025-12-01T20:13:54.0279397Z ##[group]Environment details
+Postgres Integration	Setup Node.js	2025-12-01T20:13:54.2736871Z node: v18.20.8
+Postgres Integration	Setup Node.js	2025-12-01T20:13:54.2737308Z npm: 10.8.2
+Postgres Integration	Setup Node.js	2025-12-01T20:13:54.2737592Z yarn: 1.22.22
+Postgres Integration	Setup Node.js	2025-12-01T20:13:54.2738244Z ##[endgroup]
+Postgres Integration	Install dependencies	´╗┐2025-12-01T20:13:54.2883718Z ##[group]Run npm ci
+Postgres Integration	Install dependencies	2025-12-01T20:13:54.2883984Z [36;1mnpm ci[0m
+Postgres Integration	Install dependencies	2025-12-01T20:13:54.2922134Z shell: /usr/bin/bash -e {0}
+Postgres Integration	Install dependencies	2025-12-01T20:13:54.2922367Z env:
+Postgres Integration	Install dependencies	2025-12-01T20:13:54.2922837Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Install dependencies	2025-12-01T20:13:54.2923091Z ##[endgroup]
+Postgres Integration	Install dependencies	2025-12-01T20:13:55.9644849Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Postgres Integration	Install dependencies	2025-12-01T20:13:56.1392308Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+Postgres Integration	Install dependencies	2025-12-01T20:13:56.4306179Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Postgres Integration	Install dependencies	2025-12-01T20:13:56.5971453Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+Postgres Integration	Install dependencies	2025-12-01T20:13:56.7240798Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+Postgres Integration	Install dependencies	2025-12-01T20:13:56.7393552Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+Postgres Integration	Install dependencies	2025-12-01T20:13:56.8309979Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+Postgres Integration	Install dependencies	2025-12-01T20:13:57.0032100Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.1978398Z 
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.1979359Z added 310 packages, and audited 311 packages in 11s
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.1979859Z 
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.1980157Z 52 packages are looking for funding
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.1980699Z   run `npm fund` for details
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2180205Z 
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2180626Z 4 moderate severity vulnerabilities
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2180954Z 
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2181317Z To address all issues (including breaking changes), run:
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2181850Z   npm audit fix --force
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2182084Z 
+Postgres Integration	Install dependencies	2025-12-01T20:14:05.2182274Z Run `npm audit` for details.
+Postgres Integration	Wait for Postgres	´╗┐2025-12-01T20:14:05.2480311Z ##[group]Run echo "Waiting for Postgres to be ready..."
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2480712Z [36;1mecho "Waiting for Postgres to be ready..."[0m
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2480985Z [36;1mfor i in {1..30}; do[0m
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2481256Z [36;1m  pg_isready -h localhost -p 5432 -U postgres && break[0m
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2481538Z [36;1m  sleep 1[0m
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2481704Z [36;1mdone[0m
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2516898Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2517215Z env:
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2517656Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2517907Z ##[endgroup]
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.2570836Z Waiting for Postgres to be ready...
+Postgres Integration	Wait for Postgres	2025-12-01T20:14:05.3388687Z localhost:5432 - accepting connections
+Postgres Integration	Apply Postgres schema and generate client	´╗┐2025-12-01T20:14:05.3421360Z ##[group]Run # Use `db push` in CI to apply the Postgres schema without relying on
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3421857Z [36;1m# Use `db push` in CI to apply the Postgres schema without relying on[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3422285Z [36;1m# an existing migration history that may have been generated for SQLite.[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3422711Z [36;1mnpx prisma db push --schema=prisma/schema.postgres.prisma[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3423113Z [36;1mnpx prisma generate --schema=prisma/schema.postgres.prisma[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3458427Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3458741Z env:
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3459209Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:05.3459460Z ##[endgroup]
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.1517138Z Prisma schema loaded from prisma/schema.postgres.prisma
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.1569322Z Datasource "db": PostgreSQL database "postgres", schema "public" at "localhost:5432"
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.3142501Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.3144011Z ­ƒÜÇ  Your database is now in sync with your Prisma schema. Done in 105ms
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.3144648Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.3158438Z Running generate... (Use --skip-generate to skip the generators)
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.5348043Z [2K[1A[2K[GRunning generate... - Prisma Client
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.6564129Z [2K[1A[2K[GÔ£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 120ms
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:06.6567389Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:07.6733889Z Prisma schema loaded from prisma/schema.postgres.prisma
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0634721Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0636369Z Ô£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 126ms
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0636914Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0637634Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0638212Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0639114Z Help us improve the Prisma ORM for everyone. Share your feedback in a short 2-min survey: https://pris.ly/orm/survey/release-5-22
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0639882Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0903436Z ÔöîÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÉ
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0904513Z Ôöé  Update available 5.22.0 -> 7.0.1                       Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0905714Z Ôöé                                                         Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0906574Z Ôöé  This is a major update - please follow the guide at    Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0907595Z Ôöé  https://pris.ly/d/major-version-upgrade                Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0908414Z Ôöé                                                         Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0909213Z Ôöé  Run the following to update                            Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0910031Z Ôöé    npm i --save-dev prisma@latest                       Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0910806Z Ôöé    npm i @prisma/client@latest                          Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-01T20:14:08.0911642Z ÔööÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÿ
+Postgres Integration	Seed Postgres	´╗┐2025-12-01T20:14:08.2725550Z ##[group]Run node prisma/seed.js
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.2725889Z [36;1mnode prisma/seed.js[0m
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.2758119Z shell: /usr/bin/bash -e {0}
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.2758343Z env:
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.2758951Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.2759208Z ##[endgroup]
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3343721Z Seeding demo data...
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3891419Z PrismaClientValidationError: 
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3891895Z Invalid `prisma.job.create()` invocation in
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3892431Z /home/runner/work/cvforge-mvp/cvforge-mvp/prisma/seed.js:16:32
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3892847Z 
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3893284Z   13   company = await prisma.company.create({ data: { name: 'CapeTech', ownerId: user.id } })
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3893956Z   14 }
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3894321Z   15 
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3895227Z ÔåÆ 16 const job = await prisma.job.create({
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3895655Z        data: {
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3895937Z          title: "Frontend Developer",
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3896386Z          companyId: "2e380e6b-23bb-4d4c-9af8-6dc26dd26645",
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3896859Z          location: "Cape Town, South Africa",
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3897249Z          description: "Work on React & Next.js apps",
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3897609Z          tags: "remote,frontend"
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3897892Z                ~~~~~~~~~~~~~~~~~
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3898130Z        }
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3898308Z      })
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3898418Z 
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3898888Z Argument `tags`: Invalid value provided. Expected JobCreatetagsInput or String[], provided String.
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3899756Z     at wn (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:29:1363)
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3901186Z     at $n.handleRequestError (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:121:6958)
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3903299Z     at $n.handleAndLogRequestError (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:121:6623)
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3905449Z     at $n.request (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:121:6307)
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3906834Z     at async l (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@prisma/client/runtime/library.js:130:9633)
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3907977Z     at async main (/home/runner/work/cvforge-mvp/cvforge-mvp/prisma/seed.js:16:15) {
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3908639Z   clientVersion: '5.22.0'
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3908974Z }
+Postgres Integration	Seed Postgres	2025-12-01T20:14:08.3958890Z ##[error]Process completed with exit code 1.
+Postgres Integration	Post Checkout	´╗┐2025-12-01T20:14:08.4035403Z Post job cleanup.
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.4997174Z [command]/usr/bin/git version
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5036299Z git version 2.51.2
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5082008Z Temporarily overriding HOME='/home/runner/work/_temp/16576ae5-07c5-4de4-8fab-dba40ada231a' before making global git config changes
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5083607Z Adding repository directory to the temporary git global config as a safe directory
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5089093Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5127198Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5161082Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5390694Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5414010Z http.https://github.com/.extraheader
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5426805Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5458173Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5682564Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Postgres Integration	Post Checkout	2025-12-01T20:14:08.5715292Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Postgres Integration	Stop containers	´╗┐2025-12-01T20:14:08.6057802Z Print service container logs: cc37117f5f634948a0de1e0747a114b4_postgres15_738092
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6062401Z ##[command]/usr/bin/docker logs --details ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6189595Z  The files belonging to this database system will be owned by user "postgres".
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6191567Z  initdb: warning: enabling "trust" authentication for local connections
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6192656Z  initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6193856Z  2025-12-01 20:13:39.656 UTC [1] LOG:  starting PostgreSQL 15.15 (Debian 15.15-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6194518Z  2025-12-01 20:13:39.656 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6195164Z  2025-12-01 20:13:39.656 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6195688Z  2025-12-01 20:13:39.657 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6196180Z  2025-12-01 20:13:39.660 UTC [63] LOG:  database system was shut down at 2025-12-01 20:13:39 UTC
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6196630Z  2025-12-01 20:13:39.664 UTC [1] LOG:  database system is ready to accept connections
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6196980Z  This user must also own the server process.
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6197221Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6197468Z  The database cluster will be initialized with locale "en_US.utf8".
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6197860Z  The default database encoding has accordingly been set to "UTF8".
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6198242Z  The default text search configuration will be set to "english".
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6198788Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6198949Z  Data page checksums are disabled.
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6199159Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6199405Z  fixing permissions on existing directory /var/lib/postgresql/data ... ok
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6199751Z  creating subdirectories ... ok
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6200027Z  selecting dynamic shared memory implementation ... posix
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6200343Z  selecting default max_connections ... 100
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6200604Z  selecting default shared_buffers ... 128MB
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6200847Z  selecting default time zone ... Etc/UTC
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6201090Z  creating configuration files ... ok
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6201322Z  running bootstrap script ... ok
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6201594Z  performing post-bootstrap initialization ... ok
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6202243Z  syncing data to disk ... ok
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6202577Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6202811Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6203198Z  Success. You can now start the database server using:
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6203657Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6203965Z      pg_ctl -D /var/lib/postgresql/data -l logfile start
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6204220Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6204757Z  waiting for server to start....2025-12-01 20:13:39.419 UTC [49] LOG:  starting PostgreSQL 15.15 (Debian 15.15-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6205691Z  2025-12-01 20:13:39.420 UTC [49] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6206158Z  2025-12-01 20:13:39.423 UTC [52] LOG:  database system was shut down at 2025-12-01 20:13:39 UTC
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6206586Z  2025-12-01 20:13:39.427 UTC [49] LOG:  database system is ready to accept connections
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6206896Z   done
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6207042Z  server started
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6207207Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6207482Z  /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6207827Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6208033Z  2025-12-01 20:13:39.537 UTC [49] LOG:  received fast shutdown request
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6208470Z  waiting for server to shut down....2025-12-01 20:13:39.538 UTC [49] LOG:  aborting any active transactions
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6209052Z  2025-12-01 20:13:39.540 UTC [49] LOG:  background worker "logical replication launcher" (PID 55) exited with exit code 1
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6209742Z  2025-12-01 20:13:39.540 UTC [50] LOG:  shutting down
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6210063Z  2025-12-01 20:13:39.540 UTC [50] LOG:  checkpoint starting: shutdown immediate
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6210857Z  2025-12-01 20:13:39.543 UTC [50] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.004 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6211645Z  2025-12-01 20:13:39.547 UTC [49] LOG:  database system is shut down
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6211919Z   done
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6212086Z  server stopped
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6229595Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6229865Z  PostgreSQL init process complete; ready for start up.
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6230144Z  
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6235683Z Stop and remove container: cc37117f5f634948a0de1e0747a114b4_postgres15_738092
+Postgres Integration	Stop containers	2025-12-01T20:14:08.6241145Z ##[command]/usr/bin/docker rm --force ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Stop containers	2025-12-01T20:14:10.6738944Z ed6d8f18fc8a53162f1df725b5301c4e89eef20834848c9cbb7b65a1d5a2422b
+Postgres Integration	Stop containers	2025-12-01T20:14:10.6767588Z Remove container network: github_network_ab33b998d0ae4983abcaab1e1ad62082
+Postgres Integration	Stop containers	2025-12-01T20:14:10.6771908Z ##[command]/usr/bin/docker network rm github_network_ab33b998d0ae4983abcaab1e1ad62082
+Postgres Integration	Stop containers	2025-12-01T20:14:10.8028928Z github_network_ab33b998d0ae4983abcaab1e1ad62082
+Postgres Integration	Complete job	´╗┐2025-12-01T20:14:10.8086286Z Cleaning up orphan processes

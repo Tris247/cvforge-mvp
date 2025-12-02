@@ -1,0 +1,5 @@
+completed	failure	test(integration): make autoApplyRule seed compatible with Postgres b…	CI (SQLite-first)	feat/postgres-ci-migration	push	19847771333	55s	2025-12-02T05:00:15Z
+in_progress		test(integration): make autoApplyRule seed compatible with Postgres b…	CI	feat/postgres-ci-migration	push	19847771316	1m8s	2025-12-02T05:00:15Z
+completed	success	Ingest Analytics	Ingest Analytics	feat/postgres-ci-migration	schedule	19847171868	25s	2025-12-02T04:29:57Z
+completed	success	Prune Analytics	Prune Analytics	feat/postgres-ci-migration	schedule	19847003835	25s	2025-12-02T04:20:50Z
+completed	success	Ingest Analytics	Ingest Analytics	feat/postgres-ci-migration	schedule	19845735077	23s	2025-12-02T03:17:42Z

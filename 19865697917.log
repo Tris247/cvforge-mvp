@@ -1,0 +1,986 @@
+test	Set up job	´╗┐2025-12-02T16:23:03.4150985Z Current runner version: '2.329.0'
+test	Set up job	2025-12-02T16:23:03.4175569Z ##[group]Runner Image Provisioner
+test	Set up job	2025-12-02T16:23:03.4176338Z Hosted Compute Agent
+test	Set up job	2025-12-02T16:23:03.4177006Z Version: 20251016.436
+test	Set up job	2025-12-02T16:23:03.4177580Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+test	Set up job	2025-12-02T16:23:03.4178278Z Build Date: 2025-10-15T20:44:12Z
+test	Set up job	2025-12-02T16:23:03.4178970Z ##[endgroup]
+test	Set up job	2025-12-02T16:23:03.4179554Z ##[group]Operating System
+test	Set up job	2025-12-02T16:23:03.4180093Z Ubuntu
+test	Set up job	2025-12-02T16:23:03.4180638Z 24.04.3
+test	Set up job	2025-12-02T16:23:03.4181113Z LTS
+test	Set up job	2025-12-02T16:23:03.4181553Z ##[endgroup]
+test	Set up job	2025-12-02T16:23:03.4182109Z ##[group]Runner Image
+test	Set up job	2025-12-02T16:23:03.4182832Z Image: ubuntu-24.04
+test	Set up job	2025-12-02T16:23:03.4183395Z Version: 20251112.124.1
+test	Set up job	2025-12-02T16:23:03.4184506Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2025-12-02T16:23:03.4185928Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+test	Set up job	2025-12-02T16:23:03.4187269Z ##[endgroup]
+test	Set up job	2025-12-02T16:23:03.4188416Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2025-12-02T16:23:03.4190497Z Contents: read
+test	Set up job	2025-12-02T16:23:03.4191054Z Metadata: read
+test	Set up job	2025-12-02T16:23:03.4191575Z Packages: read
+test	Set up job	2025-12-02T16:23:03.4192125Z ##[endgroup]
+test	Set up job	2025-12-02T16:23:03.4194470Z Secret source: Actions
+test	Set up job	2025-12-02T16:23:03.4195615Z Prepare workflow directory
+test	Set up job	2025-12-02T16:23:03.4591462Z Prepare all required actions
+test	Set up job	2025-12-02T16:23:03.4631450Z Getting action download info
+test	Set up job	2025-12-02T16:23:03.7955823Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+test	Set up job	2025-12-02T16:23:04.6012425Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test	Set up job	2025-12-02T16:23:04.6927817Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test	Set up job	2025-12-02T16:23:04.8865940Z Complete job name: test
+test	Checkout	´╗┐2025-12-02T16:23:04.9593196Z ##[group]Run actions/checkout@v4
+test	Checkout	2025-12-02T16:23:04.9594183Z with:
+test	Checkout	2025-12-02T16:23:04.9594684Z   repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-02T16:23:04.9595465Z   token: ***
+test	Checkout	2025-12-02T16:23:04.9595910Z   ssh-strict: true
+test	Checkout	2025-12-02T16:23:04.9596365Z   ssh-user: git
+test	Checkout	2025-12-02T16:23:04.9596821Z   persist-credentials: true
+test	Checkout	2025-12-02T16:23:04.9597330Z   clean: true
+test	Checkout	2025-12-02T16:23:04.9597789Z   sparse-checkout-cone-mode: true
+test	Checkout	2025-12-02T16:23:04.9598323Z   fetch-depth: 1
+test	Checkout	2025-12-02T16:23:04.9598760Z   fetch-tags: false
+test	Checkout	2025-12-02T16:23:04.9599220Z   show-progress: true
+test	Checkout	2025-12-02T16:23:04.9599706Z   lfs: false
+test	Checkout	2025-12-02T16:23:04.9600126Z   submodules: false
+test	Checkout	2025-12-02T16:23:04.9600595Z   set-safe-directory: true
+test	Checkout	2025-12-02T16:23:04.9601303Z env:
+test	Checkout	2025-12-02T16:23:04.9601753Z   DATABASE_URL: file:./dev.db
+test	Checkout	2025-12-02T16:23:04.9602258Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.0699842Z Syncing repository: Tris247/cvforge-mvp
+test	Checkout	2025-12-02T16:23:05.0701785Z ##[group]Getting Git version info
+test	Checkout	2025-12-02T16:23:05.0702616Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-02T16:23:05.0704248Z [command]/usr/bin/git version
+test	Checkout	2025-12-02T16:23:05.0786969Z git version 2.51.2
+test	Checkout	2025-12-02T16:23:05.0812614Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.0826940Z Temporarily overriding HOME='/home/runner/work/_temp/b65cb127-6312-4d7d-866c-8ee3bed0fa7a' before making global git config changes
+test	Checkout	2025-12-02T16:23:05.0828457Z Adding repository directory to the temporary git global config as a safe directory
+test	Checkout	2025-12-02T16:23:05.0839075Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-02T16:23:05.0875109Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+test	Checkout	2025-12-02T16:23:05.0878544Z ##[group]Initializing the repository
+test	Checkout	2025-12-02T16:23:05.0882335Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Checkout	2025-12-02T16:23:05.1015928Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Checkout	2025-12-02T16:23:05.1017641Z hint: is subject to change. To configure the initial branch name to use in all
+test	Checkout	2025-12-02T16:23:05.1019469Z hint: of your new repositories, which will suppress this warning, call:
+test	Checkout	2025-12-02T16:23:05.1020900Z hint:
+test	Checkout	2025-12-02T16:23:05.1021787Z hint: 	git config --global init.defaultBranch <name>
+test	Checkout	2025-12-02T16:23:05.1022968Z hint:
+test	Checkout	2025-12-02T16:23:05.1023718Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Checkout	2025-12-02T16:23:05.1024700Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Checkout	2025-12-02T16:23:05.1025573Z hint:
+test	Checkout	2025-12-02T16:23:05.1026266Z hint: 	git branch -m <name>
+test	Checkout	2025-12-02T16:23:05.1026797Z hint:
+test	Checkout	2025-12-02T16:23:05.1027488Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Checkout	2025-12-02T16:23:05.1028589Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+test	Checkout	2025-12-02T16:23:05.1031937Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-02T16:23:05.1065412Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.1066267Z ##[group]Disabling automatic garbage collection
+test	Checkout	2025-12-02T16:23:05.1069213Z [command]/usr/bin/git config --local gc.auto 0
+test	Checkout	2025-12-02T16:23:05.1096895Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.1097662Z ##[group]Setting up auth
+test	Checkout	2025-12-02T16:23:05.1103600Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Checkout	2025-12-02T16:23:05.1132237Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Checkout	2025-12-02T16:23:05.1480543Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Checkout	2025-12-02T16:23:05.1510533Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Checkout	2025-12-02T16:23:05.1728104Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Checkout	2025-12-02T16:23:05.1758546Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Checkout	2025-12-02T16:23:05.1997010Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Checkout	2025-12-02T16:23:05.2035930Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.2037235Z ##[group]Fetching the repository
+test	Checkout	2025-12-02T16:23:05.2045263Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +66c15e9168a3b71a53d64fcf687c683865763987:refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-02T16:23:05.4924108Z From https://github.com/Tris247/cvforge-mvp
+test	Checkout	2025-12-02T16:23:05.4925796Z  * [new ref]         66c15e9168a3b71a53d64fcf687c683865763987 -> origin/feat/postgres-ci-migration
+test	Checkout	2025-12-02T16:23:05.4960047Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.4962098Z ##[group]Determining the checkout info
+test	Checkout	2025-12-02T16:23:05.4964759Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.4968770Z [command]/usr/bin/git sparse-checkout disable
+test	Checkout	2025-12-02T16:23:05.5012291Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Checkout	2025-12-02T16:23:05.5041905Z ##[group]Checking out the ref
+test	Checkout	2025-12-02T16:23:05.5047897Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+test	Checkout	2025-12-02T16:23:05.5194008Z Switched to a new branch 'feat/postgres-ci-migration'
+test	Checkout	2025-12-02T16:23:05.5197039Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+test	Checkout	2025-12-02T16:23:05.5205740Z ##[endgroup]
+test	Checkout	2025-12-02T16:23:05.5242989Z [command]/usr/bin/git log -1 --format=%H
+test	Checkout	2025-12-02T16:23:05.5266572Z 66c15e9168a3b71a53d64fcf687c683865763987
+test	Setup Node.js	´╗┐2025-12-02T16:23:05.5582258Z ##[group]Run actions/setup-node@v4
+test	Setup Node.js	2025-12-02T16:23:05.5583730Z with:
+test	Setup Node.js	2025-12-02T16:23:05.5584707Z   node-version: 18
+test	Setup Node.js	2025-12-02T16:23:05.5585611Z   always-auth: false
+test	Setup Node.js	2025-12-02T16:23:05.5586542Z   check-latest: false
+test	Setup Node.js	2025-12-02T16:23:05.5587723Z   token: ***
+test	Setup Node.js	2025-12-02T16:23:05.5588529Z env:
+test	Setup Node.js	2025-12-02T16:23:05.5589595Z   DATABASE_URL: file:./dev.db
+test	Setup Node.js	2025-12-02T16:23:05.5590645Z ##[endgroup]
+test	Setup Node.js	2025-12-02T16:23:05.7419812Z Attempting to download 18...
+test	Setup Node.js	2025-12-02T16:23:06.1934057Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+test	Setup Node.js	2025-12-02T16:23:06.6597090Z Extracting ...
+test	Setup Node.js	2025-12-02T16:23:06.6712143Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/02818bbb-b4a8-43d8-a546-e4452e9f0cc3 -f /home/runner/work/_temp/a9c01433-1462-474c-833f-647feb766cc8
+test	Setup Node.js	2025-12-02T16:23:07.6625808Z Adding to the cache ...
+test	Setup Node.js	2025-12-02T16:23:09.2844547Z ##[group]Environment details
+test	Setup Node.js	2025-12-02T16:23:09.5183352Z node: v18.20.8
+test	Setup Node.js	2025-12-02T16:23:09.5184000Z npm: 10.8.2
+test	Setup Node.js	2025-12-02T16:23:09.5185500Z yarn: 1.22.22
+test	Setup Node.js	2025-12-02T16:23:09.5186280Z ##[endgroup]
+test	Install dependencies	´╗┐2025-12-02T16:23:09.5339728Z ##[group]Run npm ci
+test	Install dependencies	2025-12-02T16:23:09.5340018Z [36;1mnpm ci[0m
+test	Install dependencies	2025-12-02T16:23:09.5380276Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2025-12-02T16:23:09.5380569Z env:
+test	Install dependencies	2025-12-02T16:23:09.5380756Z   DATABASE_URL: file:./dev.db
+test	Install dependencies	2025-12-02T16:23:09.5380978Z ##[endgroup]
+test	Install dependencies	2025-12-02T16:23:11.3118987Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+test	Install dependencies	2025-12-02T16:23:11.4397142Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+test	Install dependencies	2025-12-02T16:23:11.6918098Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+test	Install dependencies	2025-12-02T16:23:11.8615525Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+test	Install dependencies	2025-12-02T16:23:12.0503025Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+test	Install dependencies	2025-12-02T16:23:12.0510622Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+test	Install dependencies	2025-12-02T16:23:12.1716932Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+test	Install dependencies	2025-12-02T16:23:12.2656521Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+test	Install dependencies	2025-12-02T16:23:20.2804307Z 
+test	Install dependencies	2025-12-02T16:23:20.2813486Z added 310 packages, and audited 311 packages in 11s
+test	Install dependencies	2025-12-02T16:23:20.2814061Z 
+test	Install dependencies	2025-12-02T16:23:20.2814442Z 52 packages are looking for funding
+test	Install dependencies	2025-12-02T16:23:20.2891754Z   run `npm fund` for details
+test	Install dependencies	2025-12-02T16:23:20.3021606Z 
+test	Install dependencies	2025-12-02T16:23:20.3022115Z 4 moderate severity vulnerabilities
+test	Install dependencies	2025-12-02T16:23:20.3022486Z 
+test	Install dependencies	2025-12-02T16:23:20.3023060Z To address all issues (including breaking changes), run:
+test	Install dependencies	2025-12-02T16:23:20.3023461Z   npm audit fix --force
+test	Install dependencies	2025-12-02T16:23:20.3023613Z 
+test	Install dependencies	2025-12-02T16:23:20.3023748Z Run `npm audit` for details.
+test	Prepare clean test environment	´╗┐2025-12-02T16:23:20.3295284Z ##[group]Run # ensure no leftover marketplace test files interfere with tests
+test	Prepare clean test environment	2025-12-02T16:23:20.3295834Z [36;1m# ensure no leftover marketplace test files interfere with tests[0m
+test	Prepare clean test environment	2025-12-02T16:23:20.3296235Z [36;1mrm -f ./data/marketplace*.json || true[0m
+test	Prepare clean test environment	2025-12-02T16:23:20.3296607Z [36;1mrm -f ./data/marketplace-applications*.json || true[0m
+test	Prepare clean test environment	2025-12-02T16:23:20.3296924Z [36;1mmkdir -p data[0m
+test	Prepare clean test environment	2025-12-02T16:23:20.3297479Z [36;1mecho "Cleaned data/ and removed marketplace test files"[0m
+test	Prepare clean test environment	2025-12-02T16:23:20.3332012Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Prepare clean test environment	2025-12-02T16:23:20.3332336Z env:
+test	Prepare clean test environment	2025-12-02T16:23:20.3332522Z   DATABASE_URL: file:./dev.db
+test	Prepare clean test environment	2025-12-02T16:23:20.3332960Z ##[endgroup]
+test	Prepare clean test environment	2025-12-02T16:23:20.3420190Z Cleaned data/ and removed marketplace test files
+test	Prepare test files and SQLite DB	´╗┐2025-12-02T16:23:20.3441638Z ##[group]Run mkdir -p data
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3441931Z [36;1mmkdir -p data[0m
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3442154Z [36;1mtouch dev.db[0m
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3442410Z [36;1mecho "Using SQLite dev DB at ./dev.db for test run"[0m
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3443121Z [36;1m# Apply the Prisma schema to the local sqlite dev.db (safe for CI)[0m
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3443531Z [36;1mnpx prisma db push --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3444070Z [36;1mnpx prisma generate --schema=prisma/schema.prisma[0m
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3474412Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3474740Z env:
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3474918Z   DATABASE_URL: file:./dev.db
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3475140Z ##[endgroup]
+test	Prepare test files and SQLite DB	2025-12-02T16:23:20.3545978Z Using SQLite dev DB at ./dev.db for test run
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.1793959Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.1851501Z Datasource "db": SQLite database "dev.db" at "file:./dev.db"
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.2197594Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.2198873Z The database is already in sync with the Prisma schema.
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.2207713Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.2217088Z Running generate... (Use --skip-generate to skip the generators)
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.4603314Z [2K[1A[2K[GRunning generate... - Prisma Client
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.5803916Z [2K[1A[2K[GÔ£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 119ms
+test	Prepare test files and SQLite DB	2025-12-02T16:23:21.5806876Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.5849183Z Prisma schema loaded from prisma/schema.prisma
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9489427Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9490523Z Ô£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 112ms
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9490880Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9491214Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9491529Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9492052Z Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9492406Z 
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9765641Z ÔöîÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÉ
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9766360Z Ôöé  Update available 5.22.0 -> 7.0.1                       Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9766991Z Ôöé                                                         Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9767685Z Ôöé  This is a major update - please follow the guide at    Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9768614Z Ôöé  https://pris.ly/d/major-version-upgrade                Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9769378Z Ôöé                                                         Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9770097Z Ôöé  Run the following to update                            Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9770912Z Ôöé    npm i --save-dev prisma@latest                       Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9771721Z Ôöé    npm i @prisma/client@latest                          Ôöé
+test	Prepare test files and SQLite DB	2025-12-02T16:23:22.9772588Z ÔööÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÿ
+test	Run tests	´╗┐2025-12-02T16:23:23.1589842Z ##[group]Run npx vitest --run
+test	Run tests	2025-12-02T16:23:23.1590154Z [36;1mnpx vitest --run[0m
+test	Run tests	2025-12-02T16:23:23.1622936Z shell: /usr/bin/bash -e {0}
+test	Run tests	2025-12-02T16:23:23.1623180Z env:
+test	Run tests	2025-12-02T16:23:23.1623355Z   DATABASE_URL: file:./dev.db
+test	Run tests	2025-12-02T16:23:23.1623576Z   VITEST_MAX_THREADS: 1
+test	Run tests	2025-12-02T16:23:23.1623774Z   VITEST_MIN_THREADS: 1
+test	Run tests	2025-12-02T16:23:23.1623970Z ##[endgroup]
+test	Run tests	2025-12-02T16:23:23.8216632Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+test	Run tests	2025-12-02T16:23:23.8475898Z 
+test	Run tests	2025-12-02T16:23:23.8476923Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+test	Run tests	2025-12-02T16:23:23.8477496Z 
+test	Run tests	2025-12-02T16:23:24.1600213Z [90mstderr[2m | tests/ai-generate.spec.ts[2m > [22m[2mAI generate endpoint[2m > [22m[2muses OpenAI when configured and falls back correctly[22m[39m
+test	Run tests	2025-12-02T16:23:24.1601108Z Captured exception Error: Simulated OpenAI failure for test API key
+test	Run tests	2025-12-02T16:23:24.1601719Z     at callOpenAI (/home/runner/work/cvforge-mvp/cvforge-mvp/lib/openai.js:19:11)
+test	Run tests	2025-12-02T16:23:24.1602301Z     at handler (/home/runner/work/cvforge-mvp/cvforge-mvp/pages/api/ai/generate.ts:51:27)
+test	Run tests	2025-12-02T16:23:24.1603179Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/ai-generate.spec.ts:67:5
+test	Run tests	2025-12-02T16:23:24.1603833Z     at runTest (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:781:11)
+test	Run tests	2025-12-02T16:23:24.1604583Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	Run tests	2025-12-02T16:23:24.1605714Z     at runSuite (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:909:15)
+test	Run tests	2025-12-02T16:23:24.1606470Z     at runFiles (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:958:5)
+test	Run tests	2025-12-02T16:23:24.1607226Z     at startTests (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:967:3)
+test	Run tests	2025-12-02T16:23:24.1608048Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7
+test	Run tests	2025-12-02T16:23:24.1609008Z     at withEnv (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5) { userId: 'u1' }
+test	Run tests	2025-12-02T16:23:24.1609740Z openai error Simulated OpenAI failure for test API key
+test	Run tests	2025-12-02T16:23:24.1610127Z 
+test	Run tests	2025-12-02T16:23:24.1672521Z  [32mÔ£ô[39m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 61[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:24.3915122Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.3916845Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604352-3805.json
+test	Run tests	2025-12-02T16:23:24.3917643Z apply endpoint POST: itemId action-item applicantId undefined
+test	Run tests	2025-12-02T16:23:24.3918410Z apply endpoint: wrote application 1764692604369 itemId action-item
+test	Run tests	2025-12-02T16:23:24.3919584Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604352-3805.json
+test	Run tests	2025-12-02T16:23:24.3920704Z apply endpoint POST: itemId action-item applicantId undefined
+test	Run tests	2025-12-02T16:23:24.3921498Z apply endpoint: wrote application 1764692604388 itemId action-item
+test	Run tests	2025-12-02T16:23:24.3921876Z 
+test	Run tests	2025-12-02T16:23:24.4234474Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4237097Z list endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604352-3805.json itemId action-item returning [ '1764692604388', '1764692604369' ]
+test	Run tests	2025-12-02T16:23:24.4238298Z 
+test	Run tests	2025-12-02T16:23:24.4240130Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4242268Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692604352-6216.json items [ 'action-item' ]
+test	Run tests	2025-12-02T16:23:24.4243398Z 
+test	Run tests	2025-12-02T16:23:24.4681522Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4683433Z <empty line>
+test	Run tests	2025-12-02T16:23:24.4685519Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4687574Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692604352-6216.json items [ 'action-item' ]
+test	Run tests	2025-12-02T16:23:24.4688478Z 
+test	Run tests	2025-12-02T16:23:24.4769531Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4770771Z <empty line>
+test	Run tests	2025-12-02T16:23:24.4772557Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4774839Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692604352-6216.json items [ 'action-item' ]
+test	Run tests	2025-12-02T16:23:24.4775897Z 
+test	Run tests	2025-12-02T16:23:24.4834402Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4835672Z <empty line>
+test	Run tests	2025-12-02T16:23:24.4837475Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+test	Run tests	2025-12-02T16:23:24.4839231Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692604352-6216.json items [ 'action-item' ]
+test	Run tests	2025-12-02T16:23:24.4839769Z 
+test	Run tests	2025-12-02T16:23:24.4840292Z  [32mÔ£ô[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 128[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:24.6911630Z [90mstdout[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+test	Run tests	2025-12-02T16:23:24.6913677Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604661-8519.json
+test	Run tests	2025-12-02T16:23:24.6914500Z apply endpoint POST: itemId jobA-1764692604665-9283 applicantId undefined
+test	Run tests	2025-12-02T16:23:24.6915286Z apply endpoint: wrote application 1764692604666 itemId jobA-1764692604665-9283
+test	Run tests	2025-12-02T16:23:24.6916617Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604661-8519.json
+test	Run tests	2025-12-02T16:23:24.6917436Z apply endpoint POST: itemId jobA-1764692604665-9283 applicantId undefined
+test	Run tests	2025-12-02T16:23:24.6918018Z apply endpoint: wrote application 1764692604687 itemId jobA-1764692604665-9283
+test	Run tests	2025-12-02T16:23:24.6918837Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604661-8519.json
+test	Run tests	2025-12-02T16:23:24.6919543Z apply endpoint POST: itemId jobB applicantId undefined
+test	Run tests	2025-12-02T16:23:24.6919981Z apply endpoint: wrote application 1764692604688 itemId jobB
+test	Run tests	2025-12-02T16:23:24.6920215Z 
+test	Run tests	2025-12-02T16:23:24.6974524Z [90mstderr[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+test	Run tests	2025-12-02T16:23:24.6977672Z list endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604661-8519.json itemId jobA-1764692604665-9283 returning [ '1764692604687', '1764692604666' ]
+test	Run tests	2025-12-02T16:23:24.6978915Z 
+test	Run tests	2025-12-02T16:23:24.6980397Z [90mstdout[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+test	Run tests	2025-12-02T16:23:24.6982585Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692604688-7031.json items [ 'jobA-1764692604665-9283' ]
+test	Run tests	2025-12-02T16:23:24.6983780Z 
+test	Run tests	2025-12-02T16:23:24.7051320Z [90mstdout[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+test	Run tests	2025-12-02T16:23:24.7053175Z [90mstderr[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+test	Run tests	2025-12-02T16:23:24.7055267Z decision endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692604661-8519.json appId 1764692604687 appItemId jobA-1764692604665-9283
+test	Run tests	2025-12-02T16:23:24.7055943Z 
+test	Run tests	2025-12-02T16:23:24.7056590Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692604688-7031.json items [ 'jobA-1764692604665-9283' ]
+test	Run tests	2025-12-02T16:23:24.7057149Z 
+test	Run tests	2025-12-02T16:23:24.7057686Z  [32mÔ£ô[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 41[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:24.9324146Z  [32mÔ£ô[39m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 42[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:25.1732620Z  [32mÔ£ô[39m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 57[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:25.1755535Z [90mstderr[2m | tests/webhook-reconcile.spec.ts[22m[39m
+test	Run tests	2025-12-02T16:23:25.1756275Z STRIPE_SECRET required
+test	Run tests	2025-12-02T16:23:25.1756521Z 
+test	Run tests	2025-12-02T16:23:25.3827676Z  [32mÔ£ô[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 26[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:25.3830023Z [90mstdout[2m | tests/marketplace-apply.spec.ts[2m > [22m[2mmarketplace apply API[2m > [22m[2mPOST validation rejects bad input[22m[39m
+test	Run tests	2025-12-02T16:23:25.3831874Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605353-8370.json
+test	Run tests	2025-12-02T16:23:25.3833413Z apply endpoint POST: itemId undefined applicantId undefined
+test	Run tests	2025-12-02T16:23:25.3833926Z 
+test	Run tests	2025-12-02T16:23:25.3835280Z [90mstdout[2m | tests/marketplace-apply.spec.ts[2m > [22m[2mmarketplace apply API[2m > [22m[2mPOST creates an application and GET returns it[22m[39m
+test	Run tests	2025-12-02T16:23:25.3837172Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605353-8370.json
+test	Run tests	2025-12-02T16:23:25.3838431Z apply endpoint POST: itemId g1 applicantId undefined
+test	Run tests	2025-12-02T16:23:25.3839221Z apply endpoint: wrote application 1764692605360 itemId g1
+test	Run tests	2025-12-02T16:23:25.3840596Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605353-8370.json
+test	Run tests	2025-12-02T16:23:25.3841465Z 
+test	Run tests	2025-12-02T16:23:25.3843123Z [90mstdout[2m | tests/marketplace-apply.spec.ts[2m > [22m[2mmarketplace apply API[2m > [22m[2mPOST accepts embedded CV upload and saves file[22m[39m
+test	Run tests	2025-12-02T16:23:25.3845024Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605353-8370.json
+test	Run tests	2025-12-02T16:23:25.3846290Z apply endpoint POST: itemId g2 applicantId undefined
+test	Run tests	2025-12-02T16:23:25.3847083Z apply endpoint: wrote application 1764692605380 itemId g2
+test	Run tests	2025-12-02T16:23:25.3847500Z 
+test	Run tests	2025-12-02T16:23:25.6246909Z [90mstdout[2m | tests/subscriptions-flow.spec.ts[2m > [22m[2msubscription flows (integration-like)[2m > [22m[2mwebhook checkout.session.completed maps pending subscription by metadata[22m[39m
+test	Run tests	2025-12-02T16:23:25.6248405Z checkout.session.completed sess_x
+test	Run tests	2025-12-02T16:23:25.6248598Z 
+test	Run tests	2025-12-02T16:23:25.7993505Z  [32mÔ£ô[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 220[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:26.0564154Z [90mstdout[2m | tests/marketplace-e2e.spec.ts[2m > [22m[2mmarketplace full flow e2e-like[2m > [22m[2mpost -> apply -> owner accepts flow completes[22m[39m
+test	Run tests	2025-12-02T16:23:26.0565518Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605984-311.json
+test	Run tests	2025-12-02T16:23:26.0566354Z apply endpoint POST: itemId 1764692606047 applicantId undefined
+test	Run tests	2025-12-02T16:23:26.0566837Z apply endpoint: wrote application 1764692606051 itemId 1764692606047
+test	Run tests	2025-12-02T16:23:26.0567096Z 
+test	Run tests	2025-12-02T16:23:26.0700250Z [90mstderr[2m | tests/marketplace-e2e.spec.ts[2m > [22m[2mmarketplace full flow e2e-like[2m > [22m[2mpost -> apply -> owner accepts flow completes[22m[39m
+test	Run tests	2025-12-02T16:23:26.0702263Z list endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605984-311.json itemId 1764692606047 returning [ '1764692606051' ]
+test	Run tests	2025-12-02T16:23:26.0704373Z decision endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692605984-311.json appId 1764692606051 appItemId 1764692606047
+test	Run tests	2025-12-02T16:23:26.0705014Z 
+test	Run tests	2025-12-02T16:23:26.0705813Z [90mstdout[2m | tests/marketplace-e2e.spec.ts[2m > [22m[2mmarketplace full flow e2e-like[2m > [22m[2mpost -> apply -> owner accepts flow completes[22m[39m
+test	Run tests	2025-12-02T16:23:26.0707166Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692605984-9822.json items [ '1764692606047' ]
+test	Run tests	2025-12-02T16:23:26.0708265Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692605984-9822.json items [ '1764692606047' ]
+test	Run tests	2025-12-02T16:23:26.0708792Z 
+test	Run tests	2025-12-02T16:23:26.0709229Z  [32mÔ£ô[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 84[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:26.3895278Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-02T16:23:26.3896910Z processing autoapply job e5c8760c-c72e-4a1a-a2c5-b3647d5ed702
+test	Run tests	2025-12-02T16:23:26.3897389Z 
+test	Run tests	2025-12-02T16:23:26.3910323Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-02T16:23:26.3911629Z found 1 auto-apply rules
+test	Run tests	2025-12-02T16:23:26.3911900Z 
+test	Run tests	2025-12-02T16:23:26.4223280Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+test	Run tests	2025-12-02T16:23:26.4231840Z autoapply created 1 applications for job e5c8760c-c72e-4a1a-a2c5-b3647d5ed702
+test	Run tests	2025-12-02T16:23:26.4232411Z 
+test	Run tests	2025-12-02T16:23:26.5347639Z  [32mÔ£ô[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 241[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:26.7917551Z [90mstdout[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+test	Run tests	2025-12-02T16:23:26.7920492Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692606729-3357.json
+test	Run tests	2025-12-02T16:23:26.7921799Z apply endpoint POST: itemId auth-test-item applicantId undefined
+test	Run tests	2025-12-02T16:23:26.7922888Z apply endpoint: wrote application 1764692606736 itemId auth-test-item
+test	Run tests	2025-12-02T16:23:26.7924279Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692606729-3357.json
+test	Run tests	2025-12-02T16:23:26.7925505Z apply endpoint POST: itemId auth-test-item applicantId undefined
+test	Run tests	2025-12-02T16:23:26.7926646Z apply endpoint: wrote application 1764692606786 itemId auth-test-item
+test	Run tests	2025-12-02T16:23:26.7927081Z 
+test	Run tests	2025-12-02T16:23:26.7993306Z [90mstdout[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+test	Run tests	2025-12-02T16:23:26.7995404Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692606729-8518.json items [ 'auth-test-item' ]
+test	Run tests	2025-12-02T16:23:26.7996411Z 
+test	Run tests	2025-12-02T16:23:26.8021049Z [90mstderr[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+test	Run tests	2025-12-02T16:23:26.8023518Z decision endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692606729-3357.json appId 1764692606786 appItemId auth-test-item
+test	Run tests	2025-12-02T16:23:26.8025063Z decision endpoint: requireOwner failed { ok: false, status: 403, error: 'forbidden' }
+test	Run tests	2025-12-02T16:23:26.8025420Z 
+test	Run tests	2025-12-02T16:23:26.8026148Z [90mstdout[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+test	Run tests	2025-12-02T16:23:26.8027214Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692606729-8518.json items [ 'auth-test-item' ]
+test	Run tests	2025-12-02T16:23:26.8027739Z 
+test	Run tests	2025-12-02T16:23:26.8028175Z  [32mÔ£ô[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 70[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:27.0134052Z  [32mÔ£ô[39m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 28[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:27.2226280Z  [32mÔ£ô[39m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 27[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:27.4498791Z  [32mÔ£ô[39m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 42[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:27.6413123Z  [32mÔ£ô[39m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 6[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:27.8818662Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+test	Run tests	2025-12-02T16:23:27.8820085Z notification email preview: preview://example
+test	Run tests	2025-12-02T16:23:27.8820492Z 
+test	Run tests	2025-12-02T16:23:28.0346890Z  [32mÔ£ô[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 213[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:28.2624396Z  [32mÔ£ô[39m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 44[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:28.4730405Z  [32mÔ£ô[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 3[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:28.7193265Z  [32mÔ£ô[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 55[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:28.9791616Z  [32mÔ£ô[39m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 76[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:29.2267571Z  [32mÔ£ô[39m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 62[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:29.4287267Z  [32mÔ£ô[39m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 24[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:29.6317844Z  [32mÔ£ô[39m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 21[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:29.8195954Z  [32mÔ£ô[39m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 7[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:30.0400203Z  [32mÔ£ô[39m tests/queue.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 40[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:30.2297867Z  [32mÔ£ô[39m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 7[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:30.4180138Z  [32mÔ£ô[39m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 11[2mms[22m[39m
+test	Run tests	2025-12-02T16:23:30.4184303Z [90mstderr[2m | tests/telemetry.spec.ts[2m > [22m[2mtelemetry helper[2m > [22m[2mdoes not throw when SENTRY_DSN not configured[22m[39m
+test	Run tests	2025-12-02T16:23:30.4185703Z Captured exception Error: test
+test	Run tests	2025-12-02T16:23:30.4186388Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:34
+test	Run tests	2025-12-02T16:23:30.4187597Z     at Proxy.assertThrows (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/core/assertions.js:2644:7)
+test	Run tests	2025-12-02T16:23:30.4189084Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	Run tests	2025-12-02T16:23:30.4190552Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:850:16)
+test	Run tests	2025-12-02T16:23:30.4192127Z     at Proxy.overwritingMethodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/overwriteMethod.js:78:33)
+test	Run tests	2025-12-02T16:23:30.4193899Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:1324:19)
+test	Run tests	2025-12-02T16:23:30.4195251Z     at Proxy.<anonymous> (file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/expect/dist/index.js:800:17)
+test	Run tests	2025-12-02T16:23:30.4196338Z     at Proxy.methodWrapper (/home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+test	Run tests	2025-12-02T16:23:30.4197122Z     at /home/runner/work/cvforge-mvp/cvforge-mvp/tests/telemetry.spec.ts:7:58
+test	Run tests	2025-12-02T16:23:30.4197730Z     at file:///home/runner/work/cvforge-mvp/cvforge-mvp/node_modules/@vitest/runner/dist/index.js:135:14 
+test	Run tests	2025-12-02T16:23:30.4198089Z 
+test	Run tests	2025-12-02T16:23:30.4276895Z 
+test	Run tests	2025-12-02T16:23:30.4291550Z [2m Test Files [22m [1m[32m26 passed[39m[22m[90m (26)[39m
+test	Run tests	2025-12-02T16:23:30.4296350Z [2m      Tests [22m [1m[32m43 passed[39m[22m[90m (43)[39m
+test	Run tests	2025-12-02T16:23:30.4297044Z [2m   Start at [22m 16:23:23
+test	Run tests	2025-12-02T16:23:30.4298189Z [2m   Duration [22m 6.58s[2m (transform 312ms, setup 2ms, collect 411ms, tests 1.64s, environment 4ms, prepare 1.70s)[22m
+test	Run tests	2025-12-02T16:23:30.4298831Z 
+test	Post Setup Node.js	´╗┐2025-12-02T16:23:30.4644983Z Post job cleanup.
+test	Post Checkout	´╗┐2025-12-02T16:23:30.6346586Z Post job cleanup.
+test	Post Checkout	2025-12-02T16:23:30.7299541Z [command]/usr/bin/git version
+test	Post Checkout	2025-12-02T16:23:30.7341359Z git version 2.51.2
+test	Post Checkout	2025-12-02T16:23:30.7385126Z Temporarily overriding HOME='/home/runner/work/_temp/f6e9f168-ca32-49a9-86b0-dbac4d261ea4' before making global git config changes
+test	Post Checkout	2025-12-02T16:23:30.7386870Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Checkout	2025-12-02T16:23:30.7390805Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+test	Post Checkout	2025-12-02T16:23:30.7433600Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Checkout	2025-12-02T16:23:30.7467482Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Checkout	2025-12-02T16:23:30.7715662Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Checkout	2025-12-02T16:23:30.7740434Z http.https://github.com/.extraheader
+test	Post Checkout	2025-12-02T16:23:30.7754148Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Checkout	2025-12-02T16:23:30.7786419Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Checkout	2025-12-02T16:23:30.8029655Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Checkout	2025-12-02T16:23:30.8064684Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	´╗┐2025-12-02T16:23:30.8426477Z Cleaning up orphan processes
+Postgres Integration	Set up job	´╗┐2025-12-02T16:23:37.0765934Z Current runner version: '2.329.0'
+Postgres Integration	Set up job	2025-12-02T16:23:37.0789760Z ##[group]Runner Image Provisioner
+Postgres Integration	Set up job	2025-12-02T16:23:37.0790861Z Hosted Compute Agent
+Postgres Integration	Set up job	2025-12-02T16:23:37.0791533Z Version: 20251016.436
+Postgres Integration	Set up job	2025-12-02T16:23:37.0792110Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+Postgres Integration	Set up job	2025-12-02T16:23:37.0792826Z Build Date: 2025-10-15T20:44:12Z
+Postgres Integration	Set up job	2025-12-02T16:23:37.0793480Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-02T16:23:37.0793987Z ##[group]Operating System
+Postgres Integration	Set up job	2025-12-02T16:23:37.0794549Z Ubuntu
+Postgres Integration	Set up job	2025-12-02T16:23:37.0794967Z 24.04.3
+Postgres Integration	Set up job	2025-12-02T16:23:37.0795525Z LTS
+Postgres Integration	Set up job	2025-12-02T16:23:37.0795978Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-02T16:23:37.0796445Z ##[group]Runner Image
+Postgres Integration	Set up job	2025-12-02T16:23:37.0797029Z Image: ubuntu-24.04
+Postgres Integration	Set up job	2025-12-02T16:23:37.0797526Z Version: 20251112.124.1
+Postgres Integration	Set up job	2025-12-02T16:23:37.0798510Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+Postgres Integration	Set up job	2025-12-02T16:23:37.0799920Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+Postgres Integration	Set up job	2025-12-02T16:23:37.0801213Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-02T16:23:37.0802371Z ##[group]GITHUB_TOKEN Permissions
+Postgres Integration	Set up job	2025-12-02T16:23:37.0804145Z Contents: read
+Postgres Integration	Set up job	2025-12-02T16:23:37.0804835Z Metadata: read
+Postgres Integration	Set up job	2025-12-02T16:23:37.0805346Z Packages: read
+Postgres Integration	Set up job	2025-12-02T16:23:37.0805833Z ##[endgroup]
+Postgres Integration	Set up job	2025-12-02T16:23:37.0807904Z Secret source: Actions
+Postgres Integration	Set up job	2025-12-02T16:23:37.0808632Z Prepare workflow directory
+Postgres Integration	Set up job	2025-12-02T16:23:37.1265851Z Prepare all required actions
+Postgres Integration	Set up job	2025-12-02T16:23:37.1323038Z Getting action download info
+Postgres Integration	Set up job	2025-12-02T16:23:37.5678434Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Postgres Integration	Set up job	2025-12-02T16:23:38.2229840Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Postgres Integration	Set up job	2025-12-02T16:23:38.4042941Z Complete job name: Postgres Integration
+Postgres Integration	Initialize containers	´╗┐2025-12-02T16:23:38.4538300Z ##[group]Checking docker version
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.4551978Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5628377Z '1.48'
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5640450Z Docker daemon API version: '1.48'
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5641398Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5814262Z '1.48'
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5827030Z Docker client API version: '1.48'
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5833130Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5835986Z ##[group]Clean up resources from previous jobs
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.5842305Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=b816f7"
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6002893Z ##[command]/usr/bin/docker network prune --force --filter "label=b816f7"
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6138616Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6139154Z ##[group]Create local container network
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6149897Z ##[command]/usr/bin/docker network create --label b816f7 github_network_e0644e8c18dc4d64a011947c64022617
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6750236Z 18de80e5050c4724321494f90abf9f8212ed03f60cbdc778f2901696975f70ac
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6769460Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6794125Z ##[group]Starting postgres service container
+Postgres Integration	Initialize containers	2025-12-02T16:23:38.6812944Z ##[command]/usr/bin/docker pull postgres:15
+Postgres Integration	Initialize containers	2025-12-02T16:23:39.7482511Z 15: Pulling from library/postgres
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1904344Z 0e4bc2bd6656: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1905160Z e213bd2560e2: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1905645Z 9fcd228516aa: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1906116Z 2e6036390374: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1906585Z 5a19b1f63ace: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1907059Z dd23ed782cae: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1907534Z b10108f2d223: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1908022Z 4eb4a683c389: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1908516Z b475dc4bba47: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1909065Z 2c64a0db539b: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1909485Z 6e6c09f9e058: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1909821Z 304e9b7c93e6: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1910505Z 95bcad39f7ff: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1910823Z fa51353b2c9b: Pulling fs layer
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1911148Z 2c64a0db539b: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1911721Z 6e6c09f9e058: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1911981Z b10108f2d223: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1912212Z 304e9b7c93e6: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1912454Z 4eb4a683c389: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1912735Z 95bcad39f7ff: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1913050Z b475dc4bba47: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1913302Z 2e6036390374: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1913524Z 5a19b1f63ace: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.1913760Z dd23ed782cae: Waiting
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.4483452Z e213bd2560e2: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.4484136Z e213bd2560e2: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.6142680Z 9fcd228516aa: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.6143908Z 9fcd228516aa: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.7518080Z 2e6036390374: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.7518937Z 2e6036390374: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.8496818Z 0e4bc2bd6656: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.8501148Z 0e4bc2bd6656: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.9185873Z 5a19b1f63ace: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:40.9187257Z 5a19b1f63ace: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.0179828Z dd23ed782cae: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.0180901Z dd23ed782cae: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.1007424Z b10108f2d223: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.1008163Z b10108f2d223: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.1731639Z 4eb4a683c389: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.1733041Z 4eb4a683c389: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.3820522Z 2c64a0db539b: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.3821162Z 2c64a0db539b: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.4201720Z 6e6c09f9e058: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.6127442Z 304e9b7c93e6: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.6128731Z 304e9b7c93e6: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.6575573Z 95bcad39f7ff: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.6576206Z 95bcad39f7ff: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.8827116Z 0e4bc2bd6656: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:41.9199337Z fa51353b2c9b: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:42.2729009Z b475dc4bba47: Verifying Checksum
+Postgres Integration	Initialize containers	2025-12-02T16:23:42.2729681Z b475dc4bba47: Download complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:42.9664497Z e213bd2560e2: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:43.1476935Z 9fcd228516aa: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:43.1901066Z 2e6036390374: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:43.5208816Z 5a19b1f63ace: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:43.6121309Z dd23ed782cae: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:43.6243336Z b10108f2d223: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:43.6363657Z 4eb4a683c389: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.5282803Z b475dc4bba47: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.5453246Z 2c64a0db539b: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.5604332Z 6e6c09f9e058: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.5722640Z 304e9b7c93e6: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.5842705Z 95bcad39f7ff: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.5966309Z fa51353b2c9b: Pull complete
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.6013817Z Digest: sha256:24d6c206bba8c0440bceb24a8d4bf642f60bf7aea94887051ea5761d29c22323
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.6026587Z Status: Downloaded newer image for postgres:15
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.6038968Z docker.io/library/postgres:15
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.6100515Z ##[command]/usr/bin/docker create --name ac2ee3a190a442c1a1b58e7581715066_postgres15_88dd89 --label b816f7 --network github_network_e0644e8c18dc4d64a011947c64022617 --network-alias postgres -p 5432:5432 --health-cmd "pg_isready -U postgres" --health-interval=5s --health-timeout=5s --health-retries=5 -e "POSTGRES_PASSWORD=postgres" -e GITHUB_ACTIONS=true -e CI=true postgres:15
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.6385477Z a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.6408860Z ##[command]/usr/bin/docker start a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8594934Z a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8619915Z ##[command]/usr/bin/docker ps --all --filter id=a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0 --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8753916Z a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0 Up Less than a second (health: starting)
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8783802Z ##[command]/usr/bin/docker port a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8917300Z 5432/tcp -> 0.0.0.0:5432
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8918072Z 5432/tcp -> [::]:5432
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8964871Z ##[endgroup]
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8973530Z ##[group]Waiting for all services to be ready
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.8986748Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.9129553Z starting
+Postgres Integration	Initialize containers	2025-12-02T16:23:46.9152168Z postgres service is starting, waiting 2 seconds before checking again.
+Postgres Integration	Initialize containers	2025-12-02T16:23:48.9151714Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:48.9278402Z starting
+Postgres Integration	Initialize containers	2025-12-02T16:23:48.9300888Z postgres service is starting, waiting 4 seconds before checking again.
+Postgres Integration	Initialize containers	2025-12-02T16:23:52.9613955Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Initialize containers	2025-12-02T16:23:52.9735498Z healthy
+Postgres Integration	Initialize containers	2025-12-02T16:23:52.9752698Z postgres service is healthy.
+Postgres Integration	Initialize containers	2025-12-02T16:23:52.9753766Z ##[endgroup]
+Postgres Integration	Checkout	´╗┐2025-12-02T16:23:52.9996136Z ##[group]Run actions/checkout@v4
+Postgres Integration	Checkout	2025-12-02T16:23:52.9996677Z with:
+Postgres Integration	Checkout	2025-12-02T16:23:52.9996878Z   repository: Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-02T16:23:52.9997268Z   token: ***
+Postgres Integration	Checkout	2025-12-02T16:23:52.9997445Z   ssh-strict: true
+Postgres Integration	Checkout	2025-12-02T16:23:52.9997616Z   ssh-user: git
+Postgres Integration	Checkout	2025-12-02T16:23:52.9997806Z   persist-credentials: true
+Postgres Integration	Checkout	2025-12-02T16:23:52.9998009Z   clean: true
+Postgres Integration	Checkout	2025-12-02T16:23:52.9998212Z   sparse-checkout-cone-mode: true
+Postgres Integration	Checkout	2025-12-02T16:23:52.9998441Z   fetch-depth: 1
+Postgres Integration	Checkout	2025-12-02T16:23:52.9998608Z   fetch-tags: false
+Postgres Integration	Checkout	2025-12-02T16:23:52.9998791Z   show-progress: true
+Postgres Integration	Checkout	2025-12-02T16:23:52.9998994Z   lfs: false
+Postgres Integration	Checkout	2025-12-02T16:23:52.9999154Z   submodules: false
+Postgres Integration	Checkout	2025-12-02T16:23:52.9999330Z   set-safe-directory: true
+Postgres Integration	Checkout	2025-12-02T16:23:52.9999699Z env:
+Postgres Integration	Checkout	2025-12-02T16:23:53.0000324Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Checkout	2025-12-02T16:23:53.0000585Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.1078259Z Syncing repository: Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-02T16:23:53.1079536Z ##[group]Getting Git version info
+Postgres Integration	Checkout	2025-12-02T16:23:53.1080195Z Working directory is '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Postgres Integration	Checkout	2025-12-02T16:23:53.1080747Z [command]/usr/bin/git version
+Postgres Integration	Checkout	2025-12-02T16:23:53.1207450Z git version 2.51.2
+Postgres Integration	Checkout	2025-12-02T16:23:53.1235957Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.1251447Z Temporarily overriding HOME='/home/runner/work/_temp/82a73e0d-4aad-474f-a069-22bb938460ec' before making global git config changes
+Postgres Integration	Checkout	2025-12-02T16:23:53.1252947Z Adding repository directory to the temporary git global config as a safe directory
+Postgres Integration	Checkout	2025-12-02T16:23:53.1265853Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Postgres Integration	Checkout	2025-12-02T16:23:53.1309245Z Deleting the contents of '/home/runner/work/cvforge-mvp/cvforge-mvp'
+Postgres Integration	Checkout	2025-12-02T16:23:53.1313383Z ##[group]Initializing the repository
+Postgres Integration	Checkout	2025-12-02T16:23:53.1317542Z [command]/usr/bin/git init /home/runner/work/cvforge-mvp/cvforge-mvp
+Postgres Integration	Checkout	2025-12-02T16:23:53.1447509Z hint: Using 'master' as the name for the initial branch. This default branch name
+Postgres Integration	Checkout	2025-12-02T16:23:53.1448519Z hint: is subject to change. To configure the initial branch name to use in all
+Postgres Integration	Checkout	2025-12-02T16:23:53.1449196Z hint: of your new repositories, which will suppress this warning, call:
+Postgres Integration	Checkout	2025-12-02T16:23:53.1449679Z hint:
+Postgres Integration	Checkout	2025-12-02T16:23:53.1450300Z hint: 	git config --global init.defaultBranch <name>
+Postgres Integration	Checkout	2025-12-02T16:23:53.1450968Z hint:
+Postgres Integration	Checkout	2025-12-02T16:23:53.1451609Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Postgres Integration	Checkout	2025-12-02T16:23:53.1452684Z hint: 'development'. The just-created branch can be renamed via this command:
+Postgres Integration	Checkout	2025-12-02T16:23:53.1453555Z hint:
+Postgres Integration	Checkout	2025-12-02T16:23:53.1454274Z hint: 	git branch -m <name>
+Postgres Integration	Checkout	2025-12-02T16:23:53.1454785Z hint:
+Postgres Integration	Checkout	2025-12-02T16:23:53.1455491Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Postgres Integration	Checkout	2025-12-02T16:23:53.1456630Z Initialized empty Git repository in /home/runner/work/cvforge-mvp/cvforge-mvp/.git/
+Postgres Integration	Checkout	2025-12-02T16:23:53.1467472Z [command]/usr/bin/git remote add origin https://github.com/Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-02T16:23:53.1504509Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.1504925Z ##[group]Disabling automatic garbage collection
+Postgres Integration	Checkout	2025-12-02T16:23:53.1508990Z [command]/usr/bin/git config --local gc.auto 0
+Postgres Integration	Checkout	2025-12-02T16:23:53.1538098Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.1538529Z ##[group]Setting up auth
+Postgres Integration	Checkout	2025-12-02T16:23:53.1545719Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Postgres Integration	Checkout	2025-12-02T16:23:53.1576096Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Postgres Integration	Checkout	2025-12-02T16:23:53.2002493Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Postgres Integration	Checkout	2025-12-02T16:23:53.2033648Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Postgres Integration	Checkout	2025-12-02T16:23:53.2259849Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Postgres Integration	Checkout	2025-12-02T16:23:53.2291616Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Postgres Integration	Checkout	2025-12-02T16:23:53.2535099Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Postgres Integration	Checkout	2025-12-02T16:23:53.2573923Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.2574674Z ##[group]Fetching the repository
+Postgres Integration	Checkout	2025-12-02T16:23:53.2583733Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +66c15e9168a3b71a53d64fcf687c683865763987:refs/remotes/origin/feat/postgres-ci-migration
+Postgres Integration	Checkout	2025-12-02T16:23:53.7132436Z From https://github.com/Tris247/cvforge-mvp
+Postgres Integration	Checkout	2025-12-02T16:23:53.7133669Z  * [new ref]         66c15e9168a3b71a53d64fcf687c683865763987 -> origin/feat/postgres-ci-migration
+Postgres Integration	Checkout	2025-12-02T16:23:53.7169608Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.7170467Z ##[group]Determining the checkout info
+Postgres Integration	Checkout	2025-12-02T16:23:53.7173006Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.7178934Z [command]/usr/bin/git sparse-checkout disable
+Postgres Integration	Checkout	2025-12-02T16:23:53.7224165Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Postgres Integration	Checkout	2025-12-02T16:23:53.7253133Z ##[group]Checking out the ref
+Postgres Integration	Checkout	2025-12-02T16:23:53.7258392Z [command]/usr/bin/git checkout --progress --force -B feat/postgres-ci-migration refs/remotes/origin/feat/postgres-ci-migration
+Postgres Integration	Checkout	2025-12-02T16:23:53.7413095Z Switched to a new branch 'feat/postgres-ci-migration'
+Postgres Integration	Checkout	2025-12-02T16:23:53.7415115Z branch 'feat/postgres-ci-migration' set up to track 'origin/feat/postgres-ci-migration'.
+Postgres Integration	Checkout	2025-12-02T16:23:53.7422833Z ##[endgroup]
+Postgres Integration	Checkout	2025-12-02T16:23:53.7465884Z [command]/usr/bin/git log -1 --format=%H
+Postgres Integration	Checkout	2025-12-02T16:23:53.7491425Z 66c15e9168a3b71a53d64fcf687c683865763987
+Postgres Integration	Setup Node.js	´╗┐2025-12-02T16:23:53.7809744Z ##[group]Run actions/setup-node@v4
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7810247Z with:
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7810427Z   node-version: 18
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7810606Z   always-auth: false
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7810798Z   check-latest: false
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7811153Z   token: ***
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7811313Z env:
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7811700Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.7811944Z ##[endgroup]
+Postgres Integration	Setup Node.js	2025-12-02T16:23:53.9764904Z Attempting to download 18...
+Postgres Integration	Setup Node.js	2025-12-02T16:23:54.7929204Z Acquiring 18.20.8 - x64 from https://github.com/actions/node-versions/releases/download/18.20.8-14110393767/node-18.20.8-linux-x64.tar.gz
+Postgres Integration	Setup Node.js	2025-12-02T16:23:55.2795281Z Extracting ...
+Postgres Integration	Setup Node.js	2025-12-02T16:23:55.2903460Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/4e55f7bf-14a8-46e8-a855-74d71fd414fc -f /home/runner/work/_temp/221319e0-36c4-42f0-8dc7-ebb1e9c77ac0
+Postgres Integration	Setup Node.js	2025-12-02T16:23:56.2349876Z Adding to the cache ...
+Postgres Integration	Setup Node.js	2025-12-02T16:23:57.8555980Z ##[group]Environment details
+Postgres Integration	Setup Node.js	2025-12-02T16:23:58.0915226Z node: v18.20.8
+Postgres Integration	Setup Node.js	2025-12-02T16:23:58.0915626Z npm: 10.8.2
+Postgres Integration	Setup Node.js	2025-12-02T16:23:58.0915824Z yarn: 1.22.22
+Postgres Integration	Setup Node.js	2025-12-02T16:23:58.0916394Z ##[endgroup]
+Postgres Integration	Install dependencies	´╗┐2025-12-02T16:23:58.1065414Z ##[group]Run npm ci
+Postgres Integration	Install dependencies	2025-12-02T16:23:58.1065710Z [36;1mnpm ci[0m
+Postgres Integration	Install dependencies	2025-12-02T16:23:58.1106315Z shell: /usr/bin/bash -e {0}
+Postgres Integration	Install dependencies	2025-12-02T16:23:58.1106601Z env:
+Postgres Integration	Install dependencies	2025-12-02T16:23:58.1107119Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Install dependencies	2025-12-02T16:23:58.1107413Z ##[endgroup]
+Postgres Integration	Install dependencies	2025-12-02T16:23:59.8351307Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.0593119Z npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.3265992Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.5947650Z npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.7782087Z npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.7919453Z npm warn deprecated gauge@4.0.4: This package is no longer supported.
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.8301424Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+Postgres Integration	Install dependencies	2025-12-02T16:24:00.8535692Z npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3357792Z 
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3358701Z added 310 packages, and audited 311 packages in 11s
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3359251Z 
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3359555Z 52 packages are looking for funding
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3360472Z   run `npm fund` for details
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3562951Z 
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3563731Z 4 moderate severity vulnerabilities
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3564107Z 
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3564448Z To address all issues (including breaking changes), run:
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3564899Z   npm audit fix --force
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3565095Z 
+Postgres Integration	Install dependencies	2025-12-02T16:24:09.3565652Z Run `npm audit` for details.
+Postgres Integration	Wait for Postgres	´╗┐2025-12-02T16:24:09.3875150Z ##[group]Run echo "Waiting for Postgres to be ready..."
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3875577Z [36;1mecho "Waiting for Postgres to be ready..."[0m
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3875872Z [36;1mfor i in {1..30}; do[0m
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3876163Z [36;1m  pg_isready -h localhost -p 5432 -U postgres && break[0m
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3876466Z [36;1m  sleep 1[0m
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3876637Z [36;1mdone[0m
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3912130Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3912684Z env:
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3913150Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3913413Z ##[endgroup]
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.3967243Z Waiting for Postgres to be ready...
+Postgres Integration	Wait for Postgres	2025-12-02T16:24:09.4520470Z localhost:5432 - accepting connections
+Postgres Integration	Apply Postgres schema and generate client	´╗┐2025-12-02T16:24:09.4551687Z ##[group]Run # Use `db push` in CI to apply the Postgres schema without relying on
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4552202Z [36;1m# Use `db push` in CI to apply the Postgres schema without relying on[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4552649Z [36;1m# an existing migration history that may have been generated for SQLite.[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4553095Z [36;1mnpx prisma db push --schema=prisma/schema.postgres.prisma[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4553492Z [36;1mnpx prisma generate --schema=prisma/schema.postgres.prisma[0m
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4586048Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4586358Z env:
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4586823Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:09.4587076Z ##[endgroup]
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.2837705Z Prisma schema loaded from prisma/schema.postgres.prisma
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.2879407Z Datasource "db": PostgreSQL database "postgres", schema "public" at "localhost:5432"
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.4575240Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.4576900Z ­ƒÜÇ  Your database is now in sync with your Prisma schema. Done in 115ms
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.4577540Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.4592409Z Running generate... (Use --skip-generate to skip the generators)
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.6788606Z [2K[1A[2K[GRunning generate... - Prisma Client
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.8084731Z [2K[1A[2K[GÔ£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 128ms
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:10.8087013Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:11.8299239Z Prisma schema loaded from prisma/schema.postgres.prisma
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2142123Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2143619Z Ô£ö Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 128ms
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2144173Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2144710Z Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2145201Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2145638Z Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2146100Z 
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2562138Z ÔöîÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÉ
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2564414Z Ôöé  Update available 5.22.0 -> 7.0.1                       Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2565193Z Ôöé                                                         Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2566069Z Ôöé  This is a major update - please follow the guide at    Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2566943Z Ôöé  https://pris.ly/d/major-version-upgrade                Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2567703Z Ôöé                                                         Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2568428Z Ôöé  Run the following to update                            Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2569201Z Ôöé    npm i --save-dev prisma@latest                       Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2569964Z Ôöé    npm i @prisma/client@latest                          Ôöé
+Postgres Integration	Apply Postgres schema and generate client	2025-12-02T16:24:12.2570935Z ÔööÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÿ
+Postgres Integration	Seed Postgres	´╗┐2025-12-02T16:24:12.4208713Z ##[group]Run node prisma/seed.js
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.4209012Z [36;1mnode prisma/seed.js[0m
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.4241867Z shell: /usr/bin/bash -e {0}
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.4242096Z env:
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.4242531Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.4242786Z ##[endgroup]
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.4853013Z Seeding demo data...
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.5445680Z skipping invoice seed (model may be absent) Cannot read properties of undefined (reading 'create')
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.5447127Z skipping stripeEvent seed (model may be absent) Cannot read properties of undefined (reading 'create')
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.5448540Z skipping marketplace seed (models may be absent) Cannot read properties of undefined (reading 'create')
+Postgres Integration	Seed Postgres	2025-12-02T16:24:12.5449411Z Seeding finished
+Postgres Integration	Run integration tests (Postgres)	´╗┐2025-12-02T16:24:12.5598659Z ##[group]Run npm test --silent -- --testNamePattern="integration|e2e|autoapply|marketplace"
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:12.5599306Z [36;1mnpm test --silent -- --testNamePattern="integration|e2e|autoapply|marketplace"[0m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:12.5632842Z shell: /usr/bin/bash -e {0}
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:12.5633081Z env:
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:12.5633499Z   DATABASE_URL: ***localhost:5432/postgres
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:12.5633753Z ##[endgroup]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.0654808Z [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.0923464Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.0925064Z [7m[1m[36m RUN [39m[22m[27m [36mv1.6.1[39m [90m/home/runner/work/cvforge-mvp/cvforge-mvp[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.0925724Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4447733Z  [2m[90mÔåô[39m[22m tests/ai-generate.spec.ts [2m ([22m[2m4 tests[22m [2m|[22m [33m4 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4781388Z [90mstdout[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4783501Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653438-8022.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4785186Z apply endpoint POST: itemId jobA-1764692653449-3227 applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4786224Z apply endpoint: wrote application 1764692653451 itemId jobA-1764692653449-3227
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4791638Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653438-8022.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4793085Z apply endpoint POST: itemId jobA-1764692653449-3227 applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4794156Z apply endpoint: wrote application 1764692653473 itemId jobA-1764692653449-3227
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4795656Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653438-8022.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4796959Z apply endpoint POST: itemId jobB applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4797780Z apply endpoint: wrote application 1764692653473 itemId jobB
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4798200Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4799823Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4802245Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653427-7473.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4803467Z apply endpoint POST: itemId action-item applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4804291Z apply endpoint: wrote application 1764692653448 itemId action-item
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4805601Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653427-7473.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4806791Z apply endpoint POST: itemId action-item applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4807605Z apply endpoint: wrote application 1764692653475 itemId action-item
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.4808064Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5261751Z [90mstderr[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5264846Z list endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653438-8022.json itemId jobA-1764692653449-3227 returning [ '1764692653473', '1764692653451' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5267848Z [90mstdout[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5268959Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5270689Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5273369Z list endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653427-7473.json itemId action-item returning [ '1764692653475', '1764692653448' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5275020Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5276294Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692653474-5252.json items [ 'jobA-1764692653449-3227' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5277389Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5278962Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5281339Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692653427-3987.json items [ 'action-item' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5282363Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5516247Z [90mstdout[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5518721Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692653474-5252.json items [ 'jobA-1764692653449-3227' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5519769Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5521539Z [90mstderr[2m | tests/marketplace-applicants.spec.ts[2m > [22m[2mmarketplace applicants API[2m > [22m[2mlists applicants for an item and lets employers accept/reject[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5523939Z  [33mÔØ»[39m tests/marketplace-applicants.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [31m1 failed[39m[2m)[22m[90m 105[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5525440Z decision endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653438-8022.json appId 1764692653473 appItemId jobB
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5526372Z requireOwner: item not found { itemId: 'jobB', candidateIds: [ 'jobA-1764692653449-3227' ] }
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5527026Z decision endpoint: requireOwner failed { ok: false, status: 404, error: 'item not found' }
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5527359Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5528131Z [31m   [33mÔØ»[31m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.5528926Z [31m     ÔåÆ expected 404 to be 200 // Object.is equality[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6006481Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6007771Z <empty line>
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6009399Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6011705Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692653427-3987.json items [ 'action-item' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6012673Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6190658Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6193480Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6195425Z <empty line>
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6196775Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692653427-3987.json items [ 'action-item' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6201468Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6315020Z [90mstderr[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6316474Z <empty line>
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6323187Z [90mstdout[2m | tests/marketplace-actions.spec.ts[2m > [22m[2mmarketplace applicant actions (owner-only)[2m > [22m[2mallows owner to message, hire and archive applicants[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6325815Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692653427-3987.json items [ 'action-item' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6326848Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.6331832Z  [32mÔ£ô[39m tests/marketplace-actions.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 199[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.7270837Z  [2m[90mÔåô[39m[22m tests/uploads-parsing.spec.ts [2m ([22m[2m2 tests[22m [2m|[22m [33m2 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.8476035Z  [2m[90mÔåô[39m[22m tests/webhook-reconcile.spec.ts [2m ([22m[2m4 tests[22m [2m|[22m [33m4 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9916855Z [90mstdout[2m | tests/marketplace-apply.spec.ts[2m > [22m[2mmarketplace apply API[2m > [22m[2mPOST validation rejects bad input[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9922933Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653940-2632.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9923752Z apply endpoint POST: itemId undefined applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9924004Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9924797Z [90mstdout[2m | tests/marketplace-apply.spec.ts[2m > [22m[2mmarketplace apply API[2m > [22m[2mPOST creates an application and GET returns it[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9926127Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653940-2632.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9926784Z apply endpoint POST: itemId g1 applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9927185Z apply endpoint: wrote application 1764692653951 itemId g1
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9927885Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653940-2632.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9928334Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9929011Z [90mstdout[2m | tests/marketplace-apply.spec.ts[2m > [22m[2mmarketplace apply API[2m > [22m[2mPOST accepts embedded CV upload and saves file[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9930203Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692653940-2632.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9930868Z apply endpoint POST: itemId g2 applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9931278Z apply endpoint: wrote application 1764692653988 itemId g2
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9931487Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:13.9948107Z  [32mÔ£ô[39m tests/marketplace-apply.spec.ts [2m ([22m[2m3 tests[22m[2m)[22m[90m 46[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2670580Z [90mstdout[2m | tests/marketplace-e2e.spec.ts[2m > [22m[2mmarketplace full flow e2e-like[2m > [22m[2mpost -> apply -> owner accepts flow completes[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2681431Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692654136-7553.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2682672Z apply endpoint POST: itemId 1764692654254 applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2683558Z apply endpoint: wrote application 1764692654259 itemId 1764692654254
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2684066Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2749281Z [90mstdout[2m | tests/subscriptions-flow.spec.ts[2m > [22m[2msubscription flows (integration-like)[2m > [22m[2mwebhook checkout.session.completed maps pending subscription by metadata[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2756950Z checkout.session.completed sess_x
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2757329Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2884715Z [90mstderr[2m | tests/marketplace-e2e.spec.ts[2m > [22m[2mmarketplace full flow e2e-like[2m > [22m[2mpost -> apply -> owner accepts flow completes[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2887090Z list endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692654136-7553.json itemId 1764692654254 returning [ '1764692654259' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2889547Z decision endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692654136-7553.json appId 1764692654259 appItemId 1764692654254
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2891291Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2892710Z [90mstdout[2m | tests/marketplace-e2e.spec.ts[2m > [22m[2mmarketplace full flow e2e-like[2m > [22m[2mpost -> apply -> owner accepts flow completes[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2894743Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692654136-2665.json items [ '1764692654254' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2896825Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692654136-2665.json items [ '1764692654254' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2897838Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.2917820Z  [32mÔ£ô[39m tests/marketplace-e2e.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 149[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4168249Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4177281Z processing autoapply job be0f7c79-b9d3-4967-a0f0-be01e22e39df
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4178753Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4633329Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4634556Z found 1 auto-apply rules
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4635231Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4684091Z [90mstdout[2m | tests/autoapply-worker.integration.spec.ts[2m > [22m[2mautoapply worker integration[2m > [22m[2mcreates an application when rule matches job[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4700513Z autoapply created 1 applications for job be0f7c79-b9d3-4967-a0f0-be01e22e39df
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4701570Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.4843546Z  [32mÔ£ô[39m tests/autoapply-worker.integration.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 131[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5771322Z  [32mÔ£ô[39m tests/subscriptions-flow.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[33m 544[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5952647Z [90mstdout[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5956089Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692654549-6482.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5957347Z apply endpoint POST: itemId auth-test-item applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5958250Z apply endpoint: wrote application 1764692654555 itemId auth-test-item
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5959579Z apply endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692654549-6482.json
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5961022Z apply endpoint POST: itemId auth-test-item applicantId undefined
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5961875Z apply endpoint: wrote application 1764692654588 itemId auth-test-item
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.5962321Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6048095Z [90mstdout[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6067320Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692654549-9273.json items [ 'auth-test-item' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6068666Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6121012Z [90mstderr[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6122530Z [90mstdout[2m | tests/marketplace-auth.spec.ts[2m > [22m[2mmarketplace auth checks[2m > [22m[2mprevents non-owners from listing and deciding[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6123767Z decision endpoint: FILE /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace-applications.test-1764692654549-6482.json appId 1764692654588 appItemId auth-test-item
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6124725Z decision endpoint: requireOwner failed { ok: false, status: 403, error: 'forbidden' }
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6125035Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6125667Z getMarketplaceItems: using file /home/runner/work/cvforge-mvp/cvforge-mvp/data/marketplace.test-1764692654549-9273.json items [ 'auth-test-item' ]
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6127168Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.6128046Z  [32mÔ£ô[39m tests/marketplace-auth.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 60[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.7370805Z  [2m[90mÔåô[39m[22m tests/uploads-api.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.8637472Z  [2m[90mÔåô[39m[22m tests/ai-upload.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:14.9103342Z  [2m[90mÔåô[39m[22m tests/convert-legacy-analytics.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.0111454Z  [2m[90mÔåô[39m[22m tests/ingest-worker.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.2088726Z  [2m[90mÔåô[39m[22m tests/repair-cli.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.2316023Z [90mstdout[2m | tests/notifications-mailer.spec.ts[2m > [22m[2mnotifications mailer integration[2m > [22m[2mcalls the mailer when enabled[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.2317434Z notification email preview: preview://example
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.2317816Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.3259362Z  [32mÔ£ô[39m tests/autoapply-matching.spec.ts [2m ([22m[2m4 tests[22m[2m)[22m[90m 5[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.3828278Z  [32mÔ£ô[39m tests/notifications-mailer.spec.ts [2m ([22m[2m1 test[22m[2m)[22m[90m 244[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.5353989Z  [32mÔ£ô[39m tests/marketplace-api.spec.ts [2m ([22m[2m2 tests[22m[2m)[22m[90m 90[2mms[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.5729787Z  [2m[90mÔåô[39m[22m tests/subscriptions.spec.ts [2m ([22m[2m3 tests[22m [2m|[22m [33m3 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.6856392Z  [2m[90mÔåô[39m[22m tests/notifications-api.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.8193287Z  [2m[90mÔåô[39m[22m tests/invoice-webhook.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.8381782Z  [2m[90mÔåô[39m[22m tests/analytics-jsonl.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:15.9560419Z  [2m[90mÔåô[39m[22m tests/cv-preview.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.0982481Z  [2m[90mÔåô[39m[22m tests/queue.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.1152555Z  [2m[90mÔåô[39m[22m tests/openai-wrapper.spec.ts [2m ([22m[2m2 tests[22m [2m|[22m [33m2 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2161689Z  [2m[90mÔåô[39m[22m tests/telemetry.spec.ts [2m ([22m[2m1 test[22m [2m|[22m [33m1 skipped[39m[2m)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2364815Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2412462Z [31mÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1m[7m Failed Tests 1 [27m[22mÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2413068Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2414692Z [31m[1m[7m FAIL [27m[22m[39m tests/marketplace-applicants.spec.ts[2m > [22mmarketplace applicants API[2m > [22mlists applicants for an item and lets employers accept/reject
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2416444Z [31m[1mAssertionError[22m: expected 404 to be 200 // Object.is equality[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2416964Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2417095Z - Expected
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2417407Z + Received
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2417576Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2417686Z - 200
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2417953Z + 404
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2418104Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2418692Z [36m [2mÔØ»[22m tests/marketplace-applicants.spec.ts:[2m58:30[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2721577Z     [90m 56| [39m    [35mconst[39m dres[33m:[39many [33m=[39m { status[33m:[39m (c[33m:[39mnumber)[33m=>[39m ({ json[33m:[39m (b[33m:[39many)[33m=>[39m { dres[33m.[39mÔÇª
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2723173Z     [90m 57| [39m    [35mawait[39m decisionMod[33m.[39m[35mdefault[39m(dreq[33m,[39m dres)
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2724492Z     [90m 58| [39m    [34mexpect[39m(dres[33m.[39m_out[33m.[39mstatus)[33m.[39m[34mtoBe[39m([34m200[39m)
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2726090Z     [90m   | [39m                             [31m^[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2727379Z     [90m 59| [39m    [34mexpect[39m(dres[33m.[39m_out[33m.[39mbody[33m.[39mapplication[33m.[39mstatus)[33m.[39m[34mtoBe[39m([32m'accepted'[39m)
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2728339Z     [90m 60| [39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2728563Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2729037Z [31m[2mÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»ÔÄ»[1/1]ÔÄ»[22m[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2729374Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2729410Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2761518Z ##[error]AssertionError: expected 404 to be 200 // Object.is equality
+Postgres Integration	Run integration tests (Postgres)	
+Postgres Integration	Run integration tests (Postgres)	- Expected
+Postgres Integration	Run integration tests (Postgres)	+ Received
+Postgres Integration	Run integration tests (Postgres)	
+Postgres Integration	Run integration tests (Postgres)	- 200
+Postgres Integration	Run integration tests (Postgres)	+ 404
+Postgres Integration	Run integration tests (Postgres)	
+Postgres Integration	Run integration tests (Postgres)	 ÔØ» tests/marketplace-applicants.spec.ts:58:30
+Postgres Integration	Run integration tests (Postgres)	
+Postgres Integration	Run integration tests (Postgres)	
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2774738Z [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m9 passed[39m[22m[2m | [22m[33m16 skipped[39m[90m (26)[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2776839Z [2m      Tests [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m16 passed[39m[22m[2m | [22m[33m26 skipped[39m[90m (43)[39m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2777772Z [2m   Start at [22m 16:24:13
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2778867Z [2m   Duration [22m 3.15s[2m (transform 441ms, setup 4ms, collect 762ms, tests 1.57s, environment 6ms, prepare 2.60s)[22m
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.2779535Z 
+Postgres Integration	Run integration tests (Postgres)	2025-12-02T16:24:16.3055951Z ##[error]Process completed with exit code 1.
+Postgres Integration	Post Checkout	´╗┐2025-12-02T16:24:16.3145928Z Post job cleanup.
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4096971Z [command]/usr/bin/git version
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4133365Z git version 2.51.2
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4177208Z Temporarily overriding HOME='/home/runner/work/_temp/c76f006a-d17f-4671-b501-18c9fcf6666f' before making global git config changes
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4178691Z Adding repository directory to the temporary git global config as a safe directory
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4183848Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cvforge-mvp/cvforge-mvp
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4218964Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4251130Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4482229Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4504412Z http.https://github.com/.extraheader
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4519297Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4550453Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4776243Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Postgres Integration	Post Checkout	2025-12-02T16:24:16.4808594Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Postgres Integration	Stop containers	´╗┐2025-12-02T16:24:16.5124573Z Print service container logs: ac2ee3a190a442c1a1b58e7581715066_postgres15_88dd89
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5129019Z ##[command]/usr/bin/docker logs --details a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5259054Z  initdb: warning: enabling "trust" authentication for local connections
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5260163Z  The files belonging to this database system will be owned by user "postgres".
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5261294Z  initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5262647Z  2025-12-02 16:23:47.737 UTC [1] LOG:  starting PostgreSQL 15.15 (Debian 15.15-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5263676Z  2025-12-02 16:23:47.737 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5264211Z  2025-12-02 16:23:47.737 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5264735Z  2025-12-02 16:23:47.738 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5265220Z  2025-12-02 16:23:47.741 UTC [61] LOG:  database system was shut down at 2025-12-02 16:23:47 UTC
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5265717Z  2025-12-02 16:23:47.745 UTC [1] LOG:  database system is ready to accept connections
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5266075Z  This user must also own the server process.
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5266314Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5266560Z  The database cluster will be initialized with locale "en_US.utf8".
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5266952Z  The default database encoding has accordingly been set to "UTF8".
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5267329Z  The default text search configuration will be set to "english".
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5267612Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5267775Z  Data page checksums are disabled.
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5267987Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5268235Z  fixing permissions on existing directory /var/lib/postgresql/data ... ok
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5268582Z  creating subdirectories ... ok
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5268862Z  selecting dynamic shared memory implementation ... posix
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5269172Z  selecting default max_connections ... 100
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5269434Z  selecting default shared_buffers ... 128MB
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5269950Z  selecting default time zone ... Etc/UTC
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5270428Z  creating configuration files ... ok
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5270671Z  running bootstrap script ... ok
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5270927Z  performing post-bootstrap initialization ... ok
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5271194Z  syncing data to disk ... ok
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5271382Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5271518Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5271711Z  Success. You can now start the database server using:
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5271965Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5272162Z      pg_ctl -D /var/lib/postgresql/data -l logfile start
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5272414Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5272948Z  waiting for server to start....2025-12-02 16:23:47.499 UTC [47] LOG:  starting PostgreSQL 15.15 (Debian 15.15-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5273691Z  2025-12-02 16:23:47.500 UTC [47] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5274449Z  2025-12-02 16:23:47.503 UTC [50] LOG:  database system was shut down at 2025-12-02 16:23:47 UTC
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5275242Z  2025-12-02 16:23:47.507 UTC [47] LOG:  database system is ready to accept connections
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5275780Z   done
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5276026Z  server started
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5276296Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5276594Z  /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5276947Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5277164Z  2025-12-02 16:23:47.616 UTC [47] LOG:  received fast shutdown request
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5277605Z  waiting for server to shut down....2025-12-02 16:23:47.617 UTC [47] LOG:  aborting any active transactions
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5278188Z  2025-12-02 16:23:47.618 UTC [47] LOG:  background worker "logical replication launcher" (PID 53) exited with exit code 1
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5278911Z  2025-12-02 16:23:47.619 UTC [48] LOG:  shutting down
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5279254Z  2025-12-02 16:23:47.619 UTC [48] LOG:  checkpoint starting: shutdown immediate
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5280270Z  2025-12-02 16:23:47.622 UTC [48] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.004 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5281060Z  2025-12-02 16:23:47.625 UTC [47] LOG:  database system is shut down
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5281332Z   done
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5281488Z  server stopped
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5281650Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5281849Z  PostgreSQL init process complete; ready for start up.
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5282110Z  
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5287433Z Stop and remove container: ac2ee3a190a442c1a1b58e7581715066_postgres15_88dd89
+Postgres Integration	Stop containers	2025-12-02T16:24:16.5292674Z ##[command]/usr/bin/docker rm --force a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Stop containers	2025-12-02T16:24:18.6162247Z a29f02fee22c07e8fe9f385b5201ce8492a3c2529dacedaf3aa678dd20ab8bb0
+Postgres Integration	Stop containers	2025-12-02T16:24:18.6190674Z Remove container network: github_network_e0644e8c18dc4d64a011947c64022617
+Postgres Integration	Stop containers	2025-12-02T16:24:18.6194973Z ##[command]/usr/bin/docker network rm github_network_e0644e8c18dc4d64a011947c64022617
+Postgres Integration	Stop containers	2025-12-02T16:24:18.7316888Z github_network_e0644e8c18dc4d64a011947c64022617
+Postgres Integration	Complete job	´╗┐2025-12-02T16:24:18.7382506Z Cleaning up orphan processes

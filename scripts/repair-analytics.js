@@ -9,25 +9,22 @@ async function main(){
   const lines = raw.split(/\r?\n/).filter(l=>l && l.trim())
   const repairedPath = file + '.repaired'
   const corruptPath = file + '.corrupt'
-  const out = fs.createWriteStream(repairedPath, { flags: 'w' })
-  const corrupt = fs.createWriteStream(corruptPath, { flags: 'w' })
   let valid = 0, invalid = 0
+  const repairedLines = []
+  const corruptLines = []
   for(const l of lines){
     try{
       JSON.parse(l)
-      out.write(l + '\n')
+      repairedLines.push(l)
       valid++
     }catch(e){
-      corrupt.write(l + '\n')
+      corruptLines.push(l)
       invalid++
     }
   }
-  out.end(); corrupt.end();
-  // wait for streams to finish writing before rotating
-  try{
-    const { once } = require('events')
-    await Promise.all([ once(out, 'finish'), once(corrupt, 'finish') ])
-  }catch(e){ /* ignore */ }
+  // write synchronously to avoid Windows stream/rename races
+  fs.writeFileSync(repairedPath, repairedLines.join('\n') + (repairedLines.length ? '\n' : ''), 'utf8')
+  fs.writeFileSync(corruptPath, corruptLines.join('\n') + (corruptLines.length ? '\n' : ''), 'utf8')
   // rotate original
   try{ fs.renameSync(file, file + '.bak.' + Date.now()) }catch(e){}
   // move repaired into place
