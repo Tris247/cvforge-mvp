@@ -23,3 +23,10 @@ if (process.env.PLAYWRIGHT_E2E === '1') {
   expect(found).toBeTruthy()
   })
 }
+
+  // Provide a skipped suite so Vitest considers the file handled
+  // when running unit tests without Playwright.
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const { describe } = require('vitest')
+  // @ts-ignore
+  describe.skip('playwright e2e (disabled locally)', () => {})
