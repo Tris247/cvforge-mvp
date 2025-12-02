@@ -22,7 +22,11 @@ describe('autoapply worker integration', () => {
 
     // create a candidate user and a rule that should match
     user = await prisma.user.create({ data: { email: `candidate+${Date.now()}@test.local`, name: 'Candidate' } })
-    rule = await prisma.autoApplyRule.create({ data: { userId: user.id, keywords: 'engineer,services', locations: 'remote', active: true } })
+    // Prisma Postgres schema expects string arrays for keywords/locations; SQLite schema may accept strings.
+    const isPostgres = !!(process.env.DATABASE_URL && process.env.DATABASE_URL.startsWith('postgres'))
+    const keywordsVal: any = isPostgres ? ['engineer', 'services'] : 'engineer,services'
+    const locationsVal: any = isPostgres ? ['remote'] : 'remote'
+    rule = await prisma.autoApplyRule.create({ data: { userId: user.id, keywords: keywordsVal, locations: locationsVal, active: true } })
   })
 
   afterAll(async () => {
