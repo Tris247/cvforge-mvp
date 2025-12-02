@@ -50,6 +50,20 @@ npm test
 ```
 
  - If you get an error about <Link> or a server-side render error, fix Link usage to avoid nested <a> tags. We fixed these in the scaffold.
+
+## Postgres CI Migration (2025-12)
+
+- CI runs two paths: SQLite-first unit tests and a Postgres integration job.
+- Prisma Postgres schema uses `String[]` for fields like `keywords`, `locations`, `tags`.
+- Local dev can stay file-backed; CI seeds Postgres and runs integration tests.
+- Deterministic marketplace tests set `MARKETPLACE_FILE` and `MARKETPLACE_APPS_FILE` per-test to avoid cross-file mismatches.
+- A `pretest` script creates `data/` so file-backed tests don’t fail with ENOENT.
+
+### Env gates for local runs
+
+- `DATABASE_URL` with `postgres://` enables Postgres-only integration suites locally; otherwise they are skipped.
+- `PLAYWRIGHT_E2E=1` runs Playwright e2e under `ci-artifacts/tests/e2e`; otherwise the file provides a skipped suite so Vitest passes.
+
  - If hot reload returns 404 for a webpack hot-update.json file, restart the dev server and refresh the browser.
  Background work: Auto-apply supports Redis + BullMQ and falls back to file-backed queue for local development.
 
