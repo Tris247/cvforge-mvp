@@ -20,6 +20,8 @@ function ensure(filePath: string) {
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const FILE = process.env.MARKETPLACE_APPS_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_APPS_FILE) : path.resolve(process.cwd(), 'data', 'marketplace-applications.json')
+  // resolved marketplace file (items) — prefer explicit env if present
+  const MARKET_FILE = process.env.MARKETPLACE_FILE ? path.resolve(process.cwd(), process.env.MARKETPLACE_FILE) : path.resolve(process.cwd(), 'data', 'marketplace.json')
   // debug: capture working dir and resolved file path in CI logs
   try { console.log('apply endpoint: cwd', process.cwd(), 'resolved FILE', FILE) } catch(_) {}
   ensure(FILE)
@@ -63,9 +65,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         status: 'pending',
         message: body.message || null,
         applicantId: body.applicantId || null,
-        // record which marketplace applications file was used so decision
-        // handlers can validate against the same source in CI/test runs
-        sourceMarketplaceFile: FILE,
+        // record which marketplace items file was used so decision
+        // handlers can validate against the same marketplace source in CI/test runs
+        sourceMarketplaceFile: MARKET_FILE,
         createdAt: new Date().toISOString(),
       }
       items.unshift(newItem)
