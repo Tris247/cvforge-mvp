@@ -1,13 +1,12 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
-import { PrismaClient } from '@prisma/client'
 import { processor } from '../workers/autoApplyWorker'
-
-const prisma = new PrismaClient()
 
 const isPostgres = typeof process !== 'undefined' && process.env.DATABASE_URL && /^postgres(ql)?:\/\//i.test(String(process.env.DATABASE_URL))
 const maybeDescribe = isPostgres ? describe : describe.skip
 
 maybeDescribe('autoapply worker integration', () => {
+  const { PrismaClient } = require('@prisma/client')
+  const prisma = new PrismaClient()
   let user: any
   let owner: any
   let company: any
