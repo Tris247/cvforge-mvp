@@ -85,21 +85,31 @@ export async function requireOwner(req:any, itemId:string){
     // by Vitest where multiple marketplace files may exist in CI.
     try {
       const dataDir = path.resolve(process.cwd(), 'data')
-      if (fs.existsSync(dataDir)) {
-        const candidates = fs.readdirSync(dataDir).filter(f => f.startsWith('marketplace') && f.endsWith('.json'))
-        for (const f of candidates) {
+        if (fs.existsSync(dataDir)) {
+          const candidates = fs.readdirSync(dataDir).filter(f => f.startsWith('marketplace') && f.endsWith('.json'))
           try {
-            const full = path.join(dataDir, f)
-            const d = JSON.parse(fs.readFileSync(full,'utf8')||'[]')
-            const found = (d||[]).find((x:any)=> String(x.id) === String(itemId))
-            if (found) {
-              it = found
-              console.log('requireOwner: found item in file', full)
-              break
+            // log candidate list for CI triage (non-sensitive filenames only)
+            console.log('requireOwner: candidate marketplace files', candidates.slice(0,20))
+          } catch (_) {}
+          for (const f of candidates) {
+            try {
+              const full = path.join(dataDir, f)
+              let mtime: any = null
+              try { mtime = fs.statSync(full).mtime.toISOString() } catch (_) { mtime = null }
+              console.log('requireOwner: inspecting candidate', full, 'mtime', mtime)
+              const d = JSON.parse(fs.readFileSync(full,'utf8')||'[]')
+              const found = (d||[]).find((x:any)=> String(x.id) === String(itemId))
+              if (found) {
+                it = found
+                console.log('requireOwner: found item in file', full)
+                break
+              }
+            } catch (err) {
+              console.warn('requireOwner: failed inspecting candidate', f, err && err.message)
+              /* ignore malformed candidate */
             }
-          } catch (_) { /* ignore malformed candidate */ }
+          }
         }
-      }
     } catch (_) { /* ignore scan errors */ }
   }
   if(!it) {
