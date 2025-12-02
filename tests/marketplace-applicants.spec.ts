@@ -22,7 +22,11 @@ describe('marketplace applicants API', ()=>{
     const ownerId = 'owner-1'
     // create the marketplace items file before creating applications so handlers
     // resolve the same source file in CI and local runs
-    fs.writeFileSync(marketPath, JSON.stringify([{ id: uniqueItem, ownerId, title: 'Test item' }], null, 2))
+    // Include both uniqueItem and 'jobB' (the test creates applications for both)
+    fs.writeFileSync(marketPath, JSON.stringify([
+      { id: uniqueItem, ownerId, title: 'Test item A' },
+      { id: 'jobB', ownerId, title: 'Test item B' }
+    ], null, 2))
     // mock auth to return owner
     vi.doMock('../lib/auth', ()=> ({ getUserFromReq: async ()=> ({ id: ownerId, name: 'Owner User' }) }))
     const applyMod = await import('../pages/api/marketplace/apply')
