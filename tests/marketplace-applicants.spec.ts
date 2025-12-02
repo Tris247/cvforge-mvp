@@ -14,8 +14,18 @@ describe('marketplace applicants API', ()=>{
 
   it('lists applicants for an item and lets employers accept/reject', async ()=>{
     resetFile()
-      const applyMod = await import('../pages/api/marketplace/apply')
     const uniqueItem = `jobA-${Date.now()}-${Math.floor(Math.random()*10000)}`
+    // ensure both marketplace items and apps files are deterministic for this test
+    const MARKET_FILE = `data/marketplace.test-${Date.now()}-${Math.floor(Math.random()*10000)}.json`
+    process.env.MARKETPLACE_FILE = MARKET_FILE
+    const marketPath = path.resolve(process.cwd(), process.env.MARKETPLACE_FILE)
+    const ownerId = 'owner-1'
+    // create the marketplace items file before creating applications so handlers
+    // resolve the same source file in CI and local runs
+    fs.writeFileSync(marketPath, JSON.stringify([{ id: uniqueItem, ownerId, title: 'Test item' }], null, 2))
+    // mock auth to return owner
+    vi.doMock('../lib/auth', ()=> ({ getUserFromReq: async ()=> ({ id: ownerId, name: 'Owner User' }) }))
+    const applyMod = await import('../pages/api/marketplace/apply')
     const req1:any = { method: 'POST', body: { itemId: uniqueItem, applicantName: 'Alice', message: 'ok' } }
     const res1:any = { status: (c:number)=> ({ json: (b:any)=> { res1._out = { status: c, body: b } } }) }
     await applyMod.default(req1, res1)
@@ -30,15 +40,6 @@ describe('marketplace applicants API', ()=>{
     const res3:any = { status: (c:number)=> ({ json: (b:any)=> { res3._out = { status: c, body: b } } }) }
     await applyMod.default(req3, res3)
     expect(res3._out.status).toBe(200)
-
-    // create a marketplace item file with owner and mock auth so only owner can list/decide
-    const MARKET_FILE = `data/marketplace.test-${Date.now()}-${Math.floor(Math.random()*10000)}.json`
-    process.env.MARKETPLACE_FILE = MARKET_FILE
-    const marketPath = path.resolve(process.cwd(), process.env.MARKETPLACE_FILE)
-    const ownerId = 'owner-1'
-    fs.writeFileSync(marketPath, JSON.stringify([{ id: uniqueItem, ownerId, title: 'Test item' }], null, 2))
-    // mock auth to return owner
-    vi.doMock('../lib/auth', ()=> ({ getUserFromReq: async ()=> ({ id: ownerId, name: 'Owner User' }) }))
 
     // list for jobA
     const listMod = await import('../pages/api/marketplace/applicants/index')
